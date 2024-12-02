@@ -4,6 +4,7 @@ import {PageHomeComponent} from './page-home/page-home.component';
 import {PageAboutMePONTComponent} from './page-about-me-pont/page-about-me-pont.component';
 import {PageAboutMeKOVACSComponent} from "./page-about-me-kovacs/page-about-me-kovacs.component";
 import {PageAboutMeZHOUComponent} from "./page-about-me-zhou/page-about-me-zhou.component";
+import {PageAboutMeHauerComponent} from "./page-about-me-Hauer/page-about-me-hauer.component";
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -18,5 +19,7 @@ export const routes: Routes = [
     component: PageAboutMeKOVACSComponent },
   { path: 'page_zhou',
     component: PageAboutMeZHOUComponent },
+  { path: 'page_hauer',
+    component: PageAboutMeHauerComponent },
 ];
 
