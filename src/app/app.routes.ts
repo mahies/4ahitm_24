@@ -9,7 +9,7 @@ import {PageAboutmeHobelComponent} from "./page-aboutme-hobel/page-aboutme-hobel
 import {PageAboutMeHauerComponent} from "./page-about-me-Hauer/page-about-me-hauer.component";
 import {PageAboutmeMETZComponent} from "./page-aboutme-metz/page-aboutme-metz.component";
 import {PageAboutMeKOVACICComponent} from "./page-about-me-kovacic/page-about-me-kovacic.component";
-import {PageAboutMeMAJZELComponent} from './page-about-me-majzel/page-about-me-majzel.component';
+import {PageAboutMeMajzelComponent} from './page-about-me-majzel/page-about-me-majzel.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -35,6 +35,6 @@ export const routes: Routes = [
   { path: 'page_kovacic',
     component: PageAboutMeKOVACICComponent },
   { path: 'page_majzel',
-    component: PageAboutMeMAJZELComponent },
+    component: PageAboutMeMajzelComponent },
 ];
 
