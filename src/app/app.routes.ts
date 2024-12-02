@@ -33,7 +33,7 @@ export const routes: Routes = [
   { path: 'page_hobel',
     component: PageAboutmeHobelComponent },
   { path: 'page_kovacic',
-    component: PageAboutMeKOVACICComponent }
+    component: PageAboutMeKOVACICComponent },
   { path: 'page_majzel',
     component: PageAboutMeMAJZELComponent },
 ];
