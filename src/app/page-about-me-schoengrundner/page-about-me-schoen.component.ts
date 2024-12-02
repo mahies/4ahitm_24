@@ -8,6 +8,7 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
     RouterLinkActive
   ],
   templateUrl: './page-about-me-schoen.component.html',
+  standalone: true,
   styleUrl: './page-about-me-schoen.component.scss'
 })
 export class PageAboutMeSCHOENComponent {
