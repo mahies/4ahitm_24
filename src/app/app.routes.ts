@@ -4,6 +4,7 @@ import {PageHomeComponent} from './page-home/page-home.component';
 import {PageAboutMePONTComponent} from './page-about-me-pont/page-about-me-pont.component';
 import {PageAboutMeKOVACSComponent} from "./page-about-me-kovacs/page-about-me-kovacs.component";
 import {PageAboutMeZHOUComponent} from "./page-about-me-zhou/page-about-me-zhou.component";
+import {PageAboutmeHobelComponent} from "./page-aboutme-hobel/page-aboutme-hobel.component";
 import {PageAboutMeHauerComponent} from "./page-about-me-Hauer/page-about-me-hauer.component";
 import {PageAboutmeMETZComponent} from "./page-aboutme-metz/page-aboutme-metz.component";
 
@@ -25,5 +26,7 @@ export const routes: Routes = [
   { path: 'page_metz',
     component: PageAboutmeMETZComponent },
 
+  { path: 'page_hobel',
+    component: PageAboutmeHobelComponent }
 ];
 
