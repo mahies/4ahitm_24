@@ -5,8 +5,6 @@ import {RouterLinkActive} from '@angular/router';
   selector: 'app-page-about-me-pojar',
   imports: [
 
-    RouterLink,
-    RouterLinkActive
   ],
   templateUrl: './page-about-me-pojar.component.html',
   styleUrl: './page-about-me-pojar.component.scss'
@@ -14,3 +12,4 @@ import {RouterLinkActive} from '@angular/router';
 export class PageAboutMePojarComponent {
 
 }
+
