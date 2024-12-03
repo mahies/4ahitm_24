@@ -8,9 +8,8 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
     RouterLinkActive
   ],
   templateUrl: './page-about-me-coco.component.html',
-  styleUrl: './page-about-me-coco.component.scss.'
+  styleUrl: './page-about-me-coco.component.scss'
 })
-export class PageAboutMeCOCOComponent {
-
+export class PageAboutMeCocoComponent {
 
 }
