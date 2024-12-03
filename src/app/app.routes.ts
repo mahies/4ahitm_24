@@ -31,20 +31,17 @@ export const routes: Routes = [
     component: PageAboutMeHauerComponent },
   { path: 'page_metz',
     component: PageAboutmeMETZComponent },
-
   { path: 'page_hobel',
     component: PageAboutmeHobelComponent },
-
   { path: 'page_garcia',
     component: PageAboutMeGARCIAComponent },
   { path: 'page_schoen',
     component: PageAboutMeSCHOENComponent },
-
   { path: 'page_pojar',
     component: PageAboutMePojarComponent },
   { path: 'page_kovacic',
     component: PageAboutMeKOVACICComponent },
-  { path: 'page_wagn',
+  { path: 'page_wagner',
     component: PageAboutMeWAGNComponent },
   { path: 'page_majzel',
     component: PageAboutMeMajzelComponent },
