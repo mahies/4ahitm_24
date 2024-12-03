@@ -7,7 +7,7 @@ export interface Person {
   department: string;
   email: string;
   github_nickname: string;
-  zip_code: number; //aequivalent to integer in java
+  zip_code: number; //equivalent to integer in java
   city: string;
   message: string;
 }
@@ -63,6 +63,21 @@ export  const KOVACS : Person = {
   city: "Wien",
   message: "\„Gib immer 100%, außer beim Blutspenden.\""
 };
+
+export  const MAJZEL : Person = {
+  surname: "David",
+  firstname: "Majzel",
+  urlImage: "",
+  birthday: new Date("2004-05-22"),
+  department: "ITEL Medientechnik",
+  email: "190323@htl-donaustadt.at",
+  github_nickname: "Dave 64",
+  zip_code: 1220,
+  city: "Wien",
+  message: "\„Carne Assada: proof that some of life’s best moments come from a little heat and a lot of marinade.\" \n(Easy Peasy Quotes)"
+};
+
+
 
 
 

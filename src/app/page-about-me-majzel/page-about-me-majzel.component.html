@@ -1,1 +1,11 @@
-<p>page-about-me-majzel works!</p>
+<div class="container-fluid m-5">
+  <div class="card" style="width: 18rem;">
+    <img src="{{ me_Majzel.urlImage }}" class="card-img-top" width="20c" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ me_Majzel.firstname }} {{ me_Majzel.surname }}</h5>
+      <p class="card-text">{{me_Majzel.message}}</p>
+      <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Back</a>
+    </div>
+  </div>
+</div>
+
