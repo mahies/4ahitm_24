@@ -23,6 +23,20 @@ export  const MINNIE : Person = {
   zip_code: 1010,
   city: "Entenhausen",
   message: "\„Wenn du es dir vorstellen kannst, kannst du es auch machen.\" \n(Walt Disney)"
+
+};
+export  const Carina : Person = {
+  surname: "Wagner",
+  firstname: "Carina",
+  urlImage: "assets-WAGN/DEMOBild.jpg",
+  birthday: new Date("2005-07-19"),
+  department: "ITEL Medientechnik",
+  email: "180469@studierende.htl-donaustadt.at",
+  github_nickname: "CarinaWagn",
+  zip_code: 1220,
+  city: "Wien",
+  message: "\„Life's simple. Take the shot or lose the chance.\" \n(Samira)"
+
 };
 
 export  const HOBEL : Person = {

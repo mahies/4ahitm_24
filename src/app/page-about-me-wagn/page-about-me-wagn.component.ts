@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Carina, Person} from '../model/person';
 
 @Component({
   selector: 'app-page-about-me-wagn',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './page-about-me-wagn.component.scss'
 })
 export class PageAboutMeWAGNComponent {
-
+  me: Person = Carina; //Variable me vom Typ Person = KONSTANTE MOUSE
 }
+
+
