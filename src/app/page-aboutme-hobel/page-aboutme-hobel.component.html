@@ -1,2 +1,11 @@
 <p>page-aboutme-hobel works!</p>
-<a routerLink="" routerLinkActive="active">zurück Home</a>
+<div class="container-fluid m-5">
+  <div class="card" style="width: 18rem;">
+    <img src="{{ me_hobel.urlImage }}" class="card-img-top" width="20c" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ me_hobel.firstname }} {{ me_hobel.surname }}</h5>
+      <p class="card-text">{{me.message}}</p>
+      <a routerLink="" routerLinkActive="active">zurück Home</a>
+    </div>
+  </div>
+</div>

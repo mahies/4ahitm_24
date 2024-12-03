@@ -25,6 +25,18 @@ export  const MINNIE : Person = {
   message: "\„Wenn du es dir vorstellen kannst, kannst du es auch machen.\" \n(Walt Disney)"
 };
 
+export  const HOBEL : Person = {
+  surname: "Hobel",
+  firstname: "Richard",
+  urlImage: "assets/hobel-bilder/hobel_bild.jpeg",
+  birthday: new Date("2005-06-10"),
+  department: "ITEL Medientechnik",
+  email: "200012@studierende.htl-donaustadt.at",
+  github_nickname: "reji05",
+  zip_code: 2231,
+  city: "Strasshof a.d Nordbahn",
+  message: "\„„¡sɹǝpuɐ lɐɯ ǝƃuıp ǝıp ǝʇɥɔɐɹʇǝq“.\" \n(Irgendwas von Google lol)"
+};
 
 
 
