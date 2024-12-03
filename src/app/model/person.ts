@@ -53,5 +53,18 @@ export  const KOVACS : Person = {
 
 
 
+export  const ADRIAN : Person = {
+  surname: "Pontasch",
+  firstname: "Adrian",
+  urlImage: "",
+  birthday: new Date("2004-10-02"),
+  department: "ITEL Medientechnick",
+  email: "190280@studierende.htl-donaustadt.at",
+  github_nickname: "ponti123",
+  zip_code: 1220,
+  city: "Wien",
+  message: "\"Betrunkene und Kinder soll man nicht wecken.\"",
+};
+
 
 
