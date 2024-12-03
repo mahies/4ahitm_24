@@ -40,7 +40,7 @@ export  const HOBEL : Person = {
 export  const KOVACS : Person = {
   surname: "Kovacs",
   firstname: "Philip",
-  urlImage: "assets/demo/Portrait_Kovacs.jpg",
+  urlImage: "assets/Kovacs_Bilder/Portrait_Kovacs.jpg",
   birthday: new Date("2007-05-04"),
   department: "ITEL Netzwerktechnik",
   email: "210015@studierende.htl-donaustadt.at",
