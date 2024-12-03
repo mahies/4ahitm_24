@@ -10,6 +10,7 @@ import {PageAboutmeMETZComponent} from "./page-aboutme-metz/page-aboutme-metz.co
 import {PageAboutMeSCHOENComponent} from './page-about-me-schoengrundner/page-about-me-schoen.component';
 import {PageAboutMeGARCIAComponent} from './page-about-me-garcia/page-about-me-garcia.component';
 import {PageAboutMePojarComponent} from "./page-about-me-pojar/page-about-me-pojar.component";
+import {PageAboutMeKOVACICComponent} from './page-about-me-kovacic/page-about-me-kovacic.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -39,5 +40,7 @@ export const routes: Routes = [
 
   { path: 'page_pojar',
     component: PageAboutMePojarComponent },
+  { path: 'page_kovacic',
+    component: PageAboutMeKOVACICComponent },
 ];
 
