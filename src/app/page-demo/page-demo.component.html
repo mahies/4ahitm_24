@@ -1,10 +1,10 @@
 <div class="container-fluid m-5">
   <div class="card" style="width: 18rem;">
-    <img src="assets/demo/Minnie_Mouse.webp" class="card-img-top" alt="....">
+    <img src="{{ me.urlImage }}" class="card-img-top" width="20c" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Minniee Mouse</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">{{ me.firstname }} {{ me.surname }}</h5>
+      <p class="card-text">{{me.message}}</p>
+      <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Back</a>
     </div>
   </div>
 </div>
