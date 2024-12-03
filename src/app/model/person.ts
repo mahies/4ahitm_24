@@ -37,6 +37,21 @@ export  const HOBEL : Person = {
   city: "Strasshof a.d Nordbahn",
   message: "\„„¡sɹǝpuɐ lɐɯ ǝƃuıp ǝıp ǝʇɥɔɐɹʇǝq“.\" \n(Irgendwas von Google lol)"
 };
+export  const KOVACS : Person = {
+  surname: "Kovacs",
+  firstname: "Philip",
+  urlImage: "assets/demo/Portrait_Kovacs.jpg",
+  birthday: new Date("2007-05-04"),
+  department: "ITEL Netzwerktechnik",
+  email: "210015@studierende.htl-donaustadt.at",
+  github_nickname: "PhilipKovacs",
+  zip_code: 1220,
+  city: "Wien",
+  message: "\„Gib immer 100%, außer beim Blutspenden.\""
+};
+
+
+
 
 
 

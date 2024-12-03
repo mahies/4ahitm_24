@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import {KOVACS} from '../model/person';
+// @ts-ignore
+import { Component } from "@angular/core";
+
 
 @Component({
   selector: 'app-page-about-me-kovacs',
@@ -8,4 +11,5 @@ import { Component } from '@angular/core';
 })
 export class PageAboutMeKOVACSComponent {
 
+  protected readonly me = KOVACS;
 }
