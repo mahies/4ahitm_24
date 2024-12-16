@@ -13,7 +13,7 @@ import {PageAboutMePojarComponent} from "./page-about-me-pojar/page-about-me-poj
 import {PageAboutMeKOVACICComponent} from './page-about-me-kovacic/page-about-me-kovacic.component';
 import {PageAboutMeWAGNComponent} from './page-about-me-wagn/page-about-me-wagn.component';
 import {PageAboutMeMajzelComponent} from './page-about-me-majzel/page-about-me-majzel.component';
-import {PageAboutMeMutisevicComponent} from './page-about-me-mutisevic/page-about-me-mutisevic.component';
+import {PageAboutMeCocoComponent} from './page-about-me-coco/page-about-me-coco.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -46,7 +46,7 @@ export const routes: Routes = [
     component: PageAboutMeWAGNComponent },
   { path: 'page_majzel',
     component: PageAboutMeMajzelComponent },
-  { path: 'page_mutisevic',
-    component: PageAboutMeMutisevicComponent },
+  { path: 'page_coco',
+    component: PageAboutMeCocoComponent },
 ];
 
