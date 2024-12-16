@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
-import {ADRIAN, Person} from '../model/person';
+import {PONT, Person} from '../model/person';
 
 @Component({
   selector: 'app-page-about-me-pont',
@@ -12,5 +12,5 @@ import {ADRIAN, Person} from '../model/person';
   styleUrl: './page-about-me-pont.component.scss'
 })
 export class PageAboutMePONTComponent {
-  me:Person = ADRIAN;
+  me:Person = PONT;
 }

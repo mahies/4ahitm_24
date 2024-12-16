@@ -93,7 +93,7 @@ export  const POJAR : Person = {
 
 
 
-export  const ADRIAN : Person = {
+export  const PONT : Person = {
   surname: "Pontasch",
   firstname: "Adrian",
   urlImage: "",
