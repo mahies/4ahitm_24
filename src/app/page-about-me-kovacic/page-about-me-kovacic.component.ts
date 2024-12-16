@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
-import {Person} from '../model/person';
+
+
 
 @Component({
   selector: 'app-page-about-me-kovacic',
@@ -13,6 +14,5 @@ import {Person} from '../model/person';
   styleUrl: './page-about-me-kovacic.component.scss'
 })
 export class PageAboutMeKOVACICComponent {
-  me_kovacic: Person = kovacic;
-  protected readonly me = kovacic;
+
 }
