@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
+import {KOVACIC, Person} from '../model/person';
 
 
 
@@ -14,5 +15,6 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
   styleUrl: './page-about-me-kovacic.component.scss'
 })
 export class PageAboutMeKOVACICComponent {
-
+  me_kovacic: Person = KOVACIC;
+  protected readonly me = KOVACIC;
 }
