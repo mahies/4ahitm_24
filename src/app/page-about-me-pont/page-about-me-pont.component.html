@@ -3,7 +3,7 @@
   <div class="card-body">
     <h5 class="card-title">{{me.firstname.toUpperCase() }} {{me.surname}}</h5>
     <p class="card-text">Geboren am: {{me.birthday}}</p>
-    <p class="card-text">Geboren in: {{me.city}}</p>
+    <p class="card-text">Geboren in: {{me.city}} {{me.zip_code}}</p>
     <p class="card-text">Email: <a href="mailto:{{me.email}}">{{me.email}}</a></p>
     <a routerLink="" routerLinkActive="active" class="btn btn-primary">Go somewhere</a>
   </div>
