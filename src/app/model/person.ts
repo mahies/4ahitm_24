@@ -55,7 +55,7 @@ export  const KOVACS : Person = {
   surname: "Kovacs",
   firstname: "Philip",
   urlImage: "assets/Kovacs_Bilder/Portrait_Kovacs.jpg",
-  birthday: new Date("2007-05-04"),
+  birthday: new Date("2007-05-04T14:35"),
   department: "ITEL Netzwerktechnik",
   email: "210015@studierende.htl-donaustadt.at",
   github_nickname: "PhilipKovacs",
