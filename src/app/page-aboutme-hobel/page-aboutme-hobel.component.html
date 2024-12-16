@@ -4,7 +4,11 @@
     <img src="{{ me_hobel.urlImage }}" class="card-img-top" width="20c" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{ me_hobel.firstname }} {{ me_hobel.surname }}</h5>
-      <p class="card-text">{{me.message}}</p>
+      <p class="card-text">{{me_hobel.message}}</p>
+      <p class="card-text">Geboren am: {{me_hobel.birthday}}</p>
+      <p class="card-text">Meine Email: {{me_hobel.email}}</p>
+      <p class="card-text">Wohnort: {{me_hobel.zip_code}} {{ me.city }}</p>
+      <p class="card-text">Mein Github username {{me_hobel.github_nickname}}</p>
       <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
     </div>
   </div>
