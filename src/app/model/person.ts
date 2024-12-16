@@ -106,5 +106,19 @@ export  const ADRIAN : Person = {
   message: "\"Betrunkene und Kinder soll man nicht wecken.\"",
 };
 
+export  const MORITZ : Person = {
+  surname: "Metzinger",
+  firstname: "Moritz",
+  urlImage: "assets/metzinger-bilder/Portrait_Metzinger.JPG",
+  birthday: new Date("2006-10-06 08:37:00"),
+  department: "ITEL Medientechnick",
+  email: "210032@studierende.htl-donaustadt.at",
+  github_nickname: "Moritz-Schule",
+  zip_code: 1220,
+  city: "Wien",
+  message: "",
+};
+
+
 
 
