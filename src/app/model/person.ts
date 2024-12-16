@@ -119,6 +119,18 @@ export  const MORITZ : Person = {
   message: "",
 };
 
+export  const KOVACIC : Person = {
+  surname: "Kovacic",
+  firstname: "Victoria",
+  urlImage: "",
+  birthday: new Date("2006-11-22"),
+  department: "ITEL Medientechnick",
+  email: "210042@studierende.htl-donaustadt.at",
+  github_nickname: "sevvicc",
+  zip_code: 1210,
+  city: "Wien",
+  message: "\"Im Glashaus mit Steinen werfen!.\"",
+};
 
 
 
