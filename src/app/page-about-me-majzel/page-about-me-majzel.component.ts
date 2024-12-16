@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {MAJZEL, Person} from '../model/person';
+import {ADRIAN, MAJZEL, Person} from '../model/person';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 
 
@@ -15,4 +15,5 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 })
 export class PageAboutMeMajzelComponent {
   me_Majzel: Person = MAJZEL;
+  protected readonly me = ADRIAN;
 }
