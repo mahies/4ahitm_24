@@ -77,7 +77,18 @@ export  const MAJZEL : Person = {
   message: "\„Carne Assada: proof that some of life’s best moments come from a little heat and a lot of marinade.\" \n(Easy Peasy Quotes)"
 };
 
-
+export  const POJAR : Person = {
+  surname: "Pojar",
+  firstname: "Markus",
+  urlImage: "assets/Pojar-Assets/Ente.png",
+  birthday: new Date("2007-05-09"),
+  department: "ITEL Medientechnik",
+  email: "210178@studierende.htl-donaustadt.at",
+  github_nickname: "KebabEsser_98",
+  zip_code: 2301,
+  city: "Groß-Enzersdorf",
+  message: "\„Wenn das Leben dir Zitronen gibt, dann gib sie zurück.\" \n(Philip Kovacs)"
+};
 
 
 
