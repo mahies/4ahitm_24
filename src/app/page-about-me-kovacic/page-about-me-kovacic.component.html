@@ -1,2 +1,15 @@
 <p>page-about-me-kovacic works!</p>
-<a routerLink="" routerLinkActive="active">zurück Home</a>
+<div class="container-fluid m-5">
+  <div class="card" style="width: 18rem;">
+    <img src="{{ me_kovacic.urlImage }}" class="card-img-top" width="20c" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ me_kovacic.firstname }} {{ me_kovacic.surname }}</h5>
+      <p class="card-text">{{me_kovacic.message}}</p>
+      <p class="card-text">Geboren am: {{me_kovacic.birthday}}</p>
+      <p class="card-text">Meine Email: {{me_kovacic.email}}</p>
+      <p class="card-text">Wohnort: {{me_kovacic.zip_code}} {{ me.city }}</p>
+      <p class="card-text">Mein Github Username {{me_kovacic.github_nickname}}</p>
+      <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
+    </div>
+  </div>
+</div>
