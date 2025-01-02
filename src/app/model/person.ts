@@ -132,5 +132,17 @@ export  const KOVACIC : Person = {
   message: "\"Im Glashaus mit Steinen werfen!.\"",
 };
 
+export  const COCO : Person = {
+  surname: "Secrieri",
+  firstname: "Corneliu",
+  urlImage: "",
+  birthday: new Date("2004-08-03"),
+  department: "ITEL Medientechnick",
+  email: "190284@studierende.htl-donaustadt.at",
+  github_nickname: "coocoolinoo",
+  zip_code: 2434,
+  city: "Goetzendorf",
+  message: "\"Nachts ist es kälter als draußen.\"",
+};
 
 
