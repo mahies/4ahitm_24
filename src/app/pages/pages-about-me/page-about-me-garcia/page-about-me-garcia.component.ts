@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
-import {MINNIE} from '../model/person';
+import {MINNIE} from '../../../model/person';
 
 @Component({
   selector: 'app-page-about-me-garcia',

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
-import {PONT, Person} from '../model/person';
+import {PONT, Person} from '../../../model/person';
 
 @Component({
   selector: 'app-page-about-me-pont',

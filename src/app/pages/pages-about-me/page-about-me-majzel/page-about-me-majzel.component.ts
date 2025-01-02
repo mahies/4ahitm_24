@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {MAJZEL, Person} from '../model/person';
+import {MAJZEL, Person} from '../../../model/person';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 
 

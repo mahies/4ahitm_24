@@ -1,4 +1,4 @@
-import {KOVACS} from '../model/person';
+import {KOVACS} from '../../../model/person';
 // @ts-ignore
 import { Component } from "@angular/core";
 
