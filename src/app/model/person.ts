@@ -61,7 +61,7 @@ export  const HOBEL : Person = {
   surname: "Hobel",
   firstname: "Richard",
   urlImage: "assets/hobel-bilder/hobel_bild.jpeg",
-  birthday: new Date("2005-06-10"),
+  birthday: new Date("2005-06-10 16:05:00"),
   department: "ITEL Medientechnik",
   email: "200012@studierende.htl-donaustadt.at",
   github_nickname: "reji05",
