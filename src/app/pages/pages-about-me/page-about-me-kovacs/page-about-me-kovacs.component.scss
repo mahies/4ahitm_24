@@ -1,9 +1,38 @@
 .test{
+
   text-transform: uppercase;
 }
 
-body{
+p{
+  flex-wrap: wrap;
+
+}
+
+
+.container-flex{
+  width: fit-content;
+
+  margin-left:25px;
+  margin-right:50px;
+
+  padding-left:25px;
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-right: 25px;
+  display: flex;
   background-color: bisque;
+  flex-direction: row;
+  align-items: flex-start;
+  gap:25px;
+  border-radius: 10px;
+
+
+}
+
+
+body{
+  padding-top:25px;
+  background-color: burlywood;
 }
 
 h1,p{
@@ -15,7 +44,7 @@ a{
 }
 
 img{
-  border-radius : 5px;
+  border-radius : 10px;
   box-shadow : #313c48;
 
 }
