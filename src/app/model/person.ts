@@ -104,9 +104,6 @@ export  const GARCIA : Person = {
 
 };
 
-
-
-
 export  const PONT : Person = {
   surname: "Pontasch",
   firstname: "Adrian",
