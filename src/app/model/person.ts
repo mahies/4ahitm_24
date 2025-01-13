@@ -140,7 +140,7 @@ export  const MORITZ : Person = {
   github_nickname: "Moritz-Schule",
   zip_code: 1220,
   city: "Wien",
-  message: "",
+  message: "\"Denk mal drüber nach... 😛\"",
 };
 
 export  const KOVACIC : Person = {

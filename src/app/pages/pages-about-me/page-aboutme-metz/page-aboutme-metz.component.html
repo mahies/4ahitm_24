@@ -1,10 +1,14 @@
 
-    <img src="{{ me.urlImage }}" class="card-img-top" width="20c" alt="...">
-    <h2 class="card-title">{{ me.firstname }} {{ me.surname }}</h2>
-    <p class="card-text">{{me.message}}
-    {{me.birthday}}
-    {{me.city}}
-    {{me.zip_code}}</p>
+    <img src="{{ me.urlImage }}" class="card-img-top" style="width: 300px; height: auto;" alt="Hier stünde für gewöhnlich ein süßes Protrait">
+    <h2 class="card-title">
+      {{ me.firstname }} <span class="surname">{{ me.surname }}</span>
+    </h2>
+    <p class="card-text">Meine Message: {{me.message}}<br>
+    Mein Geburtstag: {{me.birthday | date: "dd.MM.yyyy"}}<br>
+    Mein Wohnort: {{me.city}}, {{me.zip_code}}<br>
+    Meine Socials: <a href="https://www.instagram.com/lkrm123456789/">Instagram</a>,
+      <a href="https://open.spotify.com/user/on6u2zgav35l1ptfvjzqcbx86?si=cd6b666f138543bb">Spotify</a></p>
     <a href= "mailto:name@email.com">{{me.email}}</a>
+    <br><br>
     <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Back</a>
 
