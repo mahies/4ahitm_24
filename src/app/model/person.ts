@@ -26,7 +26,7 @@ export  const MINNIE : Person = {
 
 };
 export  const Carina : Person = {
-  surname: "Wagner",
+  surname: "Wagner".toUpperCase(),
   firstname: "Carina",
   urlImage: "assets-WAGN/DEMOBild.jpg",
   birthday: new Date("2005-07-19"),
