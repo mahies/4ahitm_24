@@ -6,6 +6,7 @@ import {PageAboutMeKOVACSComponent} from "./pages/pages-about-me/page-about-me-k
 import {PageAboutMeZHOUComponent} from "./pages/pages-about-me/page-about-me-zhou/page-about-me-zhou.component";
 import {PageAboutmeHobelComponent} from "./pages/pages-about-me/page-aboutme-hobel/page-aboutme-hobel.component";
 import {PageAboutMeHauerComponent} from "./pages/pages-about-me/page-about-me-Hauer/page-about-me-hauer.component";
+import {PageAboutmeNovoComponent} from "./pages/pages-about-me/page-aboutme-novo/page-aboutme-novo.component";
 import {PageAboutmeMETZComponent} from "./pages/pages-about-me/page-aboutme-metz/page-aboutme-metz.component";
 import {PageAboutMeSCHOENComponent} from './pages/pages-about-me/page-about-me-schoengrundner/page-about-me-schoen.component';
 import {PageAboutMeGARCIAComponent} from './pages/pages-about-me/page-about-me-garcia/page-about-me-garcia.component';
@@ -31,6 +32,8 @@ export const routes: Routes = [
     component: PageAboutMeZHOUComponent },
   { path: 'page_hauer',
     component: PageAboutMeHauerComponent },
+  { path: 'page_novo',
+    component: PageAboutmeNovoComponent },
   { path: 'page_metz',
     component: PageAboutmeMETZComponent },
   { path: 'page_hobel',
