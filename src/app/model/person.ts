@@ -10,6 +10,7 @@ export interface Person {
   zip_code: number; //equivalent to integer in java
   city: string;
   message: string;
+  socialLink?: string;
 }
 
 export  const MINNIE : Person = {
@@ -35,7 +36,8 @@ export  const Carina : Person = {
   github_nickname: "CarinaWagn",
   zip_code: 1220,
   city: "Wien",
-  message: "\„Life's simple. Take the shot or lose the chance.\" \n(Samira)"
+  message: "\„Life's simple. Take the shot or lose the chance.\" \n(Samira)",
+  socialLink: "https://www.instagram.com/scalefeatherandfluff/"
 
 };
 
@@ -61,7 +63,8 @@ export  const KOVACS : Person = {
   github_nickname: "PhilipKovacs",
   zip_code: 1220,
   city: "Wien",
-  message: "\„Gib immer 100%, außer beim Blutspenden.\""
+  message: "\„Gib immer 100%, außer beim Blutspenden.\"",
+  socialLink: "https://www.instagram.com/philip.kvc/"
 };
 
 export  const MAJZEL : Person = {
@@ -168,6 +171,18 @@ export  const COCO : Person = {
   city: "Goetzendorf",
   message: "\"Nachts ist es kälter als draußen.\"",
 };
+export  const FRIEDL : Person = {
+  surname: "Friedl",
+  firstname: "Stefan",
+  urlImage: "assets/friedl-bilder/friedl_bild.jpeg",
+  birthday: new Date("2004-10-04"),
+  department: "ITEL Medientechnik",
+  email: "200006@studierende.htl-donaustadt.at",
+  github_nickname: "rapidler11",
+  zip_code: 1220,
+  city: "Wien",
+  message: "\"„Rapid über Alles!“.\""
+};
 
 export  const SCHOENGRUNDNER : Person = {
   surname: "Schöngrundner",
@@ -193,15 +208,16 @@ export  const MUTISEVIC : Person = {
   city: "Wien",
   message: "\" I AM MUSIC\""
 };
-export  const FRIEDL : Person = {
-  surname: "Friedl",
-  firstname: "Stefan",
-  urlImage: "assets/friedl-assets/stefan.jpg",
-  birthday: new Date("2004-10-04"),
-  department: "ITEL Medientechnick",
-  email: "200006@studierende.htl-donaustadt.at",
-  github_nickname: "rapidler11",
-  zip_code: 1220,
-  city: "Wien",
-  message: "\"Rapid über Alles\""
+
+export  const NOVO : Person = {
+  surname: "Novomesky",
+  firstname: "Philipp",
+  urlImage: "assets/novo_bilder/image_novo.jpg",
+  birthday: new Date("2007-07-11 03:32:00"),
+  department: "ITEL Medientechnik",
+  email: "210053@studierende.htl-donaustadt.at",
+  github_nickname: "PhilippNovo",
+  zip_code: 2291,
+  city: "Lassee",
+  message: "\"You vs You\""
 };
