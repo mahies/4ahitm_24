@@ -7,7 +7,7 @@ import { Component } from "@angular/core";
   selector: 'app-page-about-me-kovacs',
   imports: [],
   templateUrl: './page-about-me-kovacs.component.html',
-  styleUrl: './page-about-me-kovacs.component.css'
+  styleUrl: './page-about-me-kovacs.component.scss'
 })
 export class PageAboutMeKOVACSComponent {
 
