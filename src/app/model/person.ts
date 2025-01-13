@@ -181,7 +181,7 @@ export  const FRIEDL : Person = {
   github_nickname: "rapidler11",
   zip_code: 1220,
   city: "Wien",
-  message: "\"„Rapid über alles!“.\""
+  message: "\"„Rapid über Alles!“.\""
 };
 
 export  const SCHOENGRUNDNER : Person = {
