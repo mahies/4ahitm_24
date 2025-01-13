@@ -78,8 +78,8 @@ export  const MAJZEL : Person = {
 };
 
 export  const POJAR : Person = {
-  surname: "Pojar",
-  firstname: "Markus",
+  surname: "POJAR ",
+  firstname: "Markus ",
   urlImage: "assets/Pojar-Assets/Ente.png",
   birthday: new Date("2007-05-09"),
   department: "ITEL Medientechnik",
