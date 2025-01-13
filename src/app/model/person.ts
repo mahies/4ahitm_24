@@ -10,6 +10,7 @@ export interface Person {
   zip_code: number; //equivalent to integer in java
   city: string;
   message: string;
+  socialLink?: string;
 }
 
 export  const MINNIE : Person = {
@@ -61,7 +62,8 @@ export  const KOVACS : Person = {
   github_nickname: "PhilipKovacs",
   zip_code: 1220,
   city: "Wien",
-  message: "\„Gib immer 100%, außer beim Blutspenden.\""
+  message: "\„Gib immer 100%, außer beim Blutspenden.\"",
+  socialLink: "https://www.instagram.com/philip.kvc/"
 };
 
 export  const MAJZEL : Person = {

@@ -7,11 +7,14 @@
 <h1>
   <span class="test"> {{me.surname}} </span> {{me.firstname}}
 </h1>
-<a href= "mailto:name@email.com">{{me.email}}</a><br>
+
 
 
 <p>Geboren am {{me.birthday.getDay()}}.{{me.birthday.getMonth()}} {{me.birthday.getFullYear()}}
    um {{me.birthday.getHours()}}:{{me.birthday.getMinutes()}} in {{me.city}}</p>
+
+<a href= "mailto:name@email.com">{{me.email}}</a><br>
+<a href= "https://www.instagram.com/philip.kvc/">{{me.socialLink}}</a><br>
 
 <a href="/" routerLink="" routerLinkActive="active" class="btn btn-primary">Back</a>
 
