@@ -48,7 +48,6 @@ export const routes: Routes = [
     component: PageAboutMeMajzelComponent },
   { path: 'page_mutisevic',
     component: PageAboutMeMutisevicComponent },
-
   { path: 'page_friedl',
     component: PageAboutMeMutisevicComponent },
 ];

@@ -1,0 +1,15 @@
+<p>page-aboutme-friedl works!</p>
+<div class="container-fluid m-5">
+  <div class="card" style="width: 18rem;">
+    <img src="{{ me_friedl.urlImage }}" class="card-img-top" width="20c" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ me_friedl.firstname }} {{ me_friedl.surname }}</h5>
+      <p class="card-text">{{me_friedl.message}}</p>
+      <p class="card-text">Geboren am: {{me_friedl.birthday}}</p>
+      <p class="card-text">Meine Email: {{me_friedl.email}}</p>
+      <p class="card-text">Wohnort: {{me_friedl.zip_code}} {{ me.city }}</p>
+      <p class="card-text">Mein Github username {{me_friedl.github_nickname}}</p>
+      <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
+    </div>
+  </div>
+</div>
