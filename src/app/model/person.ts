@@ -102,7 +102,20 @@ export  const GARCIA : Person = {
   city: "Wien",
   message: "\" Yesterday was history, Tomorrow is mystery, Today is a gift. That's why it's called Present.\""
 
-}; //test
+};
+export  const HAUER : Person = {
+  surname: "Hauer",
+  firstname: "Erik",
+  urlImage: "assets/Hauer_bilder/Hauer_Katze.jpg",
+  birthday: new Date("2006-07-18"),
+  department: "ITEL Medientechnick",
+  email: "200019@studierende.htl-donaustadt.at",
+  github_nickname: "Nova1807",
+  zip_code: 1140,
+  city: "Wien",
+  message: "\" ich bin müüüüüüde\""
+
+};
 
 export  const PONT : Person = {
   surname: "Pontasch",
