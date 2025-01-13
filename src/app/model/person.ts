@@ -171,6 +171,18 @@ export  const COCO : Person = {
   city: "Goetzendorf",
   message: "\"Nachts ist es kälter als draußen.\"",
 };
+export  const FRIEDL : Person = {
+  surname: "Friedl",
+  firstname: "Stefan",
+  urlImage: "assets/friedl-bilder/friedl_bild.jpeg",
+  birthday: new Date("2004-10-04"),
+  department: "ITEL Medientechnik",
+  email: "200006@studierende.htl-donaustadt.at",
+  github_nickname: "rapidler11",
+  zip_code: 1220,
+  city: "Wien",
+  message: "\"„Rapid über alles“.\""
+};
 
 export  const SCHOENGRUNDNER : Person = {
   surname: "Schöngrundner",
