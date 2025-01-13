@@ -102,7 +102,7 @@ export  const GARCIA : Person = {
   city: "Wien",
   message: "\" Yesterday was history, Tomorrow is mystery, Today is a gift. That's why it's called Present.\""
 
-};
+}; //test
 
 export  const PONT : Person = {
   surname: "Pontasch",

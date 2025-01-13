@@ -13,3 +13,4 @@ export class PageAboutMeHauerComponent {
  // me_hauer: Person = HAUER;
  me_hauer: Person = HAUER;
 }
+//test
