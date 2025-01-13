@@ -10,7 +10,6 @@ export interface Person {
   zip_code: number; //equivalent to integer in java
   city: string;
   message: string;
-  socialLink?: string;
 }
 
 export  const MINNIE : Person = {
@@ -36,8 +35,7 @@ export  const Carina : Person = {
   github_nickname: "CarinaWagn",
   zip_code: 1220,
   city: "Wien",
-  message: "\„Life's simple. Take the shot or lose the chance.\" \n(Samira)",
-  socialLink: "https://www.instagram.com/scalefeatherandfluff/"
+  message: "\„Life's simple. Take the shot or lose the chance.\" \n(Samira)"
 
 };
 
@@ -63,8 +61,7 @@ export  const KOVACS : Person = {
   github_nickname: "PhilipKovacs",
   zip_code: 1220,
   city: "Wien",
-  message: "\„Gib immer 100%, außer beim Blutspenden.\"",
-  socialLink: "https://www.instagram.com/philip.kvc/"
+  message: "\„Gib immer 100%, außer beim Blutspenden.\""
 };
 
 export  const MAJZEL : Person = {
@@ -170,18 +167,6 @@ export  const COCO : Person = {
   zip_code: 2434,
   city: "Goetzendorf",
   message: "\"Nachts ist es kälter als draußen.\"",
-};
-export  const FRIEDL : Person = {
-  surname: "Friedl",
-  firstname: "Stefan",
-  urlImage: "assets/friedl-bilder/friedl_bild.jpeg",
-  birthday: new Date("2004-10-04"),
-  department: "ITEL Medientechnik",
-  email: "200006@studierende.htl-donaustadt.at",
-  github_nickname: "rapidler11",
-  zip_code: 1220,
-  city: "Wien",
-  message: "\"„Rapid über Alles!“.\""
 };
 
 export  const SCHOENGRUNDNER : Person = {
