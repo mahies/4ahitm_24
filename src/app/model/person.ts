@@ -145,4 +145,15 @@ export  const COCO : Person = {
   message: "\"Nachts ist es kälter als draußen.\"",
 };
 
-
+export  const SCHOENGRUNDNER : Person = {
+  surname: "Schöngrundner",
+  firstname: "Ines",
+  urlImage: "assets/schoen-bilder/hondacbr600rr.jpeg",
+  birthday: new Date("2007-02-16"),
+  department: "ITEL Medientechnick",
+  email: "210179@studierende.htl-donaustadt.at",
+  github_nickname: "inesschoen",
+  zip_code: 1220,
+  city: "Wien",
+  message: "\"Blöd gelaufen!.\"",
+};

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
+import {SCHOENGRUNDNER, Person} from '../../../model/person';
 
 @Component({
   selector: 'app-page-about-me-schoen',
@@ -12,5 +13,6 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
   styleUrl: './page-about-me-schoen.component.scss'
 })
 export class PageAboutMeSCHOENComponent {
-
+  me_schoen: Person = SCHOENGRUNDNER;
+  protected readonly me = SCHOENGRUNDNER;
 }

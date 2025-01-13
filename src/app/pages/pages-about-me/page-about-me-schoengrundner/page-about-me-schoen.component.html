@@ -1,2 +1,15 @@
 <p>page-about-me-schoengrundner</p>
-<a routerLink="" routerLinkActive="active">zurück Home</a>
+<div class="container-fluid m-5">
+  <div class="card" style="width: 18rem;">
+    <img src="{{ me_schoen.urlImage }}" class="card-img-top" width="20c" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ me_schoen.firstname }} {{ me_schoen.surname }}</h5>
+      <p class="card-text">{{me_schoen.message}}</p>
+      <p class="card-text">Geboren am: {{me_schoen.birthday}}</p>
+      <p class="card-text">Meine Email: {{me_schoen.email}}</p>
+      <p class="card-text">Wohnort: {{me_schoen.zip_code}} {{ me.city }}</p>
+      <p class="card-text">Mein Github Username {{me_schoen.github_nickname}}</p>
+      <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
+    </div>
+  </div>
+</div>
