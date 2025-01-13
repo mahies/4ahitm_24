@@ -10,6 +10,7 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
   standalone: true
 })
 export class PageAboutmeFriedlComponent {
+
   me_friedl: Person = FRIEDL;
   protected readonly me = FRIEDL;
 }
