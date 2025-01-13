@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
-import {RouterLink, RouterLinkActive} from '@angular/router';
-import {KOVACS, FRIEDL} from '../../../model/person';
+import {Person, FRIEDL} from '../../../model/person';
+import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
-  selector: 'app-page-about-me-friedl',
-  imports: [RouterLink, RouterLinkActive],
-  templateUrl: './page-about-me-friedl.component.html',
-  standalone: true,
-  styleUrl: './page-about-me-friedl.component.scss'
+  selector: 'app-page-aboutme-friedl',
+  imports: [RouterLink,RouterLinkActive],
+  templateUrl: './page-aboutme-friedl.component.html',
+  styleUrl: './page-aboutme-friedl.component.scss',
+  standalone: true
 })
 export class PageAboutmeFriedlComponent {
-  Person= FRIEDL;
+
+  me_friedl: Person = FRIEDL;
   protected readonly me = FRIEDL;
 }

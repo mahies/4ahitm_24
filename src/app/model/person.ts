@@ -193,3 +193,15 @@ export  const MUTISEVIC : Person = {
   city: "Wien",
   message: "\" I AM MUSIC\""
 };
+export  const FRIEDL : Person = {
+  surname: "Friedl",
+  firstname: "Stefan",
+  urlImage: "assets/friedl-assets/stefan.jpg",
+  birthday: new Date("2004-10-04"),
+  department: "ITEL Medientechnick",
+  email: "200006@studierende.htl-donaustadt.at",
+  github_nickname: "rapidler11",
+  zip_code: 1220,
+  city: "Wien",
+  message: "\"Rapid über Alles\""
+};
