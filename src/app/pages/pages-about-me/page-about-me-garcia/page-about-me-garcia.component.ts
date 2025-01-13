@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
-import {MINNIE, PONT} from '../../../model/person';
+import {MINNIE, GARCIA} from '../../../model/person';
 
 @Component({
   selector: 'app-page-about-me-garcia',
