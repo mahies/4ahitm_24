@@ -90,6 +90,20 @@ export  const POJAR : Person = {
   message: "\„Wenn das Leben dir Zitronen gibt, dann gib sie zurück.\" \n(Philip Kovacs)"
 };
 
+export  const GARCIA : Person = {
+  surname: "Garcia",
+  firstname: "Riz",
+  urlImage: "assets/garcia_bilder/Garcia.jpg",
+  birthday: new Date("1928-11-18"),
+  department: "ITEL Medientechnick",
+  email: "200005@studierende.htl-donaustadt.at",
+  github_nickname: "rizi06",
+  zip_code: 1220,
+  city: "Wien",
+  message: "\" Yesterday was history, Tomorrow is mystery, Today is a gift. That's why it's called Present.\""
+
+};
+
 
 
 
