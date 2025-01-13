@@ -181,3 +181,15 @@ export  const SCHOENGRUNDNER : Person = {
   city: "Wien",
   message: "\"Blöd gelaufen!.\"",
 };
+export  const MUTISEVIC : Person = {
+  surname: "Mutisevic",
+  firstname: "Adin",
+  urlImage: "assets/mutisevic-assets/adin.jpg",
+  birthday: new Date("2006-05-30"),
+  department: "ITEL Medientechnick",
+  email: "200224@studierende.htl-donaustadt.at",
+  github_nickname: "adino",
+  zip_code: 1210,
+  city: "Wien",
+  message: "\" I AM MUSIC\""
+};
