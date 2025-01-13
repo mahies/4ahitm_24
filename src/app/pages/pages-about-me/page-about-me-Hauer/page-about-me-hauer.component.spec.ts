@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageAboutMeHauerComponent} from './page-about-me-hauer.component';
+import { PageAboutMeHauerComponent } from './page-about-me-hauer.component';
 
-describe('PageAboutMeHauerComponent', () => {
+describe('PageAboutmeHauerComponent', () => {
   let component: PageAboutMeHauerComponent;
   let fixture: ComponentFixture<PageAboutMeHauerComponent>;
 
@@ -10,7 +10,7 @@ describe('PageAboutMeHauerComponent', () => {
     await TestBed.configureTestingModule({
       imports: [PageAboutMeHauerComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(PageAboutMeHauerComponent);
     component = fixture.componentInstance;

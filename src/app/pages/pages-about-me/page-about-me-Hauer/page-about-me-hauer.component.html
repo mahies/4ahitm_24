@@ -1,2 +1,15 @@
-<p>page-about-me-hauer works!</p>
-<a routerLink="" routerLinkActive="active">zurück Home</a>
+<p>page-aboutme-hauer works!</p>
+<div class="container-fluid m-5">
+  <div class="card" style="width: 18rem;">
+    <img src="{{ me_hauer.urlImage}}" class="card-img-top" width="20c" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ me_hauer.firstname }} {{ me_hauer.surname }}</h5>
+      <p class="card-text">{{me_hauer.message}}</p>
+      <p class="card-text">Geboren am: {{me_hauer.birthday}}</p>
+      <p class="card-text">Meine Email: {{me_hauer.email}}</p>
+      <p class="card-text">Wohnort: {{me_hauer.zip_code}} {{ me_hauer.city }}</p>
+      <p class="card-text">Mein Github username {{me_hauer.github_nickname}}</p>
+      <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
+    </div>
+  </div>
+</div>

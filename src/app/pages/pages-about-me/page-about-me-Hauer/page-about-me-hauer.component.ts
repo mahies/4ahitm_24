@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
-import {RouterLink, RouterLinkActive} from '@angular/router';
+import {Person, HAUER} from '../../../model/person';
+import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
   selector: 'app-page-about-me-hauer',
-  imports: [
-    RouterLink,
-    RouterLinkActive
-  ],
+  imports: [RouterLink,RouterLinkActive],
   templateUrl: './page-about-me-hauer.component.html',
-  standalone: true,
-  styleUrl: './page-about-me-hauer.component.scss'
+  styleUrl: './page-about-me-hauer.component.scss',
+  standalone: true
 })
-export class PageAboutMeHauerComponent{
-
+export class PageAboutMeHauerComponent {
+ // me_hauer: Person = HAUER;
+ me_hauer: Person = HAUER;
 }
