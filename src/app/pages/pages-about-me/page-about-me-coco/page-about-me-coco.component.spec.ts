@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageAboutMeCocoComponent } from './page-about-me-coco.component.scss';
+import { PageAboutMeCocoComponent } from "./page-about-me-coco.component";
 
 describe('PageAboutMeCocoComponent', () => {
   let component: PageAboutMeCocoComponent;
