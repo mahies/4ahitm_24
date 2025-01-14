@@ -1,18 +1,18 @@
-
+<div class="steckbrief">
     <img src="{{ me.urlImage }}" class="card-img-top" style="width: 300px; height: auto;" alt="Hier stünde für gewöhnlich ein süßes Protrait">
     <h2 class="card-title">
       {{ me.firstname }} <span class="surname">{{ me.surname }}</span>
     </h2>
-    <p class="card-text">Meine Message: {{me.message}}<br>
-    Mein Geburtstag: {{me.birthday | date: "dd.MM.yyyy"}}<br>
-    Mein Wohnort: {{me.city}}, {{me.zip_code}}<br>
-    Meine Socials: <a href="https://www.instagram.com/lkrm123456789/">Instagram</a>,
+    <p class="card-text"><b>Meine Message:</b> {{me.message}}<br>
+    <b>Mein Geburtstag:</b> {{me.birthday | date: "dd.MM.yyyy"}}<br>
+    <b>Mein Wohnort:</b> {{me.city}}, {{me.zip_code}}<br>
+    <b>Meine Socials: </b><a href="https://www.instagram.com/lkrm123456789/">Instagram</a>,
       <a href="https://rateyourmusic.com/~lkrm">RateYourMusic</a>,
       <a href="https://letterboxd.com/lkrm/">Letterboxd</a><br>
-      Mein Github: {{me.github_nickname}}</p>
+     <b>Mein Github:</b> {{me.github_nickname}}</p>
 
     <a href= "mailto:name@email.com">{{me.email}}</a><br>
 
     <br><br>
     <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Back</a>
-
+</div>
