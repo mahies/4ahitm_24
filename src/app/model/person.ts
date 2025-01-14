@@ -221,3 +221,16 @@ export  const NOVO : Person = {
   city: "Lassee",
   message: "\"You vs You\""
 };
+
+export  const ZHOU : Person = {
+  surname: "ZHOU",
+  firstname: "Kevin",
+  urlImage: "assets/zhou-bilder/.jpg",
+  birthday: new Date("2005-11-25"),
+  department: "ITEL Medientechnik",
+  email: "210013@studierende.htl-donaustadt.at",
+  github_nickname: "FaithfulMeow",
+  zip_code: 1220,
+  city: "Wien",
+  message: "\"Mach ein Backflip\""
+};
