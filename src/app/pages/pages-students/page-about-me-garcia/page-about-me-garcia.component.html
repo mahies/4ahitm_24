@@ -1,15 +1,20 @@
-<p>page-about-me-garcia</p>
+
+<body style="background-color: lightblue;">
 <div class="container-fluid m-5">
   <div class="card" style="width: 18rem;">
-    <img src="{{ me.urlImage }}" class="card-img-top" width="20c" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{ me.firstname }} {{ me.surname }}</h5>
-      <p class="card-text">{{me.message}}</p>
-      <p class="card-text">Birth date: {{me.birthday}}</p>
-      <p class="card-text">Mail: {{me.email}}</p>
-      <p class="card-text">Residence: {{me.zip_code}} {{ me.city }}</p>
-      <p class="card-text">Github Username: {{me.github_nickname}}</p>
-      <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
+    <div class="card-body d-flex">
+      <img src="{{ me.urlImage }}" class="card-img-top" width="30" alt="..." style="margin-right: 30px;" style=" >
+
+      <div>
+        <h5 class="card-title">{{ me.firstname }} {{ me.surname }}</h5>
+        <p class="card-text">{{ me.message }}</p>
+        <p class="card-text">Birth date: {{ me.birthday }}</p>
+        <p class="card-text">Mail: {{ me.email }}</p>
+        <p class="card-text">Residence: {{ me.zip_code }} {{ me.city }}</p>
+        <p class="card-text">Github Username: {{ me.github_nickname }}</p>
+        <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Zurück home</a>
+      </div>
     </div>
   </div>
 </div>
+<
