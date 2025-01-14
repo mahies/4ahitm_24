@@ -1,15 +1,20 @@
-.test{
 
+.test{
   text-transform: uppercase;
+}
+
+.headline{
+  font-weight: bold;
 }
 
 p{
   flex-wrap: wrap;
+  font-size: 18px;
 
 }
 
-
-.container-flex{
+.fluid-container{
+  display: flex;
   width: fit-content;
 
   margin-left:25px;
@@ -19,16 +24,13 @@ p{
   padding-top:25px;
   padding-bottom:25px;
   padding-right: 25px;
-  display: flex;
+
   background-color: bisque;
   flex-direction: row;
   align-items: flex-start;
   gap:25px;
   border-radius: 10px;
-
-
 }
-
 
 body{
   padding-top:25px;
@@ -46,5 +48,4 @@ a{
 img{
   border-radius : 10px;
   box-shadow : #313c48;
-
 }
