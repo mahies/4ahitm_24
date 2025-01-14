@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {HOBEL, Person, ZHOU} from '../../../model/person';
+import {ZHOU, Person} from '../../../model/person';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 @Component({
   selector: 'app-page-about-me-zhou',
@@ -14,5 +14,4 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 export class PageAboutMeZHOUComponent {
   me : Person = ZHOU;
 
-  protected readonly me_hobel = HOBEL;
 }
