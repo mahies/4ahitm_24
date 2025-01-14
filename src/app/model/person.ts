@@ -225,7 +225,7 @@ export  const NOVO : Person = {
 export  const ZHOU : Person = {
   surname: "ZHOU",
   firstname: "Kevin",
-  urlImage: "assets/zhou-bilder/.jpg",
+  urlImage: "assets/zhou-bilder/stickfigure.jpg",
   birthday: new Date("2005-11-25"),
   department: "ITEL Medientechnik",
   email: "210013@studierende.htl-donaustadt.at",
