@@ -97,7 +97,7 @@ export  const GARCIA : Person = {
   surname: "Garcia",
   firstname: "Riz",
   urlImage: "assets/garcia_bilder/Garcia.jpg",
-  birthday: new Date("1928-11-18"),
+  birthday: new Date("2006-07-14"),
   department: "ITEL Medientechnick",
   email: "200005@studierende.htl-donaustadt.at",
   github_nickname: "rizi06",
