@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import {PageDemoComponent} from './pages/page-demo/page-demo.component';
+import {PageDemoComponent} from './pages/pages-demo/page-demo/page-demo.component';
 import {PageHomeComponent} from './pages/page-home/page-home.component';
 import {PageAboutMePONTComponent} from './pages/pages-about-me/page-about-me-pont/page-about-me-pont.component';
 import {PageAboutMeKOVACSComponent} from "./pages/pages-about-me/page-about-me-kovacs/page-about-me-kovacs.component";
