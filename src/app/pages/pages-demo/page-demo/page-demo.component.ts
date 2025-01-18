@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import {Person, MINNIE} from '../../../model/person';
-import {RouterLink, RouterLinkActive} from '@angular/router';
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-page-demo',
-  imports: [RouterLink,RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, RouterOutlet,],
   templateUrl: './page-demo.component.html',
   styleUrl: './page-demo.component.scss',
   standalone: true

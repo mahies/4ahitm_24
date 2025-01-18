@@ -11,6 +11,7 @@ export interface Person {
   city: string;
   message: string;
   socialLink?: string;
+  routerLink?: string;
 }
 
 export  const MINNIE : Person = {
@@ -23,8 +24,8 @@ export  const MINNIE : Person = {
   github_nickname: "minnie",
   zip_code: 1010,
   city: "Entenhausen",
-  message: "\„Wenn du es dir vorstellen kannst, kannst du es auch machen.\" \n(Walt Disney)"
-
+  message: "\„Wenn du es dir vorstellen kannst, kannst du es auch machen.\" \n(Walt Disney)",
+  routerLink: "/page_demo"
 };
 export  const Carina : Person = {
   surname: "Wagner".toUpperCase(),
@@ -119,7 +120,6 @@ export  const HAUER : Person = {
   message: "\" ich bin müüüüüüde\""
 
 };
-
 export  const PONT : Person = {
   surname: "Pontasch",
   firstname: "Adrian",
@@ -132,7 +132,6 @@ export  const PONT : Person = {
   city: "Wien",
   message: "\"Betrunkene und Kinder soll man nicht wecken.\"",
 };
-
 export  const MORITZ : Person = {
   surname: "Metzinger",
   firstname: "Moritz",
@@ -145,7 +144,6 @@ export  const MORITZ : Person = {
   city: "Wien",
   message: "\"Denk mal drüber nach... 😛\"",
 };
-
 export  const KOVACIC : Person = {
   surname: "Kovacic",
   firstname: "Victoria",
@@ -158,7 +156,6 @@ export  const KOVACIC : Person = {
   city: "Wien",
   message: "\"Im Glashaus mit Steinen werfen!.\"",
 };
-
 export  const COCO : Person = {
   surname: "Secrieri",
   firstname: "Corneliu",
@@ -183,7 +180,6 @@ export  const FRIEDL : Person = {
   city: "Wien",
   message: "\"„Rapid über Alles!“.\""
 };
-
 export  const SCHOENGRUNDNER : Person = {
   surname: "Schöngrundner",
   firstname: "Ines",
@@ -208,7 +204,6 @@ export  const MUTISEVIC : Person = {
   city: "Wien",
   message: "\" I AM MUSIC\""
 };
-
 export  const NOVO : Person = {
   surname: "Novomesky",
   firstname: "Philipp",
@@ -221,7 +216,6 @@ export  const NOVO : Person = {
   city: "Lassee",
   message: "\"You vs You\""
 };
-
 export  const ZHOU : Person = {
   surname: "ZHOU",
   firstname: "Kevin",
@@ -234,3 +228,6 @@ export  const ZHOU : Person = {
   city: "Wien",
   message: "\"Mach ein Backflip\""
 };
+
+//list all students
+export const STUDENTS:Person[] = [ZHOU,NOVO,MUTISEVIC,FRIEDL,COCO,SCHOENGRUNDNER,KOVACIC,MORITZ,POJAR,PONT,HAUER,HOBEL,MAJZEL,Carina];

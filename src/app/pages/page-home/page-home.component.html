@@ -1,8 +1,23 @@
 
 <main class="main container m-5">
   <div class="content ">
-    <h1>Das ist die Startseite der {{title}}</h1>
+    <h4>DEMO</h4>
+    <a routerLink="{{demo.routerLink}}" routerLinkActive="active" class="students">
+      <li>
+        <img src="{{demo.urlImage}}">
+      </li>
+    </a>
   </div>
+  <div class="content ">
+    <h1>Die Medientechnika der {{title}}</h1>
+  </div>
+  <ul class="students d-flex flex-row">
+    <li *ngFor="let student of students  | orderBy: 'surname' ; let i = index" class="m-2">
+      <img src="{{student.urlImage}}">
+      <span class="badge">{{i}}</span>
+      <span class="name">{{student.surname}}</span>
+    </li>
+  </ul>
   <a routerLink="/page_demo" routerLinkActive="active">Link zur page demo</a><br>
   <a routerLink="/page_pont" routerLinkActive="active">Link zur Pontasch Seite</a><br>
   <a routerLink="/page_kovacs" routerLinkActive="active">Link zur Kovacs Seite</a><br>
