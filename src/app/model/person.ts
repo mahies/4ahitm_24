@@ -177,7 +177,7 @@ export  const COCO : Person = {
 export  const FRIEDL : Person = {
   surname: "Friedl",
   firstname: "Stefan",
-  urlImage: "assets/friedl-bilder/friedl_bild.jpeg",
+  urlImage: "assets/Friedl-bilder/Friedl_bild.png",
   birthday: new Date("2004-10-04"),
   department: "ITEL Medientechnik",
   email: "200006@studierende.htl-donaustadt.at",
