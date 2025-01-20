@@ -243,7 +243,8 @@ export  const NOVO : Person = {
   zip_code: 2291,
   city: "Lassee",
   message: "\"You vs You\"",
-  socialLink: "https://www.instagram.com/p.novomesky/"
+  socialLink: "https://www.instagram.com/p.novomesky/",
+  routerLink: "/page_novo"
 };
 export  const ZHOU : Person = {
   surname: "ZHOU",
