@@ -1,1 +1,14 @@
-$p_font: 'Calibri', sans-serif;
+
+body {
+  font-family: Elephant, sans-serif;
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.p_font {
+'Calibri', sans-serif;
+}
