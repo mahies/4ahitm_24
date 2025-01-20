@@ -17,19 +17,22 @@ p{
   display: flex;
   width: fit-content;
 
-  margin-left:25px;
-  margin-right:50px;
+  margin: 0 auto;
 
   padding-left:25px;
   padding-top:25px;
   padding-bottom:25px;
   padding-right: 25px;
 
+  box-shadow: 0 7.5px 7.5px #343434;
+
   background-color: bisque;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap:25px;
   border-radius: 10px;
+
+  position: relative;
 }
 
 body{
@@ -37,13 +40,38 @@ body{
   background-color: burlywood;
 }
 
-h1,p{
+p{
   color: #313c48;
+  font-family: "Segoe UI";
+
+}
+h1{
+  color: #313c48;
+  font-family: "Sitka Text";
 }
 
-a{
+.Link{
   color: #588884;
+  font-family: "Segoe UI";
+
 }
+.Button{
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.sub-Button{
+  display: flex;
+  gap:10px;
+  margin-right:50px;
+
+}
+
 
 img{
   border-radius : 10px;

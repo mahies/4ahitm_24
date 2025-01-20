@@ -1,4 +1,4 @@
-8
+
 export interface Person {
   surname: string;
   firstname: string;
@@ -42,21 +42,6 @@ export  const WAGNER : Person = {
 
 };
 
-export  const CIZMIC : Person = {
-  surname: "Cizmic",
-  firstname: "Elvir",
-  urlImage: "assets/cizmic_assets/PictureRef.png",
-  birthday: new Date("2006-08-04"),
-  department: "ITEL Medientechnik",
-  email: "210474@studierende.htl-donaustadt.at",
-  github_nickname: "ElvirC",
-  zip_code: 1220,
-  city: "Wien",
-  message: "\„Murder's Great!\" \n(Thomas 'Tomska' Ridgewell)",
-  socialLink: "https://www.youtube.com/@SiIvaGunner",
-  routerLink: "/page_cizmic"
-};
-
 export  const HOBEL : Person = {
   surname: "Hobel",
   firstname: "Richard",
@@ -84,8 +69,8 @@ export  const KOVACS : Person = {
 };
 
 export  const MAJZEL : Person = {
-  surname: "Majzel",
-  firstname: "David",
+  surname: "David",
+  firstname: "Majzel",
   urlImage: "assets/assets-majzel/majzel-bilder/mybilders.png",
   birthday: new Date("2004-05-22 02:00:00"),
   department: "ITEL Medientechnik",
@@ -119,10 +104,9 @@ export  const GARCIA : Person = {
   github_nickname: "rizi06",
   zip_code: 1220,
   city: "Wien",
-  message: "\" Yesterday was history, Tomorrow is mystery, Today is a gift. That's why it's called Present.\"",
-  socialLink: "https://www.instagram.com/mahlxri_/"
-};
+  message: "\" Yesterday was history, Tomorrow is mystery, Today is a gift. That's why it's called Present.\""
 
+};
 export  const HAUER : Person = {
   surname: "Hauer",
   firstname: "Erik",
@@ -133,9 +117,7 @@ export  const HAUER : Person = {
   github_nickname: "Nova1807",
   zip_code: 1140,
   city: "Wien",
-  message: "\" ich bin müüüüüüde\"",
-  socialLink: "https://www.instagram.com/nova_18072/",
-  routerLink: "\"/page_hauer\" "
+  message: "\" ich bin müüüüüüde\""
 
 };
 export  const PONT : Person = {
@@ -176,7 +158,7 @@ export  const KOVACIC : Person = {
   github_nickname: "sevvicc",
   zip_code: 1210,
   city: "Wien",
-  message: "\"Im Glashaus mit Steinen werfen!\"",
+  message: "\"Im Glashaus mit Steinen werfen!.\"",
   socialLink:"https://www.instagram.com/vicitori__/",
   routerLink:"/page_kovacic",
 };
@@ -195,20 +177,19 @@ export  const COCO : Person = {
 export  const FRIEDL : Person = {
   surname: "Friedl",
   firstname: "Stefan",
-  urlImage: "assets/Friedl-bilder/Friedl_bild.PNG",
+  urlImage: "assets/friedl-bilder/friedl_bild.jpeg",
   birthday: new Date("2004-10-04"),
   department: "ITEL Medientechnik",
   email: "200006@studierende.htl-donaustadt.at",
   github_nickname: "rapidler11",
   zip_code: 1220,
   city: "Wien",
-  message: "\"„Rapid über Alles!“.\"",
-  socialLink: "https://www.instagram.com/s.friedl2/"
+  message: "\"„Rapid über Alles!“.\""
 };
 export  const SCHOENGRUNDNER : Person = {
   surname: "Schöngrundner",
   firstname: "Ines",
-  urlImage: "assets/schoen-bilder/hondacbr600rr.jpg",
+  urlImage: "assets/schoen-bilder/hondacbr600rr.jpeg",
   birthday: new Date("2007-02-16"),
   department: "ITEL Medientechnick",
   email: "210179@studierende.htl-donaustadt.at",
@@ -216,7 +197,6 @@ export  const SCHOENGRUNDNER : Person = {
   zip_code: 1220,
   city: "Wien",
   message: "\"Blöd gelaufen!.\"",
-  socialLink:"https://www.instagram.com/ines._.schoen/"
 };
 export  const MUTISEVIC : Person = {
   surname: "Mutisevic",
@@ -261,4 +241,4 @@ export  const ZHOU : Person = {
 };
 
 //list all students
-export const STUDENTS:Person[] = [ZHOU,NOVO,MUTISEVIC,FRIEDL,COCO,SCHOENGRUNDNER,KOVACIC,MORITZ,POJAR,PONT,HAUER,HOBEL,MAJZEL,WAGNER,GARCIA,CIZMIC];
+export const STUDENTS:Person[] = [ZHOU,NOVO,MUTISEVIC,FRIEDL,COCO,SCHOENGRUNDNER,KOVACIC,MORITZ,POJAR,PONT,HAUER,HOBEL,MAJZEL,WAGNER,GARCIA];
