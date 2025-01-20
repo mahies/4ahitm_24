@@ -1,4 +1,3 @@
-<p>page-aboutme-hauer works!</p>
 <div class="container-fluid m-5">
   <div class="card" style="width: 18rem;">
     <img src="{{ me_hauer.urlImage}}" class="card-img-top" width="20c" alt="...">
@@ -9,8 +8,8 @@
       <p class="card-text">Meine Email: {{me_hauer.email}}</p>
       <p class="card-text">Wohnort: {{me_hauer.zip_code}} {{ me_hauer.city }}</p>
       <p class="card-text">Mein Github username {{me_hauer.github_nickname}}</p>
+      <p><a href= {{me_hauer.socialLink}}> Mein Instagram Profil</a></p>
       <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
     </div>
   </div>
 </div>
-//test

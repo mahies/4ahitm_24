@@ -21,6 +21,9 @@ import {Subpage2Component} from './pages/pages-demo/subpage2/subpage2.component'
 import {
   PageHaustiereWAGNERComponent
 } from './pages/pages-students/pages-wagner/page-haustiere-wagner/page-haustiere-wagner.component';
+import {
+  PageLieblingsfilmundmusikWAGNERComponent
+} from './pages/pages-students/pages-wagner/page-lieblingsfilmundmusik-wagner/page-lieblingsfilmundmusik-wagner.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -63,6 +66,8 @@ export const routes: Routes = [
     component: PageAboutMeWAGNComponent },
   { path: 'page_haustiere_wagner',
     component: PageHaustiereWAGNERComponent },
+  { path: 'page_lieblingsfilmundmusik_wagner',
+    component: PageLieblingsfilmundmusikWAGNERComponent },
   { path: 'page_majzel',
     component: PageAboutMeMajzelComponent },
   { path: 'page_mutisevic',

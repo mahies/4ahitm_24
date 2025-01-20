@@ -1,4 +1,7 @@
-<h1>Markus Pojar</h1>
+
+<body>
+
+
 <div class="flex-container">
   <div class="Bild">
 <img src="{{ me.urlImage }}" alt="Pojar_Image" width="auto" height="900">
@@ -7,12 +10,12 @@
   <div class="card" style="" width="100" height="1000">
 
     <div class="card-body">
-      <h5 class="card-title">{{ me.firstname }} {{ me.surname }}</h5>
-        <p class="card-text">{{me.birthday}}</p>
-        <p class="card-text">{{me.zip_code}}</p>
-        <p class="card-text">{{me.city}}</p>
-        <p class="card-text">{{me.email}}</p>
-        <p class="card-text">{{me.message}}</p>
+      <h1 class="card-title">{{ me.firstname }} {{ me.surname }}</h1>
+        <h6 class="card-text">{{me.birthday}}</h6>
+        <h6 class="card-text">{{me.zip_code}}</h6>
+        <h6 class="card-text">{{me.city}}</h6>
+        <h6 class="card-text">{{me.email}}</h6>
+        <h6 class="card-text">{{me.message}}</h6>
       <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Back</a>
 
     </div>
@@ -22,3 +25,4 @@
 <p>Socials:</p>
 <a href="https://www.instagram.com/bumbobreiner12/">Instagram</a>
 
+</body>
