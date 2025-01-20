@@ -232,7 +232,9 @@ export  const ZHOU : Person = {
   github_nickname: "FaithfulMeow",
   zip_code: 1220,
   city: "Wien",
-  message: "\"Mach ein Backflip\""
+  message: "\"Mach ein Backflip\"",
+  socialLink: "instagram.com/pikapoozero",
+  routerLink: "\*/page_zhou\*"
 };
 
 //list all students
