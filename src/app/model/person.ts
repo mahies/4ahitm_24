@@ -242,7 +242,8 @@ export  const NOVO : Person = {
   github_nickname: "PhilippNovo",
   zip_code: 2291,
   city: "Lassee",
-  message: "\"You vs You\""
+  message: "\"You vs You\"",
+  socialLink: "https://www.instagram.com/p.novomesky/"
 };
 export  const ZHOU : Person = {
   surname: "ZHOU",

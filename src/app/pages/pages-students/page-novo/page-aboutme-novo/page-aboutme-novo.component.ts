@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NOVO} from '../../../model/person';
+import {NOVO} from '../../../../model/person';
 
 @Component({
   selector: 'app-page-aboutme-novo',
