@@ -1,4 +1,4 @@
-
+8
 export interface Person {
   surname: string;
   firstname: string;
@@ -197,6 +197,7 @@ export  const SCHOENGRUNDNER : Person = {
   zip_code: 1220,
   city: "Wien",
   message: "\"Blöd gelaufen!.\"",
+  socialLink:"https://www.instagram.com/ines._.schoen/"
 };
 export  const MUTISEVIC : Person = {
   surname: "Mutisevic",
