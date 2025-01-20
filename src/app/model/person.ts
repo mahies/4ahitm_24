@@ -141,7 +141,7 @@ export  const HAUER : Person = {
 export  const PONT : Person = {
   surname: "Pontasch",
   firstname: "Adrian",
-  urlImage: "assets/Pontasch-Assets/Portrait.jpg",
+  urlImage: "assets/Pontasch-Assets/Imgs/Portrait.jpg",
   birthday: new Date("2004-10-02"),
   department: "ITEL Medientechnick",
   email: "190280@studierende.htl-donaustadt.at",
