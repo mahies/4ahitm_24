@@ -4,11 +4,11 @@
     <div class="card-body">
       <h5 class="card-title">{{ me.firstname }} {{ me.surname }}</h5>
       <p class="card-text">{{me.message}}</p>
-      <p class="card-text">Geboren am: {{me.birthday}}</p>
-      <b>Meine Socials: </b><a href="https://www.instagram.com/pikapoozero/">Instagram</a>,
-      <p class="card-text">Meine Email: {{me.email}}</p>
-      <p class="card-text">Wohnort: {{me.zip_code}} {{ me.city }}</p>
-      <p class="card-text">Mein Github {{me.github_nickname}}</p>
+      <p class="card-text"><b>Geboren am:</b> {{me.birthday}}</p>
+      <b>Meine Socials: </b><a href="https://www.instagram.com/pikapoozero/">Instagram</a>
+      <p class="card-text"><b>Meine Email:</b> {{me.email}}</p>
+      <p class="card-text"><b>Wohnort:</b> {{me.zip_code}} {{ me.city }}</p>
+      <p class="card-text"><b>Mein Github:</b> {{me.github_nickname}}</p>
       <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Back</a>
     </div>
   </div>
