@@ -206,7 +206,9 @@ export  const MUTISEVIC : Person = {
   github_nickname: "adino",
   zip_code: 1210,
   city: "Wien",
-  message: "\" I AM MUSIC\""
+  message: "\"I AM MUSIC\"",
+  socialLink: "https://www.instagram.com/adin.mtsvc/"
+
 };
 export  const NOVO : Person = {
   surname: "Novomesky",
