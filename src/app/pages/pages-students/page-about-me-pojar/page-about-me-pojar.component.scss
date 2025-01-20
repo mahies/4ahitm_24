@@ -1,6 +1,8 @@
-a{
-  color: lightsteelblue;
+body{
+  background-color: lightsteelblue;
 }
+
+
 .card {
 
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -25,6 +27,7 @@ img {
 }
 
 .flex-container {
+  margin-top: 20px;
   flex-direction: row;
   display: flex;
 
@@ -36,9 +39,12 @@ img {
   padding-left: 20px;
   flex: 1 1 50%;
   max-width: 50%;
+
+
 }
 
 .card {
+
   padding: 10px;
   margin: 60px;
   flex: 1 1 50%;
@@ -47,9 +53,18 @@ img {
   width: 1250px;
   align-content: center;
   justify-content: center;
+  background-color: #dce6f5;
 
 
 }
 card{
 
+}
+
+h1{
+  font-family: "";
+  font-size: 100px;
+}
+h6{
+  font-size:40px;
 }
