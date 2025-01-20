@@ -189,7 +189,7 @@ export  const FRIEDL : Person = {
 export  const SCHOENGRUNDNER : Person = {
   surname: "Schöngrundner",
   firstname: "Ines",
-  urlImage: "assets/schoen-bilder/hondacbr600rr.jpeg",
+  urlImage: "assets/schoen-bilder/hondacbr600rr.jpg",
   birthday: new Date("2007-02-16"),
   department: "ITEL Medientechnick",
   email: "210179@studierende.htl-donaustadt.at",
