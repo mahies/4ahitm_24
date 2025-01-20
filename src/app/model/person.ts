@@ -256,7 +256,7 @@ export  const ZHOU : Person = {
   city: "Wien",
   message: "\"Mach ein Backflip\"",
   socialLink: "instagram.com/pikapoozero",
-  routerLink: "\*/page_zhou\*"
+  routerLink: "/page_zhou"
 };
 
 //list all students
