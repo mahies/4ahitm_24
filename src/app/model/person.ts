@@ -104,9 +104,10 @@ export  const GARCIA : Person = {
   github_nickname: "rizi06",
   zip_code: 1220,
   city: "Wien",
-  message: "\" Yesterday was history, Tomorrow is mystery, Today is a gift. That's why it's called Present.\""
-
+  message: "\" Yesterday was history, Tomorrow is mystery, Today is a gift. That's why it's called Present.\"",
+  socialLink: "https://www.instagram.com/mahlxri_/"
 };
+
 export  const HAUER : Person = {
   surname: "Hauer",
   firstname: "Erik",
