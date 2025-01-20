@@ -1,7 +1,6 @@
 .fluid-container{
   display: flex;
   width: fit-content;
-
   margin-left:25px;
   margin-right:50px;
 
@@ -10,9 +9,8 @@
   padding-bottom:30px;
   padding-right: 30px;
 
-  background-color: mediumaquamarine;
+  background-color: darkblue;
   flex-direction: row;
-  align-items: flex-start;
   gap:25px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
