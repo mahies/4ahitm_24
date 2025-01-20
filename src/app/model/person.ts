@@ -131,6 +131,8 @@ export  const PONT : Person = {
   zip_code: 1220,
   city: "Wien",
   message: "\"Betrunkene und Kinder soll man nicht wecken.\"",
+  socialLink: "https://linktr.ee/pontasch",
+  routerLink: "/page_pont",
 };
 export  const MORITZ : Person = {
   surname: "Metzinger",
