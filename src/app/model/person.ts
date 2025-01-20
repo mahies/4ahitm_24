@@ -42,6 +42,21 @@ export  const WAGNER : Person = {
 
 };
 
+export  const CIZMIC : Person = {
+  surname: "Cizmic",
+  firstname: "Elvir",
+  urlImage: "assets/cizmic_assets/PictureRef.png",
+  birthday: new Date("2006-08-04"),
+  department: "ITEL Medientechnik",
+  email: "210474@studierende.htl-donaustadt.at",
+  github_nickname: "ElvirC",
+  zip_code: 1220,
+  city: "Wien",
+  message: "\„Murder's Great!\" \n(Thomas 'Tomska' Ridgewell)",
+  socialLink: "https://www.youtube.com/@SiIvaGunner",
+  routerLink: "/page_cizmic"
+};
+
 export  const HOBEL : Person = {
   surname: "Hobel",
   firstname: "Richard",
@@ -245,4 +260,4 @@ export  const ZHOU : Person = {
 };
 
 //list all students
-export const STUDENTS:Person[] = [ZHOU,NOVO,MUTISEVIC,FRIEDL,COCO,SCHOENGRUNDNER,KOVACIC,MORITZ,POJAR,PONT,HAUER,HOBEL,MAJZEL,WAGNER,GARCIA];
+export const STUDENTS:Person[] = [ZHOU,NOVO,MUTISEVIC,FRIEDL,COCO,SCHOENGRUNDNER,KOVACIC,MORITZ,POJAR,PONT,HAUER,HOBEL,MAJZEL,WAGNER,GARCIA,CIZMIC];
