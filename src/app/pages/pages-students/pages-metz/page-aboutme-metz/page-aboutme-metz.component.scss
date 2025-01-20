@@ -1,16 +1,12 @@
-$background-color: #f29544;
-$card-background: #260401;
-$text-color: #f5f5f7;
-$accent-color: #f22f1d;
-$link-hover-color: #f25e3d;
+@import "../metz_variables";
 
 body {
   background-color: $background-color;
   color: $text-color;
-  font-family: 'Arial', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  font-family: $p_font;
 }
 
 .steckbrief {
@@ -33,6 +29,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin: 10px 0;
+    font-family: $h1_font;
 
     .surname {
       text-transform: uppercase;
@@ -44,7 +41,7 @@ body {
     text-align: left;
 
     a {
-      color: $accent-color;
+      color: $primary;
       text-decoration: none;
 
       &:hover {
@@ -57,7 +54,7 @@ body {
   a[href^="mailto"] {
     display: inline-block;
     margin-top: 10px;
-    color: $accent-color;
+    color: $primary;
     text-decoration: none;
 
     &:hover {
@@ -67,7 +64,7 @@ body {
   }
 
   .btn-primary {
-    background-color: $accent-color;
+    background-color: $primary;
     color: $text-color;
     border: none;
     border-radius: 5px;
