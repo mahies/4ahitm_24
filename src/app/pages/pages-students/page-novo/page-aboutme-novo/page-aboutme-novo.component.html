@@ -1,0 +1,27 @@
+<body>
+<div class="text-container">
+<div class="bild">
+<img src="{{ me.urlImage }}" width="350px" alt="Oje das ist nicht gut"><br>
+</div>
+  <div class="text">
+<div class="title">
+<h2 class="card-title">{{ me.firstname }} <div class="nachname">{{ me.surname }}</div></h2>
+</div>
+
+<a href= "mailto:name@email.com">{{me.email}}</a><br>
+
+    <a href= {{me.socialLink}}> Mein Instagram Profil</a><br>
+
+<p class="card-text">-->{{me.birthday.getUTCMonth()}}.{{me.birthday.getUTCDay()}}.{{me.birthday.getFullYear()}}
+  um {{me.birthday.getHours()}}:{{me.birthday.getMinutes()}}</p><br>
+
+    <p>-->Österreich</p><br>
+
+    <p>-->{{me.city}}</p><br>
+
+<p>-->Lassee ist die Metropole des einzigartigen Marchfelds(Preisgekröntes Spargelland).</p><br>
+
+<a href="/public" routerLink="/home" routerLinkActive="active" class="btn btn-primary">Back</a><br>
+  </div>
+</div>
+</body>

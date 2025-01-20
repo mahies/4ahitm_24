@@ -6,12 +6,12 @@ import {PageAboutMeKOVACSComponent} from "./pages/pages-students/page-about-me-k
 import {PageAboutMeZHOUComponent} from "./pages/pages-students/page-about-me-zhou/page-about-me-zhou.component";
 import {PageAboutmeHobelComponent} from "./pages/pages-students/page-aboutme-hobel/page-aboutme-hobel.component";
 import {PageAboutMeHauerComponent} from "./pages/pages-students/page-about-me-Hauer/page-about-me-hauer.component";
-import {PageAboutmeNovoComponent} from "./pages/pages-students/page-aboutme-novo/page-aboutme-novo.component";
+import {PageAboutmeNovoComponent} from "./pages/pages-students/page-novo/page-aboutme-novo/page-aboutme-novo.component";
 import {PageAboutmeMETZComponent} from "./pages/pages-students/pages-metz/page-aboutme-metz/page-aboutme-metz.component";
 import {PageAboutMeSCHOENComponent} from './pages/pages-students/page-about-me-schoengrundner/page-about-me-schoen.component';
 import {PageAboutMeGARCIAComponent} from './pages/pages-students/page-about-me-garcia/page-about-me-garcia.component';
 import {PageAboutMePojarComponent} from "./pages/pages-students/page-about-me-pojar/page-about-me-pojar.component";
-import {PageAboutMeKOVACICComponent} from './pages/pages-students/page-about-me-kovacic/page-about-me-kovacic.component';
+import {PageAboutMeKOVACICComponent} from './pages/pages-students/pages-kovacic/page-about-me-kovacic/page-about-me-kovacic.component';
 import {PageAboutMeWAGNComponent} from './pages/pages-students/pages-wagner/page-about-me-wagn/page-about-me-wagn.component';
 import {PageAboutMeMajzelComponent} from './pages/pages-students/page-about-me-majzel/page-about-me-majzel.component';
 import {PageAboutMeMutisevicComponent} from './pages/pages-students/page-about-me-mutisevic/page-about-me-mutisevic.component';
@@ -25,6 +25,9 @@ import {
 import {
   PageLieblingsfilmundmusikWAGNERComponent
 } from './pages/pages-students/pages-wagner/page-lieblingsfilmundmusik-wagner/page-lieblingsfilmundmusik-wagner.component';
+import {
+  PageReviewsMetzComponent
+} from './pages/pages-students/pages-metz/page-reviews-metz/page-reviews-metz.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -53,6 +56,8 @@ export const routes: Routes = [
     component: PageAboutmeNovoComponent },
   { path: 'page_metz',
     component: PageAboutmeMETZComponent },
+  { path: 'page_metz_reviews',
+    component: PageReviewsMetzComponent },
   { path: 'page_hobel',
     component: PageAboutmeHobelComponent },
   { path: 'page_garcia',

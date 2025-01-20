@@ -1,0 +1,46 @@
+@import "../variables-novo";
+
+body {
+  background-color: #354A5F;
+  border-radius: 50px;
+}
+p{
+  color: aliceblue;
+}
+h2{
+font-family: "DejaVu Math TeX Gyre";
+}
+
+.bild{
+    padding-left: 50px;
+    border-radius: 50px;
+}
+
+
+
+.text-container{
+  display: flex;
+  width: fit-content;
+
+  font-family: "Arial";
+  margin-left:150px;
+  margin-right:50px;
+  margin-top: 50px;
+  padding-left:25px;
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-right: 25px;
+
+  background-color: cornflowerblue;
+  flex-direction: row;
+  align-items: flex-start;
+  gap:25px;
+  border-radius: 50px;
+}
+
+.nachname{
+  text-transform: uppercase;
+}
+a{
+  color: #d31258;
+}

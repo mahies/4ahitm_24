@@ -1,0 +1,15 @@
+.fluid-container{
+  display: flex;
+  width: fit-content;
+  margin-left:25px;
+  margin-right:50px;
+  padding-left:30px;
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-right: 30px;
+
+  background-color: darkblue;
+  flex-direction: row;
+  gap:25px;
+  border-radius: 15px;
+}

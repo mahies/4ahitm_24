@@ -135,7 +135,7 @@ export  const HAUER : Person = {
   city: "Wien",
   message: "\" ich bin müüüüüüde\"",
   socialLink: "https://www.instagram.com/nova_18072/",
-  routerLink: "\"/page_hauer\" "
+  routerLink: "/page_hauer"
 
 };
 export  const PONT : Person = {
@@ -176,7 +176,7 @@ export  const KOVACIC : Person = {
   github_nickname: "sevvicc",
   zip_code: 1210,
   city: "Wien",
-  message: "\"Im Glashaus mit Steinen werfen!.\"",
+  message: "\"Im Glashaus mit Steinen werfen!\"",
   socialLink:"https://www.instagram.com/vicitori__/",
   routerLink:"/page_kovacic",
 };
@@ -242,12 +242,14 @@ export  const NOVO : Person = {
   github_nickname: "PhilippNovo",
   zip_code: 2291,
   city: "Lassee",
-  message: "\"You vs You\""
+  message: "\"You vs You\"",
+  socialLink: "https://www.instagram.com/p.novomesky/",
+  routerLink: "/page_novo"
 };
 export  const ZHOU : Person = {
   surname: "ZHOU",
   firstname: "Kevin",
-  urlImage: "assets/zhou-bilder/stickfigure.jpg",
+  urlImage: "assets/zhou-bilder/zhou-bild.jpg",
   birthday: new Date("2005-11-25"),
   department: "ITEL Medientechnik",
   email: "210013@studierende.htl-donaustadt.at",
@@ -256,7 +258,7 @@ export  const ZHOU : Person = {
   city: "Wien",
   message: "\"Mach ein Backflip\"",
   socialLink: "instagram.com/pikapoozero",
-  routerLink: "\*/page_zhou\*"
+  routerLink: "/page_zhou"
 };
 
 //list all students

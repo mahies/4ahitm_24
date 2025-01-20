@@ -1,0 +1,9 @@
+<h1>Meine Reviews 😛</h1>
+
+<ul class="students d-flex flex-row">
+  <li *ngFor="let album of alben  | orderBy: 'surname' ; let i = index" class="m-2">
+    <img src="{{album.coverLink}}">
+    <span class="badge">{{i}}</span>
+    <span class="name">{{album.title}}</span>
+  </li>
+</ul>
