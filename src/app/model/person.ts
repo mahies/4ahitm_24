@@ -118,7 +118,9 @@ export  const HAUER : Person = {
   github_nickname: "Nova1807",
   zip_code: 1140,
   city: "Wien",
-  message: "\" ich bin müüüüüüde\""
+  message: "\" ich bin müüüüüüde\"",
+  socialLink: "https://www.instagram.com/nova_18072/",
+  routerLink: "\"/page_hauer\" "
 
 };
 export  const PONT : Person = {
