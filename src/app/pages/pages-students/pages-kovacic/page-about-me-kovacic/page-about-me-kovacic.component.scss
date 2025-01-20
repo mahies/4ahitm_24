@@ -13,3 +13,19 @@
   gap:25px;
   border-radius: 15px;
 }
+.btn-primary {
+  font-family: "Times New Roman";
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: darkblue;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #6a1d73;
+}
