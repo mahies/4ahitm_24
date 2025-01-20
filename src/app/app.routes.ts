@@ -18,6 +18,9 @@ import {PageAboutMeMutisevicComponent} from './pages/pages-students/page-about-m
 import {PageAboutFriedlComponent} from './pages/pages-students/page-about-me-friedl/page-about-me-friedl.component';
 import {Subpage1Component} from './pages/pages-demo/subpage1/subpage1.component';
 import {Subpage2Component} from './pages/pages-demo/subpage2/subpage2.component';
+import {
+  PageHaustiereWAGNERComponent
+} from './pages/pages-students/pages-wagner/page-haustiere-wagner/page-haustiere-wagner.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -58,6 +61,8 @@ export const routes: Routes = [
     component: PageAboutMeKOVACICComponent },
   { path: 'page_wagner',
     component: PageAboutMeWAGNComponent },
+  { path: 'page_haustiere_wagner',
+    component: PageHaustiereWAGNERComponent },
   { path: 'page_majzel',
     component: PageAboutMeMajzelComponent },
   { path: 'page_mutisevic',
