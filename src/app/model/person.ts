@@ -80,7 +80,8 @@ export  const KOVACS : Person = {
   zip_code: 1220,
   city: "Wien",
   message: "\„Gib immer 100%, außer beim Blutspenden.\"",
-  socialLink: "https://www.instagram.com/philip.kvc/"
+  socialLink: "https://www.instagram.com/philip.kvc/",
+  routerLink: "/page_kovacs"
 };
 
 export  const MAJZEL : Person = {
@@ -263,4 +264,4 @@ export  const ZHOU : Person = {
 };
 
 //list all students
-export const STUDENTS:Person[] = [ZHOU,NOVO,MUTISEVIC,FRIEDL,COCO,SCHOENGRUNDNER,KOVACIC,MORITZ,POJAR,PONT,HAUER,HOBEL,MAJZEL,WAGNER,GARCIA,CIZMIC];
+export const STUDENTS:Person[] = [ZHOU,NOVO,MUTISEVIC,FRIEDL,COCO,SCHOENGRUNDNER,KOVACIC,MORITZ,POJAR,PONT,HAUER,HOBEL,MAJZEL,WAGNER,GARCIA,CIZMIC,KOVACS];

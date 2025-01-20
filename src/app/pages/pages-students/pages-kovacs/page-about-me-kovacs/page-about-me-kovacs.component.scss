@@ -1,3 +1,4 @@
+@import "../kov_variables";
 
 .test{
   text-transform: uppercase;
@@ -5,12 +6,6 @@
 
 .headline{
   font-weight: bold;
-}
-
-p{
-  flex-wrap: wrap;
-  font-size: 18px;
-
 }
 
 .fluid-container{
@@ -31,49 +26,45 @@ p{
   align-items: center;
   gap:25px;
   border-radius: 10px;
-
   position: relative;
 }
 
-body{
+.about-me{
   padding-top:25px;
-  background-color: burlywood;
+  background-color: bisque;
+}
+.background{
+  background-color:burlywood;
 }
 
 p{
-  color: #313c48;
-  font-family: "Segoe UI";
-
+  color: $text-color;
+  font-size:18px;
 }
+
 h1{
-  color: #313c48;
-  font-family: "Sitka Text";
+  color: $text-color;
 }
 
-.Link{
-  color: #588884;
-  font-family: "Segoe UI";
-
-}
 .Button{
+  color: $primary;
   position: absolute;
   bottom: 25px;
   right: 25px;
   display: flex;
   justify-content: center;
-
-
 }
-
 .sub-Button{
   display: flex;
   gap:10px;
   margin-right:50px;
-
 }
 
-
+a{
+  color: $primary;
+  text-decoration: none;
+}
 img{
   border-radius : 10px;
-  box-shadow : #313c48;
 }
+

@@ -1,0 +1,11 @@
+
+$background-color: burlywood; //Hintergrundfarbe Body
+$text-color: #313c48; //Farbe für Fließtext
+$primary: #588884; //Akzentfarbe (Links, Button, etc.)
+//$link-hover-color: ;
+
+$p_font: 'Segoe UI', sans-serif; //Font für Fließtext
+$h1_font: 'Sitka Text', sans-serif; //Font für Überschriften
+$a_font: 'Segoe UI', sans-serif; //Font für Links
+
+@import "bootstrap/scss/bootstrap";

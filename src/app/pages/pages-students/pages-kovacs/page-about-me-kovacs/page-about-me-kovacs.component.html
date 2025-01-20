@@ -1,7 +1,6 @@
 
-<body>
-
-<div class="fluid-container">
+<div class="background">
+<div class="fluid-container about-me">
 
   <div class="image">
     <img class="img-fluid" src="{{ me.urlImage }}" width="350px" alt="Das ist ein Bild"><br>
@@ -21,15 +20,15 @@
 <a class="Link" href= "mailto:name@email.com">{{me.email}}</a><br>
 <a class="Link" href= {{me.socialLink}}> Mein Instagram Profil</a><br>
 
-
-</div>
   <div class="Button">
       <div class="sub-Button">
       <a routerLink="subpage1" routerLinkActive="active" class="btn btn-primary">Mein Lieblingsessen</a>
       <a routerLink="subpage2" routerLinkActive="active" class="btn btn-primary">Mein Heimatland</a>
       </div>
-    <a href="/" routerLink="" routerLinkActive="active" class="btn btn-primary">Back</a>
+    <a href="/public" routerLink="" routerLinkActive="active" class="btn btn-primary">Back</a>
   </div>
+</div>
+</div>
 </div>
 <br>
 <br>
@@ -38,5 +37,5 @@
 
 
 
-</body>
+
 
