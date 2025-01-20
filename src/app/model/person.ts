@@ -69,8 +69,8 @@ export  const KOVACS : Person = {
 };
 
 export  const MAJZEL : Person = {
-  surname: "David",
-  firstname: "Majzel",
+  surname: "Majzel",
+  firstname: "David",
   urlImage: "assets/assets-majzel/majzel-bilder/mybilders.png",
   birthday: new Date("2004-05-22 02:00:00"),
   department: "ITEL Medientechnik",
