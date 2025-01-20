@@ -9,7 +9,7 @@ import {PageAboutMeHauerComponent} from "./pages/pages-students/pages_Hauer/page
 import {PageAboutmeNovoComponent} from "./pages/pages-students/page-novo/page-aboutme-novo/page-aboutme-novo.component";
 import {PageAboutmeMETZComponent} from "./pages/pages-students/pages-metz/page-aboutme-metz/page-aboutme-metz.component";
 import {PageAboutMeSCHOENComponent} from './pages/pages-students/page-about-me-schoengrundner/page-about-me-schoen.component';
-import {PageAboutMeGARCIAComponent} from './pages/pages-students/page-about-me-garcia/page-about-me-garcia.component';
+import {PageAboutMeGARCIAComponent} from './pages/pages-students/page-garcia/page-about-me-garcia/page-about-me-garcia.component';
 import {PageAboutMePojarComponent} from "./pages/pages-students/page-about-me-pojar/page-about-me-pojar.component";
 import {PageAboutMeKOVACICComponent} from './pages/pages-students/pages-kovacic/page-about-me-kovacic/page-about-me-kovacic.component';
 import {PageAboutMeWAGNComponent} from './pages/pages-students/pages-wagner/page-about-me-wagn/page-about-me-wagn.component';
