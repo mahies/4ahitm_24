@@ -27,7 +27,7 @@ export  const MINNIE : Person = {
   message: "\„Wenn du es dir vorstellen kannst, kannst du es auch machen.\" \n(Walt Disney)",
   routerLink: "/page_demo"
 };
-export  const Carina : Person = {
+export  const WAGNER : Person = {
   surname: "Wagner".toUpperCase(),
   firstname: "Carina",
   urlImage: "assets-WAGN/DEMOBild.jpg",
@@ -236,4 +236,4 @@ export  const ZHOU : Person = {
 };
 
 //list all students
-export const STUDENTS:Person[] = [ZHOU,NOVO,MUTISEVIC,FRIEDL,COCO,SCHOENGRUNDNER,KOVACIC,MORITZ,POJAR,PONT,HAUER,HOBEL,MAJZEL,Carina,GARCIA];
+export const STUDENTS:Person[] = [ZHOU,NOVO,MUTISEVIC,FRIEDL,COCO,SCHOENGRUNDNER,KOVACIC,MORITZ,POJAR,PONT,HAUER,HOBEL,MAJZEL,WAGNER,GARCIA];
