@@ -1,5 +1,5 @@
 <body style="background-color: lightblue;">
-<div class="container-fluid m-5">
+  <div class="container-fluid m-5">
   <div class="d-flex align-items-center">
 
     <div class="image" style="background-color: white; padding: 15px; border-radius: 10px; margin-right: 30px;">
@@ -26,13 +26,16 @@
         <a href="{{ me.socialLink }}">Link to my Insta</a><br>
       </div>
 
-      <p>
+      <div class="d-flex mt-3" style="gap: 10px;">
+        <a routerLink="/subpage1" class="btn btn-secondary mr-3">Subpage 1</a>
+        <a routerLink="/subpage2" class="btn btn-secondary mr-3">Subpage 2</a>
         <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Zurück home</a>
-      </p>
+      </div>
+
     </div>
 
   </div>
-</div>
+  </div>
 </body>
 
 
