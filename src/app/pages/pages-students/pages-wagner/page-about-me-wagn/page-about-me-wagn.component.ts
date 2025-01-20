@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Carina, Person} from '../../../model/person';
+import {WAGNER, Person} from '../../../../model/person';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 
 @Component({
@@ -12,7 +12,7 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
   styleUrl: './page-about-me-wagn.component.scss'
 })
 export class PageAboutMeWAGNComponent {
-  me: Person = Carina; //Variable me vom Typ Person = KONSTANTE MOUSE
+  me: Person = WAGNER; //Variable me vom Typ Person = KONSTANTE MOUSE
 }
 
 
