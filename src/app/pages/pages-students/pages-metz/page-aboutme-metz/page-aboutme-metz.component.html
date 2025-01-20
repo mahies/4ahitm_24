@@ -1,7 +1,7 @@
 <div class="steckbrief">
     <img src="{{ me.urlImage }}" class="card-img-top" style="width: 300px; height: auto;" alt="Hier stünde für gewöhnlich ein süßes Protrait">
     <h2 class="card-title">
-      {{ me.firstname }} <span class="surname">{{ me.surname }}</span>
+      <span class="surname">{{ me.surname }}</span> {{ me.firstname }}
     </h2>
     <p class="card-text"><b>Meine Message:</b> {{me.message}}<br>
     <b>Mein Geburtstag:</b> {{me.birthday | date: "dd.MM.yyyy"}}<br>
