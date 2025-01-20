@@ -1,34 +1,60 @@
-<div class="container-fluid m-5" style="background-color: beige;">
-  <div class="card" style="width: 24rem;">
-    <img src="{{ me.urlImage }}" class="card-img-top" alt="..." style="border: 3px solid #8B4513; border-radius: 5px;">
-    <div class="card-body">
-      <h5 class="card-title">{{ me.firstname }} {{ me.surname }}</h5>
-      <p class="card-text"><strong><u>{{me.message}}</u></strong></p>
-      <a href={{me.socialLink}}> => INSTA </a><br>
-      <p class="card-text">
-        <strong>Geboren am:</strong> {{me.birthday}}
-      </p>
-      <a href="mailto:name@email.com">{{me.email}}</a><br>
-      <p class="card-text">
-        <strong>Wohnort:</strong> {{me.zip_code}} {{ me.city }}
-      </p>
-      <p class="card-text">
-        <strong>Mein Github Username:</strong> {{me.github_nickname}}
-      </p>
-      <p class="card-text">
-        <strong>Die Abteilung:</strong> {{me.department}}
-      </p>
+<div class="container-fluid m-5" style="background-color: beige; display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div class="row" style="display: flex; align-items: center; justify-content: center; text-align: center;">
 
-
-      <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-        <a routerLink="subpage1" routerLinkActive="active" class="btn btn-primary">Subpage 1</a>
-        <a routerLink="subpage2" routerLinkActive="active" class="btn btn-primary">Subpage 2</a>
-      </div>
-
-
-      <div style="text-align: center;">
-        <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
-      </div>
+    <div class="col-4" style="padding: 0; display: flex; justify-content: center;">
+      <img src="{{ me.urlImage }}" class="img-fluid" alt="..." style="border: 3px solid #D2B48C; border-radius: 5px; width: 80%; height: auto;">
     </div>
+
+    <div class="col-6" style="background-color: rgba(255, 255, 255, 0.7); padding: 20px; border-radius: 5px; border: 3px solid #D2B48C; margin-left: 20px; max-width: 600px;">
+      <h5 class="card-title"><strong><u>{{ me.firstname }} {{ me.surname }}</u></strong></h5>
+      <p class="card-text"><strong>{{me.message}}</strong></p>
+
+      <div style="margin-bottom: 20px;">
+        <a href="{{ me.socialLink }}" style="display: block; margin-bottom: 10px; color: #93C572; text-decoration: none; font-weight: bold; font-size: 18px;">
+          INSTA
+        </a>
+
+        <a href="mailto:name@email.com" style="display: block; margin-bottom: 10px; color: #B4B4B4; text-decoration: none; font-weight: bold; font-size: 18px;">
+          E-Mail
+        </a>
+
+        <p class="card-text">
+          <strong>Geboren am:</strong> {{me.birthday}}
+        </p>
+        <p class="card-text">
+          <strong>Wohnort:</strong> {{me.zip_code}} {{ me.city }}
+        </p>
+        <p class="card-text">
+          <strong>Mein Github Username:</strong> {{me.github_nickname}}
+        </p>
+        <p class="card-text">
+          <strong>Die Abteilung:</strong> {{me.department}}
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10px;">
+        <div style="display: flex; justify-content: space-between; width: 220px; margin-bottom: 10px;">
+          <a routerLink="subpage1" routerLinkActive="active" class="btn btn-primary" style="width: 100px; height: 40px; background-color: #B4B4B4; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
+            Subpage 1
+          </a>
+          <a routerLink="subpage2" routerLinkActive="active" class="btn btn-primary" style="width: 100px; height: 40px; background-color: #B4B4B4; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
+            Subpage 2
+          </a>
+        </div>
+        <a routerLink="/home" routerLinkActive="active" class="btn btn-primary" style="width: 130px; height: 40px; margin-top: 10px; background-color: #B4B4B4; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
+          zurück home
+        </a>
+      </div>
+
+    </div>
+
   </div>
 </div>
+
+
+<style>
+  .btn:hover {
+    background-color: #A59A8F;
+    transform: scale(1.1);
+  }
+</style>
