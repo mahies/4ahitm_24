@@ -149,12 +149,14 @@ export  const KOVACIC : Person = {
   firstname: "Victoria",
   urlImage: "assets/kovacic_bilder/katze.jpeg",
   birthday: new Date("2006-11-22"),
-  department: "ITEL Medientechnick",
+  department: "ITEL Medientechnik",
   email: "210042@studierende.htl-donaustadt.at",
   github_nickname: "sevvicc",
   zip_code: 1210,
   city: "Wien",
   message: "\"Im Glashaus mit Steinen werfen!.\"",
+  socialLink:"https://www.instagram.com/vicitori__/",
+  routerLink:"/page_kovacic",
 };
 export  const COCO : Person = {
   surname: "Secrieri",
