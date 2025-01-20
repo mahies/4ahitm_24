@@ -110,7 +110,7 @@ export  const GARCIA : Person = {
 export  const HAUER : Person = {
   surname: "Hauer",
   firstname: "Erik",
-  urlImage: "assets/Hauer_bilder/Hauer_Katze.jpg",
+  urlImage: "assets/Hauer_bilder/Hauer_Katze.jpeg",
   birthday: new Date("2006-07-18"),
   department: "ITEL Medientechnick",
   email: "200019@studierende.htl-donaustadt.at",
