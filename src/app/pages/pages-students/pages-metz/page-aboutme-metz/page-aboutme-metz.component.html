@@ -1,19 +1,22 @@
-<div class="steckbrief">
-    <img src="{{ me.urlImage }}" class="card-img-top" style="width: 300px; height: auto;" alt="Hier stünde für gewöhnlich ein süßes Protrait">
-    <h2 class="card-title">
-      <span class="surname">{{ me.surname }}</span> {{ me.firstname }}
-    </h2>
-    <p class="card-text"><b>Meine Message:</b> {{me.message}}<br>
-    <b>Mein Geburtstag:</b> {{me.birthday | date: "dd.MM.yyyy"}}<br>
-    <b>Mein Wohnort:</b> {{me.city}}, {{me.zip_code}}<br>
-    <b>Meine Socials: </b><a href="https://www.instagram.com/lkrm123456789/">Instagram</a>,
-      <a href="https://rateyourmusic.com/~lkrm">RateYourMusic</a>,
-      <a href="https://letterboxd.com/lkrm/">Letterboxd</a><br>
-     <b>Mein Github:</b> {{me.github_nickname}}</p>
+<div class="body">
+    <div class="steckbrief">
+        <img alt="Hier stünde für gewöhnlich ein süßes Protrait" class="card-img-top" src="{{ me.urlImage }}"
+             style="width: 300px; height: auto;">
+        <h2 class="card-title">
+            <span class="surname">{{ me.surname }}</span> {{ me.firstname }}
+        </h2>
+        <p class="card-text"><b>Meine Message:</b> {{ me.message }}<br>
+            <b>Mein Geburtstag:</b> {{ me.birthday | date: "dd.MM.yyyy" }}<br>
+            <b>Mein Wohnort:</b> {{ me.city }}, {{ me.zip_code }}<br>
+            <b>Meine Socials: </b><a href="https://www.instagram.com/lkrm123456789/">Instagram</a>,
+            <a href="https://rateyourmusic.com/~lkrm">RateYourMusic</a>,
+            <a href="https://letterboxd.com/lkrm/">Letterboxd</a><br>
+            <b>Mein Github:</b> {{ me.github_nickname }}</p>
 
-    <a href= "mailto:name@email.com">{{me.email}}</a><br>
+        <a href="mailto:name@email.com">{{ me.email }}</a><br>
 
-    <br><br>
-    <a routerLink="/page_metz_reviews" routerLinkActive="active" class="btn btn-primary">Reviews</a><br><br>
-    <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Back</a>
+        <br><br>
+        <a class="btn btn-primary" routerLink="/page_metz_reviews" routerLinkActive="active">Reviews</a><br><br>
+        <a class="btn btn-primary" routerLink="/home" routerLinkActive="active">Back</a>
+    </div>
 </div>
