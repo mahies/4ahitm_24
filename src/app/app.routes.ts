@@ -25,6 +25,9 @@ import {
 import {
   PageLieblingsfilmundmusikWAGNERComponent
 } from './pages/pages-students/pages-wagner/page-lieblingsfilmundmusik-wagner/page-lieblingsfilmundmusik-wagner.component';
+import {
+  PageReviewsMetzComponent
+} from './pages/pages-students/pages-metz/page-reviews-metz/page-reviews-metz.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -53,6 +56,8 @@ export const routes: Routes = [
     component: PageAboutmeNovoComponent },
   { path: 'page_metz',
     component: PageAboutmeMETZComponent },
+  { path: 'page_metz_reviews',
+    component: PageReviewsMetzComponent },
   { path: 'page_hobel',
     component: PageAboutmeHobelComponent },
   { path: 'page_garcia',
