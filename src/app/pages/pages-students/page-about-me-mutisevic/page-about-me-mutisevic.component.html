@@ -1,15 +1,15 @@
-<div class="container-fluid m-5" style="background-color: beige; ">
+<div class="container-fluid m-5" style="background-color: beige;">
   <div class="card" style="width: 18rem;">
     <img src="{{ me.urlImage }}" class="card-img-top" width="20c" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{ me.firstname }} {{ me.surname }}</h5>
       <p class="card-text">{{me.message}}</p>
       <a href={{me.socialLink}}> => INSTA </a><br>
-      <p class="card-text">Geboren am: {{me.birthday}}</p>
-      <a href= "mailto:name@email.com">{{me.email}}</a><br>
-      <p class="card-text">Wohnort: {{me.zip_code}} {{ me.city }}</p>
-      <p class="card-text">Mein Github Username: {{me.github_nickname}}</p>
-      <p class="card-text">Die Abteilung: {{me.department}}</p>
+      <p class="card-text"><strong>Geboren am:</strong> {{me.birthday}}</p>
+      <a href="mailto:name@email.com">{{me.email}}</a><br>
+      <p class="card-text"><strong>Wohnort:</strong> {{me.zip_code}} {{ me.city }}</p>
+      <p class="card-text"><strong>Mein Github Username:</strong> {{me.github_nickname}}</p>
+      <p class="card-text"><strong>Die Abteilung:</strong> {{me.department}}</p>
       <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
     </div>
   </div>
