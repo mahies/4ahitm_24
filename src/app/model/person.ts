@@ -121,7 +121,8 @@ export  const GARCIA : Person = {
   zip_code: 1220,
   city: "Wien",
   message: "\" Yesterday was history, Tomorrow is mystery, Today is a gift. That's why it's called Present.\"",
-  socialLink: "https://www.instagram.com/mahlxri_/"
+  socialLink: "https://www.instagram.com/mahlxri_/",
+  routerLink: "/page_garcia"
 };
 
 export  const HAUER : Person = {
