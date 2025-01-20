@@ -7,7 +7,7 @@ import {PageAboutMeZHOUComponent} from "./pages/pages-students/page-about-me-zho
 import {PageAboutmeHobelComponent} from "./pages/pages-students/page-aboutme-hobel/page-aboutme-hobel.component";
 import {PageAboutMeHauerComponent} from "./pages/pages-students/page-about-me-Hauer/page-about-me-hauer.component";
 import {PageAboutmeNovoComponent} from "./pages/pages-students/page-aboutme-novo/page-aboutme-novo.component";
-import {PageAboutmeMETZComponent} from "./pages/pages-students/page-aboutme-metz/page-aboutme-metz.component";
+import {PageAboutmeMETZComponent} from "./pages/pages-students/pages-metz/page-aboutme-metz/page-aboutme-metz.component";
 import {PageAboutMeSCHOENComponent} from './pages/pages-students/page-about-me-schoengrundner/page-about-me-schoen.component';
 import {PageAboutMeGARCIAComponent} from './pages/pages-students/page-about-me-garcia/page-about-me-garcia.component';
 import {PageAboutMePojarComponent} from "./pages/pages-students/page-about-me-pojar/page-about-me-pojar.component";
