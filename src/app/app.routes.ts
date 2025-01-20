@@ -14,7 +14,7 @@ import {PageAboutMePojarComponent} from "./pages/pages-students/page-about-me-po
 import {PageAboutMeKOVACICComponent} from './pages/pages-students/pages-kovacic/page-about-me-kovacic/page-about-me-kovacic.component';
 import {PageAboutMeWAGNComponent} from './pages/pages-students/pages-wagner/page-about-me-wagn/page-about-me-wagn.component';
 import {PageAboutMeMajzelComponent} from './pages/pages-students/page-about-me-majzel/page-about-me-majzel.component';
-import {PageAboutMeMutisevicComponent} from './pages/pages-students/page-about-me-mutisevic/page-about-me-mutisevic.component';
+import {PageAboutMeMutisevicComponent} from './pages/pages-students/pages-mutisevic/page-about-me-mutisevic/page-about-me-mutisevic.component';
 import {PageAboutFriedlComponent} from './pages/pages-students/pages-friedl/page-about-me-friedl/page-about-me-friedl.component';
 import {PageAboutMeCizmicComponent} from './pages/pages-students/page-about-me-cizmic/page-about-me-cizmic.component';
 import {Subpage1Component} from './pages/pages-demo/subpage1/subpage1.component';

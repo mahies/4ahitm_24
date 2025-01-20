@@ -229,7 +229,8 @@ export  const MUTISEVIC : Person = {
   zip_code: 1210,
   city: "Wien",
   message: "\"I AM MUSIC\"",
-  socialLink: "https://www.instagram.com/adin.mtsvc/"
+  socialLink: "https://www.instagram.com/adin.mtsvc/",
+  routerLink: "/page_mutisevic"
 
 };
 export  const NOVO : Person = {
