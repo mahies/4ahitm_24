@@ -107,7 +107,8 @@ export  const POJAR : Person = {
   github_nickname: "KebabEsser_98",
   zip_code: 2301,
   city: "Groß-Enzersdorf",
-  message: "\„Wenn das Leben dir Zitronen gibt, dann gib sie zurück.\" \n(Philip Kovacs)"
+  message: "\„Wenn das Leben dir Zitronen gibt, dann gib sie zurück.\" \n(Philip Kovacs)",
+  routerLink:"/page_pojar"
 };
 
 export  const GARCIA : Person = {
