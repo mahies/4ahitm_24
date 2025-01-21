@@ -1,9 +1,18 @@
+<div class="body">
 <h1>Meine Reviews 😛</h1>
-
 <ul class="students d-flex flex-row">
-  <li *ngFor="let album of alben  | orderBy: 'title' ; let i = index" class="col-2 m-2">
-    <img src="{{album.coverLink}}" width="100px" height="auto" alt="Cover von {{album.title}}">
-    <span class="badge">{{i}}</span>
-    <span class="name">{{album.title}}</span>
+  <li *ngFor="let album of alben  | orderBy: 'title' ; let i = index" class="m-2">
+    <img src="{{album.coverLink}}" width="300px" height="auto" alt="Cover von {{album.title}}">
+    <h2 class="header"><b><a href="{{album.rymLink}}">{{album.titel}}</a></b></h2>
+    <h3 class="header">{{album.interpret}} ({{album.erscheinungsdatum.getFullYear()}})</h3>
+    <br>
+    <p>{{album.review1}}<br><br>
+        {{album.review2}}<br><br>
+        {{album.review3}}<br><br>
+      <i>"{{album.quote}}"</i>
+    </p>
   </li>
 </ul>
+  <a class="btn btn-primary" routerLink="/page_metz_reviews" routerLinkActive="active">Reviews</a><br><br>
+  <a class="btn btn-primary" routerLink="/home" routerLinkActive="active">Back</a>
+</div>
