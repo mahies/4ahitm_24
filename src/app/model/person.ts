@@ -206,7 +206,8 @@ export  const FRIEDL : Person = {
   zip_code: 1220,
   city: "Wien",
   message: "\"„Rapid über Alles!“.\"",
-  socialLink: "https://www.instagram.com/s.friedl2/"
+  socialLink: "https://www.instagram.com/s.friedl2/",
+  routerLink:"/page_friedl",
 };
 export  const SCHOENGRUNDNER : Person = {
   surname: "Schöngrundner",
