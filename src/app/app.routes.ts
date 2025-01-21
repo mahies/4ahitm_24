@@ -5,7 +5,7 @@ import {PageAboutMePONTComponent} from './pages/pages-students/pages-pont/page-a
 import {PageAboutMeKOVACSComponent} from "./pages/pages-students/pages-kovacs/page-about-me-kovacs/page-about-me-kovacs.component";
 import {PageAboutMeZHOUComponent} from "./pages/pages-students/page-about-me-zhou/page-about-me-zhou.component";
 import {PageAboutmeHobelComponent} from "./pages/pages-students/page-aboutme-hobel/page-aboutme-hobel.component";
-import {PageAboutMeHauerComponent} from "./pages/pages-students/page-about-me-Hauer/page-about-me-hauer.component";
+import {PageAboutMeHauerComponent} from "./pages/pages-students/pages_Hauer/page-about-me-Hauer/page-about-me-hauer.component";
 import {PageAboutmeNovoComponent} from "./pages/pages-students/page-novo/page-aboutme-novo/page-aboutme-novo.component";
 import {PageAboutmeMETZComponent} from "./pages/pages-students/pages-metz/page-aboutme-metz/page-aboutme-metz.component";
 import {PageAboutMeSCHOENComponent} from './pages/pages-students/page-about-me-schoengrundner/page-about-me-schoen.component';
