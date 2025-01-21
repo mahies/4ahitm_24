@@ -112,7 +112,7 @@ export  const POJAR : Person = {
 };
 
 export  const GARCIA : Person = {
-  surname: "Garcia",
+  surname: "GARCIA",
   firstname: "Riz",
   urlImage: "assets/garcia_bilder/Garcia.jpg",
   birthday: new Date("2006-07-14"),
@@ -121,7 +121,7 @@ export  const GARCIA : Person = {
   github_nickname: "rizi06",
   zip_code: 1220,
   city: "Wien",
-  message: "\" Yesterday was history, Tomorrow is mystery, Today is a gift. That's why it's called Present.\"",
+  message: "\" Yesterday is history, Tomorrow is mystery, Today is a gift. That's why it's called Present.\"",
   socialLink: "https://www.instagram.com/mahlxri_/",
   routerLink: "/page_garcia"
 };
