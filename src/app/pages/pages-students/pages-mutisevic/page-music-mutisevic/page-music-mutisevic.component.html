@@ -1,1 +1,45 @@
-<p>page-music-mutisevic works!</p>
+<div class="container-fluid music-page" style="padding: 50px; background-color: #f3f3f3; min-height: 100vh; display: flex; justify-content: center; align-items: center;">
+  <div class="card" style="max-width: 900px; width: 100%; border-radius: 20px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); overflow: hidden; background-color: white;">
+    <div class="row no-gutters">
+
+      <div class="col-md-5" style="background-color: black;">
+        <img
+          [src]="playboiCarti.imageUrl"
+          alt="Playboi Carti"
+          class="img-fluid"
+          style="width: 100%; height: 100%; object-fit: cover; border-right: 5px solid #D2B48C;"
+        >
+      </div>
+
+      <div class="col-md-7" style="padding: 20px;">
+        <h2 class="text-center" style="font-weight: bold; color: #333;">{{ playboiCarti.name }}</h2>
+        <h5 class="text-center" style="color: #777; margin-bottom: 20px;">{{ playboiCarti.realName }}</h5>
+        <p style="font-size: 16px; line-height: 1.5; color: #555; text-align: justify;">{{ playboiCarti.description }}</p>
+        <ul style="margin-top: 20px; padding-left: 20px; color: #333;">
+          <li><strong>Geboren am:</strong> {{ playboiCarti.birthday }}</li>
+          <li><strong>Geburtsort:</strong> {{ playboiCarti.birthplace }}</li>
+          <li><strong>Genre:</strong> {{ playboiCarti.genre }}</li>
+          <li><strong>Debütalbum:</strong> {{ playboiCarti.debutAlbum }}</li>
+          <li><strong>Letztes Album:</strong> {{ playboiCarti.latestAlbum }}</li>
+        </ul>
+        <div class="text-center" style="margin-top: 20px;">
+          <a
+            [href]="playboiCarti.spotifyLink"
+            target="_blank"
+            class="btn btn-success"
+            style="margin-right: 10px; padding: 10px 20px; font-weight: bold; text-transform: uppercase;">
+            Spotify
+          </a>
+          <a
+            [href]="playboiCarti.instagramLink"
+            target="_blank"
+            class="btn btn-primary"
+            style="padding: 10px 20px; font-weight: bold; text-transform: uppercase;">
+            Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
