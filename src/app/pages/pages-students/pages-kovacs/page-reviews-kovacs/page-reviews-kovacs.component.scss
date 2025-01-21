@@ -1,0 +1,62 @@
+@import "../kov_variables";
+
+.reviews-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+    color: $text-color;
+  }
+}
+
+.flags-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.flag-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+
+
+  .flag-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .flag-details {
+    margin-top: 10px;
+
+    .country-name {
+      font-size: 32px;
+      font-weight: bold;
+      color: $text-color;
+      margin: 10px 0;
+    }
+
+    .capital-city, .flag-speciality {
+      font-size: 18px;
+      color: #555;
+      margin: 5px 0;
+    }
+  }
+}

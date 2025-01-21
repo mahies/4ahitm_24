@@ -3,7 +3,7 @@ import {PageDemoComponent} from './pages/pages-demo/page-demo/page-demo.componen
 import {PageHomeComponent} from './pages/page-home/page-home.component';
 import {PageAboutMePONTComponent} from './pages/pages-students/pages-pont/page-about-me-pont/page-about-me-pont.component';
 import {PageAboutMeKOVACSComponent} from "./pages/pages-students/pages-kovacs/page-about-me-kovacs/page-about-me-kovacs.component";
-import {PageAboutMeZHOUComponent} from "./pages/pages-students/pages-zhou/page-about-me-zhou/page-about-me-zhou.component";
+import {PageAboutMeZHOUComponent} from "./pages/pages-students/page-about-me-zhou/page-about-me-zhou.component";
 import {PageAboutmeHobelComponent} from "./pages/pages-students/page-aboutme-hobel/page-aboutme-hobel.component";
 import {PageAboutMeHauerComponent} from "./pages/pages-students/pages_Hauer/page-about-me-Hauer/page-about-me-hauer.component";
 import {PageAboutmeNovoComponent} from "./pages/pages-students/page-novo/page-aboutme-novo/page-aboutme-novo.component";
@@ -26,10 +26,6 @@ import {
 import {
   PageReviewsMetzComponent
 } from './pages/pages-students/pages-metz/page-reviews-metz/page-reviews-metz.component';
-import {
-  PageSubpage1NovoComponent
-} from './pages/pages-students/page-novo/page-subpage1-novo/page-subpage1-novo.component';
-
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -48,8 +44,6 @@ export const routes: Routes = [
     component: PageAboutMeHauerComponent },
   { path: 'page_novo',
     component: PageAboutmeNovoComponent },
-  { path: 'page_novo_subpage1',
-    component: PageSubpage1NovoComponent },
   { path: 'page_metz',
     component: PageAboutmeMETZComponent },
   { path: 'page_metz_reviews',
