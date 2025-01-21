@@ -26,6 +26,10 @@ import {
 import {
   PageReviewsMetzComponent
 } from './pages/pages-students/pages-metz/page-reviews-metz/page-reviews-metz.component';
+import {
+  PageSubpage1NovoComponent
+} from './pages/pages-students/page-novo/page-subpage1-novo/page-subpage1-novo.component';
+
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -44,6 +48,8 @@ export const routes: Routes = [
     component: PageAboutMeHauerComponent },
   { path: 'page_novo',
     component: PageAboutmeNovoComponent },
+  { path: 'page_novo_subpage1',
+    component: PageSubpage1NovoComponent },
   { path: 'page_metz',
     component: PageAboutmeMETZComponent },
   { path: 'page_metz_reviews',
