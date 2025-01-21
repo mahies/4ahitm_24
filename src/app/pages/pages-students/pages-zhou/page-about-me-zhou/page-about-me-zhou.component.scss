@@ -40,6 +40,15 @@ body {
   border-radius: 5px;
 }
 
+a {
+  color: #ffba3c;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .btn-primary:hover {
   background-color: #ff910f;
 }
