@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Person, CIZMIC} from '../../../model/person';
+import {Person, CIZMIC} from '../../../../model/person';
 
 
 @Component({
