@@ -1,22 +1,23 @@
 <p>page-about-me-friedl works!</p>
-<div class="container-fluid m-5">
-  <div class="card" style="width: 18rem;">
-    <img src="{{ me_friedl.urlImage }}" class="card-img-top" width="20c" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{ me_friedl.firstname }} {{ me_friedl.surname }}</h5>
-      <p class="card-text">{{me_friedl.message}}</p>
-      <p class="card-text">Geboren am: {{me_friedl.birthday}}</p>
-      <p class="card-text">Meine Email: {{me_friedl.email}}</p>
-      <p class="card-text">Wohnort: {{me_friedl.zip_code}} {{ me.city }}</p>
-      <p class="card-text">Mein Github username {{me_friedl.github_nickname}}</p>
-      <a href= {{me.socialLink}}> Mein Instagram Profil</a><br>
-      <div class="d-flex p-2 justify-content-between">
-        <a routerLink="subpage1" routerLinkActive="active" class="btn btn-primary">Subpage 1</a>
-        <a routerLink="subpage2" routerLinkActive="active" class="btn btn-primary">Subpage 2</a>
-      </div>
-
-      <div class="d-flex p-2">
-        <a routerLink="/home" routerLinkActive="active" class="btn btn-secondary">Zurück Home</a>
+<div class="d-flex">
+  <div class="container-fluid">
+    <div class="card">
+      <img src="{{ me_friedl.urlImage }}" class="card-img-top" width="20c" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ me_friedl.firstname }} {{ me_friedl.surname }}</h5>
+        <p class="card-text">{{me_friedl.message}}</p>
+        <p class="card-text">Geboren am: {{me_friedl.birthday}}</p>
+        <p class="card-text">Meine Email: {{me_friedl.email}}</p>
+        <p class="card-text">Wohnort: {{me_friedl.zip_code}} {{ me.city }}</p>
+        <p class="card-text">Mein Github username {{me_friedl.github_nickname}}</p>
+        <a href="{{me.socialLink}}"> Mein Instagram Profil</a><br>
+        <div class="d-flex p-2 justify-content-between">
+          <a routerLink="subpage1" routerLinkActive="active" class="btn btn-primary">Subpage 1</a>
+          <a routerLink="subpage2" routerLinkActive="active" class="btn btn-primary">Subpage 2</a>
+        </div>
+        <div class="d-flex p-2">
+          <a routerLink="/home" routerLinkActive="active" class="btn btn-secondary">Zurück Home</a>
+        </div>
       </div>
     </div>
   </div>
