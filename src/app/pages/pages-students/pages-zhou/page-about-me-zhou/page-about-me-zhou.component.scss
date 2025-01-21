@@ -1,6 +1,6 @@
 
 body {
-  font-family: Elephant, sans-serif;
+  font-family: elephant, sans-serif;
   background-color: antiquewhite;
   margin: 0;
   padding: 0;
@@ -16,16 +16,16 @@ body {
   justify-content: center;
   padding: 20px;
   background-color: antiquewhite;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  max-width: 400px;
+  box-shadow: 0 10px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 85px;
+  max-width: 1800px;
   width: 100%;
   margin:  auto;
   position: relative;
   overflow: hidden;
-  max-height: 90vh;
+  max-height: 900vh;
   transform: translate(-50%, 0%);
-  left: 50%;
+  left: 47%;
   right: 50%;
 }
 
