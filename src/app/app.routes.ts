@@ -17,8 +17,6 @@ import {PageAboutMeMajzelComponent} from './pages/pages-students/page-about-me-m
 import {PageAboutMeMutisevicComponent} from './pages/pages-students/pages-mutisevic/page-about-me-mutisevic/page-about-me-mutisevic.component';
 import {PageAboutFriedlComponent} from './pages/pages-students/pages-friedl/page-about-me-friedl/page-about-me-friedl.component';
 import {PageAboutMeCizmicComponent} from './pages/pages-students/page-about-me-cizmic/page-about-me-cizmic.component';
-import {Subpage1Component} from './pages/pages-demo/subpage1/subpage1.component';
-import {Subpage2Component} from './pages/pages-demo/subpage2/subpage2.component';
 import {
   PageHaustiereWAGNERComponent
 } from './pages/pages-students/pages-wagner/page-haustiere-wagner/page-haustiere-wagner.component';
@@ -36,14 +34,6 @@ export const routes: Routes = [
     component: PageHomeComponent },
   { path: 'page_demo',
     component: PageDemoComponent },
-  {
-    path: 'page_demo/subpage1',
-    component: Subpage1Component,
-  },
-  {
-    path: 'page_demo/subpage2',
-    component: Subpage2Component,
-  },
   { path: 'page_pont',
     component: PageAboutMePONTComponent },
   { path: 'page_kovacs',
