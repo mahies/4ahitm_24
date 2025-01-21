@@ -3,7 +3,7 @@ import {PageDemoComponent} from './pages/pages-demo/page-demo/page-demo.componen
 import {PageHomeComponent} from './pages/page-home/page-home.component';
 import {PageAboutMePONTComponent} from './pages/pages-students/pages-pont/page-about-me-pont/page-about-me-pont.component';
 import {PageAboutMeKOVACSComponent} from "./pages/pages-students/pages-kovacs/page-about-me-kovacs/page-about-me-kovacs.component";
-import {PageAboutMeZHOUComponent} from "./pages/pages-students/page-about-me-zhou/page-about-me-zhou.component";
+import {PageAboutMeZHOUComponent} from "./pages/pages-students/pages-zhou/page-about-me-zhou/page-about-me-zhou.component";
 import {PageAboutmeHobelComponent} from "./pages/pages-students/page-aboutme-hobel/page-aboutme-hobel.component";
 import {PageAboutMeHauerComponent} from "./pages/pages-students/pages_Hauer/page-about-me-Hauer/page-about-me-hauer.component";
 import {PageAboutmeNovoComponent} from "./pages/pages-students/page-novo/page-aboutme-novo/page-aboutme-novo.component";

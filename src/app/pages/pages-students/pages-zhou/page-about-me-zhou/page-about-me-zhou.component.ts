@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ZHOU, Person} from '../../../model/person';
+import {ZHOU, Person} from '../../../../model/person';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 @Component({
   selector: 'app-page-about-me-zhou',
