@@ -28,6 +28,13 @@ import {
 import {
   PageReviewsMetzComponent
 } from './pages/pages-students/pages-metz/page-reviews-metz/page-reviews-metz.component';
+import {
+  PageSubpage1NovoComponent
+} from './pages/pages-students/page-novo/page-subpage1-novo/page-subpage1-novo.component';
+import {
+  PageHobbiesWAGNERComponent
+} from './pages/pages-students/pages-wagner/page-hobbies-wagner/page-hobbies-wagner.component';
+
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -70,6 +77,8 @@ export const routes: Routes = [
     component: PageHaustiereWAGNERComponent },
   { path: 'page_lieblingsfilmundmusik_wagner',
     component: PageLieblingsfilmundmusikWAGNERComponent },
+  { path: 'page_hobbies_wagner',
+    component: PageHobbiesWAGNERComponent },
   { path: 'page_majzel',
     component: PageAboutMeMajzelComponent },
   { path: 'page_mutisevic',
