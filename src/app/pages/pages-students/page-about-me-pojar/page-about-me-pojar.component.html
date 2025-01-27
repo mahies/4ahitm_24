@@ -10,21 +10,21 @@
 
     <div class="card-body">
       <h1 class="card-title">{{ me.firstname }} {{ me.surname }}</h1>
-        <h6 class="card-text">{{me.birthday}}</h6>
-        <h6 class="card-text">{{me.zip_code}}</h6>
-        <h6 class="card-text">{{me.city}}</h6>
-        <h6 class="card-text">{{me.email}}</h6>
-        <h6 class="card-text">{{me.message}}</h6>
-      <p>Socials:</p>
+        <h6 class="card-text"><strong>     Geburtstag: </strong>{{me.birthday.getUTCMonth()}}.{{me.birthday.getUTCDay()}}.{{me.birthday.getFullYear()}}</h6>
+        <h6 class="card-text"><strong>     Wohnort: </strong>{{me.zip_code}} {{me.city}}</h6>
+      <h6 class="card-text"><strong>       Abteilung: </strong>{{me.department}}</h6>
+      <h6 class="card-text"><strong>       Github: </strong>{{me.github_nickname}}</h6>
+        <h5 class="card-text">{{me.message}}</h5>
+
       <div class="speck">
 <div class="instadarm">
       <p><a href="https://www.instagram.com/bumbobreiner12/">
-        <img src="assets/Pojar-Assets/Instadarm.png" alt="Instadarm.com" width="42" height="42">
+        <img src="assets/Pojar-Assets/Instadarm.png" alt="Instadarm.com" width="50" height="50">
       </a></p>
     </div>
       <div class="email">
         <p><a href="mailto:210178@studierende.htl-donaustadt.at">
-          <img src="assets/Pojar-Assets/email-black-icon.png" alt="email" width="60" height="60">
+          <img src="assets/Pojar-Assets/email-black-icon.png" alt="email" width="80" height="80">
         </a></p>
       </div>
       </div>

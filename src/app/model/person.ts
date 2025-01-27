@@ -102,13 +102,13 @@ export  const POJAR : Person = {
   surname: "POJAR ",
   firstname: "Markus ",
   urlImage: "assets/Pojar-Assets/Markus_Foto_Bort.png",
-  birthday: new Date("2007-05-09"),
+  birthday: new Date("2007-10-12 14:32:00"),
   department: "ITEL Medientechnik",
   email: "210178@studierende.htl-donaustadt.at",
   github_nickname: "KebabEsser_98",
   zip_code: 2301,
   city: "Groß-Enzersdorf",
-  message: "\„Wenn das Leben dir Zitronen gibt, dann gib sie zurück.\" \n(Philip Kovacs)",
+  message: "\Wenn das Leben dir Zitronen gibt, dann gib sie zurück.\" \n   - Philip Kovacs",
   routerLink:"/page_pojar"
 };
 

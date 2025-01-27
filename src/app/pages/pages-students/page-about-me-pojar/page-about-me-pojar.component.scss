@@ -64,13 +64,22 @@ img {
 }
 
 h1 {
-  font-family: "";
-  font-size: 8vw;
+  font-family: Tahoma;
+  font-size: 7vw;
   line-height: 1.2;
 }
 
 h6 {
   font-size: 3vh;
+  line-height: 1.5;
+}
+p{
+  font-size: 3vh;
+  line-height: 1.5;
+}
+h5{
+  font-family: "Kunstler Script" ;
+  font-size: 5vh;
   line-height: 1.5;
 }
 
@@ -90,16 +99,17 @@ h6 {
   }
 }
 .Knopf {
+
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   margin: 0;
   float: none;
 }
 
 .speck{
 
-  margin-top: 20px;
+  margin-left: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;

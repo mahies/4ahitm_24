@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
-import {POJAR, Person} from '../../../model/person';
+import {POJAR, Person, KOVACS} from '../../../model/person';
 
 @Component({
   selector: 'app-page-about-me-pojar',
