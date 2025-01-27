@@ -35,6 +35,12 @@ import {
 import {
   PageHobbiesWAGNERComponent
 } from './pages/pages-students/pages-wagner/page-hobbies-wagner/page-hobbies-wagner.component';
+import {
+  PageHobbyMutisevicComponent
+} from './pages/pages-students/pages-mutisevic/page-hobby-mutisevic/page-hobby-mutisevic.component';
+import {
+  PageMusicMutisevicComponent
+} from './pages/pages-students/pages-mutisevic/page-music-mutisevic/page-music-mutisevic.component';
 
 
 export const routes: Routes = [
@@ -84,6 +90,10 @@ export const routes: Routes = [
     component: PageAboutMeMajzelComponent },
   { path: 'page_mutisevic',
     component: PageAboutMeMutisevicComponent },
+  { path: 'page-hobby-mutisevic',
+    component: PageHobbyMutisevicComponent },
+  { path: 'page-music-mutisevic',
+    component: PageMusicMutisevicComponent },
   { path: 'page_friedl',
     component: PageAboutFriedlComponent},
   { path: 'page_cizmic',
