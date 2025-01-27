@@ -1,72 +1,193 @@
-
-h1 {
-  visibility: visible;
-  display: block;
-}
-
 body {
-  background-color: #f0f0f0;
-  font-family: 'Lexend Giga', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: #333;
-}
-.container {
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-  max-width: 1000px;
-  width: 100%;
-}
-.header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.header h1 {
-  color: #0056b3;
-}
-.image img {
-  border-radius: 10px;
-  max-width: 350px;
-  width: 100%;
-}
-.info {
-  background-color: #C6E6FB;
-  padding: 20px;
-  border-radius: 10px;
-  border: 3px solid #0056b3;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
-}
-.info h2 {
-  color: #0056b3;
-}
-.info p {
-  font-size: 18px;
   line-height: 1.6;
 }
-.info .label {
-  font-weight: bold;
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.buttons {
+
+.header h1 {
+  font-family: 'Lora', serif;
+  font-size: 3.5rem;
+  color: #2a7f7f;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.info {
+  background-color: #e9f2f8;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.info h2 {
+  font-size: 2.5rem;
+  color: #2a7f7f;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.info p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.label {
+  font-weight: 600;
+  color: #2a7f7f;
+}
+
+.song-buttons {
   display: flex;
-  gap: 10px;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
   margin-top: 20px;
 }
-.buttons a {
-  text-decoration: none;
-  background-color: #0056b3;
+
+.song-button {
+  font-size: 1rem;
+  padding: 12px 20px;
+  background-color: #6bb7e1;
   color: white;
-  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1 1 30%;
+  min-width: 200px;
 }
+
+.song-button:hover {
+  background-color: #5392b4;
+}
+
+.buttons a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  background-color: #4a8cbf;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
 .buttons a:hover {
-  background-color: #003d7a;
+  background-color: #38718c;
 }
+
+.home-button {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  background-color: #6688b4;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.home-button:hover {
+  background-color: #b7ccea;
+}
+
+.follow-sza-header {
+  font-size: 2.5rem;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: #3f7f7f;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.button {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 12px 20px;
+  background-color: #66a6b8;
+  color: white;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background-color: #4e8fc1;
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .info p {
+    font-size: 1.1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons a {
+    margin: 5px 0;
+  }
+}
+
+
+
+

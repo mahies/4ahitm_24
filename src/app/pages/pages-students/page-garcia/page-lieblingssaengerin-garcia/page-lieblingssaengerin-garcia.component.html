@@ -1,23 +1,27 @@
 <body>
-<div class="container" style="max-width: 1000px; margin: 0 auto; padding: 20px;">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
+<h2>Favourite Songs</h2>
+
+
+
+<div class="container" style="max-width: 1000px; margin: 0 auto; padding: 20px;">
 
   <div class="header" style="text-align: center; margin-top: 50px; margin-bottom: 20px;">
     <h1>MY FAV SINGER - SZA</h1>
   </div>
 
-
-  <div class="image" style="display: flex; justify-content: center; margin-bottom: 30px; position: relative;">
+  <div class="image" style="display: flex; justify-content: center; align-items: center; margin-bottom: 30px;">
     <img src="{{ me.urlImage }}" alt="Profile Image"
-         style="max-width: 100%; width: 600px; height: auto; border-radius: 20px; border: 3px solid white; margin-top: 0;">
+         style="max-width: 100%; height: auto; object-fit: contain; border-radius: 20px; border: 3px solid white;">
   </div>
 
 
-  <div class="info">
-    <h2>Biography</h2>
+  <div class="info" style="background-color: #e6f3ff; padding: 20px; border-radius: 15px;">
+    <h2 style="text-align: left; font-size: 3rem;"><u>Biografie</u></h2>
+
     <p>
       <span class="label">Real Name:</span> Solána Imani Rowe<br>
-      <span class="label">Stage Name:</span> SZA<br>
       <span class="label">Date of Birth:</span> November 8, 1989<br>
       <span class="label">Genre:</span> R&B, Neo-soul, Hip Hop<br>
       <span class="label">Ethnicity:</span> African American, with mixed heritage (including Native American)<br>
@@ -26,24 +30,38 @@
       <span class="label">Years Active:</span> 2010–present<br>
     </p>
 
-    <h2>Why I Like her</h2>
+    <h2 style="text-align: left"><u>Why I Like her</u></h2>
     <p>
-      - SZA released her debut studio album *Ctrl* in 2017, which received critical acclaim and commercial success.<br>
-      - Her music combines elements of R&B, soul, and hip hop, often exploring themes of self-worth, vulnerability, and love.<br>
-      - SZA was nominated for multiple Grammy Awards and has won several Billboard Music Awards.<br>
-      - Known for her unique vocal style and emotional lyricism, SZA has become one of the most influential modern R&B artists.<br>
+      Ich mag sie, weil ihre Stimme so wunderschön ist, dass sie mich jedes Mal beruhigt und in eine andere Welt entführt. Sie schafft es, mit ihrer Musik eine ganz besondere Atmosphäre zu kreieren, die mich immer wieder zum Nachdenken anregt.
+      Als Person wirkt sie unglaublich lieb und sympathisch, und es scheint, als ob ihre Musik ihre wahre Persönlichkeit widerspiegelt. Ihre Lyrics sind vor allem sehr tiefgründig und gleichzeitig wunderschön zu verstehen.
+      Sie spricht aus, was viele von uns fühlen, und trifft genau den richtigen Ton.
+      Wenn ich ihre Musik höre, fühle ich mich glücklich und verbunden, fast so, als wäre sie ein guter Freund, der mich versteht. Ich könnte stundenlang ihren Songs lauschen und dabei alles um mich herum vergessen.
+      Man könnte sagen, ich bin ein echter Fan, der ihre Musik und ihre Art sehr schätzt.
     </p>
 
-    <h2>Follow SZA</h2>
-    <p>
-      You can follow SZA on her social media for updates on new music and performances.
-    </p>
+    <h2 style="text-align: left"><u>Favourite Songs</u></h2>
+    <div class="song-buttons">
+      <button class="song-button" onclick="window.open('https://www.youtube.com/watch?v=example_link')">Luther (ft. Kendrick Lamar)</button>
+      <button class="song-button" onclick="window.open('https://www.youtube.com/watch?v=example_link')">Special</button>
+      <button class="song-button" onclick="window.open('https://www.youtube.com/watch?v=example_link')">Open Arms (ft. Travis Scott)</button>
+      <button class="song-button" onclick="window.open('https://www.youtube.com/watch?v=example_link')">Gloria (ft. Kendrick Lamar)</button>
+      <button class="song-button" onclick="window.open('https://www.youtube.com/watch?v=example_link')">I Hate U</button>
+      <button class="song-button" onclick="window.open('https://www.youtube.com/watch?v=example_link')">Shirt</button>
+      <button class="song-button" onclick="window.open('https://www.youtube.com/watch?v=example_link')">Love Galore (ft. Travis Scott)</button>
+      <button class="song-button" onclick="window.open('https://www.youtube.com/watch?v=example_link')">Love Language</button>
+      <button class="song-button" onclick="window.open('https://www.youtube.com/watch?v=example_link')">Broken Clocks</button>
+    </div>
 
+    <h3 style="text-align: left">Follow SZA</h3>
     <div class="buttons" style="margin-top: 20px;">
       <a href="https://www.instagram.com/sza/" target="_blank">Instagram</a>
       <a href="https://twitter.com/sza" target="_blank">Twitter</a>
       <a href="https://www.youtube.com/c/SZA" target="_blank">YouTube</a>
+      <a routerLink="/page_garcia" routerLinkActive="active" class="btn btn-primary">back</a>
     </div>
   </div>
 </div>
 </body>
+
+
+
