@@ -9,7 +9,10 @@
       <p class="card-text">Meine Email: {{me_hobel.email}}</p>
       <p class="card-text">Wohnort: {{me_hobel.zip_code}} {{ me.city }}</p>
       <p class="card-text">Mein Github username {{me_hobel.github_nickname}}</p>
-      <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
+      <a class="Link" href= "mailto:name@email.com">{{me.email}}</a><br>
+      <a class="Link" href= {{me.socialLink}}> Mein Instagram Profil</a><br>
+      <p> </p>
+     <a routerLink="/home" routerLinkActive="active" class="btn btn-secondary">zurück</a>
     </div>
   </div>
 </div>

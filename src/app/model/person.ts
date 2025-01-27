@@ -67,6 +67,7 @@ export  const HOBEL : Person = {
   github_nickname: "reji05",
   zip_code: 2231,
   city: "Strasshof a.d Nordbahn",
+  socialLink: "https://www.instagram.com/rich_king1006?igsh=ajZ3YnF5b2cyNDNh&utm_source=qr",
   message: "\„„¡sɹǝpuɐ lɐɯ ǝƃuıp ǝıp ǝʇɥɔɐɹʇǝq“.\" \n(Irgendwas von Google lol)"
 };
 export  const KOVACS : Person = {
