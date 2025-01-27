@@ -1,7 +1,7 @@
 <div class="body">
 <h1>Meine Reviews 😛</h1>
-<ul class="alben d-flex flex-row">
-  <li *ngFor="let album of alben  | orderBy: 'interpret' ; let i = index" class="m-2">
+<ul class="alben d-flex flex-column">
+  <li *ngFor="let album of alben  | orderBy: 'interpret' ; let i = index" class="col-auto">
     <img src="{{album.coverLink}}" width="300px" height="auto" alt="Cover von {{album.title}}">
     <h2 class="header"><b><a href="{{album.rymLink}}">{{album.titel}}</a></b></h2>
     <h3 class="header">{{album.interpret}} ({{album.erscheinungsdatum.getFullYear()}})</h3>
@@ -15,6 +15,6 @@
 </ul>
   <div class="buttongrid">
     <a class="btn btn-primary" routerLink="/page_metz" routerLinkActive="active">Steckbrief</a>
-    <a class="btn btn-primary" routerLink="/home" routerLinkActive="active">Back</a>
+    <a class="btn btn-primary" routerLink="/home" routerLinkActive="active">Startseite</a>
   </div>
 </div>
