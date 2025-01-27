@@ -43,7 +43,7 @@ import {
 } from './pages/pages-students/pages-mutisevic/page-music-mutisevic/page-music-mutisevic.component';
 import {
   PageLieblingsmusikZhouComponent
-} from './pages/pages-students/pages-zhou/page-lieblingsmusik-zhou/page-lieblingsmusik-zhou.component.ts';
+} from './pages/pages-students/pages-zhou/page-lieblingsmusik-zhou/page-lieblingsmusik-zhou.component';
 
 export const routes: Routes = [
   { path: '', // default rout
