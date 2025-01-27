@@ -83,6 +83,8 @@ export const routes: Routes = [
     component: PageAboutMeHauerComponent },
   { path: 'page_novo',
     component: PageAboutmeNovoComponent },
+  { path: 'page_novo_subpage1',
+    component: PageSubpage1NovoComponent },
   { path: 'page_metz',
     component: PageAboutmeMETZComponent },
   { path: 'page_metz_reviews',

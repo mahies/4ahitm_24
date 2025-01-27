@@ -1,4 +1,7 @@
-body {
+.evr{
+  background-color: $background-color;
+}
+.body{
   background-color: darkred;
   color: white;
   border-radius: 50px;
@@ -6,8 +9,65 @@ body {
 }
 
 h1{
-  background-color: orangered;
+  background-color: darkred;
   color: white;
   border-radius: 50px;
   padding-left: 100px;
+  font-family: "DejaVu Math TeX Gyre";
+}
+
+.Montag{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.Dienstag{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.Mittwoch{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.Donnerstag{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.Freitag{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.Samstag{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.Sonntag{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.text-container{
+  display: flex;
+  width: fit-content;
+  text-align: center;
+
+  font-family: "Arial";
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 50px;
+  padding-left:25px;
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-right: 25px;
+
+  background-color: $background-color;
+  flex-direction: row;
+  align-items: flex-start;
+  gap:25px;
+  border-radius: 50px;
 }
