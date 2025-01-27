@@ -1,6 +1,7 @@
 export interface Film {
   titel: string;
-  director: string;
+  directorNachname: string;
+  directorVorname: string;
   plakatLink: string;
   erscheinungsdatum: Date;
   imdbLink: string;
@@ -9,8 +10,23 @@ export interface Film {
   rating: number;
 }
 
+export const FallenAngels: Film = {
+  titel: "Fallen Angels",
+  directorNachname: "Wong",
+  directorVorname: "Kar-wai",
+  plakatLink: "",
+  erscheinungsdatum: new Date("1995-09-06"),
+  imdbLink: "tt0112913",
+  review: [
+    ""
+  ],
+  quote: [
+    "The night’s full of weirdos."
+  ],
+  rating: 5,
+}
 
 
 
 
-export const FILME:Film[] = [];
+export const FILME:Film[] = [FallenAngels];

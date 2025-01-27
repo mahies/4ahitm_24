@@ -19,10 +19,10 @@
     </li>
   </ul>
   <ul class="filme d-flex flex-column" *ngIf="!isMusicActive">
-    <li *ngFor="let film of filme | orderBy: 'title'; let i = index" class="col-auto">
-      <img src="{{film.coverLink}}" width="300px" height="auto" alt="Cover von {{film.title}}">
-      <h2 class="header"><b><a href="{{film.link}}">{{film.title}}</a></b></h2>
-      <h3 class="header">{{film.director}} ({{film.releaseDate.getFullYear()}})</h3>
+    <li *ngFor="let film of filme | orderBy: 'directorNachname'; let i = index" class="col-auto">
+      <img src="{{film.coverLink}}" width="300px" height="auto" alt="Cover von {{film.titel}}">
+      <h2 class="header"><b><a href="https://www.imdb.com/title/{{film.imdbLink}}/">{{film.titel}} ({{film.releaseDate.getFullYear()}})</a></b></h2>
+      <h3 class="header">{{film.directorVorname}} {{film.directorNachname}}</h3>
       <br>
       <p>
         <span *ngFor="let review of film.review">{{review}}<br><br></span><br>
