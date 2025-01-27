@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {flaggen,FLAGGEN} from "../flaggen";
 import {NgForOf} from '@angular/common';
-import {OrderByPipe} from '../../../../pipes/orderBy.pipe';
+
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {KOVACS} from '../../../../model/person';
 
@@ -9,7 +9,6 @@ import {KOVACS} from '../../../../model/person';
   selector: 'app-page-reviews-kovacs',
   imports: [
     NgForOf,
-    OrderByPipe,
     RouterLink,
     RouterLinkActive
   ],

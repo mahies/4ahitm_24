@@ -1,3 +1,5 @@
+import {finalize} from 'rxjs';
+
 export interface flaggen{
   country: string;
   capital: string;
@@ -40,4 +42,71 @@ export const BritischesTerr : flaggen = {
 
 }
 
-export const FLAGGEN:flaggen[] = [Antigua_und_Barbuda,Kiribati,BritischesTerr];
+export const AmerikanischSamoa : flaggen = {
+  country: "Amerikanisch Samoa",
+  capital: "Pago Pago",
+  imagelink: "/assets/Kovacs_Bilder/flags/American_Samoa.jpg",
+  population: "43.914",
+  datum: new Date("1960-05-24"),
+  review: "",
+  verhaeltnis: "1:2"
+
+}
+
+export const Bhutan : flaggen = {
+  country: "Bhutan",
+  capital: "Thimphu",
+  imagelink: "/assets/Kovacs_Bilder/flags/Bhutan.jpg",
+  population: "787.424 ",
+  datum: new Date("1949-00-00"),
+  review: "",
+  verhaeltnis: "2:3"
+
+}
+
+export const Estonia : flaggen = {
+  country: "Estland",
+  capital: "Tallinn",
+  imagelink: "/assets/Kovacs_Bilder/flags/Estonia.jpg",
+  population: "1.366.000 ",
+  datum: new Date("1884-07-4"),
+  review: "",
+  verhaeltnis: "7:11"
+
+}
+
+export const Finland : flaggen = {
+  country: "Finnland",
+  capital: "Helsinki",
+  imagelink: "/assets/Kovacs_Bilder/flags/Finland.jpg",
+  population: "5.584.000 ",
+  datum: new Date("1918-06-28"),
+  review: "",
+  verhaeltnis: "7:11"
+
+}
+
+export const Nepal : flaggen = {
+  country: "Nepal",
+  capital: "Kathmandu",
+  imagelink: "/assets/Kovacs_Bilder/flags/Nepal.jpg",
+  population: "30.900.000 ",
+  datum: new Date("1962-12-16"),
+  review: "",
+  verhaeltnis: "1:1.21901033…"
+
+}
+
+export const Turkmenistan : flaggen = {
+  country: "Turkmenistan",
+  capital: "Ashgabat",
+  imagelink: "/assets/Kovacs_Bilder/flags/Turkmenistan.jpg",
+  population: "6.516.000",
+  datum: new Date("1992-10-27"),
+  review: "",
+  verhaeltnis: "2:3"
+
+}
+
+
+export const FLAGGEN:flaggen[] = [Antigua_und_Barbuda,Kiribati,BritischesTerr,AmerikanischSamoa,Bhutan,Estonia,Finland,Nepal,Turkmenistan];
