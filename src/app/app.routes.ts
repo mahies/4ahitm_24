@@ -44,6 +44,10 @@ import {
 import {
   PageLieblingsmusikZhouComponent
 } from './pages/pages-students/pages-zhou/page-lieblingsmusik-zhou/page-lieblingsmusik-zhou.component';
+import {
+  PageLieblingsfotosZhouComponent
+} from './pages/pages-students/pages-zhou/page-lieblingsfotos-zhou/page-lieblingsfotos-zhou.component';
+
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -64,6 +68,8 @@ export const routes: Routes = [
     component: PageAboutMeZHOUComponent },
   { path: 'page_zhou_lieblingsmusik',
     component: PageLieblingsmusikZhouComponent},
+  { path: 'page_zhou_lieblingsfotos',
+    component: PageLieblingsfotosZhouComponent},
   { path: 'page_hauer',
     component: PageAboutMeHauerComponent },
   { path: 'page_novo',
