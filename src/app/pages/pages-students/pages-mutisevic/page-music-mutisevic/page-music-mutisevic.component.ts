@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import {MUTISEVIC} from '../../../../model/person';
+import {carti} from '../carti';
 import {RouterLink, RouterLinkActive} from '@angular/router';
+import {MUTISEVIC} from '../../../../model/person';
 
 @Component({
   selector: 'app-page-music-mutisevic',
@@ -10,7 +11,6 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
   styleUrl: './page-music-mutisevic.component.scss'
 })
 export class PageMusicMutisevicComponent {
-  Person= MUTISEVIC;
-  protected readonly me = MUTISEVIC;
+  protected readonly me = carti;
 
 }
