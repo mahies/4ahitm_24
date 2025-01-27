@@ -6,6 +6,7 @@ export interface Film {
   imdbLink: string;
   review: string[];
   quote: string[];
+  rating: number;
 }
 
 
