@@ -15,7 +15,7 @@ import {PageAboutMeGARCIAComponent} from './pages/pages-students/page-garcia/pag
 import {PageAboutMePojarComponent} from "./pages/pages-students/page-about-me-pojar/page-about-me-pojar.component";
 import {PageAboutMeKOVACICComponent} from './pages/pages-students/pages-kovacic/page-about-me-kovacic/page-about-me-kovacic.component';
 import {PageAboutMeWAGNComponent} from './pages/pages-students/pages-wagner/page-about-me-wagn/page-about-me-wagn.component';
-import {PageAboutMeMajzelComponent} from './pages/pages-students/page-about-me-majzel/page-about-me-majzel.component';
+import {PageAboutMeMajzelComponent} from './pages/pages-students/pages_majzel/page-about-me-majzel/page-about-me-majzel.component';
 import {PageAboutMeMutisevicComponent} from './pages/pages-students/pages-mutisevic/page-about-me-mutisevic/page-about-me-mutisevic.component';
 import {PageAboutFriedlComponent} from './pages/pages-students/pages-friedl/page-about-me-friedl/page-about-me-friedl.component';
 import {PageAboutMeCizmicComponent} from './pages/pages-students/pages-cizmic/page-about-me-cizmic/page-about-me-cizmic.component';
@@ -44,6 +44,15 @@ import {
 import {
   PageLieblingsmusikZhouComponent
 } from './pages/pages-students/pages-zhou/page-lieblingsmusik-zhou/page-lieblingsmusik-zhou.component';
+import {
+  PageHobbiesMajzelComponent
+} from './pages/pages-students/pages_majzel/page-hobbies-majzel/page-hobbies-majzel.component';
+import {
+  PagePolenMajzelComponent
+} from './pages/pages-students/pages_majzel/page-polen-majzel/page-polen-majzel.component';
+import {
+  PageReisenMajzelComponent
+} from './pages/pages-students/pages_majzel/page-reisen-majzel/page-reisen-majzel.component';
 import {
   PageLieblingsfotosZhouComponent
 } from './pages/pages-students/pages-zhou/page-lieblingsfotos-zhou/page-lieblingsfotos-zhou.component';
@@ -115,7 +124,13 @@ export const routes: Routes = [
   { path: 'page_hobbies_wagner',
     component: PageHobbiesWAGNERComponent },
   { path: 'page_majzel',
-    component: PageAboutMeMajzelComponent },
+    component: PageAboutMeMajzelComponent},
+  { path: 'page-majzel-hobbies',
+    component: PageHobbiesMajzelComponent},
+  { path: 'page-majzel-reisen ',
+    component: PageReisenMajzelComponent},
+  { path: 'page-majzel-polen',
+    component: PagePolenMajzelComponent},
   { path: 'page_mutisevic',
     component: PageAboutMeMutisevicComponent },
   { path: 'page-hobby-mutisevic',

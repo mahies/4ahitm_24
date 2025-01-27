@@ -95,7 +95,8 @@ export  const MAJZEL : Person = {
   github_nickname: "Dave 64",
   zip_code: 1220,
   city: "Wien",
-  message: "\„Carne Assada: proof that some of life’s best moments come from a little heat and a lot of marinade.\" \n(Easy Peasy Quotes)"
+  message: "\„Carne Assada: proof that some of life’s best moments come from a little heat and a lot of marinade.\" \n(Easy Peasy Quotes)",
+  socialLink:"https://www.instagram.com/2dave64236?utm_source=qr&igsh=dTI1ZHNtNmVnbTZ5"
 };
 
 export  const POJAR : Person = {
