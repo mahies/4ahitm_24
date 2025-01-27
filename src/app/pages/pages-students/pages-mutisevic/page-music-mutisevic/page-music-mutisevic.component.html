@@ -3,7 +3,7 @@
     <div class="row" style="display: flex; align-items: center; justify-content: center; text-align: center;">
 
       <div class="col-4" style="padding: 0; display: flex; justify-content: center;">
-        <img src= "{{ me.urlImage }}" class="img-fluid" alt="Playboi Carti" style="border: 3px solid #D2B48C; border-radius: 10px; width: 80%; height: auto;">
+        <img src="{{ me.urlImage }}" class="img-fluid" alt="Playboi Carti" style="border: 3px solid #D2B48C; border-radius: 10px; width: 80%; height: auto;">
       </div>
 
       <div class="col-6" style="background-color: rgba(255, 255, 255, 0.8); padding: 30px; border-radius: 15px; border: 3px solid #D2B48C; margin-left: 30px; max-width: 700px;">
@@ -31,25 +31,26 @@
         <div style="margin-bottom: 20px;">
           <h6 style="margin-bottom: 20px;"><u>Warum Playboi Carti?</u></h6>
           <p>Playboi Carti steht für Innovation und Kreativität. Seine Tracks sind mehr als nur Musik – sie sind ein Lebensgefühl. Mit futuristischen Sounds und energiegeladenen Performances beeinflusst er eine ganze Generation.</p>
-          <p>Unteranderem zu neueren Hits gehören <strong>"Timeless", "H00dbyair", "EvilJordan"</strong> und <strong>"TypeShit"</strong>, die erneut zeigen, warum er als einer der einflussreichsten Künstler seiner Zeit gilt. Diese Lieder geben auch eine Richtung an, wie sich das neuste Album <strong>"I AM MUSIC"</strong> anhören könnte, auf das die Fans gespannt warten.</p>
+          <p>Unter anderem zu neueren Hits gehören <strong>"Timeless", "H00dbyair", "EvilJordan"</strong> und <strong>"TypeShit"</strong>, die erneut zeigen, warum er als einer der einflussreichsten Künstler seiner Zeit gilt. Diese Lieder geben auch eine Richtung an, wie sich das neueste Album <strong>"I AM MUSIC"</strong> anhören könnte, auf das die Fans gespannt warten.</p>
         </div>
 
-        <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10px;">
-          <div style="display: flex; justify-content: space-between; width: 260px; margin-bottom: 10px;">
-            <a href="https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD" target="_blank" class="btn btn-primary" style="width: 120px; height: 40px; background-color: #93C572; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
-              spotify
-            </a>
-            <a href="https://genius.com/artists/Playboi-carti" target="_blank" class="btn btn-primary" style="width: 120px; height: 40px; background-color: #80471C; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
-              biography
-            </a>
-          </div>
-          <a routerLink="/home" routerLinkActive="active" class="btn btn-primary" style="width: 160px; height: 40px; margin-top: 10px; background-color: #0E0E10; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
-            back home
+
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; justify-content: center; margin-top: 20px;">
+          <a href="https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD" target="_blank" class="btn btn-primary" style="background-color: #93C572; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
+            spotify
+          </a>
+          <a href="https://genius.com/artists/Playboi-carti" target="_blank" class="btn btn-primary" style="background-color: #80471C; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
+            biography
+          </a>
+          <a routerLink="/home" routerLinkActive="active" class="btn btn-primary" style="background-color: #0E0E10; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
+            back Home
+          </a>
+          <a routerLink="/page_mutisevic" routerLinkActive="active" class="btn btn-primary" style="background-color: #B4B4B4; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
+            about Me
           </a>
         </div>
 
       </div>
-
     </div>
   </div>
 </div>
