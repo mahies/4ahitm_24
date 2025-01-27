@@ -30,7 +30,7 @@ export  const MINNIE : Person = {
 export  const WAGNER : Person = {
   surname: "Wagner".toUpperCase(),
   firstname: "Carina",
-  urlImage: "assets-WAGN/DEMOBild.jpg",
+  urlImage: "/assets/assets-WAGN/CarinaBild.jpeg",
   birthday: new Date("2005-07-19"),
   department: "ITEL Medientechnik",
   email: "180469@studierende.htl-donaustadt.at",
