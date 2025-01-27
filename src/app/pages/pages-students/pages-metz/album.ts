@@ -1,5 +1,3 @@
-import {setThrowInvalidWriteToSignalError} from '@angular/core/primitives/signals';
-
 export interface Album {
   titel: string;
   interpret: string;
@@ -10,6 +8,7 @@ export interface Album {
   review2: string;
   review3: string;
   quote: string;
+  rating: number;
 }
 
 export const TwinFantasy : Album = {
@@ -23,6 +22,7 @@ export const TwinFantasy : Album = {
   review3: "Es gibt jedoch ein, zwei Schwachstellen: High to Death und Stop Smoking (We Love You) sind nicht so stark wie der Rest des Albums. Trotzdem bleibt Twin Fantasy (Face to Face) eines der besten Alben der letzten zehn Jahre. Wer tiefgründige Lyrics und kreative Songstrukturen mag, sollte dieses Werk unbedingt hören.",
   quote: "We said we hated humans, " +
     "We wanted to be humans",
+  rating: 5,
 }
 
 export const TexasJerusalem : Album = {
@@ -36,6 +36,7 @@ export const TexasJerusalem : Album = {
   review3: "Ein paar Songs sind weniger stark, etwa Down Came the Angels oder Down with the Prophets. Doch insgesamt bietet das Album eine einzigartige konzeptuelle musikalische Erfahrung, die in der Musikwelt ihresgleichen sucht. Es mag als „Christian Rock Opera“ beschrieben werden, aber diese Begriffe fangen nicht ein, wie einzigartig und faszinierend dieses Album ist.",
   quote: "Cause we're simply the best band in the whole damn land, " +
     "And 'Texas Is The Reason.",
+  rating: 4,
 }
 
 export const FsharpAsharp : Album = {
@@ -49,6 +50,7 @@ export const FsharpAsharp : Album = {
   review3: "Wenn du neu in der Welt des Post-Rocks bist, empfehle ich dir, es wie ein Hörbuch oder einen alten Schwarzweißfilm anzugehen: Lass dich einfach darauf ein, ohne zu viel zu erwarten, und hör aufmerksam zu. F♯ A♯ ∞ ist definitiv eines der besten Alben, um in das Genre einzutauchen, und ein absoluter Must-Listen.",
   quote: "We're trapped in the belly of this horrible machine, " +
     "And the machine is bleeding to death",
+  rating: 5,
 }
 
 export const Magnolia : Album = {
@@ -61,6 +63,7 @@ export const Magnolia : Album = {
   review2: "Das Album startet mit Farewell Transmission, einem der besten Songs aller Zeiten. Kein Witz. Irgendwas hat Molina da reingepackt, das einen direkt tief berührt. Anders als viele lange Tracks, die zwischendrin Solos oder Filler bieten, bleibt dieser Song von Anfang bis Ende intensiv und fesselnd. Später kommen bei Tracks fünf und sechs zwei Gast-Vocalists ins Spiel. Am Anfang war ich davon nicht so begeistert, aber mittlerweile schätze ich diese Abwechslung sehr, besonders bei The Old Black Hen. Das Album endet genauso stark, wie es begonnen hat, mit Hold On Magnolia – ein absolut würdiger Abschluss.",
   review3: "Wenn man von Alt-Country redet, kommt man an diesem Album nicht vorbei. Es zeigt die perfekte Balance zwischen Emotion, Songwriting und der unverkennbaren Stimme von Molina. Magnolia Electric Co. ist Peak-Alt-Country.",
   quote: "I will be gone but not forever",
+  rating: 5,
 }
 
 export const Pink : Album = {
@@ -73,6 +76,7 @@ export const Pink : Album = {
   review2: "Ich bilde mir ein, ein bisschen Ahnung von Gitarren und Equipment zu haben, aber ich kann einfach nicht begreifen, wie Boris es schaffen, so verdammt heavy zu klingen. Aus diesem Grund habe ich Takeshis und Watas Board to Death-Episoden auf dem EQD-YouTube-Kanal angesehen, aber ihr Sound bleibt für mich immer noch ein kleines Mysterium.",
   review3: "Mein Fazit: ein verdammt gutes Album. Meine Lieblingssongs sind Farewell, Pink, Blackout und Just Abandoned Myself.",
   quote: "/",
+  rating: 3,
 }
 
 export const WGO : Album = {
@@ -88,6 +92,7 @@ export const WGO : Album = {
     "There's too many of you crying / " +
     "Brother, brother, brother, " +
     "There's far too many of you dying",
+  rating: 5,
 }
 
 export const Spiderland : Album = {
@@ -100,6 +105,7 @@ export const Spiderland : Album = {
   review2: "Die Post-Rock bzw. Post-Hardcore-Band aus Louisville Kentucky zieht einen mit hypnotischen Riffs und Drums, die unmöglich von einem Menschen geschrieben oder gespielt worden sein können, komplett in ihren Bann. Die Vocals? Meist gesprochen, manchmal geflüstert und häufig geschrien. Dabei erzählen sie Geschichten – von surreal bis verstörend real – und die Musik setzt diese Geschichten auf eine Weise in Szene, die einfach perfekt passt.",
   review3: "Ein kleiner Hinweis: Hier ist es so wichtig wie nie, auf die Lyrics zu achten. Meine Favoriten sind Good Morning Captain, Breadcrumb Trail, Washer und Don Aman. Am wenigsten zurückgekehrt bin ich zum Instrumental For Dinner....",
   quote: "I too am tired now, Embracing thoughts of tonight's dreamless sleep, My head is empty, My toes are warm, I am safe from harm",
+  rating: 5,
 }
 
 export const Aja : Album = {
@@ -114,6 +120,7 @@ export const Aja : Album = {
   quote: "Aja, " +
     "When all my dime dancin' is through, " +
     "I run to you",
+  rating: 5,
 }
 
 
