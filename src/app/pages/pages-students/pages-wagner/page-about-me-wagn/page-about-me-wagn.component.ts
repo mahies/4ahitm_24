@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {WAGNER, Person} from '../../../../model/person';
+import {WAGNER, Person, MINNIE} from '../../../../model/person';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 
 @Component({
