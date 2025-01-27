@@ -47,6 +47,12 @@ import {
 import {
   PageLieblingsfotosZhouComponent
 } from './pages/pages-students/pages-zhou/page-lieblingsfotos-zhou/page-lieblingsfotos-zhou.component';
+import {
+  Subpage1FriedlComponent
+} from './pages/pages-students/pages-friedl/subpage1-friedl/subpage1-friedl.component';
+import {
+  Subpage2FriedlComponent
+} from './pages/pages-students/pages-friedl/subpage2-friedl/subpage2-friedl.component';
 
 
 export const routes: Routes = [
@@ -106,6 +112,10 @@ export const routes: Routes = [
     component: PageMusicMutisevicComponent },
   { path: 'page_friedl',
     component: PageAboutFriedlComponent},
+  { path: 'subpage1-friedl',
+    component: Subpage1FriedlComponent},
+  { path: 'subpage2-friedl',
+    component: Subpage2FriedlComponent},
   { path: 'page_cizmic',
     component: PageAboutMeCizmicComponent },
 ];
