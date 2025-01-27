@@ -1,56 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Österreichische Bundesliga 2024/25</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #e6ffee;
-      color: #333;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      font-size: 3rem; /* Sehr große Überschrift */
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-size: 1.5rem; /* Etwas kleinere Überschrift */
-      font-weight: normal;
-      margin-bottom: 20px;
-      color: #555;
-    }
-    .table {
-      margin: 0 auto;
-      border-collapse: collapse;
-      width: 90%;
-      max-width: 1000px;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: center;
-    }
-    th {
-      background-color: #a8d5ba;
-      font-weight: bold;
-    }
-    .large-text {
-      font-size: 1.2rem;
-    }
-    .bold-text {
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <h1>Österreichische Bundesliga 2024/25</h1>
-<h2>Last update: 27.1.25</h2>
+
 
 <table class="table table-success table-striped">
   <thead>
@@ -66,125 +24,54 @@
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <th scope="row">1</th>
-    <td class="bold-text">Sturm Graz</td>
-    <td>16</td>
-    <td>11</td>
-    <td>3</td>
-    <td>2</td>
-    <td>24</td>
-    <td class="bold-text">36</td>
-  </tr>
-  <tr>
-    <th scope="row">2</th>
-    <td class="bold-text">Austria Wien</td>
-    <td>16</td>
-    <td>10</td>
-    <td>3</td>
-    <td>3</td>
-    <td>12</td>
-    <td class="bold-text">33</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td class="bold-text">Rapid Wien</td>
-    <td>16</td>
-    <td>7</td>
-    <td>7</td>
-    <td>2</td>
-    <td>5</td>
-    <td class="bold-text">28</td>
-  </tr>
-  <tr>
-    <th scope="row">4</th>
-    <td class="bold-text">Wolfsberg</td>
-    <td>16</td>
-    <td>8</td>
-    <td>2</td>
-    <td>6</td>
-    <td>8</td>
-    <td class="bold-text">26</td>
-  </tr>
-  <tr>
-    <th scope="row">5</th>
-    <td class="bold-text">RB Salzburg</td>
-    <td>16</td>
-    <td>7</td>
-    <td>5</td>
-    <td>4</td>
-    <td>7</td>
-    <td class="bold-text">26</td>
-  </tr>
-  <tr>
-    <th scope="row">6</th>
-    <td class="bold-text">Blau-Weiß Linz </td>
-    <td>16</td>
-    <td>7</td>
-    <td>2</td>
-    <td>7</td>
-    <td>-1</td>
-    <td class="bold-text">23</td>
-  </tr>
-  <tr>
-    <th scope="row">7</th>
-    <td class="bold-text">LASK</td>
-    <td>16</td>
-    <td>6</td>
-    <td>2</td>
-    <td>8</td>
-    <td>-2</td>
-    <td class="bold-text">20</td>
-  </tr>
-  <tr>
-    <th scope="row">8</th>
-    <td class="bold-text">Hartberg</td>
-    <td>16</td>
-    <td>5</td>
-    <td>16</td>
-    <td>16</td>
-    <td>16</td>
-    <td class="bold-text">16</td>
-  </tr>
-  <tr>
-    <th scope="row">9</th>
-    <td class="bold-text">WSG Tirol</td>
-    <td>16</td>
-    <td>4</td>
-    <td>4</td>
-    <td>8</td>
-    <td>-7</td>
-    <td class="bold-text">16</td>
-  </tr>
-  <tr>
-    <th scope="row">10</th>
-    <td class="bold-text">Austria Klagenfurt</td>
-    <td>16</td>
-    <td>4</td>
-    <td>3</td>
-    <td>9</td>
-    <td>-21</td>
-    <td class="bold-text">15</td>
-  </tr>
-  <tr>
-    <th scope="row">11</th>
-    <td class="bold-text">GAK</td>
-    <td>16</td>
-    <td>2</td>
-    <td>6</td>
-    <td>8</td>
-    <td>-12</td>
-    <td class="bold-text">12</td>
-  </tr>
-  <tr>
-    <th scope="row">12</th>
-    <td class="bold-text">SCR Altach</td>
-    <td>16</td>
-    <td>2</td>
-    <td>4</td>
-    <td>10</td>
-    <td>-11</td>
-    <td class="bold-text">10</td>
-  </tr>
+  <tr><th scope="row">1</th><td class="bold-text">Sturm Graz</td><td>16</td><td>11</td><td>3</td><td>2</td><td>24</td><td class="bold-text">36</td></tr>
+  <tr><th scope="row">2</th><td class="bold-text">Austria Wien</td><td>16</td><td>10</td><td>3</td><td>3</td><td>12</td><td class="bold-text">33</td></tr>
+  <tr><th scope="row">3</th><td class="bold-text">Rapid Wien</td><td>16</td><td>7</td><td>7</td><td>2</td><td>5</td><td class="bold-text">28</td></tr>
+  <tr><th scope="row">4</th><td class="bold-text">Wolfsberg</td><td>16</td><td>8</td><td>2</td><td>6</td><td>8</td><td class="bold-text">26</td></tr>
+  <tr><th scope="row">5</th><td class="bold-text">RB Salzburg</td><td>16</td><td>7</td><td>5</td><td>4</td><td>7</td><td class="bold-text">26</td></tr>
+  <tr><th scope="row">6</th><td class="bold-text">Blau-Weiß Linz</td><td>16</td><td>7</td><td>2</td><td>7</td><td>-1</td><td class="bold-text">23</td></tr>
+  <tr><th scope="row">7</th><td class="bold-text">LASK</td><td>16</td><td>6</td><td>2</td><td>8</td><td>-2</td><td class="bold-text">20</td></tr>
+  <tr><th scope="row">8</th><td class="bold-text">Hartberg</td><td>16</td><td>5</td><td>16</td><td>16</td><td>16</td><td class="bold-text">16</td></tr>
+  <tr><th scope="row">9</th><td class="bold-text">WSG Tirol</td><td>16</td><td>4</td><td>4</td><td>8</td><td>-7</td><td class="bold-text">16</td></tr>
+  <tr><th scope="row">10</th><td class="bold-text">Austria Klagenfurt</td><td>16</td><td>4</td><td>3</td><td>9</td><td>-21</td><td class="bold-text">15</td></tr>
+  <tr><th scope="row">11</th><td class="bold-text">GAK</td><td>16</td><td>2</td><td>6</td><td>8</td><td>-12</td><td class="bold-text">12</td></tr>
+  <tr><th scope="row">12</th><td class="bold-text">SCR Altach</td><td>16</td><td>2</td><td>4</td><td>10</td><td>-11</td><td class="bold-text">10</td></tr>
   </tbody>
 </table>
+
+<h1>Österreichische 2. Bundesliga 2024/25</h1>
+
+<table class="table table-success table-striped">
+  <thead>
+  <tr>
+    <th scope="col" class="large-text">#</th>
+    <th scope="col" class="large-text bold-text">Verein</th>
+    <th scope="col" class="large-text">SP</th>
+    <th scope="col" class="large-text">S</th>
+    <th scope="col" class="large-text">U</th>
+    <th scope="col" class="large-text">N</th>
+    <th scope="col" class="large-text">Tordiff</th>
+    <th scope="col" class="large-text bold-text">Pkt</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr><th scope="row">1</th><td class="bold-text">Admira</td><td>16</td><td>12</td><td>2</td><td>2</td><td>26</td><td class="bold-text">38</td></tr>
+  <tr><th scope="row">2</th><td class="bold-text">Ried</td><td>16</td><td>11</td><td>2</td><td>3</td><td>19</td><td class="bold-text">35</td></tr>
+  <tr><th scope="row">3</th><td class="bold-text">Vienna</td><td>16</td><td>10</td><td>1</td><td>5</td><td>9</td><td class="bold-text">31</td></tr>
+  <tr><th scope="row">4</th><td class="bold-text">Bregenz</td><td>16</td><td>8</td><td>5</td><td>3</td><td>7</td><td class="bold-text">29</td></tr>
+  <tr><th scope="row">5</th><td class="bold-text">Rapid II</td><td>16</td><td>8</td><td>3</td><td>5</td><td>9</td><td class="bold-text">27</td></tr>
+  <tr><th scope="row">6</th><td class="bold-text">Amstetten</td><td>16</td><td>8</td><td>2</td><td>6</td><td>7</td><td class="bold-text">26</td></tr>
+  <tr><th scope="row">7</th><td class="bold-text">Kapfenberger</td><td>16</td><td>8</td><td>1</td><td>7</td><td>-5</td><td class="bold-text">25</td></tr>
+  <tr><th scope="row">8</th><td class="bold-text">St. Pölten</td><td>16</td><td>7</td><td>4</td><td>5</td><td>7</td><td class="bold-text">25</td></tr>
+  <tr><th scope="row">9</th><td class="bold-text">Sturm Graz II</td><td>16</td><td>5</td><td>6</td><td>5</td><td>4</td><td class="bold-text">21</td></tr>
+  <tr><th scope="row">10</th><td class="bold-text">Austria Lustenau</td><td>16</td><td>3</td><td>10</td><td>3</td><td>-1</td><td class="bold-text">19</td></tr>
+  <tr><th scope="row">11</th><td class="bold-text">Liefering</td><td>16</td><td>5</td><td>4</td><td>7</td><td>-7</td><td class="bold-text">19</td></tr>
+  <tr><th scope="row">12</th><td class="bold-text">Voitsberg</td><td>16</td><td>5</td><td>2</td><td>9</td><td>-4</td><td class="bold-text">17</td></tr>
+  <tr><th scope="row">13</th><td class="bold-text">FAC</td><td>16</td><td>4</td><td>4</td><td>8</td><td>-5</td><td class="bold-text">16</td></tr>
+  <tr><th scope="row">14</th><td class="bold-text">Lafnitz</td><td>16</td><td>2</td><td>3</td><td>11</td><td>-20</td><td class="bold-text">9</td></tr>
+  <tr><th scope="row">15</th><td class="bold-text">Stripfing</td><td>16</td><td>1</td><td>6</td><td>9</td><td>-10</td><td class="bold-text">9</td></tr>
+  <tr><th scope="row">16</th><td class="bold-text">Horn</td><td>16</td><td>2</td><td>3</td><td>11</td><td>-25</td><td class="bold-text">9</td></tr>
+  </tbody>
+</table>
+
+<h2>Last update: 27.1.25</h2>
