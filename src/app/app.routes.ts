@@ -121,7 +121,7 @@ export const routes: Routes = [
     component: Subpage2FriedlComponent},
   { path: 'page_cizmic',
     component: PageAboutMeCizmicComponent },
-  { path: 'app-page-lieblingssaengerin-garcia',
-    component: PageLieblingssaengerinGARCIAComponent },
+  { path: 'page-lieblingssaengerin-garcia',
+    component: PageLieblingssaengerinGARCIAComponent }
 ];
 
