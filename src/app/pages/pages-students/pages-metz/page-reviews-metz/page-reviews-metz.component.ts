@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {Album, ALBEN} from "../album";
-import {NgForOf} from "@angular/common";
+import {Film, FILME} from "../film";
+import {NgForOf, NgIf} from "@angular/common";
 import {OrderByPipe} from "../../../../pipes/orderBy.pipe";
 import {RouterLink, RouterLinkActive} from '@angular/router';
 
@@ -10,7 +11,8 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
     NgForOf,
     OrderByPipe,
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    NgIf
   ],
   templateUrl: './page-reviews-metz.component.html',
   styleUrl: './page-reviews-metz.component.scss'
@@ -18,4 +20,15 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 export class PageReviewsMetzComponent {
 
   alben: Album[] = ALBEN;
+  filme: Film[] = FILME;
+
+  isMusicActive: boolean = true;
+
+  showMusicReviews() {
+    this.isMusicActive = true;
+  }
+
+  showFilmReviews() {
+    this.isMusicActive = false;
+  }
 }

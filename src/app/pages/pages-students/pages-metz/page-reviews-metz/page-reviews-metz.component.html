@@ -1,20 +1,33 @@
 <div class="body">
-<h1>Meine Reviews 😛</h1>
-<ul class="alben d-flex flex-column">
-  <li *ngFor="let album of alben  | orderBy: 'interpret' ; let i = index" class="col-auto">
-    <img src="{{album.coverLink}}" width="300px" height="auto" alt="Cover von {{album.title}}">
-    <h2 class="header"><b><a href="{{album.rymLink}}">{{album.titel}}</a></b></h2>
-    <h3 class="header">{{album.interpret}} ({{album.erscheinungsdatum.getFullYear()}})</h3>
-    <br>
-    <p>{{album.review1}}<br><br>
-        {{album.review2}}<br><br>
-        {{album.review3}}<br><br>
-      <i>"{{album.quote}}"</i>
-    </p>
-    <br>
-    <div class="rating">{{album.rating}}/5</div>
-  </li>
-</ul>
+<h1 class="header">Meine Reviews</h1>
+  <div class="toggle-buttons d-flex justify-content-center">
+    <button class="btn btn-secondary" (click)="showMusicReviews()" [class.active]="isMusicActive">Alben</button>
+    <button class="btn btn-secondary" (click)="showFilmReviews()" [class.active]="!isMusicActive">Filme</button>
+  </div>
+  <ul class="alben d-flex flex-column" *ngIf="isMusicActive">
+    <li *ngFor="let album of alben | orderBy: 'interpret'; let i = index" class="col-auto">
+      <img src="{{album.coverLink}}" width="300px" height="auto" alt="Cover von {{album.title}}">
+      <h2 class="header"><b><a href="{{album.rymLink}}">{{album.titel}}</a></b></h2>
+      <h3 class="header">{{album.interpret}} ({{album.erscheinungsdatum.getFullYear()}})</h3>
+      <br>
+      <p>
+        <span *ngFor="let review of album.review">{{review}}<br><br></span><br>
+        <i><span *ngFor="let quote of album.quote">{{quote}}<br></span></i>
+      </p>
+    </li>
+  </ul>
+  <ul class="filme d-flex flex-column" *ngIf="!isMusicActive">
+    <li *ngFor="let film of filme | orderBy: 'title'; let i = index" class="col-auto">
+      <img src="{{film.coverLink}}" width="300px" height="auto" alt="Cover von {{film.title}}">
+      <h2 class="header"><b><a href="{{film.link}}">{{film.title}}</a></b></h2>
+      <h3 class="header">{{film.director}} ({{film.releaseDate.getFullYear()}})</h3>
+      <br>
+      <p>
+        <span *ngFor="let review of film.review">{{review}}<br><br></span><br>
+        <i><span *ngFor="let quote of film.quote">{{quote}}<br></span></i>
+      </p>
+    </li>
+  </ul>
   <div class="buttongrid">
     <a class="btn btn-primary" routerLink="/page_metz" routerLinkActive="active">Steckbrief</a>
     <a class="btn btn-primary" routerLink="/home" routerLinkActive="active">Startseite</a>
