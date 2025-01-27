@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Person, FRIEDL} from '../../../../model/person';
-import {RouterLink, RouterLinkActive} from "@angular/router";
+
 
 @Component({
   selector: 'subpage1-friedl',
