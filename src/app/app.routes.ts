@@ -41,7 +41,9 @@ import {
 import {
   PageMusicMutisevicComponent
 } from './pages/pages-students/pages-mutisevic/page-music-mutisevic/page-music-mutisevic.component';
-
+import {
+  PageLieblingsmusikZhouComponent
+} from './pages/pages-students/pages-zhou/page-lieblingsmusik-zhou/page-lieblingsmusik-zhou.component.ts';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -60,6 +62,8 @@ export const routes: Routes = [
     component: PageLieblingsessenKovacsComponent },
   { path: 'page_zhou',
     component: PageAboutMeZHOUComponent },
+  { path: 'page_zhou_lieblingsmusik',
+    component: PageLieblingsmusikZhouComponent},
   { path: 'page_hauer',
     component: PageAboutMeHauerComponent },
   { path: 'page_novo',
