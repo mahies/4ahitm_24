@@ -53,6 +53,9 @@ import {
 import {
   Subpage2FriedlComponent
 } from './pages/pages-students/pages-friedl/subpage2-friedl/subpage2-friedl.component';
+import {
+  PageLieblingssaengerinGARCIAComponent
+} from './pages/pages-students/page-garcia/page-lieblingssaengerin-garcia/page-lieblingssaengerin-garcia.component';
 
 
 export const routes: Routes = [
@@ -118,5 +121,7 @@ export const routes: Routes = [
     component: Subpage2FriedlComponent},
   { path: 'page_cizmic',
     component: PageAboutMeCizmicComponent },
+  { path: 'app-page-lieblingssaengerin-garcia',
+    component: PageLieblingssaengerinGARCIAComponent },
 ];
 
