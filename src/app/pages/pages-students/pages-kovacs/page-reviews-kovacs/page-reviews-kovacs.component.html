@@ -1,80 +1,21 @@
 <div class="reviews-container">
-  <h1>My Reviews</h1>
+  <h1>Meine Flaggen Reviews</h1>
   <div class="flags-grid">
-    <!-- Single flag card -->
-    <div class="flag-card">
-      <img src="flag-placeholder.jpg" alt="Country Flag" class="flag-image">
+    <!-- Durch alle Flaggen iterieren -->
+    <div class="flag-card" *ngFor="let flagge of flagge">
+      <img src="{{ flagge.imagelink }}" alt="Country Flag" class="flag-image">
       <div class="flag-details">
-        <h2 class="country-name">Country Name</h2>
-        <p class="capital-city"><strong>Capital:</strong> Capital City</p>
-        <p class="flag-speciality"><strong>Speciality:</strong> Unique feature of the flag</p>
+        <h2 class="Land:">{{ flagge.country }}</h2>
+        <p class="Hauptstadt:"><strong>Hauptstadt:</strong> {{ flagge.capital }}</p>
+        <p class="Einwohner:"><strong>Einwohner:</strong> {{ flagge.population }}</p>
+        <p class="Datum:"><strong>Eingeführt am:</strong> {{flagge.datum.getDate()}}.{{flagge.datum.getMonth()}}.{{flagge.datum.getFullYear()}}</p>
+        <p class="flag-speciality"><strong>Review:</strong> {{ flagge.review }}</p>
+
       </div>
     </div>
-
-    <div class="flag-card">
-      <img src="flag-placeholder.jpg" alt="Country Flag" class="flag-image">
-      <div class="flag-details">
-        <h2 class="country-name">Country Name</h2>
-        <p class="capital-city"><strong>Capital:</strong> Capital City</p>
-        <p class="flag-speciality"><strong>Speciality:</strong> Unique feature of the flag</p>
-      </div>
-    </div>
-
-    <div class="flag-card">
-      <img src="flag-placeholder.jpg" alt="Country Flag" class="flag-image">
-      <div class="flag-details">
-        <h2 class="country-name">Country Name</h2>
-        <p class="capital-city"><strong>Capital:</strong> Capital City</p>
-        <p class="flag-speciality"><strong>Speciality:</strong> Unique feature of the flag</p>
-      </div>
-    </div>
-
-    <div class="flag-card">
-      <img src="flag-placeholder.jpg" alt="Country Flag" class="flag-image">
-      <div class="flag-details">
-        <h2 class="country-name">Country Name</h2>
-        <p class="capital-city"><strong>Capital:</strong> Capital City</p>
-        <p class="flag-speciality"><strong>Speciality:</strong> Unique feature of the flag</p>
-      </div>
-    </div>
-
-    <div class="flag-card">
-      <img src="flag-placeholder.jpg" alt="Country Flag" class="flag-image">
-      <div class="flag-details">
-        <h2 class="country-name">Country Name</h2>
-        <p class="capital-city"><strong>Capital:</strong> Capital City</p>
-        <p class="flag-speciality"><strong>Speciality:</strong> Unique feature of the flag</p>
-      </div>
-    </div>
-
-    <div class="flag-card">
-      <img src="flag-placeholder.jpg" alt="Country Flag" class="flag-image">
-      <div class="flag-details">
-        <h2 class="country-name">Country Name</h2>
-        <p class="capital-city"><strong>Capital:</strong> Capital City</p>
-        <p class="flag-speciality"><strong>Speciality:</strong> Unique feature of the flag</p>
-      </div>
-    </div>
-
-    <div class="flag-card">
-      <img src="flag-placeholder.jpg" alt="Country Flag" class="flag-image">
-      <div class="flag-details">
-        <h2 class="country-name">Country Name</h2>
-        <p class="capital-city"><strong>Capital:</strong> Capital City</p>
-        <p class="flag-speciality"><strong>Speciality:</strong> Unique feature of the flag</p>
-      </div>
-    </div>
-
-    <div class="flag-card">
-      <img src="flag-placeholder.jpg" alt="Country Flag" class="flag-image">
-      <div class="flag-details">
-        <h2 class="country-name">Country Name</h2>
-        <p class="capital-city"><strong>Capital:</strong> Capital City</p>
-        <p class="flag-speciality"><strong>Speciality:</strong> Unique feature of the flag</p>
-      </div>
-    </div>
-
   </div>
   <a href="/home" routerLink="" routerLinkActive="active" class="btn btn-primary">Back</a>
 </div>
+
+
 
