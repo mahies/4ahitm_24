@@ -1,14 +1,19 @@
 import { Component } from '@angular/core';
-import {MUTISEVIC} from '../../../../model/person';
+import {cr7} from '../cr7';
 import {RouterLink, RouterLinkActive} from '@angular/router';
+import {MUTISEVIC} from '../../../../model/person';
+import {carti} from '../carti';
 
 @Component({
-  selector: 'app-page-hobby-mutisevic',
-  templateUrl: './page-hobby-mutisevic.component.html',
-  standalone: true,
-  styleUrl: './page-hobby-mutisevic.component.scss'
+    selector: 'app-page-hobby-mutisevic',
+    templateUrl: './page-hobby-mutisevic.component.html',
+    standalone: true,
+    imports: [
+        RouterLink,
+        RouterLinkActive
+    ],
+    styleUrl: './page-hobby-mutisevic.component.scss'
 })
 export class PageHobbyMutisevicComponent {
-  Person= MUTISEVIC;
-  protected readonly me = MUTISEVIC;
+  protected readonly me = cr7;
 }

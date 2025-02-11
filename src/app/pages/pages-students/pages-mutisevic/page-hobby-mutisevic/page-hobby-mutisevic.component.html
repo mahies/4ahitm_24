@@ -1,1 +1,60 @@
-<p>page-hobby-mutisevic works!</p>
+<div class="container-fluid m-5" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div class="background-box" style="background-color: beige; padding: 60px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); border: 5px solid black;">
+    <div class="row" style="display: flex; align-items: center; justify-content: center; text-align: center;">
+
+      <div class="col-4" style="padding: 0; display: flex; justify-content: center;">
+        <img src = "{{ me.urlImage }}" class="img-fluid" alt="Fußball" style="border: 3px solid #D2B48C; border-radius: 10px; width: 100%; height: 100% ">
+      </div>
+
+      <div class="col-6" style="background-color: rgba(255, 255, 255, 0.8); padding: 30px; border-radius: 15px; border: 3px solid #D2B48C; margin-left: 30px; max-width: 700px;">
+        <h5 class="card-title"><strong><u>Fußball</u></strong></h5>
+        <p class="card-text">Fußball ist mehr als nur ein Sport für mich. Es ist ein Spiel voller Emotionen, Strategie und Teamgeist. Ob auf dem Platz oder als Zuschauer – Fußball verbindet Menschen weltweit und schafft unvergessliche Momente.</p>
+
+        <div style="margin-bottom: 20px;">
+          <p class="card-text">
+            <strong>Seit wann?</strong> Schon als Kind habe ich angefangen, Fußball zu spielen und mit Begeisterung verfolgt. Leider habe ich aber nachgelassen Fußball zu spielen. Die Liebe dazu, blieb aber immer bestehen.
+          </p>
+          <p class="card-text">
+            <strong>Warum?</strong> Die Dynamik des Spiels, die taktischen Feinheiten und die pure Leidenschaft, die Fußball mit sich bringt, faszinieren mich immer wieder.
+          </p>
+        </div>
+
+        <h5 class="card-title"><strong><u>Cristiano Ronaldo</u></strong></h5>
+        <p class="card-text">Cristiano Ronaldo ist für mich mehr als nur ein großartiger Spieler. Seine unermüdliche Arbeitsmoral, seine Disziplin und sein unerschütterlicher Wille, immer der Beste zu sein, inspirieren mich täglich. <strong>SIUU!</strong></p>
+
+        <div style="margin-bottom: 20px;">
+          <p class="card-text">
+            <strong>Erfolge:</strong> Mehrfacher Champions-League-Sieger, Europameister, mehrfacher Ballon d’Or-Gewinner und Rekordtorschütze in zahlreichen Wettbewerben. <strong> Der Greatest Of All Time!</strong>
+          </p>
+          <p class="card-text">
+            <strong>Besondere Eigenschaften:</strong> Seine Schnelligkeit, sein Torinstinkt und seine Führungsqualitäten. Es ist einfacher zu sagen, was er nicht kann. Weil er <strong>ALLES</strong> kann! Das macht ihn zum größten Spieler aller Zeiten.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: center; gap: 10px; margin-bottom: 10px;">
+          <a routerLink="/home" routerLinkActive="active" class="btn btn-primary" style="background-color: #0E0E10; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
+            back home
+          </a>
+          <a routerLink="/page_mutisevic" routerLinkActive="active" class="btn btn-primary" style="background-color: #B4B4B4; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
+            about me
+          </a>
+          <a href="https://de.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank" class="btn btn-primary" style="background-color: #92664A; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
+            biography
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .btn:hover {
+    background-color: #A59A8F;
+    transform: scale(1.1);
+  }
+
+  .background-box {
+    max-width: 1500px;
+    margin: auto;
+  }
+</style>
