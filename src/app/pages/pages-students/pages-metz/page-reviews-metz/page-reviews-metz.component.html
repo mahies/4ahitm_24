@@ -4,9 +4,10 @@
     <button class="btn btn-secondary" (click)="showMusicReviews()" [class.active]="isMusicActive">Alben</button>
     <button class="btn btn-secondary" (click)="showFilmReviews()" [class.active]="!isMusicActive">Filme</button>
   </div>
+  <!--Ausgabe Alben-->
   <ul class="alben d-flex flex-column" *ngIf="isMusicActive">
     <li *ngFor="let album of alben | orderBy: 'interpret'; let i = index" class="col-auto">
-      <img src="{{album.coverLink}}" width="300px" height="auto" alt="Cover von {{album.title}}">
+      <img src="{{album.coverLink}}" width="300px" height="auto" alt="Cover von {{album.titel}}">
       <h2 class="header"><b><a href="{{album.rymLink}}">{{album.titel}}</a></b></h2>
       <h3 class="header">{{album.interpret}} ({{album.erscheinungsdatum.getFullYear()}})</h3>
       <br>
@@ -18,10 +19,11 @@
       <div class="rating">Rating: {{album.rating}}/5</div>
     </li>
   </ul>
+  <!--Ausgabe Filme-->
   <ul class="filme d-flex flex-column" *ngIf="!isMusicActive">
     <li *ngFor="let film of filme | orderBy: 'directorNachname'; let i = index" class="col-auto">
-      <img src="{{film.coverLink}}" width="300px" height="auto" alt="Cover von {{film.titel}}">
-      <h2 class="header"><b><a href="https://www.imdb.com/title/{{film.imdbLink}}/">{{film.titel}} ({{film.releaseDate.getFullYear()}})</a></b></h2>
+      <img src="{{film.plakatLink}}" width="300px" height="auto" alt="Cover von {{film.titel}}">
+      <h2 class="header"><b><a href="https://www.imdb.com/title/{{film.imdbLink}}/">{{film.titel}} ({{film.erscheinungsdatum.getFullYear()}})</a></b></h2>
       <h3 class="header">{{film.directorVorname}} {{film.directorNachname}}</h3>
       <br>
       <p>
