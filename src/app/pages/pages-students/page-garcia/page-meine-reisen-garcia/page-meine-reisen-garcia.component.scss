@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+  color: #01579b;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #0288d1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #b3e5fc;
+  border-radius: 8px;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 20px;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+
+.d-flex mt-3:hover{
+  background-color: #004B5C;
+}
