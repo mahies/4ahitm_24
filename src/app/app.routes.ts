@@ -69,6 +69,7 @@ import {
   PageLieblingsessenHauerComponent
 } from './pages/pages-students/pages_Hauer/lieblingsEssen/page-lieblingsessen-hauer.component';
 import {PageHobbiesHauerComponent} from './pages/pages-students/pages_Hauer/Hobbies/page-hobbies-hauer.component';
+import {PageArtComponent} from './pages/pages-students/pages-cizmic/page-art/page-art.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -145,6 +146,8 @@ export const routes: Routes = [
     component: Subpage2FriedlComponent},
   { path: 'page_cizmic',
     component: PageAboutMeCizmicComponent },
+  { path: 'page-art',
+    component: PageArtComponent },
   { path: 'page-lieblingssaengerin-garcia',
     component: PageLieblingssaengerinGARCIAComponent }
 ];
