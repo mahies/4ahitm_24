@@ -20,8 +20,16 @@ h2 {
   color: #555;
 }
 
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
 .table {
-  margin: 20px auto;
+  margin: 20px 0;
   border-collapse: collapse;
   width: 90%;
   max-width: 1000px;
@@ -45,3 +53,4 @@ th {
 .bold-text {
   font-weight: bold;
 }
+
