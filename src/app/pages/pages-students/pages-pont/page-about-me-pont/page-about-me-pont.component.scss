@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Jersey+10&display=swap');
 @import "../custom_vars_pontasch.scss";
-body{
+.box{
+  width: 100%;
   background: orangered;
 }
 h5 {
