@@ -22,6 +22,7 @@ import {PageAboutMeMajzelComponent} from './pages/pages-students/pages_majzel/pa
 import {PageAboutMeMutisevicComponent} from './pages/pages-students/pages-mutisevic/page-about-me-mutisevic/page-about-me-mutisevic.component';
 import {PageAboutFriedlComponent} from './pages/pages-students/pages-friedl/page-about-me-friedl/page-about-me-friedl.component';
 import {PageAboutMeCizmicComponent} from './pages/pages-students/pages-cizmic/page-about-me-cizmic/page-about-me-cizmic.component';
+import {PageAboutMeCocoComponent} from './pages/pages-students/page-about-me-coco/page-about-me-coco.component';
 import {PageMeineReisenGARCIAComponent} from './pages/pages-students/page-garcia/page-meine-reisen-garcia/page-meine-reisen-garcia.component';
 
 import {
@@ -135,6 +136,8 @@ export const routes: Routes = [
     component: PageHeimatKovacsComponent },
   { path: 'page_zhou',
     component: PageAboutMeZHOUComponent },
+  { path: 'page_coco',
+  component: PageAboutMeCocoComponent },
   { path: 'page_zhou_lieblingsmusik',
     component: PageLieblingsmusikZhouComponent},
   { path: 'page_zhou_lieblingsfotos',
