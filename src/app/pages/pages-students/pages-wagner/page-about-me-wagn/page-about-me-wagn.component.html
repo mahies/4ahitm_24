@@ -1,20 +1,25 @@
-<div >
+<div class="center">
 <h1>About me</h1>
-<img src="{{ me.urlImage }}" width="40%" height="auto" >
-<h3>{{ me.firstname }} {{ me.surname }}</h3>
-<p>Geburtsdatum: {{me.birthday}}</p>
-<p>Geburtsort: Döbling</p>
-<p>Meine E-Mailadresse: {{me.email}}</p>
-<p> Mein Lieblingsspruch: {{me.message}}</p>
-<p>Hier kommt ihr zu meinen Sozialen Medien:</p>
-<a href="{{me.socialLink}}">
- <img src="/assets/assets-WAGN/instagramIcon.png" alt="Das ist ein Bild" height="64" width="64">
-</a>
-<br>
-<br>
-<a routerLink="/page_haustiere_wagner" routerLinkActive="active" class="btn btn-primary">Zur Haustierseite</a>
-<a routerLink="/page_lieblingsfilmundmusik_wagner" routerLinkActive="active" class="btn btn-primary">Zur Lieblingsfilm- und Lieblingsmusikseite</a>
-<a routerLink="/page_hobbies_wagner" routerLinkActive="active" class="btn btn-primary">Zur Hobbiesseite</a>
-<a routerLink="" routerLinkActive="active" class="btn btn-primary">Zurück zur Homepage</a>
-</div>
 
+<div class="card " style="width: 40rem;">
+  <img class="card-img-top" src="{{me.urlImage}}" alt="Card image cap">
+  <div class="card-body">
+    <h3>{{ me.firstname }} {{ me.surname }}</h3>
+    <p>Geburtsdatum: {{me.birthday}}</p>
+    <p>Geburtsort: Döbling</p>
+    <p>Meine E-Mailadresse: {{me.email}}</p>
+    <p> Mein Lieblingsspruch: {{me.message}}</p>
+    <p>Hier kommt ihr zu meinen Sozialen Medien:</p>
+    <a href="{{me.socialLink}}">
+      <img src="/assets/assets-WAGN/instagramIcon.png" alt="Das ist ein Bild" height="64" width="64">
+    </a>
+    <br>
+    <br>
+    <a routerLink="/page_haustiere_wagner" routerLinkActive="active" class="btn btn-primary">Zur Haustierseite</a>
+    <a routerLink="/page_lieblingsfilmundmusik_wagner" routerLinkActive="active" class="btn btn-primary">Zur Lieblingsfilm- und Lieblingsmusikseite</a>
+    <a routerLink="/page_hobbies_wagner" routerLinkActive="active" class="btn btn-primary">Zur Hobbiesseite</a>
+    <a routerLink="" routerLinkActive="active" class="btn btn-primary">Zurück zur Homepage</a>
+
+  </div>
+</div>
+</div>
