@@ -11,6 +11,17 @@ export interface flaggen{
 
 }
 
+export interface country{
+  country: string;
+  capital: string;
+  imagelink: string;
+  population: string;
+  datum: Date;
+  review: string;
+  verhaeltnis: string;
+
+}
+
 export const Kiribati : flaggen = {
   country: "Kiribati",
   capital: "Tarawa",
@@ -107,6 +118,17 @@ export const Turkmenistan : flaggen = {
   verhaeltnis: "2:3"
 
 }
+export const Oesterreich : country = {
+  country: "Österreich",
+  capital: "Wien",
+  imagelink: "/assets/Kovacs_Bilder/flags/Austria.jpg",
+  population: " 9.158.750",
+  datum: new Date("1945-05-01"),
+  review: "",
+  verhaeltnis: "2:3"
+
+}
 
 
 export const FLAGGEN:flaggen[] = [Antigua_und_Barbuda,Kiribati,BritischesTerr,AmerikanischSamoa,Bhutan,Estonia,Finland,Nepal,Turkmenistan];
+export const COUNTRY:country[] = [Oesterreich];
