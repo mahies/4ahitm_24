@@ -19,6 +19,7 @@ import {PageAboutMeMajzelComponent} from './pages/pages-students/pages_majzel/pa
 import {PageAboutMeMutisevicComponent} from './pages/pages-students/pages-mutisevic/page-about-me-mutisevic/page-about-me-mutisevic.component';
 import {PageAboutFriedlComponent} from './pages/pages-students/pages-friedl/page-about-me-friedl/page-about-me-friedl.component';
 import {PageAboutMeCizmicComponent} from './pages/pages-students/pages-cizmic/page-about-me-cizmic/page-about-me-cizmic.component';
+import {PageMeineReisenGARCIAComponent} from './pages/pages-students/page-garcia/page-meine-reisen-garcia/page-meine-reisen-garcia.component';
 
 import {
   PageHaustiereWAGNERComponent
@@ -103,6 +104,7 @@ import {
 import {
   WSGFriedlComponent
 } from './pages/pages-students/pages-friedl/WSG-friedl/WSG-friedl.component';
+
 export const routes: Routes = [
   { path: '', // default rout
     component: PageHomeComponent },
@@ -203,6 +205,8 @@ export const routes: Routes = [
   { path: 'Altach-friedl',
     component: AltachFriedlComponent},
   { path: 'WAC-friedl',
-    component: WACFriedlComponent}
+    component: WACFriedlComponent},
+  { path: 'page-meine-reisen-garcia',
+    component: PageMeineReisenGARCIAComponent}
 ];
 
