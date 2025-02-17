@@ -71,9 +71,7 @@ import {
 import {
   PageLieblingssaengerinGARCIAComponent
 } from './pages/pages-students/page-garcia/page-lieblingssaengerin-garcia/page-lieblingssaengerin-garcia.component';
-import {
-  PageLieblingsessenHauerComponent
-} from './pages/pages-students/pages_Hauer/lieblingsEssen/page-lieblingsessen-hauer.component';
+import {PageHaustiereHauerComponent} from './pages/pages-students/pages_Hauer/Haustiere/page-haustiere-hauer.component';
 import {PageHobbiesHauerComponent} from './pages/pages-students/pages_Hauer/Hobbies/page-hobbies-hauer.component';
 import {PageArtComponent} from './pages/pages-students/pages-cizmic/page-art/page-art.component';
 import {
@@ -135,8 +133,8 @@ export const routes: Routes = [
     component: PageLieblingsfotosZhouComponent},
   { path: 'page_hauer',
     component: PageAboutMeHauerComponent },
-  { path: 'page_lieblingsessen_hauer',
-    component: PageLieblingsessenHauerComponent},
+  { path: 'page_haustiere_hauer',
+    component: PageHaustiereHauerComponent},
   { path: 'page_hobbies_hauer',
     component: PageHobbiesHauerComponent},
   { path: 'page_novo',

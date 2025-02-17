@@ -10,6 +10,5 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
   standalone: true
 })
 export class PageAboutMeHauerComponent {
- // me_hauer: Person = HAUER;
  me_hauer: Person = HAUER;
 }

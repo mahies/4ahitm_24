@@ -21,4 +21,3 @@ describe('PageAboutmeHauerComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-//test
