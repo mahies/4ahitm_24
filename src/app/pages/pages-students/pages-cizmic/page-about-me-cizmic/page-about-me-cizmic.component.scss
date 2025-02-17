@@ -1,4 +1,4 @@
-body {
+#card1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin: 1%;
   padding: 1%;
@@ -9,7 +9,6 @@ body {
   align-items: center;
 }
 
-card1 {
-  justify-content: center;
-  align-items: center;
+.card-text{
+  text-align: center;
 }

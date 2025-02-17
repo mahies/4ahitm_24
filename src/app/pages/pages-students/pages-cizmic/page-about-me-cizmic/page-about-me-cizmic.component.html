@@ -1,10 +1,6 @@
-<head>
-  <title>Cizmic Site</title>
-  <link rel="stylesheet" href="page-about-me-cizmic.component.scss">
-</head>
+<title>Cizmic Site</title>
 
-<div class="card" style="width: 50rem;" id = "card1">
-  <body>
+<div class="mx-auto" style="width: 50rem;" id = "card1" >
     <h3> Die Seite von: {{ elCi.firstname }} <span style="text-transform:uppercase;">{{ elCi.surname }}</span> </h3>
     <p> {{elCi.message}}</p>
     <img src="{{elCi.urlImage}}" alt ="A good drawin of sonic t. hedgehog">
@@ -14,6 +10,5 @@
     <p> Meine schul E-Mail ist {{elCi.email}}</p>
     <p> Mein total echter Social Media link ist {{elCi.socialLink}} </p>
     <a routerLink="/page-art" routerLinkActive="active"> Wenn sie mehr von meinen Zeichnungen sehen wollen, clicken sie hier</a>
-  </body>
 </div>
 
