@@ -1,15 +1,31 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #4CAF50;
-  color: white;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.greenbg {
+  background: url('../../../../../../public/assets/Friedl-bilder/Stadion_Altach.jpg');
+  background-size: cover; /* Bild passt sich dem Container an */
+  background-position: center; /* Bild zentriert */
+  background-repeat: no-repeat; /* Verhindert Bildwiederholung */
+  padding: 20px; /* Optional: Abstand zum Rand */
+  color: black; /* Textfarbe grau */
+  font-weight: bold; /* Macht den Text fett */
+  position: relative; /* Damit der Text innerhalb des Containers bleibt */
+  z-index: 1; /* Stellt sicher, dass der Text vor dem Bild angezeigt wird */
+  text-align: center; /* Zentriert den gesamten Text im Container */
 }
 
-.container {
-  text-align: center;
+.greenbg h1 {
+  font-size: 3rem; /* Vergrößert die Schriftgröße von h1 */
+  color: yellow;
+}
+
+.greenbg h2 {
+  font-size: 2.5rem; /* Vergrößert die Schriftgröße von h2 */
+  color: yellow;
+}
+
+.text-content {
+  position: relative;
+  z-index: 2; /* Damit der Text über dem Bild bleibt */
+  font-size: 2rem; /* Beispielgröße, du kannst sie nach Bedarf anpassen */
+  padding: 10px; /* Abstand um den Text */
+  background-color: rgba(128, 128, 128, 0.4); /* Schwacher grauer Hintergrund hinter dem Text */
+  display: inline-block; /* Damit der Hintergrund nur um den Text bleibt */
 }
