@@ -222,7 +222,8 @@ export  const SCHOENGRUNDNER : Person = {
   zip_code: 1220,
   city: "Wien",
   message: "\"Blöd gelaufen!.\"",
-  socialLink:"https://www.instagram.com/ines._.schoen/"
+  socialLink:"https://www.instagram.com/ines._.schoen/",
+  routerLink:"/page_schoen",
 };
 export  const MUTISEVIC : Person = {
   surname: "Mutisevic",
