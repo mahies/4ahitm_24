@@ -13,16 +13,13 @@ p {
   font-size: 17px;
   font-family: "Sour Gummy", serif;
 }
-body{
-  background-color: #b3f7fc;
-}
-img {
-  border: 1rem solid;
-  border-color: white;
-}
 .border{
   border:none;
 }
 .align{
   text-align: center;
+  justify-items: center;
+}
+.card{
+  background-color: #b3f7fc;
 }
