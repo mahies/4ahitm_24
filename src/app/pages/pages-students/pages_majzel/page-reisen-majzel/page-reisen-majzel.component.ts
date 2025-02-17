@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MAJZEL} from "../../../../model/person";
 
 @Component({
   selector: 'app-page-reisen-majzel',
@@ -8,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class PageReisenMajzelComponent {
 
+    protected readonly me = MAJZEL;
 }
