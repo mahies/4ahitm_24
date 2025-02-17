@@ -74,6 +74,7 @@ import {
 import {PageHaustiereHauerComponent} from './pages/pages-students/pages_Hauer/Haustiere/page-haustiere-hauer.component';
 import {PageHobbiesHauerComponent} from './pages/pages-students/pages_Hauer/Hobbies/page-hobbies-hauer.component';
 import {PageArtComponent} from './pages/pages-students/pages-cizmic/page-art/page-art.component';
+
 import {
   LASKFriedlComponent
 } from './pages/pages-students/pages-friedl/LASK-friedl/LASK-friedl.component';
@@ -107,6 +108,9 @@ import {
 import {
   WSGFriedlComponent
 } from './pages/pages-students/pages-friedl/WSG-friedl/WSG-friedl.component';
+import {
+  PageLieblingsessenKovacicComponent
+} from './pages/pages-students/pages-kovacic/page-lieblingsessen-kovacic/page-lieblingsessen-kovacic.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -157,6 +161,8 @@ export const routes: Routes = [
     component: PageAboutMePojarComponent },
   { path: 'page_kovacic',
     component: PageAboutMeKOVACICComponent },
+  { path: 'page-lieblingsessen-kovacic',
+    component: PageLieblingsessenKovacicComponent},
   { path: 'page_wagner',
     component: PageAboutMeWAGNComponent },
   { path: 'page_haustiere_wagner',
