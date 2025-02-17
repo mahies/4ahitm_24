@@ -5,7 +5,11 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 @Component({
   selector: 'app-page-haustiere-hauer',
   templateUrl: './page-haustiere-hauer.component.html',
-  //styleUrl: './pages/pages-students/pages_Hauer/Haustiere/page-haustiere-hauer.component.scss',
+  styleUrl: './page-haustiere-hauer.component.scss',
+  imports: [
+    RouterLink,
+    RouterLinkActive
+  ],
   standalone: true
 })
 export class PageHaustiereHauerComponent {

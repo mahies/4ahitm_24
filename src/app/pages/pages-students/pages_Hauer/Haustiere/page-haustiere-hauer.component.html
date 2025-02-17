@@ -1,55 +1,73 @@
-<!DOCTYPE html>
-<html lang="de-DE">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haustiere</title>
-</head>
-<body>
-<header>
-  <nav class="navbar">
-    <div class="logo">[Logo]</div>
-    <ul class="nav-links">
-      <li><a href="#">Startseite</a></li>
-      <li><a href="#">Platzhalter</a></li>
-      <li><a href="#">Galerie</a></li>
-      <li><a href="#">Kontakt</a></li>
-    </ul>
-  </nav>
-</header>
 
-<section class="hero">
-  <div class="hero-overlay">
-    <div class="hero-content">
-      <h1>[Platzhalter]</h1>
-      <p>[Platzhalter]</p>
-      <a href="#gallery" class="btn">Galerie ansehen</a>
+  <div class="container" >
+
+  <div class="pet-card">
+    <h3>Suri</h3>
+    <div class="slideshow-container">
+      <div class="slides">
+        <img src="/assets/Hauer_bilder/Suri/Suri.jpg" alt="Suri 0" class="slide active">
+        <img src="/assets/Hauer_bilder/Suri/Suri1.jpg" alt="Suri 1" class="slide">
+        <img src="/assets/Hauer_bilder/Suri/Suri2.jpg" alt="Suri 2" class="slide">
+      </div>
+      <button class="prev" onclick="changeSlide(this, -1)">❮</button>
+      <button class="next" onclick="changeSlide(this, 1)">❯</button>
+      <div class="dots">
+        <span class="dot active" onclick="goToSlide(this, 0)"></span>
+        <span class="dot" onclick="goToSlide(this, 1)"></span>
+        <span class="dot" onclick="goToSlide(this, 2)"></span>
+      </div>
     </div>
+    <p class="description">Suri hat mir viel zu viel Energie.</p>
   </div>
-</section>
 
-<section id="gallery" class="gallery">
-  <h2>Galerie</h2>
-  <div class="gallery-grid">
-    <img src="https://via.placeholder.com/300" alt="Platzhalterbild 1">
-    <img src="https://via.placeholder.com/300" alt="Platzhalterbild 2">
-    <img src="https://via.placeholder.com/300" alt="Platzhalterbild 3">
-    <img src="https://via.placeholder.com/300" alt="Platzhalterbild 4">
+  <div class="pet-card">
+    <h3>Odin</h3>
+    <div class="slideshow-container">
+      <div class="slides">
+        <img src="/assets/Hauer_bilder/Odin/Odin.jpg" alt="Odin 0" class="slide active">
+        <img src="/assets/Hauer_bilder/Odin/Odin1.jpg" alt="Odin 1" class="slide">
+        <img src="/assets/Hauer_bilder/Odin/Odin2.jpg" alt="Odin 2" class="slide">
+      </div>
+      <button class="prev" onclick="changeSlide(this, -1)">❮</button>
+      <button class="next" onclick="changeSlide(this, 1)">❯</button>
+      <div class="dots">
+        <span class="dot active" onclick="goToSlide(this, 0)"></span>
+        <span class="dot" onclick="goToSlide(this, 1)"></span>
+        <span class="dot" onclick="goToSlide(this, 2)"></span>
+      </div>
+    </div>
+    <p class="description">Odin war mein Kindheitshund und ist leider 2014 gestorben.</p>
   </div>
-</section>
 
-<footer>
-  <p>[Kontaktinformationen]</p>
-</footer>
+  <div class="pet-card">
+    <h3>Fibi</h3>
+    <div class="slideshow-container">
+      <div class="slides">
+        <img src="/assets/Hauer_bilder/Fibi/Fibi.jpg" alt="Fibi 0" class="slide active">
+      </div>
+    </div>
+    <p class="description">Fibi war Odins Schwester.</p>
+  </div>
 
-<!-- Inline JavaScript für Scroll-Animation -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const galleryImages = document.querySelectorAll('.gallery-grid img');
-    galleryImages.forEach((img, index) => {
-      img.style.animation = `fadeIn 0.8s ease forwards ${index * 0.2}s`;
-    });
-  });
-</script>
-</body>
-</html>
+  <div class="pet-card">
+    <h3>Charlie</h3>
+    <div class="slideshow-container">
+      <div class="slides">
+        <img src="/assets/Hauer_bilder/Charlie/Charlie2.jpeg" alt="Charlie 0" class="slide active">
+        <img src="/assets/Hauer_bilder/Charlie/Charlie1.jpeg" alt="Charlie 1" class="slide">
+        <img src="/assets/Hauer_bilder/Charlie/Charlie.jpeg" alt="Charlie 2" class="slide">
+      </div>
+      <button class="prev" onclick="changeSlide(this, -1)">❮</button>
+      <button class="next" onclick="changeSlide(this, 1)">❯</button>
+      <div class="dots">
+        <span class="dot active" onclick="goToSlide(this, 0)"></span>
+        <span class="dot" onclick="goToSlide(this, 1)"></span>
+        <span class="dot" onclick="goToSlide(this, 2)"></span>
+      </div>
+    </div>
+    <p class="description">Charlie war bei meinen Großeltern für 4 Monate und wiegt jetzt dreimal so viel.</p>
+  </div>
+  <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
+  <a routerLink="/page_hauer" routerLinkActive="active" class="btn btn-primary">About me</a>
+  <a routerLink="/page_hobbies_hauer" routerLinkActive="active" class="btn btn-primary">Hobbies</a>
+</div>
