@@ -4,7 +4,7 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
   selector: 'app-page-haustiere-hauer',
-  templateUrl: './pages/pages-students/pages_Hauer/Haustiere/page-haustiere-hauer-component.html',
+  templateUrl: './page-haustiere-hauer.component.html',
   styleUrl: './pages/pages-students/pages_Hauer/Haustiere/page-haustiere-hauer.component.scss',
   standalone: true
 })
