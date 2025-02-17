@@ -1,0 +1,78 @@
+@import "../kov_variables";
+
+body {
+  background-color: $background-color;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px 0;
+}
+.container {
+  background-color: bisque;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  text-align: center;
+}
+
+p{
+  text-align:left;
+  color: $text-color;
+  font-size:18px;
+
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.rezept{
+  background: $background-color;
+}
+
+h3{
+  color:#5a3e2b;
+  font-family: $h1_font;
+}
+.image {
+  width: 100%;
+  max-width: 512px;
+  height: auto;
+  border-radius: 10px;
+}
+.content {
+  margin-top: 15px;
+}
+h2 {
+  font-family: $h1_font;
+  color: $text-color;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  background: #fff3e6;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+button{
+  color: $primary;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+  float:right;
+}
+button:hover {
+  background-color: #36544f;
+}
