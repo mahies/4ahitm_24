@@ -8,8 +8,8 @@
   <ul *ngIf="isMusicActive" class="alben d-flex flex-column">
     <li *ngFor="let album of alben | orderBy: 'interpret'; let i = index" class="col-auto">
       <img alt="Cover von {{album.titel}}" height="auto" src="{{album.coverLink}}" width="300px">
-      <h2 class="header"><b><a href="{{album.rymLink}}">{{ album.titel }}</a></b></h2>
-      <h3 class="header">{{ album.interpret }} ({{ album.erscheinungsdatum.getFullYear() }})</h3>
+      <h2 class="header"><b><a href="{{album.rymLink}}">{{ album.titel }} ({{ album.erscheinungsdatum.getFullYear() }})</a></b></h2>
+      <h3 class="header">{{ album.interpret }}</h3>
       <br>
       <p>
         <span *ngFor="let review of album.review">{{ review }}<br><br></span><br>
