@@ -38,7 +38,8 @@ export  const WAGNER : Person = {
   zip_code: 1220,
   city: "Wien",
   message: "\„Life's simple. Take the shot or lose the chance.\" \n(Samira)",
-  socialLink: "https://www.instagram.com/scalefeatherandfluff/"
+  socialLink: "https://www.instagram.com/scalefeatherandfluff/",
+  routerLink: "/page_wagner"
 
 };
 
