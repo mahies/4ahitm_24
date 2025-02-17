@@ -1,5 +1,7 @@
 export interface Film {
   titel: string;
+  localization: boolean;
+  titelOriginal?: string;
   directorNachname: string;
   directorVorname: string;
   plakatLink: string;
@@ -12,6 +14,8 @@ export interface Film {
 
 export const FallenAngels: Film = {
   titel: "Fallen Angels",
+  localization: true,
+  titelOriginal: "墮落天使",
   directorNachname: "Wong",
   directorVorname: "Kar-wai",
   plakatLink: "assets/metzinger-bilder/Plakate/FallenAngels.jpg",
@@ -27,7 +31,9 @@ export const FallenAngels: Film = {
 }
 
 export const LaHaine: Film = {
-  titel: "La Haine",
+  titel: "Hass",
+  localization: true,
+  titelOriginal: "La Haine",
   directorNachname: "Kassovitz",
   directorVorname: "Mathieu",
   plakatLink: "assets/metzinger-bilder/Plakate/LaHaine.jpg",
@@ -44,6 +50,7 @@ export const LaHaine: Film = {
 
 export const Trainspotting: Film = {
   titel: "Trainspotting",
+  localization: false,
   directorNachname: "Boyle",
   directorVorname: "Danny",
   plakatLink: "assets/metzinger-bilder/Plakate/Trainspotting.jpg",
@@ -61,6 +68,7 @@ export const Trainspotting: Film = {
 
 export const EternalSunshine: Film = {
   titel: "Eternal Sunshine of the Spotless Mind",
+  localization: false,
   directorNachname: "Gondry",
   directorVorname: "Michel",
   plakatLink: "assets/metzinger-bilder/Plakate/EternalSunshine.jpg",
@@ -77,6 +85,7 @@ export const EternalSunshine: Film = {
 
 export const Nosferatu: Film = {
   titel: "Nosferatu - Phantom der Nacht",
+  localization: false,
   directorNachname: "Herzog",
   directorVorname: "Werner",
   plakatLink: "assets/metzinger-bilder/Plakate/Nosferatu.jpg",
@@ -94,6 +103,7 @@ export const Nosferatu: Film = {
 
 export const StraightStory: Film = {
   titel: "The Straight Story",
+  localization: false,
   directorNachname: "Lynch",
   directorVorname: "David",
   plakatLink: "assets/metzinger-bilder/Plakate/StraightStory.jpg",
@@ -103,13 +113,14 @@ export const StraightStory: Film = {
     "Das ist ein Film."
   ],
   quote: [
-
+    "The worst part of being old is remembering when you was young."
   ],
   rating: 4,
 }
 
 export const BarryLyndon: Film = {
   titel: "Barry Lyndon",
+  localization: false,
   directorNachname: "Kubrick",
   directorVorname: "Stanley",
   plakatLink: "assets/metzinger-bilder/Plakate/BarryLyndon.jpg",
@@ -126,6 +137,7 @@ export const BarryLyndon: Film = {
 
 export const WildAtHeart: Film = {
   titel: "Wild at Heart",
+  localization: false,
   directorNachname: "Lynch",
   directorVorname: "David",
   plakatLink: "assets/metzinger-bilder/Plakate/WildAtHeart.jpg",
@@ -135,7 +147,7 @@ export const WildAtHeart: Film = {
     "Das ist ein Film."
   ],
   quote: [
-    ""
+    "I guess I started smoking when I was about... four."
   ],
   rating: 4,
 }
@@ -143,6 +155,8 @@ export const WildAtHeart: Film = {
 
 export const HighLow: Film = {
   titel: "Zwischen Himmel und Hölle",
+  localization: true,
+  titelOriginal: "天国と地獄",
   directorNachname: "Kurosawa",
   directorVorname: "Akira",
   plakatLink: "assets/metzinger-bilder/Plakate/HighLow.jpg",
@@ -159,4 +173,4 @@ export const HighLow: Film = {
 
 
 
-export const FILME:Film[] = [FallenAngels, LaHaine, Trainspotting, EternalSunshine, Nosferatu, StraightStory, HighLow];
+export const FILME:Film[] = [FallenAngels, LaHaine, Trainspotting, EternalSunshine, Nosferatu, StraightStory, HighLow, WildAtHeart];

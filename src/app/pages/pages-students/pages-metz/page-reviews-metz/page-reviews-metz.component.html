@@ -1,37 +1,49 @@
 <div class="body">
-<h1 class="header">Meine Reviews</h1>
+  <h1 class="header">Meine Reviews</h1>
   <div class="toggle-buttons d-flex justify-content-center">
-    <button class="btn btn-secondary" (click)="showMusicReviews()" [class.active]="isMusicActive">Alben</button>
-    <button class="btn btn-secondary" (click)="showFilmReviews()" [class.active]="!isMusicActive">Filme</button>
+    <button (click)="showMusicReviews()" [class.active]="isMusicActive" class="btn btn-secondary">Alben</button>
+    <button (click)="showFilmReviews()" [class.active]="!isMusicActive" class="btn btn-secondary">Filme</button>
   </div>
   <!--Ausgabe Alben-->
-  <ul class="alben d-flex flex-column" *ngIf="isMusicActive">
+  <ul *ngIf="isMusicActive" class="alben d-flex flex-column">
     <li *ngFor="let album of alben | orderBy: 'interpret'; let i = index" class="col-auto">
-      <img src="{{album.coverLink}}" width="300px" height="auto" alt="Cover von {{album.titel}}">
-      <h2 class="header"><b><a href="{{album.rymLink}}">{{album.titel}}</a></b></h2>
-      <h3 class="header">{{album.interpret}} ({{album.erscheinungsdatum.getFullYear()}})</h3>
+      <img alt="Cover von {{album.titel}}" height="auto" src="{{album.coverLink}}" width="300px">
+      <h2 class="header"><b><a href="{{album.rymLink}}">{{ album.titel }}</a></b></h2>
+      <h3 class="header">{{ album.interpret }} ({{ album.erscheinungsdatum.getFullYear() }})</h3>
       <br>
       <p>
-        <span *ngFor="let review of album.review">{{review}}<br><br></span><br>
-        <i><span *ngFor="let quote of album.quote">{{quote}}<br></span></i>
+        <span *ngFor="let review of album.review">{{ review }}<br><br></span><br>
+        <i><span *ngFor="let quote of album.quote">{{ quote }}<br></span></i>
       </p>
       <br>
-      <div class="rating">Rating: {{album.rating}}/5</div>
+      <div class="rating">Rating: {{ album.rating }}/5</div>
     </li>
   </ul>
   <!--Ausgabe Filme-->
-  <ul class="filme d-flex flex-column" *ngIf="!isMusicActive">
+  <ul *ngIf="!isMusicActive" class="filme d-flex flex-column">
     <li *ngFor="let film of filme | orderBy: 'directorNachname'; let i = index" class="col-auto">
-      <img src="{{film.plakatLink}}" width="300px" height="auto" alt="Cover von {{film.titel}}">
-      <h2 class="header"><b><a href="https://www.imdb.com/title/{{film.imdbLink}}/">{{film.titel}} ({{film.erscheinungsdatum.getFullYear()}})</a></b></h2>
-      <h3 class="header">{{film.directorVorname}} {{film.directorNachname}}</h3>
+      <img alt="Cover von {{film.titel}}" height="auto" src="{{film.plakatLink}}" width="300px">
+      <!--Für Filme die Englisch/Deutsch sind-->
+      <div *ngIf="!film.localization" class="header">
+        <a href="https://www.imdb.com/title/{{film.imdbLink}}/">
+          <b><h2>{{ film.titel }} ({{ film.erscheinungsdatum.getFullYear() }})</h2></b>
+        </a>
+      </div>
+      <!--Für Filme die nicht Englisch/Deutsch sind-->
+      <div *ngIf="film.localization" class="header">
+        <a href="https://www.imdb.com/title/{{film.imdbLink}}/">
+          <b><h2>{{ film.titel }} ({{ film.erscheinungsdatum.getFullYear() }})</h2></b>
+          <h4>Original: <i>{{ film.titelOriginal }}</i></h4>
+        </a>
+      </div>
+      <h3 class="header">{{ film.directorVorname }} {{ film.directorNachname }}</h3>
       <br>
       <p>
-        <span *ngFor="let review of film.review">{{review}}<br><br></span><br>
-        <i><span *ngFor="let quote of film.quote">{{quote}}<br></span></i>
+        <span *ngFor="let review of film.review">{{ review }}<br><br></span><br>
+        <i><span *ngFor="let quote of film.quote">{{ quote }}<br></span></i>
       </p>
       <br>
-      <div class="rating">Rating: {{film.rating}}/5</div>
+      <div class="rating">Rating: {{ film.rating }}/5</div>
     </li>
   </ul>
   <div class="buttongrid">
