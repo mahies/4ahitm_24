@@ -36,6 +36,9 @@ import {
   PageSubpage1NovoComponent
 } from './pages/pages-students/page-novo/page-subpage1-novo/page-subpage1-novo.component';
 import {
+  PageSubpage2NovoComponent
+} from './pages/pages-students/page-novo/page-subpage2-novo/page-subpage2-novo.component';
+import {
   PageHobbiesWAGNERComponent
 } from './pages/pages-students/pages-wagner/page-hobbies-wagner/page-hobbies-wagner.component';
 import {
@@ -140,6 +143,8 @@ export const routes: Routes = [
     component: PageAboutmeNovoComponent },
   { path: 'page_novo_subpage1',
     component: PageSubpage1NovoComponent },
+  { path: 'page_novo_subpage2',
+    component: PageSubpage2NovoComponent },
   { path: 'page_metz',
     component: PageAboutmeMETZComponent },
   { path: 'page_metz_reviews',
