@@ -107,7 +107,9 @@ import {
 import {
   WSGFriedlComponent
 } from './pages/pages-students/pages-friedl/WSG-friedl/WSG-friedl.component';
-
+import {
+  PageLieblingsbuecherPontComponent
+} from './pages/pages-students/pages-pont/page-lieblingsbuecher-pont/page-lieblingsbuecher-pont.component';
 export const routes: Routes = [
   { path: '', // default rout
     component: PageHomeComponent },
@@ -117,6 +119,8 @@ export const routes: Routes = [
     component: PageDemoComponent },
   { path: 'page_pont',
     component: PageAboutMePONTComponent },
+  { path: 'page_pont_Lieblingsbuecher',
+    component: PageLieblingsbuecherPontComponent },
   { path: 'page_kovacs',
     component: PageAboutMeKOVACSComponent },
   { path: 'page_kovacs_reviews',
