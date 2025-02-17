@@ -28,3 +28,27 @@ body {
   transform: scale(2.7); /* Vergrößert das Bild */
   z-index: 10;
 }
+
+a {
+  color: #feb47b;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn-primary:hover {
+  background-color: #ff7e5f;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #feb47b;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
