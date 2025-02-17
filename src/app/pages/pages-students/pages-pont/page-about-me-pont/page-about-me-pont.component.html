@@ -1,12 +1,15 @@
-<div class="card" style="width: 18rem;">
-  <img [src]="me.urlImage"  class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{me.firstname}} {{me.surname.toUpperCase()}}</h5>
-    <p class="card-text">Geboren am: {{me.birthday}}</p>
-    <p class="card-text">Geboren in: {{me.city}} {{me.zip_code}}</p>
-    <p class="card-text">Email: <a href="mailto:{{me.email}}">{{me.email}}</a></p>
-    <a routerLink="" routerLinkActive="active" class="btn btn-primary">Go somewhere</a>
+<body>
+<div class="container">
+  <div class="card mx-auto">
+    <img [src]="me.urlImage" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ me.firstname }} {{ me.surname.toUpperCase() }}</h5>
+      <p class="card-text">Geboren am: {{ me.birthday }}</p>
+      <p class="card-text">Geboren in: {{ me.city }} {{ me.zip_code }}</p>
+      <p class="card-text">Email: <a href="mailto:{{me.email}}">{{ me.email }}</a></p>
+      <a routerLink="" routerLinkActive="active" class="btn btn-primary">Go somewhere</a>
+    </div>
   </div>
 </div>
 
-
+</body>
