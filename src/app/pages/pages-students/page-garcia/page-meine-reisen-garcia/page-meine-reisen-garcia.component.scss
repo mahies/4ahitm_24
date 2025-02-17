@@ -33,3 +33,70 @@ p {
 .d-flex mt-3:hover{
   background-color: #004B5C;
 }
+
+
+.vacation-collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.vacation-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.vacation-collage img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.vacation-collage img:hover {
+  transform: scale(1.05);
+}
+
+.vacation-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.vacation-image:hover .overlay {
+  opacity: 1;
+}
+
+.vacation-image .image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  z-index: 1;
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.3s ease; /* Smooth transition for text appearance */
+}
+
+.vacation-image:hover .image-overlay {
+  opacity: 1; /* Show the text on hover */
+}
+
+.vacation-collage-container {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}

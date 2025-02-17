@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {ReiseGar} from '../ReiseGar';
+import {SZA} from '../sza_info';
 
 @Component({
   selector: 'app-page-meine-reisen-garcia',
