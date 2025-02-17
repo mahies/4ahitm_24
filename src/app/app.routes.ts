@@ -70,7 +70,39 @@ import {
 } from './pages/pages-students/pages_Hauer/lieblingsEssen/page-lieblingsessen-hauer.component';
 import {PageHobbiesHauerComponent} from './pages/pages-students/pages_Hauer/Hobbies/page-hobbies-hauer.component';
 import {PageArtComponent} from './pages/pages-students/pages-cizmic/page-art/page-art.component';
-
+import {
+  LASKFriedlComponent
+} from './pages/pages-students/pages-friedl/LASK-friedl/LASK-friedl.component';
+import {
+  AltachFriedlComponent
+} from './pages/pages-students/pages-friedl/Altach-friedl/Altach-friedl.component';
+import {
+  BWLFriedlComponent
+} from './pages/pages-students/pages-friedl/BWL-friedl/BWL-friedl.component';
+import {
+  FAKFriedlComponent
+} from './pages/pages-students/pages-friedl/FAK-friedl/FAK-friedl.component';
+import {
+  GAKFriedlComponent
+} from './pages/pages-students/pages-friedl/GAK-friedl/GAK-friedl.component';
+import {
+  HartbergFriedlComponent
+} from './pages/pages-students/pages-friedl/Hartberg-friedl/Hartberg-friedl.component';
+import {
+  KlagenfurtFriedlComponent
+} from './pages/pages-students/pages-friedl/Klagenfurt-friedl/Klagenfurt-friedl.component';
+import {
+  SalzburgFriedlComponent
+} from './pages/pages-students/pages-friedl/Salzburg-friedl/Salzburg-friedl.component';
+import {
+  SturmFriedlComponent
+} from './pages/pages-students/pages-friedl/Sturm-friedl/Sturm-friedl.component';
+import {
+  WACFriedlComponent
+} from './pages/pages-students/pages-friedl/WAC-friedl/WAC-friedl.component';
+import {
+  WSGFriedlComponent
+} from './pages/pages-students/pages-friedl/WSG-friedl/WSG-friedl.component';
 export const routes: Routes = [
   { path: '', // default rout
     component: PageHomeComponent },
@@ -149,6 +181,28 @@ export const routes: Routes = [
   { path: 'page-art',
     component: PageArtComponent },
   { path: 'page-lieblingssaengerin-garcia',
-    component: PageLieblingssaengerinGARCIAComponent }
+    component: PageLieblingssaengerinGARCIAComponent },
+  { path: 'LASK-friedl',
+    component: LASKFriedlComponent},
+  { path: 'WSG-friedl',
+    component: WSGFriedlComponent},
+  { path: 'Sturm-friedl',
+    component: SturmFriedlComponent},
+  { path: 'Salzburg-friedl',
+    component: SalzburgFriedlComponent},
+  { path: 'Klagenfurt-friedl',
+    component: KlagenfurtFriedlComponent},
+  { path: 'Hartberg-friedl',
+    component: HartbergFriedlComponent},
+  { path: 'GAK-friedl',
+    component: GAKFriedlComponent},
+  { path: 'FAK-friedl',
+    component: FAKFriedlComponent},
+  { path: 'BWL-friedl',
+    component: BWLFriedlComponent},
+  { path: 'Altach-friedl',
+    component: AltachFriedlComponent},
+  { path: 'WAC-friedl',
+    component: WACFriedlComponent}
 ];
 
