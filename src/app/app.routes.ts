@@ -110,6 +110,9 @@ import {
 import {
   PageLieblingsbuecherPontComponent
 } from './pages/pages-students/pages-pont/page-lieblingsbuecher-pont/page-lieblingsbuecher-pont.component';
+import {
+  PageLieblingsmusikPontComponent
+} from './pages/pages-students/pages-pont/page-lieblingsmusik-pont/page-lieblingsmusik-pont.component';
 export const routes: Routes = [
   { path: '', // default rout
     component: PageHomeComponent },
@@ -121,6 +124,8 @@ export const routes: Routes = [
     component: PageAboutMePONTComponent },
   { path: 'page_pont_Lieblingsbuecher',
     component: PageLieblingsbuecherPontComponent },
+  { path: 'page_pont_Lieblingsmusik',
+    component: PageLieblingsmusikPontComponent },
   { path: 'page_kovacs',
     component: PageAboutMeKOVACSComponent },
   { path: 'page_kovacs_reviews',
