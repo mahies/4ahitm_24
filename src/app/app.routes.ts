@@ -5,6 +5,7 @@ import {PageAboutMePONTComponent} from './pages/pages-students/pages-pont/page-a
 import {PageAboutMeKOVACSComponent} from "./pages/pages-students/pages-kovacs/page-about-me-kovacs/page-about-me-kovacs.component";
 import {PageLieblingsessenKovacsComponent} from "./pages/pages-students/pages-kovacs/page-lieblingsessen-kovacs/page-lieblingsessen-kovacs.component";
 import {PageReviewsKovacsComponent} from "./pages/pages-students/pages-kovacs/page-reviews-kovacs/page-reviews-kovacs.component";
+import {PageHeimatKovacsComponent} from "./pages/pages-students/pages-kovacs/page-heimat-kovacs/page-heimat-kovacs.component";
 import {PageAboutMeZHOUComponent} from "./pages/pages-students/pages-zhou/page-about-me-zhou/page-about-me-zhou.component";
 import {PageAboutmeHobelComponent} from "./pages/pages-students/page-aboutme-hobel/page-aboutme-hobel.component";
 import {PageAboutMeHauerComponent} from "./pages/pages-students/pages_Hauer/page-about-me-Hauer/page-about-me-hauer.component";
@@ -120,6 +121,8 @@ export const routes: Routes = [
     component: PageReviewsKovacsComponent },
   { path: 'page_kovacs_lieblingsessen',
     component: PageLieblingsessenKovacsComponent },
+  { path: 'page_kovacs_heimat',
+    component: PageHeimatKovacsComponent },
   { path: 'page_zhou',
     component: PageAboutMeZHOUComponent },
   { path: 'page_zhou_lieblingsmusik',
