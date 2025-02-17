@@ -1,3 +1,7 @@
+body {
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);  /* Beispiel für einen Übergang von Orange zu Gelb */
+  }
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +25,6 @@
 }
 
 .gallery img:hover {
-  transform: scale(3); /* Vergrößert das Bild */
+  transform: scale(2.7); /* Vergrößert das Bild */
   z-index: 10;
 }
