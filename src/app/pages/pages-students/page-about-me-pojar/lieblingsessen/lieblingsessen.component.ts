@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {POJAR} from '../../../../model/person';
 
 @Component({
   selector: 'app-lieblingsessen',
@@ -8,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class LieblingsessenComponent {
 
+  protected readonly me = POJAR;
 }
