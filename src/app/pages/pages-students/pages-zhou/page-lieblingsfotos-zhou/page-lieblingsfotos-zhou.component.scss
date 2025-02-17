@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to right, #ff7e5f, #feb47b);  /* Beispiel für einen Übergang von Orange zu Gelb */
+    background-image: linear-gradient(to right, #f17a5d, #e54427);  /* Beispiel für einen Übergang von Orange zu Gelb */
   }
 
 .gallery {
@@ -30,7 +30,7 @@ body {
 }
 
 a {
-  color: #feb47b;
+  color: #e14d2e;
   text-decoration: none;
 
   &:hover {
@@ -46,7 +46,7 @@ a {
   display: block;
   width: 100%;
   text-align: center;
-  background-color: #feb47b;
+  background-color: #ee4133;
   color: #fff;
   padding: 10px 15px;
   text-decoration: none;
