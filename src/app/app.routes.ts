@@ -116,6 +116,8 @@ import {
 import {
   PageTravelMetzComponent
 } from './pages/pages-students/pages-metz/page-travel-metz/page-travel-metz.component';
+import {PageMusicCocoComponent} from './pages/pages-students/pages-coco/page-music-coco/page-music-coco.component';
+import {PageDesignCocoComponent} from './pages/pages-students/pages-coco/page-design-coco/page-design-coco.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -233,6 +235,10 @@ export const routes: Routes = [
   { path: 'page-travel-metz',
     component: PageTravelMetzComponent},
   { path: 'page-getestete-doener-pojar',
-    component: PageGetesteteDoenerPojarComponent}
+    component: PageGetesteteDoenerPojarComponent},
+  { path: 'page-music-coco',
+    component: PageMusicCocoComponent},
+  { path: 'page-design-coco',
+    component: PageDesignCocoComponent}
 ];
 
