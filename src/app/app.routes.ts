@@ -81,6 +81,11 @@ import {
 } from './pages/pages-students/pages-friedl/LASK-friedl/LASK-friedl.component';
 import {
   AltachFriedlComponent
+} from './pages/pages-students/pages-friedl/Altach-friedl/Altach-friedl.component';
+import {
+  BWLFriedlComponent
+} from './pages/pages-students/pages-friedl/BWL-friedl/BWL-friedl.component';
+import {
   FAKFriedlComponent
 } from './pages/pages-students/pages-friedl/FAK-friedl/FAK-friedl.component';
 import {
@@ -89,11 +94,6 @@ import {
 import {
   HartbergFriedlComponent
 } from './pages/pages-students/pages-friedl/Hartberg-friedl/Hartberg-friedl.component';
-} from './pages/pages-students/pages-friedl/Altach-friedl/Altach-friedl.component';
-import {
-  BWLFriedlComponent
-} from './pages/pages-students/pages-friedl/BWL-friedl/BWL-friedl.component';
-import {
 import {
   KlagenfurtFriedlComponent
 } from './pages/pages-students/pages-friedl/Klagenfurt-friedl/Klagenfurt-friedl.component';
