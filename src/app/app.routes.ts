@@ -14,6 +14,7 @@ import {PageAboutmeMETZComponent} from "./pages/pages-students/pages-metz/page-a
 import {PageAboutMeSCHOENComponent} from './pages/pages-students/page-about-me-schoengrundner/page-about-me-schoen.component';
 import {PageAboutMeGARCIAComponent} from './pages/pages-students/page-garcia/page-about-me-garcia/page-about-me-garcia.component';
 import {PageAboutMePojarComponent} from "./pages/pages-students/page-about-me-pojar/page-about-me-pojar.component";
+import {PageGetesteteDoenerPojarComponent} from "./pages/pages-students/page-about-me-pojar/page-getestete-doener-pojar/page-getestete-doener-pojar.component";
 import {PageLieblingsessenPojarComponent} from "./pages/pages-students/page-about-me-pojar/page-lieblingsessen-pojar/page-lieblingsessen-pojar.component";
 import {PageAboutMeKOVACICComponent} from './pages/pages-students/pages-kovacic/page-about-me-kovacic/page-about-me-kovacic.component';
 import {PageAboutMeWAGNComponent} from './pages/pages-students/pages-wagner/page-about-me-wagn/page-about-me-wagn.component';
@@ -80,11 +81,6 @@ import {
 } from './pages/pages-students/pages-friedl/LASK-friedl/LASK-friedl.component';
 import {
   AltachFriedlComponent
-} from './pages/pages-students/pages-friedl/Altach-friedl/Altach-friedl.component';
-import {
-  BWLFriedlComponent
-} from './pages/pages-students/pages-friedl/BWL-friedl/BWL-friedl.component';
-import {
   FAKFriedlComponent
 } from './pages/pages-students/pages-friedl/FAK-friedl/FAK-friedl.component';
 import {
@@ -93,6 +89,11 @@ import {
 import {
   HartbergFriedlComponent
 } from './pages/pages-students/pages-friedl/Hartberg-friedl/Hartberg-friedl.component';
+} from './pages/pages-students/pages-friedl/Altach-friedl/Altach-friedl.component';
+import {
+  BWLFriedlComponent
+} from './pages/pages-students/pages-friedl/BWL-friedl/BWL-friedl.component';
+import {
 import {
   KlagenfurtFriedlComponent
 } from './pages/pages-students/pages-friedl/Klagenfurt-friedl/Klagenfurt-friedl.component';
@@ -227,6 +228,8 @@ export const routes: Routes = [
   { path: 'page-lieblingsessen-pojar',
     component: PageLieblingsessenPojarComponent},
   { path: 'page-travel-metz',
-    component: PageTravelMetzComponent}
+    component: PageTravelMetzComponent},
+  { path: 'page-getestete-doener-pojar',
+    component: PageGetesteteDoenerPojarComponent}
 ];
 
