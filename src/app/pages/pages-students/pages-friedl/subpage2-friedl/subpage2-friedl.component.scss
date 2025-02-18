@@ -28,9 +28,9 @@ body {
   width: 100%;
 
   .table {
-
+    // Mehr Abstand zur oberen und unteren Seite
     margin: 40px 0;
-
+    // Damit die Zellen nicht direkt aneinander kleben:
     border-collapse: separate;
     border-spacing: 10px;
     width: 90%;
