@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mein Lieblingsgericht</title>
-
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 <div class="container">
   <h1>Mein Lieblingsgericht</h1>
+
   <div class="card">
-    <img src="{{ me.urlImage }}" class="img-fluid" alt="Gericht" style="border: 3px solid #D2B48C; border-radius: 10px; width: 95%; height: auto;">
-    <h2>Teriyaki Huhn</h2>
+    <div class="card-content">
+      <img src="{{ me.urlImage }}" class="img-fluid" alt="Teriyaki Huhn">
+      <div class="text-content">
+        <h2>Teriyaki Huhn</h2>
+        <p>Teriyaki stammt aus Japan und bezeichnet eine spezielle Art des Marinierens und Glasierens von Fleisch oder Fisch mit einer süßlichen Sojasoße.</p>
+
+        <div class="recipe">
+          <h3>Zutaten:</h3>
+          <ul>
+            <li>2 Hähnchenbrustfilets</li>
+            <li>4 EL Sojasoße</li>
+            <li>2 EL Honig</li>
+            <li>1 EL Reisessig</li>
+            <li>1 TL Sesamöl</li>
+            <li>1 Knoblauchzehe (gehackt)</li>
+            <li>1 TL geriebener Ingwer</li>
+            <li>1 TL Speisestärke</li>
+            <li>Sesamsamen & Frühlingszwiebeln zum Garnieren</li>
+          </ul>
+
+          <h3>Zubereitung:</h3>
+          <ol>
+            <li>Sojasoße, Honig, Reisessig, Sesamöl, Knoblauch und Ingwer in einer Schüssel vermengen.</li>
+            <li>Das Hähnchen in dünne Streifen schneiden und in die Marinade legen. Mindestens 30 Minuten ziehen lassen.</li>
+            <li>Hähnchen in einer Pfanne anbraten, bis es goldbraun ist.</li>
+            <li>Restliche Marinade mit Speisestärke andicken und zum Hähnchen geben.</li>
+            <li>Mit Sesamsamen und Frühlingszwiebeln garnieren und servieren.</li>
+          </ol>
+        </div>
+
+        <div class="buttons">
+          <a href="index.html" class="btn">Zur Homepage</a>
+          <a href="profil.html" class="btn">Zu meinem Profil</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 </body>
+
 </html>
