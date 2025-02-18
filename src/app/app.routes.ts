@@ -111,6 +111,9 @@ import {
 import {
   PageLieblingsessenKovacicComponent
 } from './pages/pages-students/pages-kovacic/page-lieblingsessen-kovacic/page-lieblingsessen-kovacic.component';
+import {
+  PageTravelMetzComponent
+} from './pages/pages-students/pages-metz/page-travel-metz/page-travel-metz.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -222,6 +225,8 @@ export const routes: Routes = [
   { path: 'page-meine-reisen-garcia',
     component: PageMeineReisenGARCIAComponent},
   { path: 'page-lieblingsessen-pojar',
-    component: PageLieblingsessenPojarComponent}
+    component: PageLieblingsessenPojarComponent},
+  { path: 'page-travel-metz',
+    component: PageTravelMetzComponent}
 ];
 

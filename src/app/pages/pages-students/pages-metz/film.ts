@@ -22,7 +22,10 @@ export const FallenAngels: Film = {
   erscheinungsdatum: new Date("1995-09-06"),
   imdbLink: "tt0112913",
   review: [
-    "Das ist ein Film."
+    "Hong Kong war Mitte der neunziger in einer misslichen Lage. Die Megastadt war zu diesem Zeitpunkt immer noch eine britische Kronkolonie, die jedoch im Inbegriff war an China abgetreten zu werden. Für die Bevölkerung der Stadt war das natürlich wie eine Wahl zwischen Pech und Schwefel und die Stimmung war folglich angespannt. Fallen Angels zeigt Aspekte der Einsamkeit in dieser Anspannung.",
+    "Auf die Spitze treibt Wong Kar-Wai das, indem er uns die einsiedlerischsten Menschen der Bevölkerung zeigt. Einen Auftragsmörder in der kriminellen Unterwelt, sowie seine Geschäftspartnerin und einem jungen Mann, dem es, nachdem er einmal zu viel Ananas gegessen hatte, permanent die Sprache verschlagen hat. Trotzdem treffen deren Erfahrungen, wenn nicht so extrem, auf die meisten Großstadtbewohner zu. Auf die Details möchte ich hier nicht zu genau eingehen, um niemandem von der einmaligen Erfahrung Wong Kar-Wais Meisterwerk zu erleben zu berauben.",
+    "Das Budget für den Film scheint nicht zu hoch Gewesen sein, doch das macht nichts. Ganz im Gegenteil. Nicht nur regen Limitation die Kreativität an wie sonst kaum etwas anderes, sondern der Film gewinnt auch einiges an Charm durch beispielsweise das Filmen an echten Schauplätzen anstelle von Studios. Die Kameraarbeit in Fallen Angels ist makellos und wird durch Charakteristiken wie das häufige verwenden von Weitwinkelobjektiven und langen Einstellungen gekennzeichnet. Auch die Farbpalette lässt nichts zu beklagen übrig.",
+    "All diese Tatsachen kombiniert haben mich am Ende des Films dumm aus der Wäsche schauen lassen. Ich wusste nicht ganz, wie ich mich fühlen sollte, was meist ein gutes Zeichen ist. Der Film hat mich eingesaugt und die Gedanken und Gefühle der einzelnen Charaktere selbst empfinden lassen. So etwas magisches habe ich sonst noch nirgends gesehen."
   ],
   quote: [
     "The night’s full of weirdos."
@@ -40,7 +43,10 @@ export const LaHaine: Film = {
   erscheinungsdatum: new Date("1995-05-31"),
   imdbLink: "tt0113247",
   review: [
-    "Das ist ein Film."
+    "Es brodelt in den Banlieues von Paris. Abdel, ein guter Freund der drei Protagonisten, wurde von einem Polizisten ins Koma geprügelt, was zu heftigen Protesten führte. Der Zuschauer verfolgt die marginalisierten jugendlichen Vinz, Saïd und Hubert, wie sie am Tag nach den Aufständen durch die Metropole streunen.",
+    "Ein Polizist hat bei den Unruhen seine Pistole verloren, welche ausgerechnet von Vinz gefunden und mitgenommen wird. Dieser schwört sich, im Fall, dass ihr Freund im Krankhaus stirbt, einen Polizisten umzubringen. Die Spannung in dem Film ist teilweise unaushaltbar. Unterstrichen wird diese durch das wiederholte „jusqu'ici, tout va bien“ – so weit so gut. Man hat das Gefühl, dass jeden Moment alles schieflaufen könnte – man spielt quasi für 98 Minuten russisches Roulette. Das Ende des Films ist erdrückend, jedoch passend und jedes Jahr aufs Neue scheint der Film so relevant zu sein wie eh und je.",
+    "Die Entscheidung den in Farbe gedrehten Film in der Postproduktion Schwarz-Weiß zu machen, muss eine der besten der Filmgeschichte gewesen sein. Es verdeutlicht die triste, perspektivlose Welt der Protagonisten und verstärkt die emotionale Bindung zum Zuschauer exorbitant. Ikonische Szenen wie Vinz‘ Monolog vor dem Spiegel oder der legendäre Dolly-Zoom hätten mit Garantie nicht denselben Effekt, wie wenn sie in Farbe gewesen wären.",
+    "Auch wenn die eben geschriebenen Zeilen probieren, dem Meisterwerk auf den Zahn zu fühlen und zu ergründen, was den Film so speziell macht, habe ich im Gefühl, das bei weitem noch nicht erreicht zu haben. Tage wenn nicht sogar Wochen ging mir der Film nicht aus dem Kopf und ich bekomme immer noch Gänsehaut, wenn ich an so manche Szenen denke. La Haine ist ohne Zweifel in meinen Top 5 Lieblingsfilmen und ich bin mir sicher er ist da, um zu bleiben."
   ],
   quote: [
     "Le monde est à ꝟnous."
