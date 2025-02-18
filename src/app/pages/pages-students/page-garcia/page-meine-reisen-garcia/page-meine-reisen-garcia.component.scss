@@ -1,5 +1,3 @@
-
-
 header {
   background-color: #0277bd;
   color: white;
@@ -8,14 +6,17 @@ header {
   font-size: 1.8em;
   letter-spacing: 1px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 section {
   padding: 25px;
-  margin: 25px;
+  margin: 25px auto;
   background-color: #b3e5fc;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 1200px;
 }
 
 h1 {
@@ -106,4 +107,35 @@ p {
   background-color: #f1f8ff;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn {
+  background-color: #0277bd;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #01579b;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  background-color: #004c8c;
 }
