@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mein Lieblingsgericht</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 <div class="container">
   <h1>Mein Lieblingsgericht</h1>
-
   <div class="card">
     <div class="card-content">
       <img src="{{ me.urlImage }}" class="img-fluid" alt="Teriyaki Huhn">
       <div class="text-content">
         <h2>Teriyaki Huhn</h2>
         <p>Teriyaki stammt aus Japan und bezeichnet eine spezielle Art des Marinierens und Glasierens von Fleisch oder Fisch mit einer süßlichen Sojasoße.</p>
-
         <div class="recipe">
           <h3>Zutaten:</h3>
           <ul>
@@ -32,7 +28,6 @@
             <li>1 TL Speisestärke</li>
             <li>Sesamsamen & Frühlingszwiebeln zum Garnieren</li>
           </ul>
-
           <h3>Zubereitung:</h3>
           <ol>
             <li>Sojasoße, Honig, Reisessig, Sesamöl, Knoblauch und Ingwer in einer Schüssel vermengen.</li>
@@ -42,15 +37,13 @@
             <li>Mit Sesamsamen und Frühlingszwiebeln garnieren und servieren.</li>
           </ol>
         </div>
-
-        <div class="buttons">
-          <a href="index.html" class="btn">Zur Homepage</a>
-          <a href="profil.html" class="btn">Zu meinem Profil</a>
-        </div>
       </div>
+    </div>
+    <div class="buttons">
+      <a routerLink="/page_kovacic" routerLinkActive="active" class="btn btn-primary">Zu meinem Profil</a>
+      <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Homepage</a>
     </div>
   </div>
 </div>
 </body>
-
 </html>
