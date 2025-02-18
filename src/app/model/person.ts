@@ -176,7 +176,7 @@ export  const MORITZ : Person = {
 export  const KOVACIC : Person = {
   surname: "Kovacic",
   firstname: "Victoria",
-  urlImage: "assets/kovacic_bilder/katze.jpeg",
+  urlImage: "assets/kovacic_bilder/vic.jpeg",
   birthday: new Date("2006-11-22"),
   department: "ITEL Medientechnik",
   email: "210042@studierende.htl-donaustadt.at",
