@@ -1,57 +1,54 @@
-<body style="background-color: #79B0C9; border-radius: 20px; box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); overflow: hidden;
+<div class="full-container" style="background-color: #79B0C9; border-radius: 20px; box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); overflow: hidden;
             display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
-<div class="container-fluid m-5" style="max-width: 1200px; width: 100%;">
+  <div class="container-fluid m-5" style="max-width: 1200px; width: 100%;">
 
-  <div style="background-color: rgba(0, 86, 179, 0.7); padding: 30px; border-radius: 20px; width: 100%;
-            display: flex; justify-content: center; align-items: center;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);">
-  <div class="d-flex align-items-center" style="width: 100%;">
-
-
-      <div class="image"
-           style="background-color: white; padding: 15px; border-radius: 10px; margin-right: 30px; border: 3px solid white;">
-        <img class="img-fluid" src="{{ me.urlImage }}" width="350px" alt="Profile Image">
-      </div>
+    <div style="background-color: rgba(0, 86, 179, 0.7); padding: 30px; border-radius: 20px; width: 100%;
+                display: flex; justify-content: center; align-items: center;
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);">
+      <div class="d-flex align-items-center" style="width: 100%;">
 
 
-      <div style="background-color: #C6E6FB; padding: 20px; border-radius: 10px; border: 3px solid white;
-                    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);">
-        <h1 style="font-family: 'Lexend Giga', sans-serif;">
-          <span class="text-primary">{{ me.surname }}</span> {{ me.firstname }}
-        </h1>
-
-        <h5>
-          <p class="card-text">{{ me.message }}</p>
-        </h5>
-
-        <h6>
-          <span class="card-text"><strong>Birth date:</strong> {{ me.birthday }}</span><br>
-          <span class="card-text"><strong>Residence:</strong> {{ me.zip_code }} {{ me.city }}</span><br>
-          <span class="card-text"><strong>Github Username:</strong> {{ me.github_nickname }}</span><br>
-          <span class="card-text"><strong>Departure:</strong> {{ me.department }}</span><br>
-        </h6>
-
-        <div>
-          <a href="mailto:name@email.com">{{ me.email }}</a><br>
-          <span>My Links: </span><a href="{{ me.socialLink }}">Instagram</a><br>
+        <div class="image"
+             style="background-color: white; padding: 15px; border-radius: 10px; margin-right: 30px; border: 3px solid white;">
+          <img class="img-fluid" src="{{ me.urlImage }}" width="350px" alt="Profile Image">
         </div>
 
-        <div class="d-flex mt-3" style="gap: 10px; color: #004B77; " >
-          <a style="background-color: cornflowerblue; " routerLink="/page-meine-reisen-garcia" routerLinkActive="active" class="btn btn-secondary mr-3">My Journey</a>
-          <a style="background-color: cornflowerblue; "routerLink= "/page-lieblingssaengerin-garcia" routerLinkActive="active" class="btn btn-secondary mr-3">Fav Singer</a>
-          <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Back Home</a>
+
+        <div style="background-color: #C6E6FB; padding: 20px; border-radius: 10px; border: 3px solid white;
+                      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);">
+          <h1 style="font-family: 'Lexend Giga', sans-serif;">
+            <span class="text-primary">{{ me.surname }}</span> {{ me.firstname }}
+          </h1>
+
+          <h5>
+            <p class="card-text">{{ me.message }}</p>
+          </h5>
+
+          <h6>
+            <span class="card-text"><strong>Birth date:</strong> {{ me.birthday }}</span><br>
+            <span class="card-text"><strong>Residence:</strong> {{ me.zip_code }} {{ me.city }}</span><br>
+            <span class="card-text"><strong>Github Username:</strong> {{ me.github_nickname }}</span><br>
+            <span class="card-text"><strong>Departure:</strong> {{ me.department }}</span><br>
+          </h6>
+
+          <div>
+            <a href="mailto:name@email.com">{{ me.email }}</a><br>
+            <span>My Links: </span><a href="{{ me.socialLink }}">Instagram</a><br>
+          </div>
+
+          <div class="d-flex mt-3" style="gap: 10px; color: #004B77;">
+            <a style="background-color: cornflowerblue;" routerLink="/page-meine-reisen-garcia" routerLinkActive="active" class="btn btn-secondary mr-3">My Journey</a>
+            <a style="background-color: cornflowerblue;" routerLink="/page-lieblingssaengerin-garcia" routerLinkActive="active" class="btn btn-secondary mr-3">Fav Singer</a>
+            <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Back Home</a>
+          </div>
+
         </div>
 
       </div>
 
     </div>
-
   </div>
 </div>
-</body>
-
-
-
 
 
 
