@@ -5,19 +5,19 @@ body {
   text-align: center;
   margin: 0;
   padding: 20px;
-}
 
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
 
-h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin-bottom: 20px;
-  color: #555;
+  h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #555;
+  }
 }
 
 .table-container {
@@ -26,24 +26,28 @@ h2 {
   align-items: center;
   flex-direction: column;
   width: 100%;
-}
 
-.table {
-  margin: 20px 0;
-  border-collapse: collapse;
-  width: 90%;
-  max-width: 1000px;
-}
+  .table {
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
-}
+    margin: 40px 0;
 
-th {
-  background-color: #a8d5ba;
-  font-weight: bold;
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 90%;
+    max-width: 1000px;
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #a8d5ba;
+      font-weight: bold;
+    }
+  }
 }
 
 .large-text {
@@ -53,4 +57,3 @@ th {
 .bold-text {
   font-weight: bold;
 }
-
