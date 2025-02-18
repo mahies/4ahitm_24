@@ -190,7 +190,7 @@ export  const KOVACIC : Person = {
 export  const COCO : Person = {
   surname: "Secrieri",
   firstname: "Corneliu",
-  urlImage: "",
+  urlImage: "/assets/assets-coco/kamerad.png",
   birthday: new Date("2004-08-03"),
   department: "ITEL Medientechnick",
   email: "190284@studierende.htl-donaustadt.at",
@@ -198,8 +198,8 @@ export  const COCO : Person = {
   zip_code: 2434,
   city: "Goetzendorf",
   message: "\"Nachts ist es kälter als draußen.\"",
-  socialLink: "https://www.linkedin.com/in/corneliu-secrieri-b488a22b6/"
-  routerLink:"/page_coco",
+  socialLink: "https://www.linkedin.com/in/corneliu-secrieri-b488a22b6/",
+  routerLink:"/page_coco"
 };
 export  const FRIEDL : Person = {
   surname: "Friedl",
