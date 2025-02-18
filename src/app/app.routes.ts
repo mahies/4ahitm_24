@@ -119,6 +119,12 @@ import {
 import {PageMusicCocoComponent} from './pages/pages-students/pages-coco/page-music-coco/page-music-coco.component';
 import {PageDesignCocoComponent} from './pages/pages-students/pages-coco/page-design-coco/page-design-coco.component';
 import {
+  PageLieblingsmusikPontComponent
+} from './pages/pages-students/pages-pont/page-lieblingsmusik-pont/page-lieblingsmusik-pont.component';
+import {
+  PageLieblingsbuecherPontComponent
+} from './pages/pages-students/pages-pont/page-lieblingsbuecher-pont/page-lieblingsbuecher-pont.component';
+import {
   PageLieblingsmusikKovacicComponent
 } from './pages/pages-students/pages-kovacic/page-lieblingsmusik-kovacic/page-lieblingsmusik-kovacic.component';
 import {
@@ -137,6 +143,10 @@ export const routes: Routes = [
     component: PageDemoComponent },
   { path: 'page_pont',
     component: PageAboutMePONTComponent },
+  { path: 'page_pont_lieblingsbuecher',
+    component: PageLieblingsbuecherPontComponent },
+  { path: 'page_pont_lieblingsmusik',
+    component: PageLieblingsmusikPontComponent },
   { path: 'page_kovacs',
     component: PageAboutMeKOVACSComponent },
   { path: 'page_kovacs_reviews',
