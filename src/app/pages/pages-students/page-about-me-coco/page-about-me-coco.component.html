@@ -3,12 +3,12 @@
     <div class="row" style="display: flex; align-items: center; justify-content: center; text-align: center;">
 
       <div class="col-4" style="padding: 0; display: flex; justify-content: center;">
-        <img src="{{ me.urlImage }}" class="img-fluid" alt="..." style="border: 3px solid #D2B48C; border-radius: 10px; width: 80%; height: auto;">
+        <img src="{{ coco.urlImage }}" class="img-fluid" alt="..." style="border: 3px solid #D2B48C; border-radius: 10px; width: 80%; height: auto;">
       </div>
 
       <div class="col-6" style="background-color: rgba(255, 255, 255, 0.8); padding: 30px; border-radius: 15px; border: 3px solid #D2B48C; margin-left: 30px; max-width: 700px;">
-        <h5 class="card-title"><strong><u>{{ me.firstname }} {{ me.surname }}</u></strong></h5>
-        <p class="card-text"><strong>{{me.message}}</strong></p>
+        <h5 class="card-title"><strong><u>{{ coco.firstname }} {{ coco.surname }}</u></strong></h5>
+        <p class="card-text"><strong>{{coco.message}}</strong></p>
 
         <div style="margin-bottom: 20px;">
           <a href="https://www.linkedin.com/in/corneliu-secrieri-b488a22b6/" style="display: block; margin-bottom: 10px; color: #93C572; text-decoration: none; font-weight: bold; font-size: 18px;">
@@ -20,16 +20,16 @@
           </a>
 
           <p class="card-text">
-            <strong>Geboren am:</strong> {{me.birthday}}
+            <strong>Geboren am:</strong> {{coco.birthday}}
           </p>
           <p class="card-text">
-            <strong>Wohnort:</strong> {{me.zip_code}} {{ me.city }}
+            <strong>Wohnort:</strong> {{coco.zip_code}} {{ coco.city }}
           </p>
           <p class="card-text">
-            <strong>Mein Github Username:</strong> {{me.github_nickname}}
+            <strong>Mein Github Username:</strong> {{coco.github_nickname}}
           </p>
           <p class="card-text">
-            <strong>Die Abteilung:</strong> {{me.department}}
+            <strong>Die Abteilung:</strong> {{coco.department}}
           </p>
         </div>
 
