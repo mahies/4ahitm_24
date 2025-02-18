@@ -120,7 +120,7 @@ export  const GARCIA : Person = {
   firstname: "Riz",
   urlImage: "assets/garcia_bilder/Garcia.jpg",
   birthday: new Date("2006-07-14"),
-  department: "ITEL Medientechnick",
+  department: "ITEL Medientechnik",
   email: "200005@studierende.htl-donaustadt.at",
   github_nickname: "rizi06",
   zip_code: 1220,
