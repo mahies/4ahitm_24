@@ -1,18 +1,51 @@
- <p>page-about-me-schoengrundner</p>
-<div class="container-fluid m-5">
-  <div class="card" style="width: 18rem;">
-    <img src="{{ me_schoen.urlImage }}" class="card-img-top" width="20c" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{ me_schoen.firstname }} {{ me_schoen.surname }}</h5>
-      <p class="card-text">{{me_schoen.message}}</p>
-      <p class="card-text">Geboren am: {{me_schoen.birthday}}</p>
-      <p class="card-text">Meine Email: {{me_schoen.email}}</p>
-      <p class="card-text">Wohnort: {{me_schoen.zip_code}} {{ me.city }}</p>
-      <p class="card-text">Mein Github Username {{me_schoen.github_nickname}}</p>
-      <a href= {{me_schoen.socialLink}}> Mein Instagram Account</a><br>
-      <a routerLink="/subpage1-schoen" routerLinkActive="active" class="btn btn-primary">Hobbys</a>
-      <a routerLink="/subpage2-schoen" routerLinkActive="active" class="btn btn-primary">Lieblingsessen</a>
-      <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
+<!DOCTYPE html>
+<html lang="de">
+
+<div class="full-container" style="background-color: darkorchid; border-radius: 20px; box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); overflow: hidden;
+            display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+  <div class="container-fluid m-5" style="max-width: 1200px; width: 100%;">
+
+    <div style="background-color: mediumorchid; padding: 30px; border-radius: 20px; width: 100%;
+                display: flex; justify-content: center; align-items: center;
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);">
+      <div class="d-flex align-items-center" style="width: 100%;">
+
+        <div class="image"
+             style="background-color: white; padding: 15px; border-radius: 10px; margin-right: 30px; border: 3px solid white;">
+          <img class="img-fluid" src="{{ me_schoen.urlImage }}" width="350px" alt="Profile Image">
+        </div>
+
+        <div style="background-color: mediumorchid; padding: 20px; border-radius: 10px; border: 3px solid white;
+                      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);">
+          <h1 style="font-family: 'Lexend Giga', sans-serif;">
+            <span class="text-primary">{{ me_schoen.surname }}</span> {{ me_schoen.firstname }}
+          </h1>
+
+          <h5>
+            <p class="card-text">{{ me_schoen.message }}</p>
+          </h5>
+
+          <h6>
+            <span class="card-text"><strong>Geboren am:</strong> {{ me_schoen.birthday }}</span><br>
+            <span class="card-text"><strong>Wohnort:</strong> {{ me_schoen.zip_code }} {{ me.city }}</span><br>
+            <span class="card-text"><strong>Github Username:</strong> {{ me_schoen.github_nickname }}</span><br>
+          </h6>
+
+          <div>
+            <a href="mailto:{{ me_schoen.email }}">Meine Email: {{ me_schoen.email }}</a><br>
+            <span>Meine Links: </span><a href="{{ me_schoen.socialLink }}">Instagram</a><br>
+          </div>
+
+          <div class="d-flex mt-3" style="gap: 10px; color: #6a1d73;">
+            <a routerLink="/subpage1-schoen" routerLinkActive="active" class="btn btn-secondary btn-hover" style="background-color: darkorchid;  ">Hobbys</a>
+            <a routerLink="/subpage2-schoen" routerLinkActive="active" class="btn btn-secondary btn-hover" style="background-color: darkorchid;">Lieblingsessen</a>
+            <a routerLink="/home" routerLinkActive="active" class="btn btn-primary btn-hover" style="background-color: darkorchid;">Zurück Home</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+</html>
+
