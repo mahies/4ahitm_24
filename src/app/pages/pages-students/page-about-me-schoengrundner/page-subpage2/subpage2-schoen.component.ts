@@ -18,3 +18,4 @@ export class Subpage2SchoenComponent {
   me_schoen: Person = SCHOENGRUNDNER;
   protected readonly me = SCHOENGRUNDNER;
 }
+
