@@ -1,17 +1,32 @@
 <div class="container-fluid m-5">
-  <div class="card" style="width: 18rem;">
-    <img src="{{ me_hauer.urlImage}}" class="card-img-top" width="20c" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{ me_hauer.firstname }} {{ me_hauer.surname }}</h5>
-      <p class="card-text">{{me_hauer.message}}</p>
-      <p class="card-text">Geboren am: {{me_hauer.birthday}}</p>
-      <p class="card-text">Meine Email: {{me_hauer.email}}</p>
-      <p class="card-text">Wohnort: {{me_hauer.zip_code}} {{ me_hauer.city }}</p>
-      <p class="card-text">Mein Github username {{me_hauer.github_nickname}}</p>
-      <p><a href= {{me_hauer.socialLink}}> Mein Instagram Profil</a></p>
-      <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">zurück home</a>
-      <a routerLink="/page_haustiere_hauer" routerLinkActive="active" class="btn btn-primary">Haustiere</a>
-      <a routerLink="/page_hobbies_hauer" routerLinkActive="active" class="btn btn-primary">Hobbies</a>
+  <div class="background-box">
+    <div class="row">
+
+      <div class="col-4 image-container">
+        <img src="{{ me_hauer.urlImage }}" class="img-fluid" alt="...">
+      </div>
+
+      <div class="col-6 card">
+        <h5 class="card-title"><strong><u>{{ me_hauer.firstname }} {{ me_hauer.surname }}</u></strong></h5>
+        <p class="card-text"><strong>{{ me_hauer.message }}</strong></p>
+
+        <div class="link-container">
+          <a href="{{ me_hauer.socialLink }}" class="social-link">INSTA</a>
+          <a href="mailto:{{ me_hauer.email }}" class="email-link">E-Mail</a>
+
+          <p class="card-text"><strong>Geboren am:</strong> {{ me_hauer.birthday }}</p>
+          <p class="card-text"><strong>Wohnort:</strong> {{ me_hauer.zip_code }} {{ me_hauer.city }}</p>
+          <p class="card-text"><strong>Mein Github Username:</strong> {{ me_hauer.github_nickname }}</p>
+        </div>
+
+        <div class="link-container">
+          <div class="link-group">
+            <a routerLink="/page_haustiere_hauer" routerLinkActive="active" class="btn btn-primary">Haustiere</a>
+            <a routerLink="/page_hobbies_hauer" routerLinkActive="active" class="btn btn-primary">Hobbies</a>
+          </div>
+          <a routerLink="/home" routerLinkActive="active" class="btn btn-primary back-home">zurück home</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
