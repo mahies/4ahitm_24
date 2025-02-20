@@ -21,3 +21,4 @@ describe('Subpage2SchoenComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
