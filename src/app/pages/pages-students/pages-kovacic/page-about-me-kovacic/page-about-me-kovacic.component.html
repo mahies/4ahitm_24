@@ -1,17 +1,33 @@
-<div class="fluid-container">
-  <div class="card" style="width: 18rem;">
-    <img src="{{ me_kovacic.urlImage }}" class="card-img-top" width="20c" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{ me_kovacic.firstname }} {{ me_kovacic.surname }}</h5>
-      <p class="card-text">{{me_kovacic.message}}</p>
-      <a href= {{me_kovacic.socialLink}}> Mein Instagram Account</a><br>
-      <p class="card-text">Mein Github Username {{me_kovacic.github_nickname}}</p>
-      <p class="card-text">Geboren am: {{me_kovacic.birthday}}</p>
-      <p class="card-text">Wohnort: {{me_kovacic.zip_code}} {{ me.city }}</p>
-      <p class="card-text">Meine Email: {{me_kovacic.email}}</p>
-      <a routerLink="hobbies" routerLinkActive="active" class="btn btn-primary">Hobbies</a>
-      <a routerLink="/page-lieblingsessen-kovacic" routerLinkActive="active" class="btn btn-primary">Lieblingsessen</a>
-      <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Back</a>
+
+<div class="container-fluid">
+  <div class="background-box">
+    <div class="row">
+
+      <div class="col-4 image-container">
+        <img src="{{ me_kovacic.urlImage }}" class="img-fluid" alt="...">
+      </div>
+
+      <div class="col-6 card">
+        <h5 class="card-title"><strong><u>{{ me_kovacic.firstname }} {{ me_kovacic.surname }}</u></strong></h5>
+        <p class="card-text"><strong>{{ me_kovacic.message }}</strong></p>
+
+        <div class="link-container">
+          <a href="{{ me_kovacic.socialLink }}" class="social-link">Mein Instagram Account</a>
+          <p class="card-text"><strong>Meine E-Mail :</strong> {{ me_kovacic.email }}</p>
+          <p class="card-text"><strong>Geboren am:</strong> {{ me_kovacic.birthday }}</p>
+          <p class="card-text"><strong>Wohnort:</strong> {{ me_kovacic.zip_code }} {{ me_kovacic.city }}</p>
+          <p class="card-text"><strong>Mein Github Username:</strong> {{ me_kovacic.github_nickname }}</p>
+        </div>
+
+        <div class="link-container">
+          <div class="link-group">
+            <a routerLink="/page-lieblingsessen-kovacic" routerLinkActive="active" class="btn btn-primary">Lieblingsessen</a>
+            <a routerLink="/page-lieblingsmusik-kovacic" routerLinkActive="active" class="btn btn-primary">Lieblingsmusik</a>
+          </div>
+          <a routerLink="/home" routerLinkActive="active" class="btn btn-primary back-home">Homepage</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
