@@ -118,6 +118,12 @@ import {
 } from './pages/pages-students/pages-metz/page-travel-metz/page-travel-metz.component';
 import {PageMusicCocoComponent} from './pages/pages-students/pages-coco/page-music-coco/page-music-coco.component';
 import {PageDesignCocoComponent} from './pages/pages-students/pages-coco/page-design-coco/page-design-coco.component';
+import {
+  Subpage1SchoenComponent
+} from './pages/pages-students/page-about-me-schoengrundner/page-subpage1/subpage1-schoen.component';
+import {
+  Subpage2SchoenComponent
+} from './pages/pages-students/page-about-me-schoengrundner/page-subpage2/subpage2-schoen.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -166,6 +172,12 @@ export const routes: Routes = [
     component: PageAboutMeGARCIAComponent },
   { path: 'page_schoen',
     component: PageAboutMeSCHOENComponent },
+  { path: 'page_schoen',
+    component: PageAboutMeSCHOENComponent },
+  { path: 'subpage2_schoen',
+    component: Subpage2SchoenComponent},
+  { path: 'subpage1_schoen',
+    component: Subpage1SchoenComponent},
   { path: 'page_pojar',
     component: PageAboutMePojarComponent },
   { path: 'page_kovacic',
