@@ -1,10 +1,43 @@
-<div class="container">
-  <h1>Meine Hobbys</h1>
-  <p>Wie ich meine Freizeit gestalte:</p>
-  <p>Am liebsten bin ich abends mit meinen Freunden draußen und sehe mir die verschiedensten Plätze Wiens an.</p>
-  <p>Währendessen sind wir abwechselnd mit Autos oder Motorrädern unterwegs.</p>
-  <a routerLink="/home" routerLinkActive="active" class="btn btn-secondary">Home</a>
-  <a routerLink="/page_schoen" routerLinkActive="active" class="btn btn-secondary">Zurück</a>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Hobbys</title>
+  <link rel="stylesheet" href="subpage1-schoen.component.scss">
+</head>
+<body>
+<h1>Meine Hobbys</h1>
+<div class="tabs">
+  <button class="tab" onclick="openTab('motorrad')">Motorrad fahren</button>
+  <button class="tab" onclick="openTab('reiten')">Reiten</button>
+  <button class="tab" onclick="openTab('auto')">Auto fahren</button>
+  <button class="tab" onclick="openTab('kochen')">Kochen</button>
 </div>
 
+<div id="motorrad" class="tab-content">
+  <h2>Motorrad fahren</h2>
+  <img src="/assets/schoen-bilder/motorrad.jpg" alt="Motorrad fahren">
+  <p>Erkunde die Straßen mit Leidenschaft auf zwei Rädern.</p>
+</div>
 
+<div id="reiten" class="tab-content" style="display:none;">
+  <h2>Reiten</h2>
+  <img src="/assets/schoen-bilder/pony.JPG" alt="Reiten">
+  <p>Die Freiheit auf dem Rücken eines Pferdes genießen.</p>
+</div>
+
+<div id="auto" class="tab-content" style="display:none;">
+  <h2>Auto fahren</h2>
+  <img src="/assets/schoen-bilder/auto.jpg" alt="Auto fahren">
+  <p>Mit voller Geschwindigkeit unterwegs sein.</p>
+</div>
+
+<div id="kochen" class="tab-content" style="display:none;">
+  <h2>Kochen</h2>
+  <img src="/assets/schoen-bilder/essen.jpg" alt="Kochen">
+  <p>Kreativität in der Küche entfalten.</p>
+</div>
+<a href="/subpage1-schoen" class="btn btn-primary" routerLink="active" routerLinkActive="active">Zurück</a>
+</body>
+</html>
