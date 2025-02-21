@@ -121,6 +121,12 @@ import {PageDesignCocoComponent} from './pages/pages-students/pages-coco/page-de
 import {
   PageLieblingsmusikKovacicComponent
 } from './pages/pages-students/pages-kovacic/page-lieblingsmusik-kovacic/page-lieblingsmusik-kovacic.component';
+import {
+  Subpage1SchoenComponent
+} from './pages/pages-students/page-about-me-schoengrundner/page-subpage1/subpage1-schoen.component';
+import {
+  Subpage2SchoenComponent
+} from './pages/pages-students/page-about-me-schoengrundner/page-subpage2/subpage2-schoen.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -169,6 +175,10 @@ export const routes: Routes = [
     component: PageAboutMeGARCIAComponent },
   { path: 'page_schoen',
     component: PageAboutMeSCHOENComponent },
+  { path: 'subpage1-schoen',
+    component: Subpage1SchoenComponent},
+  { path: 'subpage2-schoen',
+    component: Subpage2SchoenComponent},
   { path: 'page_pojar',
     component: PageAboutMePojarComponent },
   { path: 'page_kovacic',
