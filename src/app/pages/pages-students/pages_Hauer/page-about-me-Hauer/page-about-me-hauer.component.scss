@@ -1,15 +1,6 @@
-body {
-  font-family: "Times New Roman", serif;
-  background-color: #eef2f7;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 .container-fluid {
+  font-family: "Times New Roman", serif;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,11 +8,11 @@ body {
 }
 
 .background-box {
-  background-color: #e6dcf5;
+  background: linear-gradient(to bottom, #5f409e, #ff5e84);
   padding: 60px;
   border-radius: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 5px solid black;
+  box-shadow: 0 30px 30px gray;
+  border: 5px gray;
   max-width: 1500px;
   width: 100%;
   margin: auto;
@@ -72,35 +63,30 @@ body {
   align-items: center;
 }
 
-.social-link,
-.email-link {
+.social-link{
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
+  color: #B4B4B4;
+
 }
 
-.social-link {
-  color: #B4B4B4;
-}
 
-.email-link {
-  color: #B4B4B4;
-}
 
 .link-group {
   display: flex;
   justify-content: center;
-  gap: 15px; // Abstand zwischen den Buttons
+  gap: 15px;
   width: 100%;
   margin-bottom: 10px;
 }
 
 .btn-primary {
-  width: 120px;
+  width: 160px;
   height: 40px;
-  background-color: #B4B4B4;
+  background-color: #3d2767;
   border: none;
   color: white;
   font-weight: bold;
@@ -109,19 +95,19 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #968fa5;
-  transform: scale(1.1);
+  background-color: #7f57cf;
+    transform: scale(1.1);
 }
 
 .back-home {
   width: 160px;
   height: 40px;
   margin-top: 10px;
-  background-color: #0E0E10;
+  background-color: #5f409e;
 }
 
 .back-home:hover {
-  background-color: #222;
+  background-color: #7f57cf;
 }
 
 @keyframes fadeIn {

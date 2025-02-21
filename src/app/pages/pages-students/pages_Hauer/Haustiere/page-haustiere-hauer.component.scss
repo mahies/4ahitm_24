@@ -1,15 +1,5 @@
-body {
+container-fluid {
   font-family: "Times New Roman", serif;
-  background-color: #eef2f7;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.container-fluid {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,11 +9,11 @@ body {
 }
 
 .background-box {
-  background-color: #e6dcf5;
+  background: linear-gradient(to bottom, #5f409e, #ff5e84);
   padding: 60px;
   border-radius: 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 5px solid black;
+  border: 5px gray;
   max-width: 1500px;
   width: 100%;
   margin: auto;
@@ -49,9 +39,14 @@ body {
 .pet-image {
   border: 3px solid #6c4d88;
   border-radius: 10px;
-  max-width: 100%;
-  height: auto;
+  min-width: 10cm;
+  min-height: 10cm;
+  max-width: 10cm;
+  max-height: 10cm;
+
 }
+
+
 
 .card {
   background-color: rgba(255, 255, 255, 0.8);
@@ -85,9 +80,9 @@ body {
 }
 
 .btn-primary {
-  width: 120px;
+  width: 160px;
   height: 40px;
-  background-color: #B4B4B4;
+  background-color: #3d2767;
   border: none;
   color: white;
   font-weight: bold;
@@ -96,18 +91,18 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #968fa5;
+  background-color: #7f57cf;
   transform: scale(1.1);
 }
 
 .back-home {
   width: 160px;
   height: 40px;
-  background-color: #0E0E10;
+  background-color: #5f409e;
 }
 
 .back-home:hover {
-  background-color: #222;
+  background-color: #7f57cf;
 }
 
 @keyframes fadeIn {
