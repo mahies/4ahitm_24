@@ -8,6 +8,7 @@
 </head>
 <body>
 <h1>Meine Hobbys</h1>
+
 <div class="tabs">
   <button class="tab" onclick="openTab('motorrad')">Motorrad fahren</button>
   <button class="tab" onclick="openTab('reiten')">Reiten</button>
@@ -15,29 +16,42 @@
   <button class="tab" onclick="openTab('kochen')">Kochen</button>
 </div>
 
-<div id="motorrad" class="tab-content">
-  <h2>Motorrad fahren</h2>
-  <img src="/assets/schoen-bilder/motorrad.jpg" alt="Motorrad fahren">
-  <p>Erkunde die Straßen mit Leidenschaft auf zwei Rädern.</p>
+<div class="hobby-container">
+  <div id="motorrad" class="tab-content">
+    <h2>Motorrad fahren</h2>
+    <img src="/assets/schoen-bilder/motorrad.jpg" alt="Motorrad fahren">
+    <p>Erkunde die Straßen mit Leidenschaft auf zwei Rädern.</p>
+  </div>
+
+  <div id="reiten" class="tab-content" style="display:none;">
+    <h2>Reiten</h2>
+    <img src="/assets/schoen-bilder/pony.JPG" alt="Reiten">
+    <p>Die Freiheit auf dem Rücken eines Pferdes genießen.</p>
+  </div>
+
+  <div id="auto" class="tab-content" style="display:none;">
+    <h2>Auto fahren</h2>
+    <img src="/assets/schoen-bilder/auto.jpg" alt="Auto fahren">
+    <p>Mit voller Geschwindigkeit unterwegs sein.</p>
+  </div>
+
+  <div id="kochen" class="tab-content" style="display:none;">
+    <h2>Kochen</h2>
+    <img src="/assets/schoen-bilder/essen.jpg" alt="Kochen">
+    <p>Kreativität in der Küche entfalten.</p>
+  </div>
 </div>
 
-<div id="reiten" class="tab-content" style="display:none;">
-  <h2>Reiten</h2>
-  <img src="/assets/schoen-bilder/pony.JPG" alt="Reiten">
-  <p>Die Freiheit auf dem Rücken eines Pferdes genießen.</p>
-</div>
+<a routerLink="/subpage1-schoen" routerLinkActive="active" class="btn btn-primary">Zurück</a>
 
-<div id="auto" class="tab-content" style="display:none;">
-  <h2>Auto fahren</h2>
-  <img src="/assets/schoen-bilder/auto.jpg" alt="Auto fahren">
-  <p>Mit voller Geschwindigkeit unterwegs sein.</p>
-</div>
-
-<div id="kochen" class="tab-content" style="display:none;">
-  <h2>Kochen</h2>
-  <img src="/assets/schoen-bilder/essen.jpg" alt="Kochen">
-  <p>Kreativität in der Küche entfalten.</p>
-</div>
-<a href="/subpage1-schoen" class="btn btn-primary" routerLink="active" routerLinkActive="active">Zurück</a>
+<script>
+  function openTab(tabName) {
+    var contents = document.getElementsByClassName('tab-content');
+    for (var i = 0; i < contents.length; i++) {
+      contents[i].style.display = 'none';
+    }
+    document.getElementById(tabName).style.display = 'block';
+  }
+</script>
 </body>
 </html>
