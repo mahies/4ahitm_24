@@ -133,6 +133,9 @@ import {
 import {
   Subpage2SchoenComponent
 } from './pages/pages-students/page-about-me-schoengrundner/page-subpage2/subpage2-schoen.component';
+import {
+  PageHobbiesPontComponent
+} from './pages/pages-students/pages-pont/page-hobbies-pont/page-hobbies-pont.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -147,6 +150,8 @@ export const routes: Routes = [
     component: PageLieblingsbuecherPontComponent },
   { path: 'page_pont_lieblingsmusik',
     component: PageLieblingsmusikPontComponent },
+  { path: 'page_pont_hobbies',
+    component: PageHobbiesPontComponent },
   { path: 'page_kovacs',
     component: PageAboutMeKOVACSComponent },
   { path: 'page_kovacs_reviews',
