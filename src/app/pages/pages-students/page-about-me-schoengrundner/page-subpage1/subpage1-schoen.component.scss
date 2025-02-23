@@ -1,16 +1,64 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #6a1d73;
-  color: white;
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  text-align: center;
+  background-color: #0365c7;
+  margin: 0;
+  padding: 20px;
 }
 
-.container {
-  text-align: center;
+h1 {
+  margin-top: 20px;
+  font-size: 2em;
+  font-family: "Alegreya", serif;
 }
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background-color: #6a1d73;
+}
+
+.songs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.song {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 250px;
+}
+
+.song img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.song h2 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
 
