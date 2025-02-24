@@ -1,20 +1,24 @@
-.demo {
-  li {
-    list-style: none;
-    img {
-      width: auto;
-      height: 6rem;
+
+.main {
+  .demo {
+    li {
+      list-style: none;
+      img {
+        width: auto;
+        height: 6rem;
+      }
     }
   }
-}
-.students {
-  li {
-    list-style: none;
-    img {
-      height: 12rem;
-      width: 100% !important;
-      object-fit: cover;
-      object-position: top center;
+  .students {
+    li {
+      list-style: none;
+      img {
+        max-height: 18rem;
+        min-height: 18rem;
+        width: 100% !important;
+        object-fit: cover;
+        object-position: top center;
+      }
     }
   }
 }

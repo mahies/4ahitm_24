@@ -1,40 +1,30 @@
 
 <main class="main .container-fluid m-5">
-  <div class="content ">
-    <h4>DEMO</h4>
-    <a routerLink="{{demo.routerLink}}" routerLinkActive="active" class="demo">
-      <li>
-        <img src="{{demo.urlImage}}">
-      </li>
-    </a>
+<!--  <div class="content ">-->
+<!--    <h4>DEMO</h4>-->
+<!--    <a routerLink="{{demo.routerLink}}" routerLinkActive="active" class="demo">-->
+<!--      <li>-->
+<!--        <img src="{{demo.urlImage}}">-->
+<!--      </li>-->
+<!--    </a>-->
+<!--  </div>-->
+  <div class="content d-flex justify-content-around">
+    <h1 class="title">Die Medientechnika der {{title}}</h1>
   </div>
-  <div class="content">
-    <h1>Die Medientechnika der {{title}}</h1>
-  </div>
-  <ul class="students d-flex flex-row flex-wrap ">
+  <ul class="students d-flex flex-row flex-wrap justify-content-between">
     <span *ngFor="let student of students  | orderBy: 'surname' ; let i = index" class="col-2 m-2">
       <a routerLink="{{student.routerLink}}" routerLinkActive="active" class="students">
         <li>
           <div class="d-flex flex-column ">
               <img src="{{student.urlImage}}">
-          <span class="badge badge-pill badge-info">{{i}}</span>
-          <span class="name">{{student.surname}}</span>
+                   <div>
+                <span class="badge rounded-pill bg-primary">{{i}}
+                  <span class="name">{{student.surname}}</span>
+                </span>
+              </div>
           </div>
-
         </li>
       </a>
     </span>
   </ul>
-  <a routerLink="/page_demo" routerLinkActive="active">Link zur page demo</a><br>
-  <a routerLink="/page_kovacs" routerLinkActive="active">Link zur Kovacs Seite</a><br>
-  <a routerLink="/page_novo" routerLinkActive="active">Link zur Novo Seite</a><br>
-  <a routerLink="/page_hobel" routerLinkActive="active">Link zur Hobel Seite</a><br>
-  <a routerLink="/page_zhou" routerLinkActive="active">Link zur Zhou Seite</a><br>
-  <a routerLink="/page_majzel" routerLinkActive="active">Link zur Majzel Seite</a><br>
-  <a routerLink="/page_pojar" routerLinkActive="active">Link zur Pojar Seite</a><br>
-  <a routerLink="/page_mutisevic" routerLinkActive="active">Link zur Mutisevic Seite</a><br>
-  <a routerLink="/page_schoen" routerLinkActive="active">Link zur Schöngrundner Seite</a><br>
-  <a routerLink="/page_friedl" routerLinkActive="active">Link zur Friedls Seite</a><br>
-  <a routerLink="/page_garcia" routerLinkActive="active">Link zur Garcia Seite</a><br>
-  <a routerLink="page_coco" routerLinkActive="active">Link zur Secrieri Seite</a>
 </main>
