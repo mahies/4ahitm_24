@@ -1,5 +1,4 @@
-/* Grundlegende Stile */
-body {
+.body {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to right, #ff9966, #ff5e62);
   text-align: center;
@@ -7,8 +6,8 @@ body {
   padding: 0;
   color: white;
   display: flex;
-  flex-direction: column; /* Damit sich der Inhalt in die Höhe streckt */
-  min-height: 100vh; /* Stellt sicher, dass der Hintergrund die ganze Seite füllt */
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1 {
