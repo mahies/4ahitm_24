@@ -32,59 +32,16 @@ body {
   width: 100%;
   margin: auto;
   position: relative;
-  overflow-y: auto;
-  max-height: 85vh;
-}
-
-.card-body {
-  padding: 15px;
-  text-align: center;
-}
-
-.card-text {
-  font-family: "Times New Roman";
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 5px;
-}
-
-a[href*="Instagram"] {
-  margin-bottom: 10px;
-}
-
-.d-flex.p-2 {
-  margin-top: 5px;
-}
-
-.btn-primary, .btn-secondary {
-  font-family: "Times New Roman";
-  display: block;
-  width: 100%;
-  text-align: center;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-bottom: 8px;
-  transition: background-color 0.3s;
-}
-
-.btn-primary:hover, .btn-secondary:hover {
-  background-color: #0056b3;
-}
-
-.card-img-top {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  object-position: center top;
+  overflow: hidden;
 }
 
 .card-body {
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .card-title {
   font-family: "Times New Roman";
@@ -100,9 +57,56 @@ a[href*="Instagram"] {
   margin-bottom: 5px;
 }
 
+
+a[href*="Instagram"] {
+  order: 1;
+  margin-bottom: 10px;
+}
+
+
+.d-flex.p-2 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+
+.d-flex.p-2.justify-content-between {
+  width: 100%;
+  gap: 0;
+}
+
+
+.btn-primary,
+.btn-secondary {
+  font-family: "Times New Roman";
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #0056b3;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .social-link-container {
   margin-bottom: 10px;
 }
+
 
 .subpage-buttons {
   display: flex;

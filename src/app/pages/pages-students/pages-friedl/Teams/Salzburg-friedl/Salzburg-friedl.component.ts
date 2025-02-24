@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
-import {Person, FRIEDL} from '../../../../model/person';
+import {Person, FRIEDL} from '../../../../../model/person';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 
 
 @Component({
-  selector: 'Hartberg-friedl',
-  templateUrl: './Hartberg-friedl.component.html',
-  styleUrl: './Hartberg-friedl.component.scss',
+  selector: 'Salzburg-friedl',
+  templateUrl: './Salzburg-friedl.component.html',
+  styleUrl: './Salzburg-friedl.component.scss',
   imports: [
     RouterLink,
     RouterLinkActive
   ],
   standalone: true
 })
-export class HartbergFriedlComponent {
+export class SalzburgFriedlComponent {
 
   me_friedl: Person = FRIEDL;
   protected readonly me = FRIEDL;

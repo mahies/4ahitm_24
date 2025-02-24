@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
-import {Person, FRIEDL} from '../../../../model/person';
+import {Person, FRIEDL} from '../../../../../model/person';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 
 
 @Component({
-  selector: 'BWL-friedl',
-  templateUrl: './BWL-friedl.component.html',
-  styleUrl: './BWL-friedl.component.scss',
+  selector: 'FAK-friedl',
+  templateUrl: './FAK-friedl.component.html',
+  styleUrl: './FAK-friedl.component.scss',
   imports: [
     RouterLink,
     RouterLinkActive
   ],
   standalone: true
 })
-export class BWLFriedlComponent {
+export class FAKFriedlComponent {
 
   me_friedl: Person = FRIEDL;
   protected readonly me = FRIEDL;

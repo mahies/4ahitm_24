@@ -66,7 +66,7 @@ import {
 } from './pages/pages-students/pages-zhou/page-lieblingsfotos-zhou/page-lieblingsfotos-zhou.component';
 import {
   Subpage1FriedlComponent
-} from './pages/pages-students/pages-friedl/subpage1-friedl/subpage1-friedl.component';
+} from './pages/pages-students/pages-friedl/Teams/subpage1-friedl/subpage1-friedl.component';
 import {
   Subpage2FriedlComponent
 } from './pages/pages-students/pages-friedl/subpage2-friedl/subpage2-friedl.component';
@@ -79,37 +79,37 @@ import {PageArtComponent} from './pages/pages-students/pages-cizmic/page-art/pag
 
 import {
   LASKFriedlComponent
-} from './pages/pages-students/pages-friedl/LASK-friedl/LASK-friedl.component';
+} from './pages/pages-students/pages-friedl/Teams/LASK-friedl/LASK-friedl.component';
 import {
   AltachFriedlComponent
-} from './pages/pages-students/pages-friedl/Altach-friedl/Altach-friedl.component';
+} from './pages/pages-students/pages-friedl/Teams/Altach-friedl/Altach-friedl.component';
 import {
   BWLFriedlComponent
-} from './pages/pages-students/pages-friedl/BWL-friedl/BWL-friedl.component';
+} from './pages/pages-students/pages-friedl/Teams/BWL-friedl/BWL-friedl.component';
 import {
   FAKFriedlComponent
-} from './pages/pages-students/pages-friedl/FAK-friedl/FAK-friedl.component';
+} from './pages/pages-students/pages-friedl/Teams/FAK-friedl/FAK-friedl.component';
 import {
   GAKFriedlComponent
-} from './pages/pages-students/pages-friedl/GAK-friedl/GAK-friedl.component';
+} from './pages/pages-students/pages-friedl/Teams/GAK-friedl/GAK-friedl.component';
 import {
   HartbergFriedlComponent
-} from './pages/pages-students/pages-friedl/Hartberg-friedl/Hartberg-friedl.component';
+} from './pages/pages-students/pages-friedl/Teams/Hartberg-friedl/Hartberg-friedl.component';
 import {
   KlagenfurtFriedlComponent
-} from './pages/pages-students/pages-friedl/Klagenfurt-friedl/Klagenfurt-friedl.component';
+} from './pages/pages-students/pages-friedl/Teams/Klagenfurt-friedl/Klagenfurt-friedl.component';
 import {
   SalzburgFriedlComponent
-} from './pages/pages-students/pages-friedl/Salzburg-friedl/Salzburg-friedl.component';
+} from './pages/pages-students/pages-friedl/Teams/Salzburg-friedl/Salzburg-friedl.component';
 import {
   SturmFriedlComponent
-} from './pages/pages-students/pages-friedl/Sturm-friedl/Sturm-friedl.component';
+} from './pages/pages-students/pages-friedl/Teams/Sturm-friedl/Sturm-friedl.component';
 import {
   WACFriedlComponent
-} from './pages/pages-students/pages-friedl/WAC-friedl/WAC-friedl.component';
+} from './pages/pages-students/pages-friedl/Teams/WAC-friedl/WAC-friedl.component';
 import {
   WSGFriedlComponent
-} from './pages/pages-students/pages-friedl/WSG-friedl/WSG-friedl.component';
+} from './pages/pages-students/pages-friedl/Teams/WSG-friedl/WSG-friedl.component';
 import {
   PageLieblingsessenKovacicComponent
 } from './pages/pages-students/pages-kovacic/page-lieblingsessen-kovacic/page-lieblingsessen-kovacic.component';

@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
-import {Person, FRIEDL} from '../../../../model/person';
+import {Person, FRIEDL} from '../../../../../model/person';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 
 
 @Component({
-  selector: 'FAK-friedl',
-  templateUrl: './FAK-friedl.component.html',
-  styleUrl: './FAK-friedl.component.scss',
+  selector: 'subpage1-friedl',
+  templateUrl: './subpage1-friedl.component.html',
+  styleUrl: './subpage1-friedl.component.scss',
   imports: [
     RouterLink,
     RouterLinkActive
   ],
   standalone: true
 })
-export class FAKFriedlComponent {
+export class Subpage1FriedlComponent {
 
   me_friedl: Person = FRIEDL;
   protected readonly me = FRIEDL;
