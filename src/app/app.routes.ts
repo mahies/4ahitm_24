@@ -20,7 +20,7 @@ import {PageAboutMeKOVACICComponent} from './pages/pages-students/pages-kovacic/
 import {PageAboutMeWAGNComponent} from './pages/pages-students/pages-wagner/page-about-me-wagn/page-about-me-wagn.component';
 import {PageAboutMeMajzelComponent} from './pages/pages-students/pages_majzel/page-about-me-majzel/page-about-me-majzel.component';
 import {PageAboutMeMutisevicComponent} from './pages/pages-students/pages-mutisevic/page-about-me-mutisevic/page-about-me-mutisevic.component';
-import {PageAboutFriedlComponent} from './pages/pages-students/pages-friedl/page-about-me-friedl/page-about-me-friedl.component';
+import {PageAboutFriedlComponent} from './pages/pages-students/pages-friedl/mainpages-friedl/page-about-me-friedl/page-about-me-friedl.component';
 import {PageAboutMeCizmicComponent} from './pages/pages-students/pages-cizmic/page-about-me-cizmic/page-about-me-cizmic.component';
 import {PageAboutMeCocoComponent} from './pages/pages-students/page-about-me-coco/page-about-me-coco.component';
 import {PageMeineReisenGARCIAComponent} from './pages/pages-students/page-garcia/page-meine-reisen-garcia/page-meine-reisen-garcia.component';
@@ -69,7 +69,7 @@ import {
 } from './pages/pages-students/pages-friedl/Teams/subpage1-friedl/subpage1-friedl.component';
 import {
   Subpage2FriedlComponent
-} from './pages/pages-students/pages-friedl/subpage2-friedl/subpage2-friedl.component';
+} from './pages/pages-students/pages-friedl/mainpages-friedl/subpage2-friedl/subpage2-friedl.component';
 import {
   PageLieblingssaengerinGARCIAComponent
 } from './pages/pages-students/page-garcia/page-lieblingssaengerin-garcia/page-lieblingssaengerin-garcia.component';
