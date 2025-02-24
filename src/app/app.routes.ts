@@ -215,7 +215,7 @@ export const routes: Routes = [
     component: PageAboutMeMajzelComponent},
   { path: 'page_majzel_hobbies',
     component: PageHobbiesMajzelComponent},
-  { path: 'page_majzel_reisen ',
+  { path: 'page_majzel_reisen',
     component: PageReisenMajzelComponent},
   { path: 'page_majzel_polen',
     component: PagePolenMajzelComponent},
