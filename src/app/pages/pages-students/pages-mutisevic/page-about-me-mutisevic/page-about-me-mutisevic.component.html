@@ -20,7 +20,7 @@
           </a>
 
           <p class="card-text">
-            <strong>Geboren am:</strong> {{me.birthday}}
+            <strong>Geboren am:</strong> {{ me.birthday.getUTCDate() + 1 }}.{{ me.birthday.getUTCMonth() + 1 }}.{{ me.birthday.getUTCFullYear() }}
           </p>
           <p class="card-text">
             <strong>Wohnort:</strong> {{me.zip_code}} {{ me.city }}

@@ -233,7 +233,7 @@ export  const MUTISEVIC : Person = {
   surname: "Mutisevic",
   firstname: "Adin",
   urlImage: "assets/mutisevic-assets/adin.jpg",
-  birthday: new Date("2006-05-30"),
+  birthday: new Date("2006-5-30"),
   department: "ITEL Medientechnick",
   email: "200224@studierende.htl-donaustadt.at",
   github_nickname: "adino",
