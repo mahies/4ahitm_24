@@ -1,6 +1,8 @@
+@import "../zhou_variables";
+
 body {
-    background-image: linear-gradient(to right, #f17a5d, #e54427);
-  }
+  background-image: linear-gradient(to right, #f17a5d, #e54427);
+}
 
 .gallery {
   display: flex;
@@ -12,11 +14,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-.test{
+
+.test {
   margin-bottom: 70px;
   margin-left: 20px;
   margin-right: 20px;
 }
+
 .gallery img {
   width: calc(20% - 50px);
   max-width: 200%;
