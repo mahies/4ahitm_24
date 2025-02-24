@@ -140,6 +140,7 @@ import {PageGamesCizComponent} from './pages/pages-students/pages-cizmic/page-ga
 import {
   PageVacationsGarciaComponent
 } from './pages/pages-students/page-garcia/page-vacations-garcia/page-vacations-garcia.component';
+import { PageDeltaCizComponent } from './pages/pages-students/pages-cizmic/page-delta-ciz/page-delta-ciz.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -240,6 +241,8 @@ export const routes: Routes = [
     component: PageArtComponent },
   { path: 'page-game-ciz',
     component: PageGamesCizComponent },
+  { path: 'page-delta-ciz',
+    component: PageDeltaCizComponent },
   { path: 'page-lieblingssaengerin-garcia',
     component: PageLieblingssaengerinGARCIAComponent },
   { path: 'LASK-friedl',
