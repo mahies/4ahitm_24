@@ -1,10 +1,12 @@
+@import "../ciz_variables";
+
 #artBod {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin: 1%;
   padding: 1%;
   text-align: center;
-  background-color: #c9e4ff;
-  color: #0f1154;
+  background-color: $bgColor;
+  color: $regColor;
   justify-content: center;
   align-items: center;
 }

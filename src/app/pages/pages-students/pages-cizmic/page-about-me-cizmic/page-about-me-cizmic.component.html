@@ -1,7 +1,10 @@
 <title>Cizmic Site</title>
 
+<header>
+  <h3> Eine Seite von: {{ elCi.firstname }} <span style="text-transform:uppercase;">{{ elCi.surname }}</span> </h3>
+</header>
+
 <div class="mx-auto" style="width: 50rem;" id = "card1" >
-    <h3> Die Seite von: {{ elCi.firstname }} <span style="text-transform:uppercase;">{{ elCi.surname }}</span> </h3>
     <p> {{elCi.message}}</p>
     <img src="{{elCi.urlImage}}" alt ="A good drawin of sonic t. hedgehog">
     <p>^Hier ist ein bild^</p>
@@ -10,5 +13,6 @@
     <p> Meine schul E-Mail ist {{elCi.email}}</p>
     <p> Mein total echter Social Media link ist {{elCi.socialLink}} </p>
     <a routerLink="/page-art" routerLinkActive="active"> Wenn sie mehr von meinen Zeichnungen sehen wollen, clicken sie hier</a>
+    <a routerLink="/page-games-ciz" routerLinkActive="active"> Games Test</a>
 </div>
 

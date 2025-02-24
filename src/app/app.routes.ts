@@ -136,6 +136,7 @@ import {
 import {
   PageHobbiesPontComponent
 } from './pages/pages-students/pages-pont/page-hobbies-pont/page-hobbies-pont.component';
+import {PageGamesCizComponent} from './pages/pages-students/pages-cizmic/page-games-ciz/page-games-ciz.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -234,6 +235,8 @@ export const routes: Routes = [
     component: PageAboutMeCizmicComponent },
   { path: 'page-art',
     component: PageArtComponent },
+  { path: 'page-game-ciz',
+    component: PageGamesCizComponent },
   { path: 'page-lieblingssaengerin-garcia',
     component: PageLieblingssaengerinGARCIAComponent },
   { path: 'LASK-friedl',
