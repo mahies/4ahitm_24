@@ -127,9 +127,7 @@ import {
 import {
   PageLieblingsmusikKovacicComponent
 } from './pages/pages-students/pages-kovacic/page-lieblingsmusik-kovacic/page-lieblingsmusik-kovacic.component';
-import {
-  Subpage1SchoenComponent
-} from './pages/pages-students/page-about-me-schoengrundner/page-subpage1/subpage1-schoen.component';
+
 import {
   Subpage2SchoenComponent
 } from './pages/pages-students/page-about-me-schoengrundner/page-subpage2/subpage2-schoen.component';
@@ -141,6 +139,9 @@ import {
   PageVacationsGarciaComponent
 } from './pages/pages-students/page-garcia/page-vacations-garcia/page-vacations-garcia.component';
 import { PageDeltaCizComponent } from './pages/pages-students/pages-cizmic/page-delta-ciz/page-delta-ciz.component';
+import {
+  PageHobbySchoengrundnerComponent
+} from './pages/pages-students/page-about-me-schoengrundner/page-hobby-schoengrundner/page-hobby-schoengrundner.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -195,8 +196,8 @@ export const routes: Routes = [
     component: PageAboutMeGARCIAComponent },
   { path: 'page_schoen',
     component: PageAboutMeSCHOENComponent },
-  { path: 'subpage1-schoen',
-    component: Subpage1SchoenComponent},
+  { path: 'page-hobby-schoengrundner',
+    component: PageHobbySchoengrundnerComponent},
   { path: 'subpage2-schoen',
     component: Subpage2SchoenComponent},
   { path: 'page_pojar',
