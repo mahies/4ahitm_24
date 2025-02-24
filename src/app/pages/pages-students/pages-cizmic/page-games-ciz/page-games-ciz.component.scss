@@ -1,0 +1,12 @@
+@import "../ciz_variables";
+
+#gamebod {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+  background-color: $bgColor;
+  color: $regColor;
+  justify-content: center;
+  align-items: center;
+}
