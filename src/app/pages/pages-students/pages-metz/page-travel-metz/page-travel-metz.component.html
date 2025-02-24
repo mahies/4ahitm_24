@@ -1,5 +1,5 @@
 <div class="body">
-  <h1 class="header">Meine Reisen</h1>
+  <h1 class="headerSuper">Meine Reisen</h1>
   <!--Ausgabe Alben-->
   <ul class="travel d-flex flex-column">
     <li *ngFor="let reise of reise | orderBy: 'interpret'; let i = index" class="col-auto">
@@ -11,7 +11,7 @@
             <img
               src="assets/metzinger-bilder/Fotografie/{{reise.pfad}}/{{foto.Link}}.jpg"
               alt="{{foto.Link}} wurde nicht gefunden"
-              [style.width]="foto.isVertikal ? '150px' : '300px'"
+              [style.width]="foto.isVertikal ? '300px' : '400px'"
             >
           </div>
           <p>{{ foto.Beschreibung }}</p>

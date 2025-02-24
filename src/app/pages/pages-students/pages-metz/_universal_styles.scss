@@ -4,6 +4,16 @@
   color: $text-color;
 }
 
+.headerSuper {
+  font-family: $h1_font;
+  text-align: center;
+  font-weight: bold;
+  color: $primary;
+  padding: 20px;
+  background-color: $card-background;
+  border-radius: 10px;
+}
+
 .btn-primary {
   background-color: $primary;
   color: $text-color;
