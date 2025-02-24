@@ -29,6 +29,13 @@ body {
   right: 50%;
 }
 
+.link-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+}
 .btn-primary {
   display: block;
   width: 100%;
