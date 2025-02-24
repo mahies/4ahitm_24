@@ -1,0 +1,66 @@
+.container {
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center; /* Zentriert die Karten auch vertikal */
+  height: 100vh; /* Stellt sicher, dass die Karten vertikal im Viewport zentriert sind */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; /* Anpassung der max-width für größere Karten */
+}
+
+.card {
+  width: 300px;
+  height: 450px; /* Etwas mehr Höhe für eine bessere Balance */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px; /* Etwas mehr Padding */
+  overflow: hidden;
+  text-align: center; /* Stellt sicher, dass der Text mittig ausgerichtet ist */
+}
+
+.card:hover {
+  transform: scale(1.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Alle Bilder haben jetzt die gleiche Höhe */
+  object-fit: cover; /* Verhindert Verzerrung der Bilder */
+  border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sternchen {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.sternchen img {
+  width: 160px; /* Sterne jetzt doppelt so groß */
+  height: 160px; /* Gleiche Höhe für alle Sterne */
+  object-fit: contain; /* Verhindert Verzerrung der Sterne */
+  margin: 0 5px; /* Etwas mehr Abstand zwischen den Sternen */
+}
+
+
+
+
