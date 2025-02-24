@@ -53,12 +53,13 @@
 .d-flex.mt-3 {
   gap: 10px;
   color: #004B77;
+  display: flex;
+  width: 100%;
 }
 
 .btn {
   background-color: cornflowerblue;
 }
-
 
 .btn-primary {
   background-color: cornflowerblue;
@@ -68,11 +69,15 @@
   color: #004B77;
 }
 
-
 .btn-hover:hover {
-  background-color: #006fa6 ;
+  background-color: #006fa6;
 }
 
 .btn-primary:hover {
   background-color: #0056b3;
 }
+
+.home-btn {
+  margin-left: auto; /* This will push the "Home" button to the far right */
+}
+

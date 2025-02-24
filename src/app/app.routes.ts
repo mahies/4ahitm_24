@@ -137,6 +137,9 @@ import {
   PageHobbiesPontComponent
 } from './pages/pages-students/pages-pont/page-hobbies-pont/page-hobbies-pont.component';
 import {PageGamesCizComponent} from './pages/pages-students/pages-cizmic/page-games-ciz/page-games-ciz.component';
+import {
+  PageVacationsGarciaComponent
+} from './pages/pages-students/page-garcia/page-vacations-garcia/page-vacations-garcia.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -272,6 +275,8 @@ export const routes: Routes = [
   { path: 'page-music-coco',
     component: PageMusicCocoComponent},
   { path: 'page-design-coco',
-    component: PageDesignCocoComponent}
+    component: PageDesignCocoComponent},
+  { path: 'page-vacations-garcia',
+    component: PageVacationsGarciaComponent}
 ];
 
