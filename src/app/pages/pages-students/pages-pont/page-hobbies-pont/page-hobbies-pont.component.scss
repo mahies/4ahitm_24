@@ -1,0 +1,33 @@
+@import "../custom_vars_pontasch.scss";
+
+$body-bg: $gray-100;
+$container-bg: $white;
+$text-color: $body-color;
+
+body {
+  background-color: $body-bg;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.hobby-container {
+  max-width: 600px;
+  margin: auto;
+  background: $container-bg;
+  padding: 20px;
+  border-radius: $border-radius-lg;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: $text-color;
+}
+
+.hobby {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  margin-top: 20px;
+}
