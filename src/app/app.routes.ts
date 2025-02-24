@@ -268,7 +268,7 @@ export const routes: Routes = [
     component: PageMeineReisenGARCIAComponent},
   { path: 'page-lieblingsessen-pojar',
     component: PageLieblingsessenPojarComponent},
-  { path: 'page-travel-metz',
+  { path: 'page_metz_travel',
     component: PageTravelMetzComponent},
   { path: 'page-getestete-doener-pojar',
     component: PageGetesteteDoenerPojarComponent},

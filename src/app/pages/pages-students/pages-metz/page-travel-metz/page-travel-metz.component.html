@@ -1,20 +1,38 @@
 <div class="body">
   <h1 class="header">Meine Reisen</h1>
-  <!--Ausgabe Alben-->
   <ul class="travel d-flex flex-column">
     <li *ngFor="let reise of reise | orderBy: 'interpret'; let i = index" class="col-auto">
-      <ul>
-        <li *ngFor="let foto of reise.fotos">
-          <div>
-            <img src="assets/metzinger-bilder/Fotografie/{{foto.Link}}.jpg" alt="{{foto.Link}} wurde nicht gefunden">
-          </div>
-          <p>{{ foto.Beschreibung }}</p>
-          <br>
-        </li>
-      </ul>
+      <h2>{{ reise.ziel }}</h2>
+      <h3>{{ getMonthAsText(reise.datum.getMonth()) }}, {{ reise.datum.getFullYear() }}</h3>
 
+      <div id="carousel-{{i}}" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div *ngFor="let foto of reise.fotos; let j = index" class="carousel-item" [class.active]="j === 0">
+            <div>
+              <img
+                src="assets/metzinger-bilder/Fotografie/{{reise.pfad}}/{{foto.Link}}.jpg"
+                alt="{{foto.Link}} wurde nicht gefunden"
+                [style.width]="foto.isVertikal ? '150px' : '300px'"
+                class="d-block w-100"
+              >
+            </div>
+            <p>{{ foto.Beschreibung }}</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-{{i}}" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-{{i}}" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <br>
     </li>
   </ul>
+
   <div class="buttongrid">
     <a class="btn btn-primary" routerLink="/page_metz" routerLinkActive="active">Steckbrief</a>
     <a class="btn btn-primary" routerLink="/home" routerLinkActive="active">Startseite</a>
