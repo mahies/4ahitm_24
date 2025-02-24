@@ -9,7 +9,7 @@
           <h1><span class="text-primary">{{ me.surname }}</span> {{ me.firstname }}</h1>
           <h5><p class="card-text">{{ me.message }}</p></h5>
           <h6>
-            <span class="card-text"><strong>Birth date:</strong> {{ me.birthday }}</span><br>
+            <span class="card-text"><strong>Birth date:</strong> {{ me.birthday.getUTCDate() }}.{{ me.birthday.getUTCMonth() + 1 }}.{{ me.birthday.getUTCFullYear() }}</span><br>
             <span class="card-text"><strong>Residence:</strong> {{ me.zip_code }} {{ me.city }}</span><br>
             <span class="card-text"><strong>Github Username:</strong> {{ me.github_nickname }}</span><br>
             <span class="card-text"><strong>Departure:</strong> {{ me.department }}</span><br>
