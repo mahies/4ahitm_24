@@ -17,7 +17,7 @@ h2 {
 
 img {
   border-radius: 50px;
-  box-shadow: 15px 15px 10px #354A5F;
+  box-shadow: 15px 15px 10px orangered;
   max-width: 100%;
   height: auto;
 }
@@ -156,3 +156,39 @@ h1 {
   }
 }
 
+.header {
+  background-color: darkred;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.header img {
+  width: 90px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.header h5 {
+  font-size: 35px;
+  color: white;
+  margin: 0;
+  font-family: "Baloo Bhaijaan", cursive;
+}
+
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
