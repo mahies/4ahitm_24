@@ -79,6 +79,43 @@ a {
     padding: 30px 10px;
   }
 }
+.header {
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.header img {
+  width: 90px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.header h5 {
+  font-size: 35px;
+  color: white;
+  margin: 0;
+  font-family: "Baloo Bhaijaan", cursive;
+}
+
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
 
 .header {
   background-color: cornflowerblue;
