@@ -1,7 +1,8 @@
-<div class="container-fluid m-5" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <div class="background-box" style="background-color: beige; padding: 60px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); border: 5px solid black;">
-    <div class="row" style="display: flex; align-items: center; justify-content: center; text-align: center;">
+<app-page-header-mutisevic></app-page-header-mutisevic>
 
+<div class="container-fluid m-5" style="display: flex; justify-content: center; align-items: center; height: 100vh; margin-top: 80px;">
+  <div class="background-box" style="background-color: beige; padding: 60px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); border: 5px solid black; width: 100%; max-width: 1200px; text-align: center; position: relative;">
+    <div class="row" style="display: flex; align-items: center; justify-content: center; text-align: center;">
       <div class="col-4" style="padding: 0; display: flex; justify-content: center;">
         <img src="{{ me.urlImage }}" class="img-fluid" alt="..." style="border: 3px solid #D2B48C; border-radius: 10px; width: 80%; height: auto;">
       </div>
@@ -11,44 +12,21 @@
         <p class="card-text"><strong>{{me.message}}</strong></p>
 
         <div style="margin-bottom: 20px;">
-          <a href="{{ me.socialLink }}" style="display: block; margin-bottom: 10px; color: #93C572; text-decoration: none; font-weight: bold; font-size: 18px;">
-            INSTA
-          </a>
-
-          <a href="mailto:name@email.com" style="display: block; margin-bottom: 10px; color: #B4B4B4; text-decoration: none; font-weight: bold; font-size: 18px;">
-            E-Mail
-          </a>
-
-          <p class="card-text">
-            <strong>Geboren am:</strong> {{ me.birthday.getUTCDate() + 1 }}.{{ me.birthday.getUTCMonth() + 1 }}.{{ me.birthday.getUTCFullYear() }}
-          </p>
-          <p class="card-text">
-            <strong>Wohnort:</strong> {{me.zip_code}} {{ me.city }}
-          </p>
-          <p class="card-text">
-            <strong>Mein Github Username:</strong> {{me.github_nickname}}
-          </p>
-          <p class="card-text">
-            <strong>Die Abteilung:</strong> {{me.department}}
-          </p>
+          <a href="{{ me.socialLink }}" style="display: block; margin-bottom: 10px; color: #93C572; text-decoration: none; font-weight: bold; font-size: 18px;">INSTA</a>
+          <a href="mailto:name@email.com" style="display: block; margin-bottom: 10px; color: #B4B4B4; text-decoration: none; font-weight: bold; font-size: 18px;">E-Mail</a>
+          <p class="card-text"><strong>Geboren am:</strong> {{ me.birthday.getUTCDate() + 1 }}.{{ me.birthday.getUTCMonth() + 1 }}.{{ me.birthday.getUTCFullYear() }}</p>
+          <p class="card-text"><strong>Wohnort:</strong> {{me.zip_code}} {{ me.city }}</p>
+          <p class="card-text"><strong>Mein Github Username:</strong> {{me.github_nickname}}</p>
+          <p class="card-text"><strong>Die Abteilung:</strong> {{me.department}}</p>
         </div>
-
         <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10px;">
           <div style="display: flex; justify-content: space-between; width: 260px; margin-bottom: 10px;">
-            <a routerLink="/page-music-mutisevic" routerLinkActive="active" class="btn btn-primary" style="width: 120px; height: 40px; background-color: #B4B4B4; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
-              music
-            </a>
-            <a routerLink="/page-hobby-mutisevic" routerLinkActive="active" class="btn btn-primary" style="width: 120px; height: 40px; background-color: #B4B4B4; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
-              hobby
-            </a>
+            <a routerLink="/page-music-mutisevic" routerLinkActive="active" class="btn btn-primary" style="width: 120px; height: 40px; background-color: #B4B4B4; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">music</a>
+            <a routerLink="/page-hobby-mutisevic" routerLinkActive="active" class="btn btn-primary" style="width: 120px; height: 40px; background-color: #B4B4B4; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">hobby</a>
           </div>
-          <a routerLink="/home" routerLinkActive="active" class="btn btn-primary" style="width: 160px; height: 40px; margin-top: 10px; background-color: #0E0E10; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">
-             home
-          </a>
+          <a routerLink="/home" routerLinkActive="active" class="btn btn-primary" style="width: 160px; height: 40px; margin-top: 10px; background-color: #0E0E10; border: none; color: white; font-weight: bold; text-align: center; transition: background-color 0.3s ease, transform 0.3s ease;">home</a>
         </div>
-
       </div>
-
     </div>
   </div>
 </div>
