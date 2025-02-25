@@ -1,24 +1,34 @@
-<div class="px-3 py-2 border-bottom fixed-top" style="background-color: rgba(88, 57, 39, 0.8); z-index: 1030;">
+<div class="px-3 py-2 border-bottom fixed-top d-flex align-items-center justify-content-center"
+     style="background-color: rgba(88, 57, 39, 0.8); z-index: 1030; width: 100%;">
   <div class="container">
-    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" routerLink="/home">
-        <path d="M5.793 1a1 1 0 0 1 1.414 0l.647.646a.5.5 0 1 1-.708.708L6.5 1.707 2 6.207V12.5a.5.5 0 0 0 .5.5.5.5 0 0 1 0 1A1.5 1.5 0 0 1 1 12.5V7.207l-.146.147a.5.5 0 0 1-.708-.708zm3 1a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708zm.707.707L5 7.207V13.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7.207z"/>
-      </svg>
+    <div class="d-flex align-items-center justify-content-center gap-4">
 
-      <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-        <li>
-          <a routerLink="/page-music-coco" class="nav-link text-white">
-            <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
-            music.
+
+      <a routerLink="/home" class="text-white d-flex align-items-center logo">
+        <svg class="bi" width="30" height="30" role="img" aria-label="Bootstrap"
+             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M5.793 1a1 1 0 0 1 1.414 0l.647.646a.5.5 0 1 1-.708.708L6.5 1.707 2 6.207V12.5a.5.5 0 0 0 .5.5.5.5 0 0 1 0 1A1.5 1.5 0 0 1 1 12.5V7.207l-.146.147a.5.5 0 0 1-.708-.708zm3 1a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708zm.707.707L5 7.207V13.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7.207z"/>
+        </svg>
+      </a>
+
+
+      <ul class="nav d-flex align-items-center gap-3">
+        <li class="nav-item">
+          <a routerLink="/page-music-coco" class="nav-link text-white d-flex align-items-center link-hover">
+            <svg class="bi" width="24" height="24"></svg>
+            <span class="ms-1">music.</span>
           </a>
         </li>
-        <li>
-          <a routerLink="/page-design-coco" class="nav-link text-white">
-            <svg class="bi d-block mx-auto mb-1" width="24" height="24"></svg>
-            design.
+        <li class="nav-item">
+          <a routerLink="/page-design-coco" class="nav-link text-white d-flex align-items-center link-hover">
+            <svg class="bi" width="24" height="24"></svg>
+            <span class="ms-1">design.</span>
           </a>
         </li>
       </ul>
+
     </div>
   </div>
 </div>
+
+
