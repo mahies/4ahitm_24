@@ -3,16 +3,18 @@ import {NgForOf} from '@angular/common';
 import {OrderByPipe} from '../../../../pipes/orderBy.pipe';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {TRAVEL, Travel} from '../travel';
+import {HeaderMetzComponent} from "../header-metz/header-metz.component";
 
 
 @Component({
   selector: 'app-page-travel-metz',
-  imports: [
-    NgForOf,
-    OrderByPipe,
-    RouterLink,
-    RouterLinkActive
-  ],
+    imports: [
+        NgForOf,
+        OrderByPipe,
+        RouterLink,
+        RouterLinkActive,
+        HeaderMetzComponent
+    ],
   templateUrl: './page-travel-metz.component.html',
   styleUrl: './page-travel-metz.component.scss'
 })
