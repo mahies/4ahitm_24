@@ -49,7 +49,7 @@
           transition: color 0.3s ease-in-out;
 
           &:hover {
-            color: darken($primary, 15%);
+            color: $link-hover-color;
           }
         }
       }
@@ -68,7 +68,7 @@
   padding: 20px 0;
 }
 .container {
-  background-color: bisque;
+  background-color: $background-color2;
   padding-top: 35px;
   padding-bottom: 35px;
   border-radius: 15px;
@@ -95,7 +95,7 @@ p{
 }
 
 h3{
-  color:#5a3e2b;
+  color:$h3-color;
   font-family: $h1_font;
 }
 .image {
@@ -116,7 +116,7 @@ ul {
   padding: 0;
 }
 .Zutaten li {
-  background: #fff3e6;
+  background: $li-back;
   margin: 5px 0;
   padding: 5px;
   border-radius: 5px;
@@ -131,5 +131,5 @@ button{
   float:right;
 }
 button:hover {
-  background-color: #36544f;
+  background-color: $link-hover-color;
 }
