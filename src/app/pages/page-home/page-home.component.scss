@@ -1,17 +1,14 @@
-
-.main {
+main {
   .demo {
-    li {
-      list-style: none;
-      img {
-        width: auto;
-        height: 6rem;
-      }
+    img {
+      width: auto;
+      height: 6rem;
     }
   }
   .students {
-    li {
-      list-style: none;
+    .item {
+      height: 24rem;
+      width: 18rem;
       img {
         max-height: 18rem;
         min-height: 18rem;
