@@ -1,16 +1,41 @@
+.box{
+  width: 100%;
+  background: cadetblue;
+}
 h5 {
-  font-family: arial, sans-serif;
+  font-family: "Arial";
   font-weight: 300;
   font-style: normal;
-  font-size: 2rem;
-  color: forestgreen;
+  font-size: 1.5rem;
+  color: darkmagenta !important;
 }
 
 p {
-  font-family: arial, sans-serif;
+  font-family: "Arial Narrow Bold";
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   font-size: 1rem;
   color: brown;
+}
+
+.card{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 16rem;
+  background-color: forestgreen;
+  border: 1.5px black;
+}
+
+.card-text{
+  text-align: center;
+
+}
+
+.container{
+
+  background-color: orangered;
+  border: 1px solid Black;
+  width: 50%;
+
 }
