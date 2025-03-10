@@ -1,13 +1,10 @@
 .footer-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   padding: 20px;
   background-color: #B0C6CE;
   color: #031926;
-  position: relative;
-  bottom: 0;
   width: 100%;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -15,11 +12,32 @@
 .footer-text {
   font-size: 18px;
   font-weight: bold;
+  margin: 0;
   text-align: center;
-  margin: 5px 0;
   transition: color 0.3s ease;
 }
 
 .footer-text:hover {
   color: #031926;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bi-instagram {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.bi-instagram:hover {
+  transform: scale(1.2);
 }
