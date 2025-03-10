@@ -1,69 +1,64 @@
 @import "../kov_variables";
 
-.test{
+.test {
   text-transform: uppercase;
 }
 
-.headline{
+.headline {
   font-weight: bold;
   font-family: $h1_font;
 }
 
-.fluid-container{
+/* Body Struktur für zentrierten Container und flexiblen Footer */
+.body {
+  background-color: burlywood;
+  min-height: 80vh;
   display: flex;
-  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; // Inhalt wird vertikal mittig
+  padding: 20px;
+}
 
-  margin: 0 auto;
-  margin-top:25px;
-  padding:25px;
-
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-
-  background-color: $background-color2;
+/* Zentrierter Container für Steckbrief */
+.about-me {
+  display: flex;
   flex-direction: row;
   align-items: center;
-  gap:25px;
-  border-radius: 10px;
-  position: relative;
-
-}
-
-.about-me{
-  padding-top:25px;
+  gap: 25px;
   background-color: $background-color2;
-}
-.body{
-  background-color:burlywood;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-p{
-  color: $text-color;
-  font-size:18px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  max-width: 80%; // Verhindert zu große Ausdehnung
+  margin: 0 auto;
 }
 
-h1{
-  color: $text-color;
-  font-family: $h1_font;
-  font-size: 38px;
+/* Bild */
+.image img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
+/* Text */
+.text {
+  max-width: 500px;
+}
+
+/* Buttons */
 .button-group {
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 10px;
+  margin-top: 15px;
 }
 
 .sub-Button {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 10px;
 }
 
@@ -71,11 +66,12 @@ h1{
   margin-top: 10px;
 }
 
-a{
+/* Links */
+a {
   color: $primary;
   text-decoration: none;
-}
-img{
-  border-radius : 10px;
-}
 
+  &:hover {
+    color: $link-hover-color;
+  }
+}

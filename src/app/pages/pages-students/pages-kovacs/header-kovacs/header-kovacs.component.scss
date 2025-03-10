@@ -19,18 +19,20 @@
       width: auto;
       border-radius: 5px;
     }
-    h1{
+
+    h1 {
       color: $text-color;
       font-family: $h1_font;
       font-size: 38px;
-      margin:0;
+      margin: 0;
     }
   }
 
   .nav {
-    flex-grow: 1; // Ermöglicht, dass die Navigation den verfügbaren Platz nutzt
+    flex-grow: 1;
     display: flex;
-    justify-content: flex-end; // Sorgt für rechtsbündige Hyperlinks
+    justify-content: flex-end;
+
     ul {
       list-style: none;
       display: flex;
@@ -47,10 +49,18 @@
           color: $primary;
           font-weight: bold;
           transition: color 0.3s ease-in-out;
+          padding-bottom: 5px;
 
           &:hover {
             color: $link-hover-color;
           }
+        }
+
+
+        a.active {
+          color: $link-hover-color;
+          border-bottom: 3px solid $link-hover-color;
+          font-weight: bold;
         }
       }
     }
