@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import {NgForOf, NgStyle} from '@angular/common';
 import {OrderByPipe} from '../../../../pipes/orderBy.pipe';
-import {RouterLink, RouterLinkActive} from '@angular/router';
 import {TRAVEL, Travel} from '../travel';
 import {HeaderMetzComponent} from "../header-metz/header-metz.component";
+import {FooterMetzComponent} from '../footer-metz/footer-metz.component';
 
 
 @Component({
@@ -11,10 +11,9 @@ import {HeaderMetzComponent} from "../header-metz/header-metz.component";
   imports: [
     NgForOf,
     OrderByPipe,
-    RouterLink,
-    RouterLinkActive,
     HeaderMetzComponent,
-    NgStyle
+    NgStyle,
+    FooterMetzComponent
   ],
   templateUrl: './page-travel-metz.component.html',
   styleUrl: './page-travel-metz.component.scss'
