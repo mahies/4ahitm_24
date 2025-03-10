@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
+import {WAGNER} from '../../../../model/person';
 
 
 @Component({
@@ -13,4 +14,5 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 })
 export class PageHaustiereWAGNERComponent {
 
+  protected readonly me = WAGNER;
 }
