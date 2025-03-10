@@ -3,30 +3,52 @@
 <div class="body">
   <br>
   <h1 class="headerSuper">Meine Reisen</h1>
-  <!--Ausgabe Alben-->
+
+  <!-- Ausgabe der Reisen -->
   <ul class="travel d-flex flex-column">
     <li *ngFor="let reise of reise | orderBy: 'interpret'; let i = index" class="col-auto">
       <h2>{{reise.ziel}}</h2>
-      <h3> {{ getMonthAsText(reise.datum.getMonth()) }}, {{reise.datum.getFullYear()}}</h3>
-      <ul>
-        <li *ngFor="let foto of reise.fotos">
-          <div>
-            <img
-              src="assets/metzinger-bilder/Fotografie/{{reise.pfad}}/{{foto.Link}}.jpg"
-              alt="{{foto.Link}} wurde nicht gefunden"
-              [style.width]="foto.isVertikal ? '300px' : '400px'"
-            >
-          </div>
-          <p>{{ foto.Beschreibung }}</p>
-          <br>
-        </li>
-      </ul>
+      <h3>{{ getMonthAsText(reise.datum.getMonth()) }}, {{reise.datum.getFullYear()}}</h3>
 
+      <!-- Karussell für alle Fotos der aktuellen Reise -->
+      <div id="carouselExampleControls{{i}}" class="carousel slide mx-auto" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Dynamische Bilder für das Karussell -->
+          <div *ngFor="let foto of reise.fotos; let j = index" class="carousel-item" [class.active]="j === 0">
+            <!-- Bild mit Anpassung basierend auf isVertikal -->
+            <img
+              [src]="'assets/metzinger-bilder/Fotografie/' + reise.pfad + '/' + foto.Link + '.jpg'"
+              class="d-block mx-auto"
+              [ngStyle]="{
+                'width': foto.isVertikal ? '50%' : '70%',
+                'height': foto.isVertikal ? 'auto' : 'auto'
+              }"
+              alt="{{foto.Link}} wurde nicht gefunden">
+            <div class="carousel-caption d-none d-md-block">
+              <p style="font-size: 1.25rem; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+                {{ foto.Beschreibung }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Karussell Steuerung -->
+        <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carouselExampleControls' + i" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carouselExampleControls' + i" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <br>
     </li>
   </ul>
+
   <div class="buttongrid">
     <a class="btn btn-primary" routerLink="/page_metz" routerLinkActive="active">Steckbrief</a>
     <a class="btn btn-primary" routerLink="/home" routerLinkActive="active">Startseite</a>
   </div>
 </div>
-
