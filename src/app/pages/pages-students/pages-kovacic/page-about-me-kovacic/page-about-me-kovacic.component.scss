@@ -38,14 +38,13 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  padding-right:10px;
+  padding-right: 10px;
 }
 
 .image-container img {
   border-radius: 10px;
-  min-width:10px;
-  min-height:10px;
-
+  min-width: 10px;
+  min-height: 10px;
 }
 
 .card {
@@ -73,21 +72,19 @@ body {
   align-items: center;
 }
 
-.social-link, {
+.social-link {
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
-  color:#ff9966;
+  color: #ff9966;
 }
-
-
 
 .link-group {
   display: flex;
   justify-content: center;
-  gap: 15px; // Abstand zwischen den Buttons
+  gap: 15px;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -132,4 +129,88 @@ body {
 
 .background-box {
   animation: fadeIn 0.5s ease-out;
+}
+
+
+@media (max-width: 768px) {
+  .background-box {
+    padding: 40px;
+  }
+
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .image-container {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    margin-left: 0;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .back-home {
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .link-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .background-box {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .back-home {
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+  }
 }

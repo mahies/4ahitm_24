@@ -13,6 +13,7 @@ body {
   text-align: center;
   color: white;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .container h1 {
@@ -31,7 +32,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: inline-block;
-  max-width: 1000px;
+  max-width: 100%;
   text-align: left;
   margin: 20px;
   width: 100%;
@@ -49,7 +50,8 @@ body {
 
 .card-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .card img {
@@ -118,10 +120,59 @@ body {
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border: none;
 }
 
 .btn:hover {
   background-color: #e14e5d;
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 36px;
+  }
+
+  .card {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .card h1 {
+    font-size: 28px;
+  }
+
+  .card-content {
+    display: block;
+  }
+
+  .card img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .text-content {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .recipe h3 {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
 }
