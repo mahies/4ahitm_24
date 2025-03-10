@@ -2,6 +2,9 @@
   <div class="d-flex justify-content-between align-items-center">
 
     <div class="nav-links">
+      <a routerLink="/page-about-me-garcia" class="nav-link">
+        <strong>About Me</strong>
+      </a>
       <a routerLink="/page-meine-reisen-garcia" class="nav-link">
         <strong>My Journey</strong>
       </a>
@@ -13,9 +16,12 @@
       </a>
     </div>
 
-    <a href="https://www.htl-donaustadt.at/home" class="logo-container">
-      <img src="{{ me.urlImage }}" alt="Logo" class="logo">
+    <a routerLink="/home" class="nav-link">
+      <strong>Home</strong>
     </a>
-
   </div>
+
+  <a href="https://www.htl-donaustadt.at/home" class="logo-container">
+    <img src="{{ me.urlImage }}" alt="Logo" class="logo">
+  </a>
 </div>
