@@ -55,12 +55,6 @@
     <a href="{{me.socialLink}}">
       <img src="/assets/assets-WAGN/instagramicon.png" alt="Das ist ein Bild" height="64" width="64">
     </a>
-    <br>
-    <br>
-    <a routerLink="/page_haustiere_wagner" routerLinkActive="active" class="btn btn-primary">Zur Haustierseite</a>
-    <a routerLink="/page_lieblingsfilmundmusik_wagner" routerLinkActive="active" class="btn btn-primary">Zur Lieblingsfilm- und Lieblingsmusikseite</a>
-    <a routerLink="/page_hobbies_wagner" routerLinkActive="active" class="btn btn-primary">Zur Hobbiesseite</a>
-    <a routerLink="" routerLinkActive="active" class="btn btn-primary">Zurück zur Homepage</a>
 
   </div>
 </div>
@@ -70,26 +64,42 @@
   <div class="container p-4">
     <!--Grid row-->
 
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <section class="mb-4">
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">
         <span>Folgt uns auf unseren Social Media Seiten:</span>
       </div>
       <div>
         <a href="https://www.htl-donaustadt.at/home" class="me-4 text-reset" >
-      <img src="/assets/assets-WAGN/google.png" alt="google icon" height="5%" width="auto">
+      <img src="/assets/assets-WAGN/google.png" alt="google icon" height="auto" width="5%">
         </a>
         <a href="https://www.instagram.com/scalefeatherandfluff/" class="me-4 text-reset">
-          <img src="/assets/assets-WAGN/instagramicon.png" alt="google icon" height="5%" width="auto">
+          <img src="/assets/assets-WAGN/instagramicon.png" alt="google icon" height="auto" width="5%">
         </a>
 
         <a href="https://github.com/CarinaWagn" class="me-4 text-reset">
-          <img src="/assets/assets-WAGN/Github.png" alt="google icon" height="5%" width="auto">
+          <img src="/assets/assets-WAGN/Github.png" alt="google icon" height="auto" width="5%">
         </a>
       </div>
+    </section>
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <a routerLink="/page_wagner" routerLinkActive="active" class="btn btn-primary">Zurück zur About-Me Seite</a>
+    <a routerLink="/page_haustiere_wagner" routerLinkActive="active" class="btn btn-primary">Zur Haustierseite</a>
+    <a routerLink="/page_lieblingsfilmundmusik_wagner" routerLinkActive="active" class="btn btn-primary">Zur Lieblingsfilm- und Lieblingsmusikseite</a>
+    <a routerLink="/page_hobbies_wagner" routerLinkActive="active" class="btn btn-primary">Zur Hobbiesseite</a>
+    <a routerLink="" routerLinkActive="active" class="btn btn-primary">Zurück zur Homepage</a>
+    </section>
+    <section>
+      <h3>Impressum</h3>
+      <p>Name: Carina Wagner</p>
+      <p>Email: {{me.email}}</p>
     </section>
   </div>
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2024 Copyright: Carina Wagner
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+   Zuletzt bearbeitet am 10.03.2025
   </div>
 </footer>

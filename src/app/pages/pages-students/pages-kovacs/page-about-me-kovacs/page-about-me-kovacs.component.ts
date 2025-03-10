@@ -4,6 +4,7 @@ import { Component } from "@angular/core";
 import {HeaderKovacsComponent} from '../header-kovacs/header-kovacs.component';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {DatePipe} from '@angular/common';
+import {FooterKovacsComponent} from '../footer-kovacs/footer-kovacs.component';
 
 
 
@@ -13,7 +14,8 @@ import {DatePipe} from '@angular/common';
     RouterLink,
     RouterLinkActive,
     DatePipe,
-    HeaderKovacsComponent
+    HeaderKovacsComponent,
+    FooterKovacsComponent
   ],
   templateUrl: './page-about-me-kovacs.component.html',
   styleUrl: './page-about-me-kovacs.component.scss'

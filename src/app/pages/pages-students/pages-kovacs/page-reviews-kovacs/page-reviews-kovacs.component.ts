@@ -5,6 +5,7 @@ import {DatePipe, NgForOf} from '@angular/common';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {KOVACS} from '../../../../model/person';
 import {HeaderKovacsComponent} from '../header-kovacs/header-kovacs.component';
+import {FooterKovacsComponent} from '../footer-kovacs/footer-kovacs.component';
 
 @Component({
   selector: 'app-page-reviews-kovacs',
@@ -13,7 +14,8 @@ import {HeaderKovacsComponent} from '../header-kovacs/header-kovacs.component';
     RouterLink,
     RouterLinkActive,
     DatePipe,
-    HeaderKovacsComponent
+    HeaderKovacsComponent,
+    FooterKovacsComponent
   ],
   templateUrl: './page-reviews-kovacs.component.html',
   styleUrl: './page-reviews-kovacs.component.scss'

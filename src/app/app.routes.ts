@@ -24,6 +24,7 @@ import {PageAboutFriedlComponent} from './pages/pages-students/pages-friedl/main
 import {PageAboutMeCizmicComponent} from './pages/pages-students/pages-cizmic/page-about-me-cizmic/page-about-me-cizmic.component';
 import {PageAboutMeCocoComponent} from './pages/pages-students/page-about-me-coco/page-about-me-coco.component';
 import {PageMeineReisenGARCIAComponent} from './pages/pages-students/page-garcia/page-meine-reisen-garcia/page-meine-reisen-garcia.component';
+import {MainpageRADDAComponent} from './pages/pages-students/pages-radda/mainpage-radda.component';
 
 import {
   PageHaustiereWAGNERComponent
@@ -66,7 +67,7 @@ import {
 } from './pages/pages-students/pages-zhou/page-lieblingsfotos-zhou/page-lieblingsfotos-zhou.component';
 import {
   Subpage1FriedlComponent
-} from './pages/pages-students/pages-friedl/Teams/subpage1-friedl/subpage1-friedl.component';
+} from './pages/pages-students/pages-friedl/mainpages-friedl/subpage1-friedl/subpage1-friedl.component';
 import {
   Subpage2FriedlComponent
 } from './pages/pages-students/pages-friedl/mainpages-friedl/subpage2-friedl/subpage2-friedl.component';
@@ -142,6 +143,7 @@ import { PageDeltaCizComponent } from './pages/pages-students/pages-cizmic/page-
 import {
   PageHobbySchoengrundnerComponent
 } from './pages/pages-students/page-about-me-schoengrundner/page-hobby-schoengrundner/page-hobby-schoengrundner.component';
+import {Subpage1RaddaComponent} from './pages/pages-students/pages-radda/subpage1/subpage1-radda.component';
 
 export const routes: Routes = [
   { path: '', // default rout
@@ -283,6 +285,11 @@ export const routes: Routes = [
   { path: 'page-vacations-garcia',
     component: PageVacationsGarciaComponent},
   { path: 'page-about-me-garcia',
-    component: PageAboutMeGARCIAComponent}
+    component: PageAboutMeGARCIAComponent},
+
+  { path: 'subpage1-radda',
+    component: Subpage1RaddaComponent},
+  { path: 'subpage2-radda',
+    component: Subpage2RaddaComponent}
 ];
 

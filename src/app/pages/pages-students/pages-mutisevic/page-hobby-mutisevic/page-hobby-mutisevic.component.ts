@@ -4,6 +4,7 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 import {MUTISEVIC} from '../../../../model/person';
 import {carti} from '../carti';
 import {PageHeaderMutisevicComponent} from '../page-header-mutisevic/page-header-mutisevic.component';
+import {PageFooterMutisevicComponent} from '../page-footer-mutisevic/page-footer-mutisevic.component';
 
 @Component({
     selector: 'app-page-hobby-mutisevic',
@@ -12,7 +13,8 @@ import {PageHeaderMutisevicComponent} from '../page-header-mutisevic/page-header
   imports: [
     RouterLink,
     RouterLinkActive,
-    PageHeaderMutisevicComponent
+    PageHeaderMutisevicComponent,
+    PageFooterMutisevicComponent
   ],
     styleUrl: './page-hobby-mutisevic.component.scss'
 })
