@@ -1,0 +1,30 @@
+@import "bootstrap/scss/functions";
+
+$primary: #000205;
+
+@import "bootstrap/scss/bootstrap";
+
+$body-bg: $gray-100;
+$container-bg: $white;
+$text-color: $body-color;
+
+.hobby-container {
+  max-width: 600px;
+  margin: auto;
+  background: $container-bg;
+  padding: 20px;
+  border-radius: $border-radius-lg;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: $text-color;
+}
+
+.hobby {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  margin-top: 20px;
+}

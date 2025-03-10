@@ -71,6 +71,7 @@ export  const HOBEL : Person = {
   socialLink: "https://www.instagram.com/rich_king1006?igsh=ajZ3YnF5b2cyNDNh&utm_source=qr",
   message: "\„„¡sɹǝpuɐ lɐɯ ǝƃuıp ǝıp ǝʇɥɔɐɹʇǝq“.\" \n(Irgendwas von Google lol)"
 };
+
 export  const KOVACS : Person = {
   surname: "Kovacs",
   firstname: "Philip",
@@ -273,5 +274,20 @@ export  const ZHOU : Person = {
   routerLink: "/page_zhou"
 };
 
+export  const RADDA : Person = {
+  surname: "RADDA",
+  firstname: "Daniel",
+  urlImage: "assets/radda-bilder/radda-bild.jpg",
+  birthday: new Date("2005-04-21"),
+  department: "ITEL Medientechnik",
+  email: "200009@studierende.htl-donaustadt.at",
+  github_nickname: "Wingenn",
+  zip_code: 1220,
+  city: "Wien",
+  message: "\"It aint a think if it aint got that fling -the Professor\"",
+  socialLink: "instagram.com/wingenn2005",
+  routerLink: "/page_radda"
+};
+
 //list all students
-export const STUDENTS:Person[] = [ZHOU,NOVO,MUTISEVIC,FRIEDL,COCO,SCHOENGRUNDNER,KOVACIC,MORITZ,POJAR,PONT,HAUER,HOBEL,MAJZEL,WAGNER,GARCIA,CIZMIC,KOVACS];
+export const STUDENTS:Person[] = [RADDA,ZHOU,NOVO,MUTISEVIC,FRIEDL,COCO,SCHOENGRUNDNER,KOVACIC,MORITZ,POJAR,PONT,HAUER,HOBEL,MAJZEL,WAGNER,GARCIA,CIZMIC,KOVACS];
