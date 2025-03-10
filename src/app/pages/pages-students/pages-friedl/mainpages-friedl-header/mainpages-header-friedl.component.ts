@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
+import {FRIEDL} from '../../../../model/person';
 
 @Component({
   selector: 'app-mainpages-header-friedl',
@@ -13,4 +14,5 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 })
 export class HeaderFriedlComponent {
 
+  protected readonly me = FRIEDL;
 }
