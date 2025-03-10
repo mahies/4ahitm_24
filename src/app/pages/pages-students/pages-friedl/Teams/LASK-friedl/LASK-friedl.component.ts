@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {Person, FRIEDL} from '../../../../../model/person';
 import {RouterLink, RouterLinkActive} from '@angular/router';
+import {HeaderFriedlComponent} from "../../mainpages-friedl-header/mainpages-header-friedl.component";
+import {FooterFriedlComponent} from '../../mainpages-friedl-footer/mainpages-footer-friedl.component';
 
 
 @Component({
@@ -9,7 +11,9 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
   styleUrl: './LASK-friedl.component.scss',
   imports: [
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    HeaderFriedlComponent,
+    FooterFriedlComponent
   ],
   standalone: true
 })

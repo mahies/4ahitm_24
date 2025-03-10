@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {Person, FRIEDL} from '../../../../../model/person';
 import {RouterLink, RouterLinkActive} from '@angular/router';
+import {FooterFriedlComponent} from "../../mainpages-friedl-footer/mainpages-footer-friedl.component";
+import {HeaderFriedlComponent} from '../../mainpages-friedl-header/mainpages-header-friedl.component';
 
 
 @Component({
@@ -9,7 +11,9 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
   styleUrl: './Altach-friedl.component.scss',
   imports: [
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    FooterFriedlComponent,
+    HeaderFriedlComponent
   ],
   standalone: true
 })
