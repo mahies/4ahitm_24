@@ -4,15 +4,17 @@
   <header class="d-flex justify-content-center py-3">
     <ul class="nav nav-pills">
       <li class="nav-item">
-        <a routerLink="page_metz" routerLinkActive="active" class="nav-link text-white" aria-current="page">Home</a>
+        <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link text-white">Home</a>
       </li>
       <li class="nav-item">
-        <a routerLink="page_metz_reviews" routerLinkActive="active" class="nav-link text-white">Reviews</a>
+        <a routerLink="/page_metz" routerLinkActive="active" class="nav-link text-white">About Me</a>
       </li>
       <li class="nav-item">
-        <a routerLink="page_metz_travel" routerLinkActive="active" class="nav-link text-white">Reisen</a>
+        <a routerLink="/page_metz_reviews" routerLinkActive="active" class="nav-link text-white">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/page_metz_travel" routerLinkActive="active" class="nav-link text-white">Reisen</a>
       </li>
     </ul>
   </header>
 </div>
-
