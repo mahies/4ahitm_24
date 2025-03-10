@@ -77,7 +77,7 @@
     }
   }
 
-  // Responsive Anpassung für kleinere Bildschirme
+  // Responsive
   @media (max-width: 750px) {
     flex-direction: row;
     align-items: center;
@@ -111,26 +111,26 @@
       background-color: $background-color2;
       padding-top: 10px;
       position: absolute;
-      top: 100%;  // Positioniere das Menü direkt unterhalb des Headers
-      right: 0;  // Menü rechtsbündig
+      top: 100%;
+      right: 0;
       z-index: 1;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);  // Fügt einen Schatten hinzu
-      border-radius: 5px;  // Optional, fügt abgerundete Ecken hinzu
-      transition: top 0.3s ease-in-out; // Animation für das Öffnen
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      transition: top 0.3s ease-in-out;
     }
 
     .nav.active {
       display: flex;
-      top: 100%;  // Bleibt direkt unterhalb des Headers
+      top: 100%;
     }
 
     ul {
       flex-direction: column;
       width: auto;
-      text-align: center;  // Jetzt wird der Text zentriert
+      text-align: center;
 
       li {
-        width: 200px;  // Limitierte Breite der Links
+        width: 200px;
         padding: 10px 0;
 
         a {
