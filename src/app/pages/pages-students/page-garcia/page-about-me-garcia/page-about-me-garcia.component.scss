@@ -1,3 +1,29 @@
+.header {
+  background-color: #004B77;
+  color: white;
+  padding: 20px 0;
+}
+
+.header .container-fluid {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.header .d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo img {
+  max-height: 50px;
+}
+
+.header .site-name h1 {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 24px;
+}
+
 .full-container {
   background-color: #79B0C9;
   border-radius: 20px;
@@ -80,4 +106,3 @@
 .home-btn {
   margin-left: auto; /* This will push the "Home" button to the far right */
 }
-

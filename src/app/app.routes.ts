@@ -281,6 +281,8 @@ export const routes: Routes = [
   { path: 'page-design-coco',
     component: PageDesignCocoComponent},
   { path: 'page-vacations-garcia',
-    component: PageVacationsGarciaComponent}
+    component: PageVacationsGarciaComponent},
+  { path: 'page-about-me-garcia',
+    component: PageAboutMeGARCIAComponent}
 ];
 
