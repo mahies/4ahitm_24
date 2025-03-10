@@ -1,23 +1,16 @@
-<div class="container">
-  <div class="d-flex justify-content-between align-items-center">
+<header class="header">
+  <div class="header-container">
+    <nav class="nav-links">
+      <a routerLink="/home" class="nav-link"><strong>home</strong></a>
+      <a routerLink="/page_mutisevic" class="nav-link"><strong>about me</strong></a>
+      <a routerLink="/page-music-mutisevic" class="nav-link"><strong>music</strong></a>
+      <a routerLink="/page-hobby-mutisevic" class="nav-link"><strong>hobby</strong></a>
 
 
-    <div class="d-flex">
-      <a routerLink="/page-music-mutisevic" class="nav-link text-white me-4">
-        <strong>Music</strong>
-      </a>
-      <a routerLink="/page-hobby-mutisevic" class="nav-link text-white">
-        <strong>Hobby</strong>
-      </a>
-      <a routerLink="/page_mutisevic" class="nav-link text-white">
-        <strong>About Me</strong>
-      </a>
-    </div>
+    </nav>
 
-
-    <a href="https://www.htl-donaustadt.at/home" class="d-flex align-items-center">
-      <img src="{{ me.urlImage }}" alt="Logo" style="height: 40px;">
+    <a href="https://www.htl-donaustadt.at/home" class="logo-container">
+      <img src="{{ me.urlImage }}" alt="Logo" class="logo">
     </a>
-
   </div>
-</div>
+</header>
