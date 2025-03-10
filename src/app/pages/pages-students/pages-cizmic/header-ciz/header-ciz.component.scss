@@ -1,0 +1,11 @@
+@import "../ciz_variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1%;
+  text-align: center;
+  background-color: $regColor;
+  color: $bgColor;
+}

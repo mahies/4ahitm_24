@@ -1,15 +1,13 @@
 <title>Cizmic Site</title>
 
-<header>
-  <h3> Eine Seite von: {{ elCi.firstname }} <span style="text-transform:uppercase;">{{ elCi.surname }}</span> </h3>
-</header>
+<app-header-ciz></app-header-ciz>
 
 <div class="mx-auto" style="width: 50rem;" id = "card1" >
     <p> {{elCi.message}}</p>
   <img src="assets/cizmic_assets/Picture0.png" alt ="A good drawin of sonic t. hedgehog">
     <p>^Hier ist ein bild^</p>
 
-    <p> Ich wurde geboren am {{elCi.birthday}} und lebe in {{elCi.zip_code}} {{elCi.city}}</p>
+    <p> Ich wurde geboren am {{elCi.birthday.getUTCDay()}}.{{elCi.birthday.getUTCMonth()}}.{{elCi.birthday.getFullYear()}} und lebe in {{elCi.zip_code}} {{elCi.city}}</p>
     <p> Meine schul E-Mail ist {{elCi.email}}</p>
     <p> Mein total echter Social Media link ist {{elCi.socialLink}} </p>
     <a routerLink="/page-art" routerLinkActive="active"> Wenn sie mehr von meinen Zeichnungen sehen wollen, clicken sie hier</a>
@@ -17,3 +15,4 @@
     <a routerLink="/page-game-ciz" routerLinkActive="active"> Möchten sie ein paar Spiele sehen die ich mag?</a>
 </div>
 
+<app-footer-ciz></app-footer-ciz>
