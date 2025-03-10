@@ -5,8 +5,8 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  align-items: center; /* Zentriert die Karten auch vertikal */
-  height: 100vh; /* Stellt sicher, dass die Karten vertikal im Viewport zentriert sind */
+  align-items: center;
+  height: 100vh;
 }
 
 .card-container {
@@ -14,12 +14,12 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   width: 100%;
-  max-width: 1200px; /* Anpassung der max-width für größere Karten */
+  max-width: 1200px;
 }
 
 .card {
   width: 300px;
-  height: 450px; /* Etwas mehr Höhe für eine bessere Balance */
+  height: 450px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -27,9 +27,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px; /* Etwas mehr Padding */
+  padding: 15px;
   overflow: hidden;
-  text-align: center; /* Stellt sicher, dass der Text mittig ausgerichtet ist */
+  text-align: center;
 }
 
 .card:hover {
@@ -38,29 +38,77 @@
 
 .card img {
   width: 100%;
-  height: 200px; /* Alle Bilder haben jetzt die gleiche Höhe */
-  object-fit: cover; /* Verhindert Verzerrung der Bilder */
-  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 10px 10px;
+
 }
 
 .card h3 {
-  font-size: 24px;
+  font-size: 22px;
+  font-weight: bold;
   margin-bottom: 10px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 8px;
+  width: 100%;
+  border-bottom: 3px solid black;
+  border-radius: 8px 8px 0 0;
 }
+
 
 .sternchen {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 5px;
+  height: auto;
 }
 
 .sternchen img {
-  width: 160px; /* Sterne jetzt doppelt so groß */
-  height: 160px; /* Gleiche Höhe für alle Sterne */
-  object-fit: contain; /* Verhindert Verzerrung der Sterne */
-  margin: 0 5px; /* Etwas mehr Abstand zwischen den Sternen */
+  width: 270px;
+  height: auto;
+  object-fit: contain;
 }
 
 
 
+.Döner{
+  border: 4px solid black;
+}
+
+
+.main-title {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.info-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 8px;
+  width: 100%;
+  border-top: 3px solid black;
+  border-radius: 0 0 8px 8px;
+  margin-top: 5px;
+}
+
+p{
+  font-weight: bold;
+  font-size: 20px;
+}
 

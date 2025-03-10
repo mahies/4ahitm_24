@@ -1,13 +1,34 @@
 @import "../zhou_variables";
 
-body {
-  font-family: elephant, sans-serif;
-  background-color: antiquewhite;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+  background-color: burlywood;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #b68041;
+      transition: 0.3s;
+    }
+  }
 }
 
 .container-fluid {
@@ -47,6 +68,10 @@ body {
   padding: 10px 15px;
   text-decoration: none;
   border-radius: 5px;
+
+  &:hover {
+    background-color: #b68041;
+  }
 }
 
 a {
@@ -56,8 +81,4 @@ a {
   &:hover {
     text-decoration: underline;
   }
-}
-
-.btn-primary:hover {
-  background-color: #ff910f;
 }
