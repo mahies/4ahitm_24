@@ -35,11 +35,31 @@
   transform: scale(1.05);
 }
 
-/* Neue Klasse für aktive Links */
+
+.home-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 40px;
+}
+
+.home-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+.home-icon:hover svg {
+  fill: #BEB7A4;
+}
+
+
 .active-link {
-  color: #BEB7A4; /* Farbe für den aktiven Link */
-  font-weight: bold; /* Optional, um den aktiven Link hervorzuheben */
-  border-bottom: 2px solid #BEB7A4; /* Optional: Unterstreichung des aktiven Links */
+  color: #BEB7A4;
+  font-weight: bold;
+  border-bottom: 2px solid #BEB7A4;
 }
 
 .home-btn {
