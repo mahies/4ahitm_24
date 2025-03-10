@@ -13,7 +13,7 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
   ],
   standalone: true
 })
-export class Subpage2SchoenComponent {
+export class Subpage2RaddaComponent {
 
   me_radda: Person = RADDA;
   protected readonly me = RADDA;
