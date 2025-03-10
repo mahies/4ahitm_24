@@ -170,8 +170,8 @@ export  const MORITZ : Person = {
   github_nickname: "Moritz-Schule",
   zip_code: 1220,
   city: "Wien",
-  message: "\"Denk mal drüber nach... 😛\"",
-  socialLink:"",
+  message: "\"Keep your eye on the donut, not on the hole\" - David Lynch",
+  socialLink:"https://www.instagram.com/lkrm123456789/",
   routerLink:"/page_metz",
 };
 export  const KOVACIC : Person = {
