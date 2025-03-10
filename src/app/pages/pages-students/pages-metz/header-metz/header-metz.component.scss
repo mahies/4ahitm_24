@@ -1,4 +1,18 @@
+@import "../metz_variables";
+
 .nav-link.active {
   background-color: #007bff;
   color: white;
 }
+
+header {
+  background-color: $primary;
+  width: 100%;
+}
+
+header .nav-link {
+  color: $card-background;
+}
+
+
+@import "bootstrap/scss/bootstrap";

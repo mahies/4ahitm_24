@@ -2,15 +2,22 @@
 .body {
   background-color: $background-color;
   color: $text-color;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  line-height: 1.6;
+  margin: 0;
+  font-family: $p_font;
 }
 
 .headerSuper {
   font-family: $h1_font;
   text-align: center;
   font-weight: bold;
-  color: $primary;
+  color: $background-color;
   padding: 20px;
-  background-color: $card-background;
+  margin-left: 40%;
+  margin-right: 40%;
+  background-color: $text-color;
   border-radius: 10px;
 }
 
