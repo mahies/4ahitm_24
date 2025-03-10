@@ -30,7 +30,7 @@ p{
 strong{
   font-size: 18px;
   margin-bottom: 20px;
-  color: $text-color;
+  color: $h3-color;
   font-family:$h1_font;
 }
 
@@ -44,7 +44,7 @@ strong{
 }
 
 .flag-card {
-  background-color: $li-back;
+  background-color: $background-color2;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -70,7 +70,7 @@ strong{
 
     .capital-city, .flag-speciality {
       font-size: 18px;
-      color: $link-hover-color;
+      color: $h3-color;
       margin: 5px 0;
     }
   }
