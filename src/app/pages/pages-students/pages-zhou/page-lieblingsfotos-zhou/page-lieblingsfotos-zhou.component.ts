@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
+import {ZHOU} from "../../../../model/person";
 @Component({
     selector: 'app-page-lieblingsfotos-zhou',
     templateUrl: './page-lieblingsfotos-zhou.component.html',
@@ -12,4 +13,5 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 })
 export class PageLieblingsfotosZhouComponent {
 
+    protected readonly me = ZHOU;
 }
