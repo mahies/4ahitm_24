@@ -62,16 +62,17 @@
 
 .sternchen {
   display: flex;
-  justify-content: center; /* Zentriert die Sterne unter dem Bild */
-  align-items: center; /* Sorgt für vertikale Ausrichtung */
-  margin-top: 16px; /* Reduziert den Abstand */
-  height: auto; /* Entfernt unnötige Höhe */
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 5px;
+  height: auto;
 }
 
 .sternchen img {
-  width: 270px; /* Optional: Kleinere Sterne */
+  width: 270px;
   height: auto;
-  object-fit: contain; /* Verhindert Verzerrung */
+  object-fit: contain;
 }
 
 
@@ -106,4 +107,8 @@
   margin-top: 5px;
 }
 
+p{
+  font-weight: bold;
+  font-size: 20px;
+}
 
