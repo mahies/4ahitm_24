@@ -1,32 +1,72 @@
-
-.container {
-  padding: 10px 20px;
-  background-color: black;
+/* Dünnerer Header über gesamte Breite */
+.header {
+  width: 100vw;
+  background-color: #171717;
+  padding: 5px 0; /* Weniger Padding */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
+/* Flex-Container für bessere Ausrichtung */
+.header-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px; /* Weniger Padding für kompaktere Höhe */
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+/* Links Styling */
 .nav-link {
   font-weight: bold;
-  font-size: 18px;
-  color: black;
+  font-size: 16px; /* Kleinere Schrift */
+  color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
-  padding: 10px 20px;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 5px 10px; /* Weniger Padding */
 }
 
 .nav-link:hover {
-  color: brown;
+  color: #BEB7A4;
+  transform: scale(1.05);
 }
 
-.d-flex {
+/* Home-Button */
+.home-btn {
+  background-color: #0E0E10;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 8px 16px; /* Etwas kleinere Größe */
+  border-radius: 5px;
+}
+
+.home-btn:hover {
+  background-color: #BEB7A4;
+  transform: scale(1.05);
+}
+
+/* Logo Styling */
+.logo-container {
   display: flex;
   align-items: center;
 }
 
-.me-4 {
-  margin-right: 20px;
+.logo {
+  height: 30px; /* Kleineres Logo */
+  transition: transform 0.3s ease;
 }
 
-a {
-  display: flex;
-  align-items: center;
+.logo:hover {
+  transform: rotate(10deg) scale(1.1);
 }
