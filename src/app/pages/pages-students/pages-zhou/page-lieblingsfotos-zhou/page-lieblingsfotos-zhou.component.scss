@@ -7,6 +7,7 @@
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  height: 70px;
 
   ul {
     list-style: none;
@@ -79,7 +80,7 @@ a {
 }
 
 .btn-primary:hover {
-  background-color: #ff7e5f;
+  background-color: #f86138;
 }
 
 .btn-primary {
@@ -91,4 +92,43 @@ a {
   padding: 10px 15px;
   text-decoration: none;
   border-radius: 5px;
+}
+
+.footer {
+  background-image: linear-gradient(to right, #f17a5d, #e54427);
+  padding: 15px 0;
+  text-align: center;
+  position: relative;
+  height: 90px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  li {
+    display: inline;
+  }
+
+  a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #be1804;
+      transition: 0.3s;
+    }
+  }
 }

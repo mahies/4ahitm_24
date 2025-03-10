@@ -1,0 +1,37 @@
+.footer {
+  width: 100vw;
+  background-color: #171717;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 50px;
+  padding: 10px 30px;
+}
+
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.footer a:hover {
+  color: #A59A8F;
+  transform: scale(1.05);
+}
+
+
+.footer p {
+  text-align: center;
+  margin: 0;
+}

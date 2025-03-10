@@ -66,7 +66,7 @@ import {
 } from './pages/pages-students/pages-zhou/page-lieblingsfotos-zhou/page-lieblingsfotos-zhou.component';
 import {
   Subpage1FriedlComponent
-} from './pages/pages-students/pages-friedl/Teams/subpage1-friedl/subpage1-friedl.component';
+} from './pages/pages-students/pages-friedl/mainpages-friedl/subpage1-friedl/subpage1-friedl.component';
 import {
   Subpage2FriedlComponent
 } from './pages/pages-students/pages-friedl/mainpages-friedl/subpage2-friedl/subpage2-friedl.component';

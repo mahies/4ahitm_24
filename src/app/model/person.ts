@@ -262,7 +262,7 @@ export  const ZHOU : Person = {
   surname: "ZHOU",
   firstname: "Kevin",
   urlImage: "assets/zhou-bilder/cool-kid.jpg",
-  birthday: new Date("2005-11-25"),
+  birthday: new Date("2005-12-25"),
   department: "ITEL Medientechnik",
   email: "210013@studierende.htl-donaustadt.at",
   github_nickname: "FaithfulMeow",
