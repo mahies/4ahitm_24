@@ -131,6 +131,9 @@ body {
   animation: fadeIn 0.5s ease-out;
 }
 
+.card-text:last-child {
+  margin-bottom: 20px; /* Erhöht den Abstand nach dem GitHub-Namen */
+}
 
 @media (max-width: 768px) {
   .background-box {
