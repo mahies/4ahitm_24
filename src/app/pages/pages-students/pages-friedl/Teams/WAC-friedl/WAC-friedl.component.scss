@@ -1,15 +1,32 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #4CAF50;
+.wacbg {
+  background-image: url('../../../../../../../public/assets/Friedl-bilder/Stadion_WAC.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
   color: white;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
-.container {
-  text-align: center;
+.wacbg h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+.wacbg h2 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.text-content {
+  position: relative;
+  z-index: 2;
+  font-size: 2rem;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Dunkler Hintergrund für den Text */
+  display: inline-block;
 }

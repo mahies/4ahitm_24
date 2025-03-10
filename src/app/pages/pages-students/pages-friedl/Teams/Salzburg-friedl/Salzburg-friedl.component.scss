@@ -1,15 +1,32 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #4CAF50;
+.salzburggbg {
+  background: url('../../../../../../../public/assets/Friedl-bilder/Stadion_Salzburg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
   color: white;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
-.container {
-  text-align: center;
+.salzburggbg h1 {
+  font-size: 3rem;
+  color: red;
+  font-weight: bold;
+}
+
+.salzburggbg h2 {
+  font-size: 2.5rem;
+  color: red;
+  font-weight: bold;
+}
+
+.text-content {
+  position: relative;
+  z-index: 2;
+  font-size: 2rem;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
 }
