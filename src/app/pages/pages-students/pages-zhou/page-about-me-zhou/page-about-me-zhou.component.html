@@ -1,5 +1,16 @@
+<nav class="header">
+  <ul>
+    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/page_zhou_lieblingsfotos" routerLinkActive="active">FavFotos</a></li>
+    <li><a routerLink="/page_zhou_lieblingsmusik" routerLinkActive="active">FavSongs</a></li>
+  </ul>
+</nav>
+
 <div class="container-fluid m-5">
+
   <div class="card" style="width: 18rem;">
+
+
     <img src="{{ me.urlImage }}" class="card-img-top" width="20c" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{ me.firstname }} {{ me.surname }}</h5>
@@ -12,8 +23,8 @@
 
       <br><br>
       <div class="link-group">
-        <a class="btn btn-primary" routerLink="/page_zhou_lieblingsfotos" routerLinkActive="active">FavPictures</a>
-        <a class="btn btn-primary" routerLink="/page_zhou_lieblingsmusik" routerLinkActive="active">FavMusic</a>
+        <a class="btn btn-primary" routerLink="/page_zhou_lieblingsfotos" routerLinkActive="active">FavFotos</a>
+        <a class="btn btn-primary" routerLink="/page_zhou_lieblingsmusik" routerLinkActive="active">FavSongs</a>
 
       </div>
       <a routerLink="/home" routerLinkActive="active" class="btn btn-primary">Back</a>
