@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {DatePipe} from '@angular/common';
 import {HeaderKovacsComponent} from '../header-kovacs/header-kovacs.component';
+import {FooterKovacsComponent} from '../footer-kovacs/footer-kovacs.component';
 
 @Component({
   selector: 'app-page-heimat-kovacs',
@@ -9,7 +10,9 @@ import {HeaderKovacsComponent} from '../header-kovacs/header-kovacs.component';
     RouterLink,
     RouterLinkActive,
     DatePipe,
-    HeaderKovacsComponent],
+    HeaderKovacsComponent,
+    FooterKovacsComponent
+  ],
   templateUrl: './page-heimat-kovacs.component.html',
   styleUrl: './page-heimat-kovacs.component.scss'
 })
