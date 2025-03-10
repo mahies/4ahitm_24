@@ -1,0 +1,37 @@
+@import "../kovacic-variablen";
+
+.footer {
+  background-color: $background-color;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    p {
+      margin: 5px 0;
+      font-size: 16px;
+      font-family: $p_font;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+
+      li {
+        display: inline;
+
+
+      }
+    }
+  }
+}

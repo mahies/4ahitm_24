@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {KOVACIC, Person} from '../../../../model/person';
+import {HeaderKovacicComponent} from '../header-kovacic/header-kovacic.component';
+import {FooterKovacicComponent} from '../footer-kovacic/footer-kovacic.component';
 
 
 
@@ -8,7 +10,9 @@ import {KOVACIC, Person} from '../../../../model/person';
   selector: 'app-page-about-me-kovacic',
   imports: [
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    HeaderKovacicComponent,
+    FooterKovacicComponent
   ],
   templateUrl: './page-about-me-kovacic.component.html',
   standalone: true,

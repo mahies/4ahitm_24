@@ -1,0 +1,22 @@
+<header class="header">
+  <div class="logo-title">
+    <a routerLink="/page-about-me-kovacic">
+    </a>
+    <h1>Meine Webseite</h1>
+  </div>
+
+  <div class="burger-menu" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="nav" [class.active]="menuOpen">
+    <ul>
+      <li><a routerLink="/page_kovacic" routerLinkActive="active">Über mich</a></li>
+      <li><a routerLink="/page-lieblingsessen-kovacic" routerLinkActive="active">Mein Lieblingsessen</a></li>
+      <li><a routerLink="/page-lieblingsmusik-kovacic" routerLinkActive="active">Meine Lieblingsmusik</a></li>
+      <li><a routerLink="/home" routerLinkActive="active">Zur Homepage</a></li>
+    </ul>
+  </nav>
+</header>

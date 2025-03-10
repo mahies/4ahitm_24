@@ -3,8 +3,8 @@ body {
   background: linear-gradient(to right, #ff9966, #ff5e62);
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+  align-items: flex-start;
+  height: 100vh;
   margin: 0;
   overflow-x: hidden;
 }
@@ -13,6 +13,16 @@ body {
   text-align: center;
   color: white;
   padding-bottom: 20px;
+}
+
+.container h1 {
+  color: white;
+  font-size: 42px;
+  font-family: 'Georgia', serif;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
 }
 
 .card {
@@ -68,16 +78,16 @@ body {
   letter-spacing: 1px;
 }
 
+.recipe {
+  margin-top: 20px;
+}
+
 .recipe h3 {
   color: #ff5e62;
   font-size: 24px;
   font-family: 'Georgia', serif;
   margin-bottom: 15px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.recipe {
-  margin-top: 20px;
 }
 
 .recipe ul,
@@ -93,7 +103,7 @@ body {
 
 .buttons {
   margin-top: 20px;
-  text-align: center; /* Buttons zentrieren */
+  text-align: center;
 }
 
 .btn {

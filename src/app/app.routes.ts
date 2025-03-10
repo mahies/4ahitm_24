@@ -24,7 +24,6 @@ import {PageAboutFriedlComponent} from './pages/pages-students/pages-friedl/main
 import {PageAboutMeCizmicComponent} from './pages/pages-students/pages-cizmic/page-about-me-cizmic/page-about-me-cizmic.component';
 import {PageAboutMeCocoComponent} from './pages/pages-students/page-about-me-coco/page-about-me-coco.component';
 import {PageMeineReisenGARCIAComponent} from './pages/pages-students/page-garcia/page-meine-reisen-garcia/page-meine-reisen-garcia.component';
-import {MainpageRADDAComponent} from './pages/pages-students/pages-radda/mainpage-radda.component';
 
 import {
   PageHaustiereWAGNERComponent
@@ -289,7 +288,5 @@ export const routes: Routes = [
 
   { path: 'subpage1-radda',
     component: Subpage1RaddaComponent},
-  { path: 'subpage2-radda',
-    component: Subpage2RaddaComponent}
 ];
 

@@ -1,4 +1,4 @@
-.body {
+body {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to right, #ff9966, #ff5e62);
   text-align: center;
@@ -107,6 +107,7 @@ p {
   padding: 12px 20px;
   font-size: 18px;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;

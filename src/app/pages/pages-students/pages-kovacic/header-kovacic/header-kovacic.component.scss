@@ -1,0 +1,143 @@
+@import "../kovacic-variablen";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: $background-color2;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-start;
+
+    img {
+      height: 75px;
+      width: auto;
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: $text-color;
+      font-family: $h1_font;
+      font-size: 28px;
+      margin: 0;
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline;
+
+        a {
+          text-decoration: none;
+          font-size: 18px;
+          color: $primary;
+          font-weight: bold;
+          transition: color 0.3s ease-in-out;
+          padding-bottom: 2px;
+
+          &:hover,
+          &.active {
+            color: $link-hover-color;
+            border-bottom: 2px solid $link-hover-color;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    span {
+      width: 30px;
+      height: 3px;
+      background-color: $primary;
+      transition: 0.3s;
+    }
+  }
+
+  // Responsive Anpassung für kleinere Bildschirme
+  @media (max-width: 750px) {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+
+    .logo-title {
+      display: flex;
+      justify-content: flex-start;
+      width: auto;
+      margin-right: 10px;
+      order: 1;  // Damit das Logo links bleibt
+    }
+
+    .burger-menu {
+      display: flex;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      gap: 5px;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .nav {
+      display: none;
+      width: auto;
+      flex-direction: column;
+      align-items: center;
+      background-color: $background-color2;
+      padding-top: 10px;
+      position: absolute;
+      top: 100%;  // Positioniere das Menü direkt unterhalb des Headers
+      right: 0;  // Menü rechtsbündig
+      z-index: 1;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);  // Fügt einen Schatten hinzu
+      border-radius: 5px;  // Optional, fügt abgerundete Ecken hinzu
+      transition: top 0.3s ease-in-out; // Animation für das Öffnen
+    }
+
+    .nav.active {
+      display: flex;
+      top: 100%;  // Bleibt direkt unterhalb des Headers
+    }
+
+    ul {
+      flex-direction: column;
+      width: auto;
+      text-align: center;  // Jetzt wird der Text zentriert
+
+      li {
+        width: 200px;  // Limitierte Breite der Links
+        padding: 10px 0;
+
+        a {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
