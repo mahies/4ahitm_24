@@ -178,7 +178,7 @@ export  const KOVACIC : Person = {
   surname: "Kovacic",
   firstname: "Victoria",
   urlImage: "assets/kovacic_bilder/vic.jpeg",
-  birthday: new Date("2006-11-22"),
+  birthday: new Date("2006-12-22 05:23:00"),
   department: "ITEL Medientechnik",
   email: "210042@studierende.htl-donaustadt.at",
   github_nickname: "sevvicc",

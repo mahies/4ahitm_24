@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
-import {KOVACIC, Person} from '../../../../model/person';
+import {KOVACIC, KOVACS, Person} from '../../../../model/person';
 import {HeaderKovacicComponent} from '../header-kovacic/header-kovacic.component';
 import {FooterKovacicComponent} from '../footer-kovacic/footer-kovacic.component';
 
