@@ -1,9 +1,15 @@
+@import '../bootstrap_hauer';
+
+.main-content {
+  margin-top: $header-fixed-offset;
+  align-content: center;
+}
+
+
 .page-wrapper {
-  font-family: "Times New Roman", serif;
-  background: linear-gradient(to bottom, #5f409e, #ff5e84);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: $main-font;
+  background: linear-gradient(to bottom, $primary-purple, $accent-pink);
+  @include flex-center;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -11,43 +17,41 @@
 
 .container {
   text-align: center;
-  color: white;
+  color: $white;
   padding-bottom: 20px;
 }
 
 .title {
+  padding-top: 60px;
   text-align: center;
   font-size: 36px;
-  font-family: 'Arial', sans-serif;
-  color: white;
+  font-family: $arial-font;
+  color: $white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
 
 .card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
+  @include card-style;
+  background: $white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: inline-block;
   max-width: 1000px;
-  text-align: left;
   margin: 20px;
   width: 100%;
   overflow: hidden;
-}
 
-.card h1 {
-  color: #ff5e62;
-  font-size: 36px;
-  font-family: 'Georgia', serif;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  letter-spacing: 1px;
+  h1 {
+    color: $accent-pink;
+    font-size: 36px;
+    font-family: $heading-font;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+  }
 }
 
 .card-content {
-  display: flex;
+  @include flex-center;
   align-items: center;
 }
 
@@ -55,49 +59,38 @@
   width: 45%;
   border-radius: 10px;
   margin-right: 20px;
-  border: 5px solid #ff5e62;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
+  border: 5px solid $accent-pink;
+  box-shadow: $image-shadow;
+  transition: transform $transition;
 
-.card img:hover {
-  transform: scale(1.05);
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .text-content {
   width: 55%;
 }
 
-.card h2 {
-  color: #ff5e62;
-  font-size: 30px;
-  font-family: 'Georgia', serif;
-  margin-bottom: 15px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  letter-spacing: 1px;
-}
-
-.recipe h3 {
-  color: #ff5e62;
-  font-size: 24px;
-  font-family: 'Georgia', serif;
-  margin-bottom: 15px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
 .recipe {
   margin-top: 20px;
-}
 
-.recipe ul,
-.recipe ol {
-  padding-left: 20px;
-  list-style-position: inside;
-}
+  h3 {
+    color: $accent-pink;
+    font-size: 24px;
+    font-family: $heading-font;
+    margin-bottom: 15px;
+  }
 
-.recipe li {
-  margin-bottom: 12px;
-  line-height: 1.6;
+  ul, ol {
+    padding-left: 20px;
+    list-style-position: inside;
+  }
+
+  li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
 }
 
 .buttons {
@@ -110,32 +103,77 @@
 }
 
 .btn, .back-home {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 160px;
-  height: 40px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  @include button-style;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  &.btn {
+    background-color: $dark-purple;
+
+    &:hover {
+      background-color: $button-hover;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &.back-home {
+    background-color: $primary-purple;
+  }
 }
 
-.btn {
-  background-color: #3d2767;
-  color: white;
-  padding: 10px 20px;
+@media (max-width: 1024px) {
+  .card {
+    max-width: 90%;
+  }
+
+  .card-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+
+  .text-content {
+    width: 90%;
+  }
 }
 
-.btn:hover {
-  background-color: #7f57cf;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+@media (max-width: 768px) {
+  .main-content{
+    margin-top: 250px;
+  }
+  .title {
+    font-size: 28px;
+  }
 
-.back-home {
-  background-color: #5f409e;
-  color: white;
+  .card img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .text-content {
+    width: 100%;
+  }
+
+  .recipe h3 {
+    font-size: 20px;
+  }
+
+  .recipe ul, .recipe ol {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
 }

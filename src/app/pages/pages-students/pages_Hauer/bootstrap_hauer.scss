@@ -1,0 +1,62 @@
+$primary-purple: #5f409e;
+$secondary-purple: #7f57cf;
+$dark-purple: #3d2767;
+$accent-pink: #ff5e84;
+$border-color: #6c4d88;
+$button-hover: #7f57cf;
+$text-gray: #555;
+$light-gray: #B4B4B4;
+$white: white;
+$gray-shadow: gray;
+
+$main-font: "Times New Roman", serif;
+$heading-font: 'Georgia', serif;
+$arial-font: 'Arial', sans-serif;
+
+$button-width: 160px;
+$button-height: 40px;
+$container-radius: 30px;
+$card-padding: 30px;
+$standard-gap: 15px;
+$max-container-width: 1500px;
+
+$box-shadow: 0 30px 30px $gray-shadow;
+$image-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+
+$transition: all 0.3s ease;
+$fadeIn-animation: fadeIn 0.5s ease-out;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card-style {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  border: 3px solid $border-color;
+  padding: $card-padding;
+}
+
+@mixin button-style {
+  width: $button-width;
+  height: $button-height;
+  border: none;
+  color: $white;
+  font-weight: bold;
+  transition: $transition;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+$header-fixed-offset: 120px;
+

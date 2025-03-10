@@ -1,19 +1,18 @@
+<header-hauer></header-hauer>
 <div class="container-fluid">
   <div class="background-box">
     <div class="row">
-
-      <div class="col-4 image-container">
+      <div class="col-12 col-md-4 image-container">
         <img src="{{ me_hauer.urlImage }}" class="img-fluid" alt="...">
       </div>
 
-      <div class="col-6 card">
+      <div class="col-12 col-md-6 card">
         <h5 class="card-title"><strong><u>{{ me_hauer.firstname }} {{ me_hauer.surname }}</u></strong></h5>
         <p class="card-text"><strong>{{ me_hauer.message }}</strong></p>
 
         <div class="link-container">
           <a href="{{ me_hauer.socialLink }}" class="social-link">INSTA</a>
-
-          <p class="card-text"><strong>Geboren am:</strong> {{ me_hauer.birthday }}</p>
+          <p class="card-text"><strong>Geboren am:</strong> {{ me_hauer.birthday.getUTCDate() }}.{{ me_hauer.birthday.getUTCMonth() }}.{{ me_hauer.birthday.getFullYear() }}</p>
           <p class="card-text"><strong>Wohnort:</strong> {{ me_hauer.zip_code }} {{ me_hauer.city }}</p>
           <p class="card-text"><strong>Mein Github Username:</strong> {{ me_hauer.github_nickname }}</p>
         </div>
@@ -29,3 +28,4 @@
     </div>
   </div>
 </div>
+<footer-hauer></footer-hauer>

@@ -1,0 +1,152 @@
+@import '../bootstrap_hauer';
+
+.site-header {
+  @include flex-center;
+  justify-content: space-between;
+  padding: 40px 70px;
+  background: $primary-purple;
+  color: $white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .logo-title {
+
+      font-size: 38px;
+      font-family: $heading-font;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin: 0;
+
+  }
+
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-left: $standard-gap * 2;
+
+        a {
+          color: $white;
+          text-decoration: none;
+          font-size: 24px;
+          font-weight: 500;
+          padding: 14px 20px;
+          border-radius: $container-radius / 3;
+          transition: $transition;
+
+          &.active,
+          &:hover {
+            background: $accent-pink;
+            color: $white;
+            box-shadow: $image-shadow;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-content {
+  margin-top: $header-fixed-offset;
+  align-content: center;
+}
+
+.buttons {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .btn, .back-home {
+    @include button-style;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &.btn {
+      background-color: $dark-purple;
+      &:hover {
+        background-color: $button-hover;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &.back-home {
+      background-color: $primary-purple;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .site-header {
+    padding: 30px 50px;
+  }
+
+  .logo-title{
+    font-size: 32px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: $standard-gap;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: $standard-gap;
+  }
+
+  nav ul li a {
+    font-size: 22px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: $standard-gap * 2 $standard-gap * 3;
+  }
+
+  .logo-title{
+    font-size: 28px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: $standard-gap * 2;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: $standard-gap;
+  }
+
+  nav ul li a {
+    font-size: 5px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn, .back-home {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 20px;
+  }
+}

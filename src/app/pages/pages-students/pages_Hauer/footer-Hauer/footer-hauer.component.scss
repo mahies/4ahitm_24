@@ -1,0 +1,49 @@
+@import '../bootstrap_hauer';
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.site-footer {
+  background: $accent-pink;
+  color: $white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  z-index: 10;
+  margin-top: auto;
+}
+
+.footer-content {
+  p {
+    font-size: 18px;
+    font-family: $heading-font;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .site-footer {
+    padding: 20px 50px;
+
+    .footer-content p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 15px 20px;
+
+    .footer-content p {
+      font-size: 14px;
+    }
+  }
+}

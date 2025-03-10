@@ -1,71 +1,64 @@
-container-fluid {
-  font-family: "Times New Roman", serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@import '../bootstrap_hauer';
+
+
+
+.container-fluid {
+  font-family: $main-font;
+  @include flex-center;
   height: 100vh;
   width: 100%;
   padding: 20px;
+  margin-top: $header-fixed-offset;
+
 }
 
 .background-box {
-  background: linear-gradient(to bottom, #5f409e, #ff5e84);
+  background: linear-gradient(to bottom, $primary-purple, $accent-pink);
   padding: 60px;
-  border-radius: 30px;
+  border-radius: $container-radius;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 5px gray;
-  max-width: 1500px;
+  border: 5px $gray-shadow;
+  max-width: $max-container-width;
   width: 100%;
   margin: auto;
   box-sizing: border-box;
   min-height: 300px;
+  animation: $fadeIn-animation;
 }
 
 .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
   text-align: center;
   flex-wrap: wrap;
 }
 
 .image-container {
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 }
 
 .pet-image {
-  border: 3px solid #6c4d88;
-  border-radius: 10px;
-  min-width: 10cm;
-  min-height: 10cm;
-  max-width: 10cm;
-  max-height: 10cm;
-
+  width: min(30vw, 10cm);
+  height: min(30vw, 10cm);
+  object-fit: cover;
 }
 
 
 
 .card {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 30px;
-  border-radius: 15px;
-  border: 3px solid #6c4d88;
+  @include card-style;
   margin-left: 30px;
   max-width: 700px;
-  box-sizing: border-box;
-}
 
-.card-title {
-  font-size: 1.8rem;
-  color: #333;
-}
+  &-title {
+    font-size: 1.8rem;
+    color: #333;
+  }
 
-.card-text {
-  font-size: 1.1rem;
-  color: #555;
+  &-text {
+    font-size: 1.1rem;
+    color: $text-gray;
+  }
 }
 
 .link-container {
@@ -76,46 +69,39 @@ container-fluid {
 
 .link-group {
   display: flex;
-  gap: 15px;
+  gap: $standard-gap;
 }
 
 .btn-primary {
-  width: 160px;
-  height: 40px;
-  background-color: #3d2767;
-  border: none;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
+  @include button-style;
+  background-color: $dark-purple;
 
-.btn-primary:hover {
-  background-color: #7f57cf;
-  transform: scale(1.1);
+  &:hover {
+    background-color: $button-hover;
+    transform: scale(1.1);
+  }
 }
 
 .back-home {
-  width: 160px;
-  height: 40px;
-  background-color: #5f409e;
-}
+  @include button-style;
+  background-color: $primary-purple;
 
-.back-home:hover {
-  background-color: #7f57cf;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  &:hover {
+    background-color: $button-hover;
   }
 }
-
-.background-box {
-  animation: fadeIn 0.5s ease-out;
+@media (max-width: 768px) {
+  .pet-image {
+    min-width: 8cm;
+    min-height: 8cm;
+    max-width: 8cm;
+    max-height: 8cm;
+  }
+  .main-content{
+    margin-top: 6000px;
+  }
+  .background-box{
+    margin-top: 120px;
+  }
 }
+

@@ -1,60 +1,68 @@
-.container-fluid {
-  font-family: "Times New Roman", serif;
+@import '../bootstrap_hauer';
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container-fluid {
+  font-family: $main-font;
+  @include flex-center;
   height: 100vh;
+  padding: 20px; // Padding für kleinere Bildschirme hinzufügen
 }
 
 .background-box {
-  background: linear-gradient(to bottom, #5f409e, #ff5e84);
-  padding: 60px;
-  border-radius: 30px;
-  box-shadow: 0 30px 30px gray;
-  border: 5px gray;
-  max-width: 1500px;
+  background: linear-gradient(to bottom, $primary-purple, $accent-pink);
+  padding: 40px 20px; // Padding anpassen für kleinere Bildschirme
+  border-radius: $container-radius;
+  box-shadow: $box-shadow;
+  border: 5px solid $gray-shadow; // Hier fehlte "solid"
+  max-width: $max-container-width;
   width: 100%;
   margin: auto;
+  animation: $fadeIn-animation;
 }
 
 .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
   text-align: center;
+  flex-direction: column; // Standardmäßig Spaltenrichtung für mobile Geräte
+
+  @media (min-width: 768px) {
+    flex-direction: row; // Ab mittleren Bildschirmen wieder Zeilenrichtung
+  }
 }
 
 .image-container {
   padding: 0;
-  display: flex;
-  justify-content: center;
-}
+  @include flex-center;
 
-.image-container img {
-  border: 3px solid  #6c4d88;
-  border-radius: 10px;
-  width: 80%;
-  height: auto;
+  img {
+    border: 3px solid $border-color;
+    border-radius: 10px;
+    width: 100%; // Volle Breite auf kleinen Bildschirmen
+    max-width: 300px; // Maximale Breite für größere Bildschirme
+    height: auto;
+    margin-bottom: 20px; // Abstand nach unten auf kleinen Bildschirmen
+  }
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 30px;
-  border-radius: 15px;
-  border: 3px solid #6c4d88;
-  margin-left: 30px;
-  max-width: 700px;
-}
+  @include card-style;
+  margin-left: 0; // Kein linker Abstand auf kleinen Bildschirmen
+  max-width: 100%; // Volle Breite auf kleinen Bildschirmen
+  width: 100%;
 
-.card-title {
-  font-size: 1.8rem;
-  color: #333;
-}
+  @media (min-width: 768px) {
+    margin-left: 30px; // Linker Abstand ab mittleren Bildschirmen
+    max-width: 700px; // Maximale Breite für größere Bildschirme
+  }
 
-.card-text {
-  font-size: 1.1rem;
-  color: #555;
+  &-title {
+    font-size: 1.8rem;
+    color: #333;
+  }
+
+  &-text {
+    font-size: 1.1rem;
+    color: $text-gray;
+  }
 }
 
 .link-container {
@@ -63,64 +71,44 @@
   align-items: center;
 }
 
-.social-link{
+.social-link {
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
-  color: #B4B4B4;
-
+  color: $light-gray;
 }
-
-
 
 .link-group {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: $standard-gap;
   width: 100%;
   margin-bottom: 10px;
+  flex-direction: column; // Buttons untereinander auf kleinen Bildschirmen
+
+  @media (min-width: 768px) {
+    flex-direction: row; // Buttons nebeneinander ab mittleren Bildschirmen
+  }
 }
 
 .btn-primary {
-  width: 160px;
-  height: 40px;
-  background-color: #3d2767;
-  border: none;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
+  @include button-style;
+  background-color: $dark-purple;
 
-.btn-primary:hover {
-  background-color: #7f57cf;
+  &:hover {
+    background-color: $button-hover;
     transform: scale(1.1);
+  }
 }
 
 .back-home {
-  width: 160px;
-  height: 40px;
+  @include button-style;
   margin-top: 10px;
-  background-color: #5f409e;
-}
+  background-color: $primary-purple;
 
-.back-home:hover {
-  background-color: #7f57cf;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+  &:hover {
+    background-color: $button-hover;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.background-box {
-  animation: fadeIn 0.5s ease-out;
 }
