@@ -7,6 +7,8 @@
   color: #031926;
   width: 100%;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  flex-direction: column; /* Ändert die Richtung der Flexbox auf vertikal */
+  align-items: center; /* Zentriert den Inhalt horizontal */
 }
 
 .footer-text {
@@ -22,22 +24,9 @@
 }
 
 .socials {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  margin-top: 10px; /* Fügt etwas Abstand zwischen dem Text und dem Icon hinzu */
 }
 
-.social-link {
-  text-decoration: none;
-  display: inline-block;
-}
-
-.bi-instagram {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s ease;
-}
-
-.bi-instagram:hover {
-  transform: scale(1.2);
+.socials a {
+  display: inline-block; /* Macht das Icon klickbar */
 }
