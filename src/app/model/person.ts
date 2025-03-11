@@ -135,7 +135,7 @@ export  const HAUER : Person = {
   surname: "Hauer",
   firstname: "Erik",
   urlImage: "/assets/Hauer_bilder/Erik.jpg",
-  birthday: new Date("2006-07-18"),
+  birthday: new Date("2006-08-18"),
   department: "ITEL Medientechnick",
   email: "200019@studierende.htl-donaustadt.at",
   github_nickname: "Nova1807",
