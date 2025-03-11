@@ -3,3 +3,13 @@ div{
   font-weight: normal;
   font-style: normal;
 }
+
+.btn:hover {
+  background-color: #811b28;
+  transform: scale(1.1);
+}
+
+.background-box {
+  max-width: 1500px;
+  margin: auto;
+}
