@@ -288,4 +288,3 @@ export const routes: Routes = [
     component: PageAboutMeGARCIAComponent},
 
 ];
-
