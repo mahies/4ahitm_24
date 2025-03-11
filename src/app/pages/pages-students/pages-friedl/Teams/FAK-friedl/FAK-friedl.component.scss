@@ -10,16 +10,30 @@
   text-align: center;
 }
 
-.austriabg h1 {
-  font-size: 3rem;
-  color: #6a4c9c;
-  font-weight: bold;
+.header-container {
+  position: relative;
+  text-align: center;
+  padding: 20px;
 }
 
-.austriabg h2 {
-  font-size: 2.5rem;
-  color: #6a4c9c;
+.header-container h1 {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 3rem;
   font-weight: bold;
+  color: #6a4c9c;
+}
+
+.header-logo {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-logo img {
+  width: 120px;
+  height: auto;
 }
 
 .text-content {

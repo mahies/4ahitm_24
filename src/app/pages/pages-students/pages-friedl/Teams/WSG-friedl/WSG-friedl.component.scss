@@ -1,5 +1,5 @@
-.wsgtirobg {
-  background-image: url('../../../../../../../public/assets/Friedl-bilder/WSG_Stadion.jpg');
+.greenbg {
+  background: url('../../../../../../../public/assets/Friedl-bilder/WSG_Stadion.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,16 +10,30 @@
   text-align: center;
 }
 
-.wsgtirobg h1 {
-  font-size: 3rem;
-  color: #006d32;
-  font-weight: bold;
+.header-container {
+  position: relative;
+  text-align: center;
+  padding: 20px;
 }
 
-.wsgtirobg h2 {
-  font-size: 2.5rem;
-  color: #006d32;
+.header-container h1 {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 3rem;
   font-weight: bold;
+  color: lawngreen;
+}
+
+.header-logo {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-logo img {
+  width: 120px;
+  height: auto;
 }
 
 .text-content {
@@ -27,6 +41,10 @@
   z-index: 2;
   font-size: 2rem;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(128, 128, 128, 0.5);
   display: inline-block;
+}
+
+.greenbg h2 {
+  color: #32CD32;
 }

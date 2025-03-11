@@ -10,16 +10,30 @@
   text-align: center;
 }
 
-.bluebg h1 {
-  font-size: 3rem;
-  color: Blue;
-  font-weight: bold;
+.header-container {
+  position: relative;
+  text-align: center;
+  padding: 20px;
 }
 
-.bluebg h2 {
-  font-size: 2.5rem;
-  color: Blue;
+.header-container h1 {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 3rem;
   font-weight: bold;
+  color: blue;
+}
+
+.header-logo {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-logo img {
+  width: 120px;
+  height: auto;
 }
 
 .text-content {

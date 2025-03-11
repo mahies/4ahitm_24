@@ -22,6 +22,11 @@
   display: flex;
   justify-content: center;
   flex-grow: 1;
+  position: relative;
+}
+
+.nav-offset {
+  transform: translateX(-33px);
 }
 
 .nav {

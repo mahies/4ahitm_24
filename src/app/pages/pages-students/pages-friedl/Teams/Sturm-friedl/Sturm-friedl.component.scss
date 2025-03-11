@@ -1,5 +1,5 @@
 .sturmbg {
-  background-image: url('../../../../../../../public/assets/Friedl-bilder/Stadion_Sturm.jpg');
+  background: url('../../../../../../../public/assets/Friedl-bilder/Stadion_Sturm.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,16 +10,30 @@
   text-align: center;
 }
 
-.sturmbg h1 {
-  font-size: 3rem;
-  color: white;
-  font-weight: bold;
+.header-container {
+  position: relative;
+  text-align: center;
+  padding: 20px;
 }
 
-.sturmbg h2 {
-  font-size: 2.5rem;
-  color: white;
+.header-container h1 {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 3rem;
   font-weight: bold;
+  color: white;
+}
+
+.header-logo {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-logo img {
+  width: 120px;
+  height: auto;
 }
 
 .text-content {
