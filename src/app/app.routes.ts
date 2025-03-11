@@ -13,7 +13,7 @@ import {PageAboutmeNovoComponent} from "./pages/pages-students/page-novo/page-ab
 import {PageAboutmeMETZComponent} from "./pages/pages-students/pages-metz/page-aboutme-metz/page-aboutme-metz.component";
 import {PageAboutMeSCHOENComponent} from './pages/pages-students/page-about-me-schoengrundner/page-about-me-schoen.component';
 import {PageAboutMeGARCIAComponent} from './pages/pages-students/page-garcia/page-about-me-garcia/page-about-me-garcia.component';
-import {PageAboutMePojarComponent} from './pages/pages-students/pages-pojar/page-about-me-pojar/page-about-me-pojar.component';
+import {PageAboutMePojarComponent} from "./pages/pages-students/pages-pojar/page-about-me-pojar/page-about-me-pojar.component";
 import {PageGetesteteDoenerPojarComponent} from "./pages/pages-students/pages-pojar/page-getestete-doener-pojar/page-getestete-doener-pojar.component";
 import {PageLieblingsessenPojarComponent} from "./pages/pages-students/pages-pojar/page-lieblingsessen-pojar/page-lieblingsessen-pojar.component";
 import {PageAboutMeKOVACICComponent} from './pages/pages-students/pages-kovacic/page-about-me-kovacic/page-about-me-kovacic.component';
@@ -24,6 +24,7 @@ import {PageAboutFriedlComponent} from './pages/pages-students/pages-friedl/main
 import {PageAboutMeCizmicComponent} from './pages/pages-students/pages-cizmic/page-about-me-cizmic/page-about-me-cizmic.component';
 import {PageAboutMeCocoComponent} from './pages/pages-students/page-about-me-coco/page-about-me-coco.component';
 import {PageMeineReisenGARCIAComponent} from './pages/pages-students/page-garcia/page-meine-reisen-garcia/page-meine-reisen-garcia.component';
+
 
 import {
   PageHaustiereWAGNERComponent
@@ -286,7 +287,5 @@ export const routes: Routes = [
   { path: 'page-about-me-garcia',
     component: PageAboutMeGARCIAComponent},
 
-  { path: 'subpage1-radda',
-    component: Subpage1RaddaComponent},
 ];
 
