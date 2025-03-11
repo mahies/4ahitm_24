@@ -2,15 +2,14 @@
 
 .main-content {
   margin-top: $header-fixed-offset;
-  align-content: center;
+  flex: 1;
 }
-
 
 .page-wrapper {
   font-family: $main-font;
   background: linear-gradient(to bottom, $primary-purple, $accent-pink);
   @include flex-center;
-  height: 100%;
+  min-height: 100vh;
   margin: 0;
   overflow-x: hidden;
 }
@@ -23,7 +22,6 @@
 
 .title {
   padding-top: 60px;
-  text-align: center;
   font-size: 36px;
   font-family: $arial-font;
   color: $white;
@@ -39,37 +37,32 @@
   margin: 20px;
   width: 100%;
   overflow: hidden;
-
-  h1 {
-    color: $accent-pink;
-    font-size: 36px;
-    font-family: $heading-font;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    letter-spacing: 1px;
-  }
 }
 
 .card-content {
   @include flex-center;
   align-items: center;
-}
+  flex-direction: column;
 
-.card img {
-  width: 45%;
-  border-radius: 10px;
-  margin-right: 20px;
-  border: 5px solid $accent-pink;
-  box-shadow: $image-shadow;
-  transition: transform $transition;
-
-  &:hover {
-    transform: scale(1.05);
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 }
 
+.card img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 5px solid $accent-pink;
+  box-shadow: $image-shadow;
+}
+
 .text-content {
-  width: 55%;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 55%;
+  }
 }
 
 .recipe {
@@ -79,7 +72,6 @@
     color: $accent-pink;
     font-size: 24px;
     font-family: $heading-font;
-    margin-bottom: 15px;
   }
 
   ul, ol {
@@ -95,85 +87,11 @@
 
 .buttons {
   margin-top: 20px;
-  text-align: center;
   display: flex;
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
 }
-
-.btn, .back-home {
-  @include button-style;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-
-  &.btn {
-    background-color: $dark-purple;
-
-    &:hover {
-      background-color: $button-hover;
-      transform: translateY(-3px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-  }
-
-  &.back-home {
-    background-color: $primary-purple;
-  }
-}
-
-@media (max-width: 1024px) {
-  .card {
-    max-width: 90%;
-  }
-
-  .card-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .card img {
-    width: 80%;
-    margin: 0 auto 20px auto;
-  }
-
-  .text-content {
-    width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  .main-content{
-    margin-top: 250px;
-  }
-  .title {
-    font-size: 28px;
-  }
-
-  .card img {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .text-content {
-    width: 100%;
-  }
-
-  .recipe h3 {
-    font-size: 20px;
-  }
-
-  .recipe ul, .recipe ol {
-    font-size: 16px;
-  }
-
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn {
-    width: 100%;
-    max-width: 300px;
-  }
+.main-content{
+  margin-top: 210px;
 }
