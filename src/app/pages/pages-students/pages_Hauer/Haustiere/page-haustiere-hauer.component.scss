@@ -1,15 +1,12 @@
 @import '../bootstrap_hauer';
 
-
-
 .container-fluid {
   font-family: $main-font;
   @include flex-center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding: 20px;
   margin-top: $header-fixed-offset;
-
 }
 
 .background-box {
@@ -17,7 +14,7 @@
   padding: 60px;
   border-radius: $container-radius;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 5px $gray-shadow;
+  border: 5px solid $gray-shadow;
   max-width: $max-container-width;
   width: 100%;
   margin: auto;
@@ -43,22 +40,10 @@
   object-fit: cover;
 }
 
-
-
 .card {
   @include card-style;
   margin-left: 30px;
   max-width: 700px;
-
-  &-title {
-    font-size: 1.8rem;
-    color: #333;
-  }
-
-  &-text {
-    font-size: 1.1rem;
-    color: $text-gray;
-  }
 }
 
 .link-container {
@@ -67,29 +52,6 @@
   margin-top: 30px;
 }
 
-.link-group {
-  display: flex;
-  gap: $standard-gap;
-}
-
-.btn-primary {
-  @include button-style;
-  background-color: $dark-purple;
-
-  &:hover {
-    background-color: $button-hover;
-    transform: scale(1.1);
-  }
-}
-
-.back-home {
-  @include button-style;
-  background-color: $primary-purple;
-
-  &:hover {
-    background-color: $button-hover;
-  }
-}
 @media (max-width: 768px) {
   .pet-image {
     min-width: 8cm;
@@ -97,11 +59,8 @@
     max-width: 8cm;
     max-height: 8cm;
   }
-  .main-content{
-    margin-top: 6000px;
-  }
-  .background-box{
+
+  .background-box {
     margin-top: 120px;
   }
 }
-

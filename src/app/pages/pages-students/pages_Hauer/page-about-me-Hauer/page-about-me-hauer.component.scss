@@ -3,16 +3,20 @@
 .container-fluid {
   font-family: $main-font;
   @include flex-center;
-  height: 100vh;
-  padding: 20px; // Padding für kleinere Bildschirme hinzufügen
+  min-height: 100vh;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .background-box {
   background: linear-gradient(to bottom, $primary-purple, $accent-pink);
-  padding: 40px 20px; // Padding anpassen für kleinere Bildschirme
+  padding: 40px 20px;
   border-radius: $container-radius;
   box-shadow: $box-shadow;
-  border: 5px solid $gray-shadow; // Hier fehlte "solid"
+  border: 5px solid $gray-shadow;
   max-width: $max-container-width;
   width: 100%;
   margin: auto;
@@ -22,10 +26,10 @@
 .row {
   @include flex-center;
   text-align: center;
-  flex-direction: column; // Standardmäßig Spaltenrichtung für mobile Geräte
+  flex-direction: column;
 
   @media (min-width: 768px) {
-    flex-direction: row; // Ab mittleren Bildschirmen wieder Zeilenrichtung
+    flex-direction: row;
   }
 }
 
@@ -36,48 +40,23 @@
   img {
     border: 3px solid $border-color;
     border-radius: 10px;
-    width: 100%; // Volle Breite auf kleinen Bildschirmen
-    max-width: 300px; // Maximale Breite für größere Bildschirme
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    margin-bottom: 20px; // Abstand nach unten auf kleinen Bildschirmen
+    margin-bottom: 20px;
   }
 }
 
 .card {
   @include card-style;
-  margin-left: 0; // Kein linker Abstand auf kleinen Bildschirmen
-  max-width: 100%; // Volle Breite auf kleinen Bildschirmen
+  max-width: 100%;
   width: 100%;
+  margin-left: 0;
 
   @media (min-width: 768px) {
-    margin-left: 30px; // Linker Abstand ab mittleren Bildschirmen
-    max-width: 700px; // Maximale Breite für größere Bildschirme
+    margin-left: 30px;
+    max-width: 700px;
   }
-
-  &-title {
-    font-size: 1.8rem;
-    color: #333;
-  }
-
-  &-text {
-    font-size: 1.1rem;
-    color: $text-gray;
-  }
-}
-
-.link-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.social-link {
-  display: block;
-  margin-bottom: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  color: $light-gray;
 }
 
 .link-group {
@@ -86,29 +65,41 @@
   gap: $standard-gap;
   width: 100%;
   margin-bottom: 10px;
-  flex-direction: column; // Buttons untereinander auf kleinen Bildschirmen
+  flex-direction: column;
 
   @media (min-width: 768px) {
-    flex-direction: row; // Buttons nebeneinander ab mittleren Bildschirmen
+    flex-direction: row;
   }
 }
 
-.btn-primary {
-  @include button-style;
-  background-color: $dark-purple;
-
-  &:hover {
-    background-color: $button-hover;
-    transform: scale(1.1);
+@media (max-width: 768px) {
+  .container-fluid {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
   }
-}
+  .test{
+    margin-top: 210px;
+  }
 
-.back-home {
-  @include button-style;
-  margin-top: 10px;
-  background-color: $primary-purple;
+  .background-box {
+    padding: 20px;
+    margin-top: 20px;
+  }
 
-  &:hover {
-    background-color: $button-hover;
+  .row {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .card {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .link-group {
+    flex-direction: column;
+    margin-top: 15px;
   }
 }
