@@ -130,8 +130,8 @@ import {
 } from './pages/pages-students/pages-kovacic/page-lieblingsmusik-kovacic/page-lieblingsmusik-kovacic.component';
 
 import {
-  Subpage2SchoenComponent
-} from './pages/pages-students/page-about-me-schoengrundner/page-subpage2/subpage2-schoen.component';
+  PageLieblingsessenSchoenComponent
+} from './pages/pages-students/page-about-me-schoengrundner/page-lieblingsessen-schoen/page-lieblingsessen-schoen.component';
 import {
   PageHobbiesPontComponent
 } from './pages/pages-students/pages-pont/page-hobbies-pont/page-hobbies-pont.component';
@@ -200,8 +200,8 @@ export const routes: Routes = [
     component: PageAboutMeSCHOENComponent },
   { path: 'page-hobby-schoengrundner',
     component: PageHobbySchoengrundnerComponent},
-  { path: 'subpage2-schoen',
-    component: Subpage2SchoenComponent},
+  { path: 'page-lieblingsessen-schoen',
+    component: PageLieblingsessenSchoenComponent},
   { path: 'page_pojar',
     component: PageAboutMePojarComponent },
   { path: 'page_kovacic',
